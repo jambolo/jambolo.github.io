@@ -102,25 +102,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_p2p_1_1_message_1_1_header.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="p2p_2_message_8h_source.html">Message.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for P2p::Message::Header:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_p2p_1_1_message_1_1_header.png" usemap="#P2p::Message::Header_map" alt=""/>
+  <map id="P2p::Message::Header_map" name="P2p::Message::Header_map">
+<area href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. " alt="P2p::Serializable" shape="rect" coords="0,0,139,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aecd9d9ab274353f51a9cc815068b40a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#aecd9d9ab274353f51a9cc815068b40a7">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const </td></tr>
-<tr class="memdesc:aecd9d9ab274353f51a9cc815068b40a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload checksum.  <a href="#aecd9d9ab274353f51a9cc815068b40a7">More...</a><br /></td></tr>
-<tr class="separator:aecd9d9ab274353f51a9cc815068b40a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e65cdd50fc967ca0061daa03b63615a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e65cdd50fc967ca0061daa03b63615a">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:a6e65cdd50fc967ca0061daa03b63615a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e057e8fc0f142e76f9baffb40a8ecbb">magic_</a></td></tr>
+<tr class="memdesc:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic number.  <a href="#a6e057e8fc0f142e76f9baffb40a8ecbb">More...</a><br /></td></tr>
 <tr class="separator:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8c2e5c29deb2a5f9520b951625fc93"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ade8c2e5c29deb2a5f9520b951625fc93">type_</a> [<a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a>]</td></tr>
-<tr class="memdesc:ade8c2e5c29deb2a5f9520b951625fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic number.  <a href="#ade8c2e5c29deb2a5f9520b951625fc93">More...</a><br /></td></tr>
+<tr class="memdesc:ade8c2e5c29deb2a5f9520b951625fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type.  <a href="#ade8c2e5c29deb2a5f9520b951625fc93">More...</a><br /></td></tr>
 <tr class="separator:ade8c2e5c29deb2a5f9520b951625fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ac7a86c563e7bde7ef9db8a95745dcbda">length_</a></td></tr>
-<tr class="memdesc:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type.  <a href="#ac7a86c563e7bde7ef9db8a95745dcbda">More...</a><br /></td></tr>
+<tr class="memdesc:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the payload.  <a href="#ac7a86c563e7bde7ef9db8a95745dcbda">More...</a><br /></td></tr>
 <tr class="separator:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2746a9462ac7004461a4785ef80a7fd7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a2746a9462ac7004461a4785ef80a7fd7">checksum_</a></td></tr>
-<tr class="memdesc:a2746a9462ac7004461a4785ef80a7fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the payload.  <a href="#a2746a9462ac7004461a4785ef80a7fd7">More...</a><br /></td></tr>
+<tr class="memdesc:a2746a9462ac7004461a4785ef80a7fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload checksum.  <a href="#a2746a9462ac7004461a4785ef80a7fd7">More...</a><br /></td></tr>
 <tr class="separator:a2746a9462ac7004461a4785ef80a7fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -149,10 +158,14 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A P2P network message header. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure">https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aecd9d9ab274353f51a9cc815068b40a7"></a>
+<a class="anchor" id="a6e65cdd50fc967ca0061daa03b63615a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Message::Header::serialize </td>
@@ -162,9 +175,14 @@ Static Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Payload checksum. </p>
+<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
 </div>
@@ -179,7 +197,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Length of the payload. </p>
+<p>Payload checksum. </p>
 
 </div>
 </div>
@@ -215,7 +233,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type. </p>
+<p>Length of the payload. </p>
 
 </div>
 </div>
@@ -250,6 +268,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Magic number. </p>
 
 </div>
 </div>
@@ -351,7 +371,7 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Magic number. </p>
+<p><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type. </p>
 
 </div>
 </div>

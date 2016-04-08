@@ -103,6 +103,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_equity_1_1_instruction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_instruction_8h_source.html">Instruction.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Equity::Instruction:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_equity_1_1_instruction.png" usemap="#Equity::Instruction_map" alt=""/>
+  <map id="Equity::Instruction_map" name="Equity::Instruction_map">
+<area href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. " alt="P2p::Serializable" shape="rect" coords="0,0,110,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -264,8 +273,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab486ece8809176fe4eb677d12efb793b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf629f4a85c3acc75aff809571ed1fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_instruction.html#adf629f4a85c3acc75aff809571ed1fe4">Instruction</a> (uint8_t const *&amp;in, size_t &amp;<a class="el" href="class_equity_1_1_instruction.html#acc399783ba354ca009645f03008254f9">size</a>, size_t <a class="el" href="class_equity_1_1_instruction.html#ad01f45e5c1290e65588a2b189e01e439">location</a>)</td></tr>
 <tr class="separator:adf629f4a85c3acc75aff809571ed1fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a039c41dae4cbda88b8b926bbd419ef5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_instruction.html#a039c41dae4cbda88b8b926bbd419ef5c">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const </td></tr>
-<tr class="separator:a039c41dae4cbda88b8b926bbd419ef5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8a2f2d3202f451bacc71856564b404"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_instruction.html#aaf8a2f2d3202f451bacc71856564b404">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:aaf8a2f2d3202f451bacc71856564b404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6fdd0b1a653b67d3886aab689576bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_instruction.html#a5c6fdd0b1a653b67d3886aab689576bf">op</a> () const </td></tr>
 <tr class="memdesc:a5c6fdd0b1a653b67d3886aab689576bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the opcode.  <a href="#a5c6fdd0b1a653b67d3886aab689576bf">More...</a><br /></td></tr>
 <tr class="separator:a5c6fdd0b1a653b67d3886aab689576bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -864,9 +873,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a039c41dae4cbda88b8b926bbd419ef5c"></a>
+<a class="anchor" id="aaf8a2f2d3202f451bacc71856564b404"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Instruction::serialize </td>
@@ -876,7 +888,14 @@ Static Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
 </div>

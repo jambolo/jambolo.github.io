@@ -97,6 +97,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="network_2_address_8h_source.html">Address.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Network::Address:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_network_1_1_address.png" usemap="#Network::Address_map" alt=""/>
+  <map id="Network::Address_map" name="Network::Address_map">
+<area href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. " alt="P2p::Serializable" shape="rect" coords="0,0,111,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63985e00a2a760845979cb775c761707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac534773436ed53b5a57e55bf113c0bf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#ac534773436ed53b5a57e55bf113c0bf2">Address</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:ac534773436ed53b5a57e55bf113c0bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3aa78b82f941764a8a43330055f348e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#ab3aa78b82f941764a8a43330055f348e">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const </td></tr>
-<tr class="separator:ab3aa78b82f941764a8a43330055f348e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f231ea85df2d7f014c8147630715108"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a5f231ea85df2d7f014c8147630715108">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:a5f231ea85df2d7f014c8147630715108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a433c00cd0971d89f58188dae1b99bf69"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a433c00cd0971d89f58188dae1b99bf69">time</a> () const </td></tr>
 <tr class="separator:a433c00cd0971d89f58188dae1b99bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a8b790cc4d466fe8cc4d0d088123db7bb">services</a> () const </td></tr>
@@ -252,9 +261,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab3aa78b82f941764a8a43330055f348e"></a>
+<a class="anchor" id="a5f231ea85df2d7f014c8147630715108"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Address::serialize </td>
@@ -264,7 +276,14 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
 </div>

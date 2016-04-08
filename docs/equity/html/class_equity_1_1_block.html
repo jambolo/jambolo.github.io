@@ -101,6 +101,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_equity_1_1_block.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_block_8h_source.html">Block.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Equity::Block:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_equity_1_1_block.png" usemap="#Equity::Block_map" alt=""/>
+  <map id="Equity::Block_map" name="Equity::Block_map">
+<area href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. " alt="P2p::Serializable" shape="rect" coords="0,0,106,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -115,8 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6febe5c5ab994caf9456ba33efc64ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee927abf2c791f9fec5ef54676557832"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#aee927abf2c791f9fec5ef54676557832">Block</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:aee927abf2c791f9fec5ef54676557832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1e28deac105f5f04171e0cfbd3d846f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#aa1e28deac105f5f04171e0cfbd3d846f">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const </td></tr>
-<tr class="separator:aa1e28deac105f5f04171e0cfbd3d846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1cb6deab83ec51873dcead81c23bbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#a7e1cb6deab83ec51873dcead81c23bbc">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:a7e1cb6deab83ec51873dcead81c23bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253459440ac02cc5df16dea0f7a15b1d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#a253459440ac02cc5df16dea0f7a15b1d">toJson</a> () const </td></tr>
 <tr class="separator:a253459440ac02cc5df16dea0f7a15b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae170ebd2c9c95d36d341328e95cd0075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equity_1_1_block_1_1_header.html">Header</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#ae170ebd2c9c95d36d341328e95cd0075">header</a> () const </td></tr>
@@ -227,9 +236,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa1e28deac105f5f04171e0cfbd3d846f"></a>
+<a class="anchor" id="a7e1cb6deab83ec51873dcead81c23bbc"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Block::serialize </td>
@@ -239,7 +251,14 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
 </div>

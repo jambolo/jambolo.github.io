@@ -98,6 +98,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_txid_8h_source.html">Txid.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Equity::Txid:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct_equity_1_1_txid.png" usemap="#Equity::Txid_map" alt=""/>
+  <map id="Equity::Txid_map" name="Equity::Txid_map">
+<area href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. " alt="P2p::Serializable" shape="rect" coords="0,0,106,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a031cdd4eaef78cdfa2489139ba6e2981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33dd6be4d978db98ac9416c670c3178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#ad33dd6be4d978db98ac9416c670c3178">Txid</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:ad33dd6be4d978db98ac9416c670c3178"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac91f3d60f85b1ae14b1522ad8c62367a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#ac91f3d60f85b1ae14b1522ad8c62367a">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const </td></tr>
-<tr class="separator:ac91f3d60f85b1ae14b1522ad8c62367a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39c4ee6e271e29f634ab960c68e00ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#ac39c4ee6e271e29f634ab960c68e00ee">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:ac39c4ee6e271e29f634ab960c68e00ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6db8392cac19ab0c8d26c39a1e4b737"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#ad6db8392cac19ab0c8d26c39a1e4b737">toHex</a> () const </td></tr>
 <tr class="separator:ad6db8392cac19ab0c8d26c39a1e4b737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5b577df4ce9850909fa4c06eccd5b4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#aac5b577df4ce9850909fa4c06eccd5b4">toJson</a> () const </td></tr>
@@ -186,9 +195,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac91f3d60f85b1ae14b1522ad8c62367a"></a>
+<a class="anchor" id="ac39c4ee6e271e29f634ab960c68e00ee"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Txid::serialize </td>
@@ -198,7 +210,14 @@ Public Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
 </div>
