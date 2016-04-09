@@ -11,6 +11,7 @@ var searchData=
   ['deserialize_3c_20uint64_5ft_20_3e',['deserialize&lt; uint64_t &gt;',['../namespace_p2p.html#ae32a90f40b17f335d9921ae98a035725',1,'P2p']]],
   ['deserialize_3c_20uint8_5ft_20_3e',['deserialize&lt; uint8_t &gt;',['../namespace_p2p.html#a39e3e36226c756c40f147744c086031a',1,'P2p']]],
   ['deserializearray',['deserializeArray',['../namespace_p2p.html#a087bd790d04a8375aefe2f770aa18601',1,'P2p']]],
+  ['deserializestring',['deserializeString',['../namespace_p2p.html#a47499741e9b765479f21734e2a498e91',1,'P2p']]],
   ['deserializevector',['deserializeVector',['../namespace_p2p.html#a042f2707365633bef6ed59bb79972fd2',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)'],['../namespace_p2p.html#a11dbac90e8b4e3237a8626c5b707ec6a',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)']]],
   ['deserializevector_3c_20uint8_5ft_20_3e',['deserializeVector&lt; uint8_t &gt;',['../namespace_p2p.html#a6cace374d2eb220f2a5ea8b846584e45',1,'P2p']]],
   ['difficulty',['difficulty',['../class_equity_1_1_target.html#ab7a4fdc4dd739410300d5ac29e839a7a',1,'Equity::Target']]],

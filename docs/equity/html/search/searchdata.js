@@ -5,11 +5,12 @@ var indexSectionsWithContent =
   2: "cenpu",
   3: "abcdefghimnoprstuvw",
   4: "abcdefghilmnoprstvw~",
-  5: "abcdfhilmnoprstv",
+  5: "abcdfhilmnoprstuv",
   6: "abceioprst",
-  7: "ot",
-  8: "ot",
-  9: "nt"
+  7: "cot",
+  8: "ort",
+  9: "nt",
+  10: "dt"
 };
 
 var indexSectionNames =
@@ -23,7 +24,8 @@ var indexSectionNames =
   6: "typedefs",
   7: "enums",
   8: "enumvalues",
-  9: "defines"
+  9: "defines",
+  10: "pages"
 };
 
 var indexSectionLabels =
@@ -37,6 +39,7 @@ var indexSectionLabels =
   6: "Typedefs",
   7: "Enumerations",
   8: "Enumerator",
-  9: "Macros"
+  9: "Macros",
+  10: "Pages"
 };
 

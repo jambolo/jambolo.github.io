@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -119,6 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63b0010e689fa4ca7ecf7844544eecf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#a63b0010e689fa4ca7ecf7844544eecf6">CheckOrderMessage</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a63b0010e689fa4ca7ecf7844544eecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21fa6e57e167dd11d9a66ad432037087"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#a21fa6e57e167dd11d9a66ad432037087">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="memdesc:a21fa6e57e167dd11d9a66ad432037087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a21fa6e57e167dd11d9a66ad432037087">More...</a><br /></td></tr>
 <tr class="separator:a21fa6e57e167dd11d9a66ad432037087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_network_1_1_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_network_1_1_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_network_1_1_message.html">Network::Message</a></td></tr>
 <tr class="memitem:a3975742be8a5fb7b38e57b5e839251bc inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_message.html#a3975742be8a5fb7b38e57b5e839251bc">Message</a> (char const *<a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a>)</td></tr>
@@ -139,7 +141,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A check-order message. </p>
-<p>This message was used for IP Transactions. As IP transactions have been deprecated, it is not supported. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This message was used for IP Transactions. As IP transactions have been deprecated, it is no longer used. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa1371960385dfa5fdb2e282d1c67832b"></a>
 <div class="memitem">
@@ -179,6 +181,13 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>pointer to the next byte to deserialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>number of bytes remaining in the serialized stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -204,6 +213,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Overrides Serializable. </p>
 
 <p>Reimplemented from <a class="el" href="class_network_1_1_message.html#adc60d0fd36c51acae6d0ff6de75d44ee">Network::Message</a>.</p>
 

@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -120,6 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7397928027888944f9104888f0a58a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_filter_load_message.html#a7397928027888944f9104888f0a58a3f">FilterLoadMessage</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a7397928027888944f9104888f0a58a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b5e7d060609a3f582eeb1524d43862a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_filter_load_message.html#a8b5e7d060609a3f582eeb1524d43862a">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="memdesc:a8b5e7d060609a3f582eeb1524d43862a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a8b5e7d060609a3f582eeb1524d43862a">More...</a><br /></td></tr>
 <tr class="separator:a8b5e7d060609a3f582eeb1524d43862a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_network_1_1_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_network_1_1_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_network_1_1_message.html">Network::Message</a></td></tr>
 <tr class="memitem:a3975742be8a5fb7b38e57b5e839251bc inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_message.html#a3975742be8a5fb7b38e57b5e839251bc">Message</a> (char const *<a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a>)</td></tr>
@@ -194,6 +196,15 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>filter </td></tr>
+    <tr><td class="paramname">nHashFuncs</td><td>number of hash functions </td></tr>
+    <tr><td class="paramname">tweak</td><td>random value </td></tr>
+    <tr><td class="paramname">flags</td><td>matching control </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -220,6 +231,13 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>pointer to the next byte to deserialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>number of bytes remaining in the serialized stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -245,6 +263,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Overrides Serializable. </p>
 
 <p>Reimplemented from <a class="el" href="class_network_1_1_message.html#adc60d0fd36c51acae6d0ff6de75d44ee">Network::Message</a>.</p>
 

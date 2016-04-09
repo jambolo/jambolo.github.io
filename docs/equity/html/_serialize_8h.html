@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -97,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="_serialize_8h_source.html">Go to the source code of this file.</a></p>
@@ -133,6 +135,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_var_array_3_01uint8__t_01_4.html">P2p::VarArray&lt; uint8_t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of uint8_t.  <a href="class_p2p_1_1_var_array_3_01uint8__t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_bit_array.html">P2p::BitArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of bits.  <a href="class_p2p_1_1_bit_array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_var_string.html">P2p::VarString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable-length string.  <a href="class_p2p_1_1_var_string.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -141,26 +149,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac2d2fac1f803d23c947e47708399012c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac2d2fac1f803d23c947e47708399012c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ac2d2fac1f803d23c947e47708399012c">P2p::serialize</a> (T const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:ac2d2fac1f803d23c947e47708399012c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>.  <a href="namespace_p2p.html#ac2d2fac1f803d23c947e47708399012c">More...</a><br /></td></tr>
-<tr class="separator:ac2d2fac1f803d23c947e47708399012c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1d7b7ccbfba3c644193b61400751f1"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a2b1d7b7ccbfba3c644193b61400751f1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a2b1d7b7ccbfba3c644193b61400751f1">P2p::serialize&lt; uint8_t &gt;</a> (uint8_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:a2b1d7b7ccbfba3c644193b61400751f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint8_t.  <a href="namespace_p2p.html#a2b1d7b7ccbfba3c644193b61400751f1">More...</a><br /></td></tr>
-<tr class="separator:a2b1d7b7ccbfba3c644193b61400751f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76de02dfd30620419200a999b9b3492"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ae76de02dfd30620419200a999b9b3492"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ae76de02dfd30620419200a999b9b3492">P2p::serialize&lt; uint16_t &gt;</a> (uint16_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:ae76de02dfd30620419200a999b9b3492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint16_t.  <a href="namespace_p2p.html#ae76de02dfd30620419200a999b9b3492">More...</a><br /></td></tr>
-<tr class="separator:ae76de02dfd30620419200a999b9b3492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac950981987d16da2b5034cebb81cae14"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ac950981987d16da2b5034cebb81cae14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ac950981987d16da2b5034cebb81cae14">P2p::serialize&lt; uint32_t &gt;</a> (uint32_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:ac950981987d16da2b5034cebb81cae14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint32_t.  <a href="namespace_p2p.html#ac950981987d16da2b5034cebb81cae14">More...</a><br /></td></tr>
-<tr class="separator:ac950981987d16da2b5034cebb81cae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad501269346e02058a97f77c291098956"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ad501269346e02058a97f77c291098956"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ad501269346e02058a97f77c291098956">P2p::serialize&lt; uint64_t &gt;</a> (uint64_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:ad501269346e02058a97f77c291098956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint64_t.  <a href="namespace_p2p.html#ad501269346e02058a97f77c291098956">More...</a><br /></td></tr>
-<tr class="separator:ad501269346e02058a97f77c291098956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7f5246f964750e9b1f75b9e3d09d6eb6">P2p::serialize</a> (Serializable const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>.  <a href="namespace_p2p.html#a7f5246f964750e9b1f75b9e3d09d6eb6">More...</a><br /></td></tr>
+<tr class="separator:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0eb0263a405289ab6290e145f05652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a9e0eb0263a405289ab6290e145f05652">P2p::serialize</a> (uint8_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a9e0eb0263a405289ab6290e145f05652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint8_t.  <a href="namespace_p2p.html#a9e0eb0263a405289ab6290e145f05652">More...</a><br /></td></tr>
+<tr class="separator:a9e0eb0263a405289ab6290e145f05652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff926c134001bab58511d9353f86aba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a2ff926c134001bab58511d9353f86aba">P2p::serialize</a> (uint16_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a2ff926c134001bab58511d9353f86aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint16_t.  <a href="namespace_p2p.html#a2ff926c134001bab58511d9353f86aba">More...</a><br /></td></tr>
+<tr class="separator:a2ff926c134001bab58511d9353f86aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67cd9ec5f79ecf6194e9a80721a42e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#aa67cd9ec5f79ecf6194e9a80721a42e8">P2p::serialize</a> (uint32_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:aa67cd9ec5f79ecf6194e9a80721a42e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint32_t.  <a href="namespace_p2p.html#aa67cd9ec5f79ecf6194e9a80721a42e8">More...</a><br /></td></tr>
+<tr class="separator:aa67cd9ec5f79ecf6194e9a80721a42e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdab3e75dce0773751bab29aa36b8f9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#afdab3e75dce0773751bab29aa36b8f9e">P2p::serialize</a> (uint64_t const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:afdab3e75dce0773751bab29aa36b8f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a uint64_t.  <a href="namespace_p2p.html#afdab3e75dce0773751bab29aa36b8f9e">More...</a><br /></td></tr>
+<tr class="separator:afdab3e75dce0773751bab29aa36b8f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51bbe42bc42c69bb359f7f8789eed65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ac51bbe42bc42c69bb359f7f8789eed65">P2p::serialize</a> (std::string const &amp;s, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:ac51bbe42bc42c69bb359f7f8789eed65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::string.  <a href="namespace_p2p.html#ac51bbe42bc42c69bb359f7f8789eed65">More...</a><br /></td></tr>
+<tr class="separator:ac51bbe42bc42c69bb359f7f8789eed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7c01c7580c4eeebfe136fbd27f2c9db7">P2p::serialize</a> (char const *s, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a string.  <a href="namespace_p2p.html#a7c01c7580c4eeebfe136fbd27f2c9db7">More...</a><br /></td></tr>
+<tr class="separator:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6664dcd5a38e0bf510fe17900b87383a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6664dcd5a38e0bf510fe17900b87383a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a6664dcd5a38e0bf510fe17900b87383a">P2p::serializeVector</a> (std::vector&lt; T &gt; const &amp;v, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
 <tr class="memdesc:a6664dcd5a38e0bf510fe17900b87383a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::vector.  <a href="namespace_p2p.html#a6664dcd5a38e0bf510fe17900b87383a">More...</a><br /></td></tr>
@@ -213,6 +222,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a087bd790d04a8375aefe2f770aa18601"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a087bd790d04a8375aefe2f770aa18601">P2p::deserializeArray</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a087bd790d04a8375aefe2f770aa18601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes an std::array.  <a href="namespace_p2p.html#a087bd790d04a8375aefe2f770aa18601">More...</a><br /></td></tr>
 <tr class="separator:a087bd790d04a8375aefe2f770aa18601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47499741e9b765479f21734e2a498e91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a47499741e9b765479f21734e2a498e91">P2p::deserializeString</a> (size_t n, uint8_t const *&amp;in, size_t &amp;size)</td></tr>
+<tr class="memdesc:a47499741e9b765479f21734e2a498e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a string.  <a href="namespace_p2p.html#a47499741e9b765479f21734e2a498e91">More...</a><br /></td></tr>
+<tr class="separator:a47499741e9b765479f21734e2a498e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

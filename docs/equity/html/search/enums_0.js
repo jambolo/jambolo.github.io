@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opcode',['OpCode',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9',1,'Equity::Instruction']]]
+  ['code',['Code',['../class_network_1_1_reject_message.html#a473d5fe38703d93d1b2458c7800787a3',1,'Network::RejectMessage']]]
 ];

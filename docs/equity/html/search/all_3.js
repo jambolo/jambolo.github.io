@@ -1,9 +1,10 @@
 var searchData=
 [
   ['data',['data',['../class_equity_1_1_instruction.html#a34bf0524b39e0b561c57131bf9396bd7',1,'Equity::Instruction::data()'],['../class_equity_1_1_script.html#a41d1d3bdbedace733dde2785f2a33e9b',1,'Equity::Script::data()']]],
-  ['data_5f',['data_',['../class_network_1_1_filter_add_message.html#a3bbe497386b550081fe090b9f77d93e0',1,'Network::FilterAddMessage']]],
+  ['data_5f',['data_',['../class_network_1_1_filter_add_message.html#a3bbe497386b550081fe090b9f77d93e0',1,'Network::FilterAddMessage::data_()'],['../class_network_1_1_reject_message.html#af6aa1adfddeddf976fa75bbb68bf1862',1,'Network::RejectMessage::data_()']]],
   ['debug_2eh',['Debug.h',['../_debug_8h.html',1,'']]],
   ['decode',['decode',['../namespace_equity_1_1_base58.html#a8786435b81bec2bf2efbae1e8ba5ea83',1,'Equity::Base58::decode(std::string const &amp;input, std::vector&lt; uint8_t &gt; &amp;output)'],['../namespace_equity_1_1_base58.html#ab443aac9510c4edd9ffa113c9d334643',1,'Equity::Base58::decode(char const *input, std::vector&lt; uint8_t &gt; &amp;output)'],['../namespace_equity_1_1_base58_check.html#af4ea8f2813c9930cc150eb79cac11f58',1,'Equity::Base58Check::decode(std::string const &amp;input, std::vector&lt; uint8_t &gt; &amp;output, unsigned &amp;version)'],['../namespace_equity_1_1_base58_check.html#af2542d43ea1b1ea092ea24040c0278bd',1,'Equity::Base58Check::decode(char const *input, std::vector&lt; uint8_t &gt; &amp;output, unsigned &amp;version)'],['../namespace_equity_1_1_base58_check.html#a188e76e42cbac768fe27480650c178eb',1,'Equity::Base58Check::decode(char const *input, uint8_t *output, size_t size, unsigned &amp;version)']]],
+  ['deprecated_20list',['Deprecated List',['../deprecated.html',1,'']]],
   ['derivepublickey',['derivePublicKey',['../class_crypto_1_1_ecdsa.html#a4d83baba06509e165e57762c0af45f0f',1,'Crypto::Ecdsa']]],
   ['description',['Description',['../struct_equity_1_1_instruction_1_1_description.html',1,'Equity::Instruction']]],
   ['description',['description',['../class_equity_1_1_instruction.html#a265d131c42c95539c617fdef30198582',1,'Equity::Instruction']]],
@@ -17,6 +18,7 @@ var searchData=
   ['deserializearray',['deserializeArray',['../namespace_p2p.html#a087bd790d04a8375aefe2f770aa18601',1,'P2p']]],
   ['deserializearrayimpl',['DeserializeArrayImpl',['../struct_p2p_1_1_deserialize_array_impl.html',1,'P2p']]],
   ['deserializearrayimpl_3c_20std_3a_3aarray_3c_20uint8_5ft_2c_20n_20_3e_20_3e',['DeserializeArrayImpl&lt; std::array&lt; uint8_t, N &gt; &gt;',['../struct_p2p_1_1_deserialize_array_impl_3_01std_1_1array_3_01uint8__t_00_01_n_01_4_01_4.html',1,'P2p']]],
+  ['deserializestring',['deserializeString',['../namespace_p2p.html#a47499741e9b765479f21734e2a498e91',1,'P2p']]],
   ['deserializevector',['deserializeVector',['../namespace_p2p.html#a042f2707365633bef6ed59bb79972fd2',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)'],['../namespace_p2p.html#a11dbac90e8b4e3237a8626c5b707ec6a',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)']]],
   ['deserializevector_3c_20uint8_5ft_20_3e',['deserializeVector&lt; uint8_t &gt;',['../namespace_p2p.html#a6cace374d2eb220f2a5ea8b846584e45',1,'P2p']]],
   ['difficulty',['difficulty',['../class_equity_1_1_target.html#ab7a4fdc4dd739410300d5ac29e839a7a',1,'Equity::Target']]],

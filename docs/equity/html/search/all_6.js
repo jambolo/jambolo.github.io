@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get',['get',['../struct_equity_1_1_configuration.html#a6d4095239a38bde59175ec8e80e2c41b',1,'Equity::Configuration::get()'],['../struct_network_1_1_configuration.html#a00118cee2641ceff7deb69d0a3d9eee5',1,'Network::Configuration::get()'],['../class_network_1_1_bit_array.html#a73bc38305dbdf3077000b7352b4b2d60',1,'Network::BitArray::get()']]],
+  ['get',['get',['../struct_equity_1_1_configuration.html#a6d4095239a38bde59175ec8e80e2c41b',1,'Equity::Configuration::get()'],['../struct_network_1_1_configuration.html#a00118cee2641ceff7deb69d0a3d9eee5',1,'Network::Configuration::get()'],['../class_p2p_1_1_bit_array.html#a65a71a1028aa4505709161df67f0c3d1',1,'P2p::BitArray::get()']]],
   ['getaddrmessage',['GetAddrMessage',['../class_network_1_1_get_addr_message.html',1,'Network']]],
   ['getaddrmessage',['GetAddrMessage',['../class_network_1_1_get_addr_message.html#a2ce5ec32856a63be7ebb5d8250eda486',1,'Network::GetAddrMessage::GetAddrMessage()'],['../class_network_1_1_get_addr_message.html#a7943826f762ffb41edc572746f8cd68f',1,'Network::GetAddrMessage::GetAddrMessage(uint8_t const *&amp;in, size_t &amp;size)']]],
   ['getaddrmessage_2ecpp',['GetAddrMessage.cpp',['../_get_addr_message_8cpp.html',1,'']]],
