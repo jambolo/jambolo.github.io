@@ -98,29 +98,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A Bitcoin public key.  
+ <a href="class_equity_1_1_public_key.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_public_key_8h_source.html">PublicKey.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e2eaabc1596c63bfc0286bd92f0a0f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a9e2eaabc1596c63bfc0286bd92f0a0f9">PublicKey</a> (std::vector&lt; uint8_t &gt; const &amp;k)</td></tr>
 <tr class="separator:a9e2eaabc1596c63bfc0286bd92f0a0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50810a3aed0d75f87311dbb3679ee014"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a50810a3aed0d75f87311dbb3679ee014">PublicKey</a> (uint8_t const *k)</td></tr>
-<tr class="separator:a50810a3aed0d75f87311dbb3679ee014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20b990732f541d17ea7fa548dbbe577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#ae20b990732f541d17ea7fa548dbbe577">PublicKey</a> (uint8_t const *data, size_t size)</td></tr>
+<tr class="separator:ae20b990732f541d17ea7fa548dbbe577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34a03613b1bac31f8bfde2aa5bc649a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#ad34a03613b1bac31f8bfde2aa5bc649a">PublicKey</a> (<a class="el" href="class_equity_1_1_private_key.html">PrivateKey</a> const &amp;k)</td></tr>
 <tr class="separator:ad34a03613b1bac31f8bfde2aa5bc649a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae96e028b775b6c33ba7644bf2e05dd0d"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, <a class="el" href="class_equity_1_1_public_key.html#a16eddbdf6a9a7c76e7192e23ea74a034">SIZE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#ae96e028b775b6c33ba7644bf2e05dd0d">value</a> () const </td></tr>
-<tr class="separator:ae96e028b775b6c33ba7644bf2e05dd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ee63bb6995c3908ca1897c04b4b3a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a26ee63bb6995c3908ca1897c04b4b3a1">value</a> () const </td></tr>
+<tr class="memdesc:a26ee63bb6995c3908ca1897c04b4b3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw key bytes.  <a href="#a26ee63bb6995c3908ca1897c04b4b3a1">More...</a><br /></td></tr>
+<tr class="separator:a26ee63bb6995c3908ca1897c04b4b3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac279a7af532fbfa82f63695744085ac7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#ac279a7af532fbfa82f63695744085ac7">compressed</a> () const </td></tr>
+<tr class="memdesc:ac279a7af532fbfa82f63695744085ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the public key is compressed.  <a href="#ac279a7af532fbfa82f63695744085ac7">More...</a><br /></td></tr>
+<tr class="separator:ac279a7af532fbfa82f63695744085ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67cd21ee7d2148c4072f2a86f64919f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a67cd21ee7d2148c4072f2a86f64919f3">valid</a> () const </td></tr>
+<tr class="memdesc:a67cd21ee7d2148c4072f2a86f64919f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the key is valid.  <a href="#a67cd21ee7d2148c4072f2a86f64919f3">More...</a><br /></td></tr>
 <tr class="separator:a67cd21ee7d2148c4072f2a86f64919f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af10019b178050048c12b85dd9a5e0be5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#af10019b178050048c12b85dd9a5e0be5">toHex</a> () const </td></tr>
+<tr class="memdesc:af10019b178050048c12b85dd9a5e0be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key as a hex string.  <a href="#af10019b178050048c12b85dd9a5e0be5">More...</a><br /></td></tr>
 <tr class="separator:af10019b178050048c12b85dd9a5e0be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a16eddbdf6a9a7c76e7192e23ea74a034"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a16eddbdf6a9a7c76e7192e23ea74a034">SIZE</a> = 512 / 8 + 1</td></tr>
-<tr class="separator:a16eddbdf6a9a7c76e7192e23ea74a034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a2c40522726a7e164782200f98fcdd"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#ae2a2c40522726a7e164782200f98fcdd">COMPRESSED_SIZE</a> = 33</td></tr>
+<tr class="separator:ae2a2c40522726a7e164782200f98fcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c558745b3730a49f90e3074e711efb"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_public_key.html#a52c558745b3730a49f90e3074e711efb">UNCOMPRESSED_SIZE</a> = 65</td></tr>
+<tr class="separator:a52c558745b3730a49f90e3074e711efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Bitcoin public key. </p>
+<p>Bitcoin public keys are assumed to be in the form specified by ANSI X9.62. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9e2eaabc1596c63bfc0286bd92f0a0f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -142,30 +156,45 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>raw key bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a50810a3aed0d75f87311dbb3679ee014"></a>
+<a class="anchor" id="ae20b990732f541d17ea7fa548dbbe577"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">PublicKey::PublicKey </td>
           <td>(</td>
           <td class="paramtype">uint8_t const *&#160;</td>
-          <td class="paramname"><em>k</em></td><td>)</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>raw key bytes </td></tr>
+    <tr><td class="paramname">size</td><td>size of the data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -190,10 +219,41 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>private key </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac279a7af532fbfa82f63695744085ac7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Equity::PublicKey::compressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the public key is compressed. </p>
+
+</div>
+</div>
 <a class="anchor" id="af10019b178050048c12b85dd9a5e0be5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -206,6 +266,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the key as a hex string. </p>
 
 </div>
 </div>
@@ -230,9 +292,11 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns true if the key is valid. </p>
+
 </div>
 </div>
-<a class="anchor" id="ae96e028b775b6c33ba7644bf2e05dd0d"></a>
+<a class="anchor" id="a26ee63bb6995c3908ca1897c04b4b3a1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -240,7 +304,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;uint8_t, <a class="el" href="class_equity_1_1_public_key.html#a16eddbdf6a9a7c76e7192e23ea74a034">SIZE</a>&gt; Equity::PublicKey::value </td>
+          <td class="memname">std::vector&lt;uint8_t&gt; Equity::PublicKey::value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -253,10 +317,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the raw key bytes. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a16eddbdf6a9a7c76e7192e23ea74a034"></a>
+<a class="anchor" id="ae2a2c40522726a7e164782200f98fcdd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -264,7 +330,27 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t const Equity::PublicKey::SIZE = 512 / 8 + 1</td>
+          <td class="memname">size_t const Equity::PublicKey::COMPRESSED_SIZE = 33</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52c558745b3730a49f90e3074e711efb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t const Equity::PublicKey::UNCOMPRESSED_SIZE = 65</td>
         </tr>
       </table>
   </td>

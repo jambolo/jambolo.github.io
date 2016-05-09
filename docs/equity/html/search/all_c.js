@@ -128,6 +128,6 @@ var searchData=
   ['output_2eh',['Output.h',['../_output_8h.html',1,'']]],
   ['outputindex',['outputIndex',['../struct_equity_1_1_transaction_1_1_input.html#a0a45e6c37968601e2d8315615f205f13',1,'Equity::Transaction::Input']]],
   ['outputlist',['OutputList',['../class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e',1,'Equity::Transaction']]],
-  ['outputs',['outputs',['../class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b',1,'Equity::Transaction']]],
+  ['outputs',['outputs',['../class_network_1_1_transaction_message.html#af4e08fa75153ea082222da431e6c60d1',1,'Network::TransactionMessage::outputs()'],['../class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b',1,'Equity::Transaction::outputs()']]],
   ['sha256hash',['Sha256Hash',['../class_equity_1_1_target.html#a62a7fa77162c5fe75562569dda3ea56b',1,'Equity::Target']]]
 ];

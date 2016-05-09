@@ -208,16 +208,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a042f2707365633bef6ed59bb79972fd2"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a042f2707365633bef6ed59bb79972fd2">deserializeVector</a> (size_t n, uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a042f2707365633bef6ed59bb79972fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a vector.  <a href="#a042f2707365633bef6ed59bb79972fd2">More...</a><br /></td></tr>
 <tr class="separator:a042f2707365633bef6ed59bb79972fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; T, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a11dbac90e8b4e3237a8626c5b707ec6a">deserializeVector</a> (size_t n, uint8_t const *&amp;in, size_t &amp;size)</td></tr>
-<tr class="memdesc:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a vector of std::array.  <a href="#a11dbac90e8b4e3237a8626c5b707ec6a">More...</a><br /></td></tr>
-<tr class="separator:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087bd790d04a8375aefe2f770aa18601"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a087bd790d04a8375aefe2f770aa18601"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a087bd790d04a8375aefe2f770aa18601">deserializeArray</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a087bd790d04a8375aefe2f770aa18601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes an std::array.  <a href="#a087bd790d04a8375aefe2f770aa18601">More...</a><br /></td></tr>
 <tr class="separator:a087bd790d04a8375aefe2f770aa18601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::array&lt; T, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a11dbac90e8b4e3237a8626c5b707ec6a">deserializeVector</a> (size_t n, uint8_t const *&amp;in, size_t &amp;size)</td></tr>
+<tr class="memdesc:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a vector of std::array.  <a href="#a11dbac90e8b4e3237a8626c5b707ec6a">More...</a><br /></td></tr>
+<tr class="separator:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Move to Serializer class in <a class="el" href="namespace_network.html" title="Bitcoin Network Layer. ">Network</a> namespace </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a74dc6a6562533fe0fe09ea2abbd53edc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -761,6 +763,9 @@ template&lt;&gt; </div>
 <a class="anchor" id="a7f5246f964750e9b1f75b9e3d09d6eb6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void P2p::serialize </td>
@@ -780,6 +785,11 @@ template&lt;&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>. </p>

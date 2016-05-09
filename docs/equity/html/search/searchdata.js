@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "cot",
   8: "ort",
   9: "nt",
-  10: "dt"
+  10: "bdt"
 };
 
 var indexSectionNames =

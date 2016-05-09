@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A Bitcoin address.  
+ <a href="class_equity_1_1_address.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="include_2equity_2_address_8h_source.html">Address.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -106,23 +109,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9698c379ef9e67333e89a39981203448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7e8ea283f1576c83667ae25a86acfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a7f7e8ea283f1576c83667ae25a86acfd">Address</a> (<a class="el" href="namespace_crypto.html#a82055098b5024806ea04bde98a78ab05">Crypto::Ripemd160Hash</a> const &amp;k)</td></tr>
 <tr class="separator:a7f7e8ea283f1576c83667ae25a86acfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008f932b0c16857b6bd62400befc8260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a008f932b0c16857b6bd62400befc8260">Address</a> (uint8_t const *k)</td></tr>
-<tr class="separator:a008f932b0c16857b6bd62400befc8260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0b5c94e961c03dfef4f4647e71534b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#afd0b5c94e961c03dfef4f4647e71534b">Address</a> (uint8_t const *data, size_t size)</td></tr>
+<tr class="separator:afd0b5c94e961c03dfef4f4647e71534b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fde24e811e7a59399484bb3708b66d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a9fde24e811e7a59399484bb3708b66d8">Address</a> (<a class="el" href="class_equity_1_1_public_key.html">PublicKey</a> const &amp;publicKey)</td></tr>
 <tr class="separator:a9fde24e811e7a59399484bb3708b66d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1340c84facbb8852de4a395aa61cc331"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, <a class="el" href="class_equity_1_1_address.html#a374e492b605a3abad79c2f627411c013">SIZE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a1340c84facbb8852de4a395aa61cc331">value</a> () const </td></tr>
+<tr class="memdesc:a1340c84facbb8852de4a395aa61cc331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address in binary form.  <a href="#a1340c84facbb8852de4a395aa61cc331">More...</a><br /></td></tr>
 <tr class="separator:a1340c84facbb8852de4a395aa61cc331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902a7a3824dbeff9e01807a5210b14da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a902a7a3824dbeff9e01807a5210b14da">valid</a> () const </td></tr>
+<tr class="memdesc:a902a7a3824dbeff9e01807a5210b14da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the address is valid.  <a href="#a902a7a3824dbeff9e01807a5210b14da">More...</a><br /></td></tr>
 <tr class="separator:a902a7a3824dbeff9e01807a5210b14da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fc6ed55e7045553e25212b7107a33a9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a5fc6ed55e7045553e25212b7107a33a9">toString</a> (unsigned network) const </td></tr>
+<tr class="memdesc:a5fc6ed55e7045553e25212b7107a33a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address in <a class="el" href="namespace_equity_1_1_base58_check.html" title="Functions that convert between binary and the Base58Check format. Typically used for addresses and pr...">Base58Check</a> form.  <a href="#a5fc6ed55e7045553e25212b7107a33a9">More...</a><br /></td></tr>
 <tr class="separator:a5fc6ed55e7045553e25212b7107a33a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a374e492b605a3abad79c2f627411c013"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_address.html#a374e492b605a3abad79c2f627411c013">SIZE</a> = <a class="el" href="namespace_crypto.html#a39a20662b3cfdb1c11a75685db4a4e2b">Crypto::RIPEMD160_HASH_SIZE</a></td></tr>
+<tr class="memdesc:a374e492b605a3abad79c2f627411c013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes in the unencoded binary form.  <a href="#a374e492b605a3abad79c2f627411c013">More...</a><br /></td></tr>
 <tr class="separator:a374e492b605a3abad79c2f627411c013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Bitcoin address. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9698c379ef9e67333e89a39981203448"></a>
 <div class="memitem">
 <div class="memproto">
@@ -144,6 +153,12 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>address in <a class="el" href="namespace_equity_1_1_base58_check.html" title="Functions that convert between binary and the Base58Check format. Typically used for addresses and pr...">Base58Check</a> form </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -168,30 +183,45 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>address in binary form </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a008f932b0c16857b6bd62400befc8260"></a>
+<a class="anchor" id="afd0b5c94e961c03dfef4f4647e71534b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Address::Address </td>
           <td>(</td>
           <td class="paramtype">uint8_t const *&#160;</td>
-          <td class="paramname"><em>k</em></td><td>)</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>start of address in binary form </td></tr>
+    <tr><td class="paramname">size</td><td>size of the data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +246,12 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">publicKey</td><td>public key used to generate the address </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,6 +269,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the address in <a class="el" href="namespace_equity_1_1_base58_check.html" title="Functions that convert between binary and the Base58Check format. Typically used for addresses and pr...">Base58Check</a> form. </p>
 
 </div>
 </div>
@@ -257,6 +295,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns true if the address is valid. </p>
+
 </div>
 </div>
 <a class="anchor" id="a1340c84facbb8852de4a395aa61cc331"></a>
@@ -280,6 +320,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns the address in binary form. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -300,6 +342,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Number of bytes in the unencoded binary form. </p>
 
 </div>
 </div>

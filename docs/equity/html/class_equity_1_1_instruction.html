@@ -294,6 +294,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a265d131c42c95539c617fdef30198582"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_equity_1_1_instruction_1_1_description.html">Description</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_instruction.html#a265d131c42c95539c617fdef30198582">description</a> () const </td></tr>
 <tr class="memdesc:a265d131c42c95539c617fdef30198582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information related to this instruction's opcode.  <a href="#a265d131c42c95539c617fdef30198582">More...</a><br /></td></tr>
 <tr class="separator:a265d131c42c95539c617fdef30198582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
+<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -630,7 +633,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Same as OP_CHECKSIG, but OP_VERIFY is executed afterward. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7d8b5dcb946f144d8a8ee2ecc52948f9acf74d09e48d2386b1587e31fb902b638"></a>OP_CHECKMULTISIG&#160;</td><td class="fielddoc">
-<p>Compares the first signature against each public key until it finds an ECDSA &lt; match.Starting with the subsequent public key, it compares the second signature against &lt; each remaining public key until it finds an ECDSA match.The process is repeated until &lt; all signatures have been checked or not enough public keys remain to produce a &lt; successful result.All signatures need to match a public key.Because public keys are not &lt; checked again if they fail any signature comparison, signatures must be placed in the &lt; scriptSig using the same order as their corresponding public keys were placed in the &lt; scriptPubKey or redeemScript.If all signatures are valid, 1 is returned, 0 &lt; otherwise.Due to a bug, one extra unused value is removed from the stack. </p>
+<p>Compares the first signature against each public key until it finds an ECDSA &lt; match.Starting with the subsequent public key, it compares the second signature against &lt; each remaining public key until it finds an ECDSA match.The process is repeated until &lt; all signatures have been checked or not enough public keys remain to produce a &lt; successful result.All signatures need to match a public key.Because public keys are not &lt; checked again if they fail any signature comparison, signatures must be placed in the &lt; scriptSig using the same order as their corresponding public keys were placed in the &lt; scriptPubKey or redeemScript.If all signatures are valid, 1 is returned, 0 &lt; otherwise. </p>
+<p>Due to a bug, one extra unused value is removed from the stack. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7d8b5dcb946f144d8a8ee2ecc52948f9ae4b5c04549b89e06f47556c51533ecfc"></a>OP_CHECKMULTISIGVERIFY&#160;</td><td class="fielddoc">
 <p>Same as OP_CHECKMULTISIG, but OP_VERIFY is executed afterward. </p>

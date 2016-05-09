@@ -113,8 +113,10 @@ Inheritance diagram for Equity::Transaction:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_input.html">Input</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A transaction input.  <a href="struct_equity_1_1_transaction_1_1_input.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html">Output</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A transaction output.  <a href="struct_equity_1_1_transaction_1_1_output.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -123,29 +125,34 @@ Public Types</h2></td></tr>
 <a class="el" href="class_equity_1_1_transaction.html#ab8d6660a3047f6c98d1161d9428905e7ab6eb2c32ffdb21b067882cc26b64736c">TYPE_PayToScriptHash</a>, 
 <a class="el" href="class_equity_1_1_transaction.html#ab8d6660a3047f6c98d1161d9428905e7ace6c39d5e852828f588ae0ead15c24aa">TYPE_OpReturn</a>, 
 <a class="el" href="class_equity_1_1_transaction.html#ab8d6660a3047f6c98d1161d9428905e7abb7f43a1cb7183e32eafb5f584153716">TYPE_Other</a>
- }</td></tr>
+ }<tr class="memdesc:ab8d6660a3047f6c98d1161d9428905e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The types of transactions. All but TYPE_Other are considered "standard".  <a href="class_equity_1_1_transaction.html#ab8d6660a3047f6c98d1161d9428905e7">More...</a><br /></td></tr>
+</td></tr>
 <tr class="separator:ab8d6660a3047f6c98d1161d9428905e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade263307f380bb27e00a6e8b8bd7d7b5"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="struct_equity_1_1_transaction_1_1_input.html">Input</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a></td></tr>
 <tr class="separator:ade263307f380bb27e00a6e8b8bd7d7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845003826f8f318940ce4c8a9f72426e"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="struct_equity_1_1_transaction_1_1_output.html">Output</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a></td></tr>
+<tr class="memdesc:a845003826f8f318940ce4c8a9f72426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of outputs.  <a href="#a845003826f8f318940ce4c8a9f72426e">More...</a><br /></td></tr>
 <tr class="separator:a845003826f8f318940ce4c8a9f72426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a357e63097efc1d7b05cdb4942ab4df7a">Transaction</a> (int <a class="el" href="class_equity_1_1_transaction.html#abfdc827828ae7216868638e13d2a0b8a">version</a>, <a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#ab213c635b467c95549bbb9da23f5e933">inputs</a>, <a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b">outputs</a>, uint32_t <a class="el" href="class_equity_1_1_transaction.html#af09555887f2b459315f9ca43b3a84add">lockTime</a>)</td></tr>
+<tr class="memitem:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a357e63097efc1d7b05cdb4942ab4df7a">Transaction</a> (int <a class="el" href="class_equity_1_1_transaction.html#a1b46c714dcbc48289ee998f2ac5073df">version</a>, <a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#ab213c635b467c95549bbb9da23f5e933">inputs</a>, <a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b">outputs</a>, uint32_t <a class="el" href="class_equity_1_1_transaction.html#af09555887f2b459315f9ca43b3a84add">lockTime</a>)</td></tr>
 <tr class="separator:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28357af355df57dbf5a2d21a3ed0258a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a28357af355df57dbf5a2d21a3ed0258a">Transaction</a> (std::string const &amp;json)</td></tr>
 <tr class="separator:a28357af355df57dbf5a2d21a3ed0258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f255393199ea4be9fcf3919abbfc1cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a1f255393199ea4be9fcf3919abbfc1cc">Transaction</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a1f255393199ea4be9fcf3919abbfc1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ac8f8db1585c0e111bcba442dca8d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a58ac8f8db1585c0e111bcba442dca8d3">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="memdesc:a58ac8f8db1585c0e111bcba442dca8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a58ac8f8db1585c0e111bcba442dca8d3">More...</a><br /></td></tr>
 <tr class="separator:a58ac8f8db1585c0e111bcba442dca8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d0b3e9a67ccc58047bbb425bea65cda"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a5d0b3e9a67ccc58047bbb425bea65cda">toHex</a> () const </td></tr>
+<tr class="memdesc:a5d0b3e9a67ccc58047bbb425bea65cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the serialized transaction as a hex string.  <a href="#a5d0b3e9a67ccc58047bbb425bea65cda">More...</a><br /></td></tr>
 <tr class="separator:a5d0b3e9a67ccc58047bbb425bea65cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1c3c3948577a43bbc552a357b54dfb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#acd1c3c3948577a43bbc552a357b54dfb">toJson</a> () const </td></tr>
+<tr class="memdesc:acd1c3c3948577a43bbc552a357b54dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transaction in JSON form.  <a href="#acd1c3c3948577a43bbc552a357b54dfb">More...</a><br /></td></tr>
 <tr class="separator:acd1c3c3948577a43bbc552a357b54dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfdc827828ae7216868638e13d2a0b8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#abfdc827828ae7216868638e13d2a0b8a">version</a> () const </td></tr>
-<tr class="separator:abfdc827828ae7216868638e13d2a0b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b46c714dcbc48289ee998f2ac5073df"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a1b46c714dcbc48289ee998f2ac5073df">version</a> () const </td></tr>
+<tr class="separator:a1b46c714dcbc48289ee998f2ac5073df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab213c635b467c95549bbb9da23f5e933"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#ab213c635b467c95549bbb9da23f5e933">inputs</a> () const </td></tr>
 <tr class="separator:ab213c635b467c95549bbb9da23f5e933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4575946f709190e615f72c5a477a029b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b">outputs</a> () const </td></tr>
@@ -153,7 +160,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af09555887f2b459315f9ca43b3a84add"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#af09555887f2b459315f9ca43b3a84add">lockTime</a> () const </td></tr>
 <tr class="separator:af09555887f2b459315f9ca43b3a84add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ccf663f1d8b2b0f07a701f2165dbf85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a6ccf663f1d8b2b0f07a701f2165dbf85">valid</a> () const </td></tr>
+<tr class="memdesc:a6ccf663f1d8b2b0f07a701f2165dbf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the transaction is well-formed.  <a href="#a6ccf663f1d8b2b0f07a701f2165dbf85">More...</a><br /></td></tr>
 <tr class="separator:a6ccf663f1d8b2b0f07a701f2165dbf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
+<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ade263307f380bb27e00a6e8b8bd7d7b5"></a>
@@ -178,6 +189,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>A list of outputs. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -190,6 +203,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The types of transactions. All but TYPE_Other are considered "standard". </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab8d6660a3047f6c98d1161d9428905e7a286f8467f4bb21152aecb649df359aa0"></a>TYPE_PayToPubkeyHash&#160;</td><td class="fielddoc">
 </td></tr>
@@ -281,6 +296,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>pointer to the next byte to deserialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>number of bytes remaining in the serialized stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -376,6 +398,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Overrides Serializable. </p>
+
 <p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
@@ -393,6 +417,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the serialized transaction as a hex string. </p>
+
 </div>
 </div>
 <a class="anchor" id="acd1c3c3948577a43bbc552a357b54dfb"></a>
@@ -407,6 +433,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the transaction in JSON form. </p>
 
 </div>
 </div>
@@ -431,9 +459,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Returns true if the transaction is well-formed. </p>
+
 </div>
 </div>
-<a class="anchor" id="abfdc827828ae7216868638e13d2a0b8a"></a>
+<a class="anchor" id="a1b46c714dcbc48289ee998f2ac5073df"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -441,7 +471,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Equity::Transaction::version </td>
+          <td class="memname">uint32_t Equity::Transaction::version </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

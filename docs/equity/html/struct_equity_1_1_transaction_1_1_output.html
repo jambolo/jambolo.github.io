@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>A transaction output.  
+ <a href="struct_equity_1_1_transaction_1_1_output.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_transaction_8h_source.html">Transaction.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Equity::Transaction::Output:</div>
@@ -118,20 +121,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d33cf896c586b697e5428841433c7e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a3d33cf896c586b697e5428841433c7e5">Output</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a3d33cf896c586b697e5428841433c7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5703d4b572f5806236cc6998fe746a0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a5703d4b572f5806236cc6998fe746a0b">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="memdesc:a5703d4b572f5806236cc6998fe746a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a5703d4b572f5806236cc6998fe746a0b">More...</a><br /></td></tr>
 <tr class="separator:a5703d4b572f5806236cc6998fe746a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814452eaeab45d8662d67bb721d0f7d3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a814452eaeab45d8662d67bb721d0f7d3">toHex</a> () const </td></tr>
+<tr class="memdesc:a814452eaeab45d8662d67bb721d0f7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the serialized output as a hex string.  <a href="#a814452eaeab45d8662d67bb721d0f7d3">More...</a><br /></td></tr>
 <tr class="separator:a814452eaeab45d8662d67bb721d0f7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfdcb00aedb2e959b37a1f562933b4df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#adfdcb00aedb2e959b37a1f562933b4df">toJson</a> () const </td></tr>
+<tr class="memdesc:adfdcb00aedb2e959b37a1f562933b4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the output in JSON form.  <a href="#adfdcb00aedb2e959b37a1f562933b4df">More...</a><br /></td></tr>
 <tr class="separator:adfdcb00aedb2e959b37a1f562933b4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
+<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a45d1dd5ca5c29837e000943382e9259c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a45d1dd5ca5c29837e000943382e9259c">value</a></td></tr>
+<tr class="memdesc:a45d1dd5ca5c29837e000943382e9259c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value of the output in satoshis.  <a href="#a45d1dd5ca5c29837e000943382e9259c">More...</a><br /></td></tr>
 <tr class="separator:a45d1dd5ca5c29837e000943382e9259c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb2f7ed1b962cf1693aceb3e38a6b83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#aedb2f7ed1b962cf1693aceb3e38a6b83">script</a></td></tr>
+<tr class="memdesc:aedb2f7ed1b962cf1693aceb3e38a6b83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html" title="A transaction output. ">Output</a> script.  <a href="#aedb2f7ed1b962cf1693aceb3e38a6b83">More...</a><br /></td></tr>
 <tr class="separator:aedb2f7ed1b962cf1693aceb3e38a6b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A transaction output. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8828444af02f74d09f47b3fc80223464"></a>
 <div class="memitem">
 <div class="memproto">
@@ -194,6 +207,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>pointer to the next byte to deserialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>number of bytes remaining in the serialized stream </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -220,6 +240,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Overrides Serializable. </p>
+
 <p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
 
 </div>
@@ -237,6 +259,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the serialized output as a hex string. </p>
+
 </div>
 </div>
 <a class="anchor" id="adfdcb00aedb2e959b37a1f562933b4df"></a>
@@ -252,6 +276,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the output in JSON form. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -265,6 +291,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="struct_equity_1_1_transaction_1_1_output.html" title="A transaction output. ">Output</a> script. </p>
+
 </div>
 </div>
 <a class="anchor" id="a45d1dd5ca5c29837e000943382e9259c"></a>
@@ -276,6 +304,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Value of the output in satoshis. </p>
 
 </div>
 </div>

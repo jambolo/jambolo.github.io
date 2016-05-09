@@ -6,6 +6,6 @@ var searchData=
   ['instruction_2eh',['Instruction.h',['../_instruction_8h.html',1,'']]],
   ['inventory_2ecpp',['Inventory.cpp',['../_inventory_8cpp.html',1,'']]],
   ['inventory_2eh',['Inventory.h',['../_inventory_8h.html',1,'']]],
-  ['invmessage_2ecpp',['InvMessage.cpp',['../_inv_message_8cpp.html',1,'']]],
-  ['invmessage_2eh',['InvMessage.h',['../_inv_message_8h.html',1,'']]]
+  ['inventorymessage_2ecpp',['InventoryMessage.cpp',['../_inventory_message_8cpp.html',1,'']]],
+  ['inventorymessage_2eh',['InventoryMessage.h',['../_inventory_message_8h.html',1,'']]]
 ];
