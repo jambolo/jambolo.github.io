@@ -115,48 +115,42 @@ Inheritance diagram for Network::CheckOrderMessage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1371960385dfa5fdb2e282d1c67832b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#aa1371960385dfa5fdb2e282d1c67832b">CheckOrderMessage</a> ()</td></tr>
-<tr class="separator:aa1371960385dfa5fdb2e282d1c67832b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63b0010e689fa4ca7ecf7844544eecf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#a63b0010e689fa4ca7ecf7844544eecf6">CheckOrderMessage</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a63b0010e689fa4ca7ecf7844544eecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21fa6e57e167dd11d9a66ad432037087"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#a21fa6e57e167dd11d9a66ad432037087">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
-<tr class="memdesc:a21fa6e57e167dd11d9a66ad432037087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a21fa6e57e167dd11d9a66ad432037087">More...</a><br /></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Overrides Serializable</div></td></tr>
+<tr class="memitem:a21fa6e57e167dd11d9a66ad432037087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21fa6e57e167dd11d9a66ad432037087"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a21fa6e57e167dd11d9a66ad432037087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca1b16c21c0ac07f76477f934b0341a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ca1b16c21c0ac07f76477f934b0341a"></a>
+virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a1ca1b16c21c0ac07f76477f934b0341a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_network_1_1_message"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_network_1_1_message')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_network_1_1_message.html">Network::Message</a></td></tr>
-<tr class="memitem:a3975742be8a5fb7b38e57b5e839251bc inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_message.html#a3975742be8a5fb7b38e57b5e839251bc">Message</a> (char const *<a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a>)</td></tr>
+<tr class="memitem:a3975742be8a5fb7b38e57b5e839251bc inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3975742be8a5fb7b38e57b5e839251bc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Message</b> (char const *<a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a>)</td></tr>
 <tr class="separator:a3975742be8a5fb7b38e57b5e839251bc inherit pub_methods_class_network_1_1_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc13ba38bb12fd7a0667ec60f29e1cf inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a> () const </td></tr>
-<tr class="memdesc:a5cc13ba38bb12fd7a0667ec60f29e1cf inherit pub_methods_class_network_1_1_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type.  <a href="#a5cc13ba38bb12fd7a0667ec60f29e1cf">More...</a><br /></td></tr>
+<tr class="memitem:a5cc13ba38bb12fd7a0667ec60f29e1cf inherit pub_methods_class_network_1_1_message"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cc13ba38bb12fd7a0667ec60f29e1cf"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_message.html#a5cc13ba38bb12fd7a0667ec60f29e1cf">type</a> () const </td></tr>
+<tr class="memdesc:a5cc13ba38bb12fd7a0667ec60f29e1cf inherit pub_methods_class_network_1_1_message"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type. <br /></td></tr>
 <tr class="separator:a5cc13ba38bb12fd7a0667ec60f29e1cf inherit pub_methods_class_network_1_1_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
-<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae3bad45a51fa4dcbb11feeab1d2b0314"><td class="memItemLeft" align="right" valign="top">static char const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#ae3bad45a51fa4dcbb11feeab1d2b0314">TYPE</a> [] = &quot;checkorder&quot;</td></tr>
-<tr class="memdesc:ae3bad45a51fa4dcbb11feeab1d2b0314"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_network_1_1_message.html" title="Message base class. ">Message</a> type.  <a href="#ae3bad45a51fa4dcbb11feeab1d2b0314">More...</a><br /></td></tr>
+<tr class="memitem:ae3bad45a51fa4dcbb11feeab1d2b0314"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3bad45a51fa4dcbb11feeab1d2b0314"></a>
+static char const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_check_order_message.html#ae3bad45a51fa4dcbb11feeab1d2b0314">TYPE</a> [] = &quot;checkorder&quot;</td></tr>
+<tr class="memdesc:ae3bad45a51fa4dcbb11feeab1d2b0314"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_network_1_1_message.html" title="Message base class. ">Message</a> type. <br /></td></tr>
 <tr class="separator:ae3bad45a51fa4dcbb11feeab1d2b0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
+<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A check-order message. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This message was used for IP Transactions. As IP transactions have been deprecated, it is no longer used. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa1371960385dfa5fdb2e282d1c67832b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CheckOrderMessage::CheckOrderMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a63b0010e689fa4ca7ecf7844544eecf6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -190,61 +184,9 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a21fa6e57e167dd11d9a66ad432037087"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CheckOrderMessage::serialize </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overrides Serializable. </p>
-
-<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae3bad45a51fa4dcbb11feeab1d2b0314"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char const CheckOrderMessage::TYPE = &quot;checkorder&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_network_1_1_message.html" title="Message base class. ">Message</a> type. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>network/Messages/<a class="el" href="_check_order_message_8h_source.html">CheckOrderMessage.h</a></li>
-<li>network/Messages/<a class="el" href="_check_order_message_8cpp.html">CheckOrderMessage.cpp</a></li>
+<li>network/Messages/CheckOrderMessage.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

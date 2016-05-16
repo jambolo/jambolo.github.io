@@ -90,7 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_p2p_1_1_message_1_1_header-members.html">List of all members</a>  </div>
@@ -115,295 +114,77 @@ Inheritance diagram for P2p::Message::Header:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e65cdd50fc967ca0061daa03b63615a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e65cdd50fc967ca0061daa03b63615a">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Overrides Serializable</div></td></tr>
+<tr class="memitem:a6e65cdd50fc967ca0061daa03b63615a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e65cdd50fc967ca0061daa03b63615a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a6e65cdd50fc967ca0061daa03b63615a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
-<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac456290a4ac7aa09d07f335f9bf23946"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac456290a4ac7aa09d07f335f9bf23946"></a>
+virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:ac456290a4ac7aa09d07f335f9bf23946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e057e8fc0f142e76f9baffb40a8ecbb">magic_</a></td></tr>
-<tr class="memdesc:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic number.  <a href="#a6e057e8fc0f142e76f9baffb40a8ecbb">More...</a><br /></td></tr>
+<tr class="memitem:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e057e8fc0f142e76f9baffb40a8ecbb"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e057e8fc0f142e76f9baffb40a8ecbb">magic_</a></td></tr>
+<tr class="memdesc:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic number. <br /></td></tr>
 <tr class="separator:a6e057e8fc0f142e76f9baffb40a8ecbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8c2e5c29deb2a5f9520b951625fc93"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ade8c2e5c29deb2a5f9520b951625fc93">type_</a> [<a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a>]</td></tr>
-<tr class="memdesc:ade8c2e5c29deb2a5f9520b951625fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type.  <a href="#ade8c2e5c29deb2a5f9520b951625fc93">More...</a><br /></td></tr>
+<tr class="memitem:ade8c2e5c29deb2a5f9520b951625fc93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8c2e5c29deb2a5f9520b951625fc93"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ade8c2e5c29deb2a5f9520b951625fc93">type_</a> [<a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a>]</td></tr>
+<tr class="memdesc:ade8c2e5c29deb2a5f9520b951625fc93"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type. <br /></td></tr>
 <tr class="separator:ade8c2e5c29deb2a5f9520b951625fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ac7a86c563e7bde7ef9db8a95745dcbda">length_</a></td></tr>
-<tr class="memdesc:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the payload.  <a href="#ac7a86c563e7bde7ef9db8a95745dcbda">More...</a><br /></td></tr>
+<tr class="memitem:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7a86c563e7bde7ef9db8a95745dcbda"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ac7a86c563e7bde7ef9db8a95745dcbda">length_</a></td></tr>
+<tr class="memdesc:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the payload. <br /></td></tr>
 <tr class="separator:ac7a86c563e7bde7ef9db8a95745dcbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2746a9462ac7004461a4785ef80a7fd7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a2746a9462ac7004461a4785ef80a7fd7">checksum_</a></td></tr>
-<tr class="memdesc:a2746a9462ac7004461a4785ef80a7fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload checksum.  <a href="#a2746a9462ac7004461a4785ef80a7fd7">More...</a><br /></td></tr>
+<tr class="memitem:a2746a9462ac7004461a4785ef80a7fd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2746a9462ac7004461a4785ef80a7fd7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a2746a9462ac7004461a4785ef80a7fd7">checksum_</a></td></tr>
+<tr class="memdesc:a2746a9462ac7004461a4785ef80a7fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payload checksum. <br /></td></tr>
 <tr class="separator:a2746a9462ac7004461a4785ef80a7fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a792fccefac8f1aaa6dddf2299453f402"><td class="memItemLeft" align="right" valign="top">static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a792fccefac8f1aaa6dddf2299453f402">MAGIC_MAIN</a> = 0xD9B4BEF9</td></tr>
-<tr class="memdesc:a792fccefac8f1aaa6dddf2299453f402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main network magic number.  <a href="#a792fccefac8f1aaa6dddf2299453f402">More...</a><br /></td></tr>
+<tr class="memitem:a792fccefac8f1aaa6dddf2299453f402"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a792fccefac8f1aaa6dddf2299453f402"></a>
+static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a792fccefac8f1aaa6dddf2299453f402">MAGIC_MAIN</a> = 0xD9B4BEF9</td></tr>
+<tr class="memdesc:a792fccefac8f1aaa6dddf2299453f402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main network magic number. <br /></td></tr>
 <tr class="separator:a792fccefac8f1aaa6dddf2299453f402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db6b8157cf038ed6a515d5ba8e79e88"><td class="memItemLeft" align="right" valign="top">static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6db6b8157cf038ed6a515d5ba8e79e88">MAGIC_TEST</a> = 0xDAB5BFFA</td></tr>
-<tr class="memdesc:a6db6b8157cf038ed6a515d5ba8e79e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testnet network magic number.  <a href="#a6db6b8157cf038ed6a515d5ba8e79e88">More...</a><br /></td></tr>
+<tr class="memitem:a6db6b8157cf038ed6a515d5ba8e79e88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6db6b8157cf038ed6a515d5ba8e79e88"></a>
+static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a6db6b8157cf038ed6a515d5ba8e79e88">MAGIC_TEST</a> = 0xDAB5BFFA</td></tr>
+<tr class="memdesc:a6db6b8157cf038ed6a515d5ba8e79e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testnet network magic number. <br /></td></tr>
 <tr class="separator:a6db6b8157cf038ed6a515d5ba8e79e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e317cf2c2db159a02711312ae77305"><td class="memItemLeft" align="right" valign="top">static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a70e317cf2c2db159a02711312ae77305">MAGIC_TEST3</a> = 0x0709110B</td></tr>
-<tr class="memdesc:a70e317cf2c2db159a02711312ae77305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testnet3 network magic number.  <a href="#a70e317cf2c2db159a02711312ae77305">More...</a><br /></td></tr>
+<tr class="memitem:a70e317cf2c2db159a02711312ae77305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70e317cf2c2db159a02711312ae77305"></a>
+static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a70e317cf2c2db159a02711312ae77305">MAGIC_TEST3</a> = 0x0709110B</td></tr>
+<tr class="memdesc:a70e317cf2c2db159a02711312ae77305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testnet3 network magic number. <br /></td></tr>
 <tr class="separator:a70e317cf2c2db159a02711312ae77305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3df6030122baeb9ec60de2761fb6d2"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a5c3df6030122baeb9ec60de2761fb6d2">MAGIC_SIZE</a> = 4</td></tr>
-<tr class="memdesc:a5c3df6030122baeb9ec60de2761fb6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the magic number field.  <a href="#a5c3df6030122baeb9ec60de2761fb6d2">More...</a><br /></td></tr>
+<tr class="memitem:a5c3df6030122baeb9ec60de2761fb6d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3df6030122baeb9ec60de2761fb6d2"></a>
+static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a5c3df6030122baeb9ec60de2761fb6d2">MAGIC_SIZE</a> = 4</td></tr>
+<tr class="memdesc:a5c3df6030122baeb9ec60de2761fb6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the magic number field. <br /></td></tr>
 <tr class="separator:a5c3df6030122baeb9ec60de2761fb6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef557c8dea3ef49277f5f87dd0e1648"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a> = 12</td></tr>
-<tr class="memdesc:a9ef557c8dea3ef49277f5f87dd0e1648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the type field.  <a href="#a9ef557c8dea3ef49277f5f87dd0e1648">More...</a><br /></td></tr>
+<tr class="memitem:a9ef557c8dea3ef49277f5f87dd0e1648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef557c8dea3ef49277f5f87dd0e1648"></a>
+static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a> = 12</td></tr>
+<tr class="memdesc:a9ef557c8dea3ef49277f5f87dd0e1648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the type field. <br /></td></tr>
 <tr class="separator:a9ef557c8dea3ef49277f5f87dd0e1648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f275de04d1f0acf8d5da7f3ff4bbce2"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a7f275de04d1f0acf8d5da7f3ff4bbce2">LENGTH_SIZE</a> = 4</td></tr>
-<tr class="memdesc:a7f275de04d1f0acf8d5da7f3ff4bbce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the length field.  <a href="#a7f275de04d1f0acf8d5da7f3ff4bbce2">More...</a><br /></td></tr>
+<tr class="memitem:a7f275de04d1f0acf8d5da7f3ff4bbce2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f275de04d1f0acf8d5da7f3ff4bbce2"></a>
+static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#a7f275de04d1f0acf8d5da7f3ff4bbce2">LENGTH_SIZE</a> = 4</td></tr>
+<tr class="memdesc:a7f275de04d1f0acf8d5da7f3ff4bbce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the length field. <br /></td></tr>
 <tr class="separator:a7f275de04d1f0acf8d5da7f3ff4bbce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad61aefb37a66f2c82c0f761bececf8c7"><td class="memItemLeft" align="right" valign="top">static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ad61aefb37a66f2c82c0f761bececf8c7">CHECKSUM_SIZE</a> = 4</td></tr>
-<tr class="memdesc:ad61aefb37a66f2c82c0f761bececf8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the checksum field.  <a href="#ad61aefb37a66f2c82c0f761bececf8c7">More...</a><br /></td></tr>
+<tr class="memitem:ad61aefb37a66f2c82c0f761bececf8c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad61aefb37a66f2c82c0f761bececf8c7"></a>
+static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_message_1_1_header.html#ad61aefb37a66f2c82c0f761bececf8c7">CHECKSUM_SIZE</a> = 4</td></tr>
+<tr class="memdesc:ad61aefb37a66f2c82c0f761bececf8c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the checksum field. <br /></td></tr>
 <tr class="separator:ad61aefb37a66f2c82c0f761bececf8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
+<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A P2P network message header. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure">https://en.bitcoin.it/wiki/Protocol_documentation#Message_structure</a> </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6e65cdd50fc967ca0061daa03b63615a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Message::Header::serialize </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2746a9462ac7004461a4785ef80a7fd7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t P2p::Message::Header::checksum_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Payload checksum. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad61aefb37a66f2c82c0f761bececf8c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t const P2p::Message::Header::CHECKSUM_SIZE = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Size of the checksum field. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac7a86c563e7bde7ef9db8a95745dcbda"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t P2p::Message::Header::length_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Length of the payload. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7f275de04d1f0acf8d5da7f3ff4bbce2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t const P2p::Message::Header::LENGTH_SIZE = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Size of the length field. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6e057e8fc0f142e76f9baffb40a8ecbb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t P2p::Message::Header::magic_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Magic number. </p>
-
-</div>
-</div>
-<a class="anchor" id="a792fccefac8f1aaa6dddf2299453f402"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t const P2p::Message::Header::MAGIC_MAIN = 0xD9B4BEF9</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Main network magic number. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5c3df6030122baeb9ec60de2761fb6d2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t const P2p::Message::Header::MAGIC_SIZE = 4</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Size of the magic number field. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6db6b8157cf038ed6a515d5ba8e79e88"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t const P2p::Message::Header::MAGIC_TEST = 0xDAB5BFFA</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Testnet network magic number. </p>
-
-</div>
-</div>
-<a class="anchor" id="a70e317cf2c2db159a02711312ae77305"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t const P2p::Message::Header::MAGIC_TEST3 = 0x0709110B</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Testnet3 network magic number. </p>
-
-</div>
-</div>
-<a class="anchor" id="ade8c2e5c29deb2a5f9520b951625fc93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char P2p::Message::Header::type_[<a class="el" href="class_p2p_1_1_message_1_1_header.html#a9ef557c8dea3ef49277f5f87dd0e1648">TYPE_SIZE</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_p2p_1_1_message.html" title="A P2P network message. ">Message</a> type. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9ef557c8dea3ef49277f5f87dd0e1648"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t const P2p::Message::Header::TYPE_SIZE = 12</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Size of the type field. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>p2p/<a class="el" href="p2p_2_message_8h_source.html">Message.h</a></li>
-<li>p2p/<a class="el" href="p2p_2_message_8cpp.html">Message.cpp</a></li>
+<li>p2p/Message.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

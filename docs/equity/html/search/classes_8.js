@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['input',['Input',['../class_equity_1_1_input.html',1,'Equity']]],
   ['input',['Input',['../struct_equity_1_1_transaction_1_1_input.html',1,'Equity::Transaction']]],
   ['instruction',['Instruction',['../class_equity_1_1_instruction.html',1,'Equity']]],
   ['invalidmessageerror',['InvalidMessageError',['../struct_p2p_1_1_invalid_message_error.html',1,'P2p']]],

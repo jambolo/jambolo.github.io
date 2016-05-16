@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['checksum',['Checksum',['../namespace_crypto.html#af332ad168ef4ac1c76d415f788d0028a',1,'Crypto']]]
+  ['privatekey',['PrivateKey',['../class_crypto_1_1_ecdsa.html#a0af4168602a28f71869d594d757b534b',1,'Crypto::Ecdsa']]],
+  ['publickey',['PublicKey',['../class_crypto_1_1_ecdsa.html#ae421cf4b4355ecea0610555eeb110fea',1,'Crypto::Ecdsa']]]
 ];

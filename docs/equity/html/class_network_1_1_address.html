@@ -113,53 +113,49 @@ Inheritance diagram for Network::Address:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5fe11dcde4bef5bd4b564cfa8955e31c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a5fe11dcde4bef5bd4b564cfa8955e31c">Address</a> ()</td></tr>
-<tr class="separator:a5fe11dcde4bef5bd4b564cfa8955e31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6736ea9e7b2ee534fd23949ebdf87952"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a6736ea9e7b2ee534fd23949ebdf87952">Address</a> (uint32_t <a class="el" href="class_network_1_1_address.html#a433c00cd0971d89f58188dae1b99bf69">time</a>, uint64_t <a class="el" href="class_network_1_1_address.html#a8b790cc4d466fe8cc4d0d088123db7bb">services</a>, std::array&lt; uint8_t, 16 &gt; const &amp;<a class="el" href="class_network_1_1_address.html#aef9c14f9ddd31be3ec45e2fd9b732fc0">ipv6</a>, uint16_t <a class="el" href="class_network_1_1_address.html#acf6edabefaad0a649a5a82b1617796bd">port</a>)</td></tr>
 <tr class="separator:a6736ea9e7b2ee534fd23949ebdf87952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac534773436ed53b5a57e55bf113c0bf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#ac534773436ed53b5a57e55bf113c0bf2">Address</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:ac534773436ed53b5a57e55bf113c0bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f231ea85df2d7f014c8147630715108"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a5f231ea85df2d7f014c8147630715108">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
-<tr class="memdesc:a5f231ea85df2d7f014c8147630715108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides Serializable.  <a href="#a5f231ea85df2d7f014c8147630715108">More...</a><br /></td></tr>
-<tr class="separator:a5f231ea85df2d7f014c8147630715108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433c00cd0971d89f58188dae1b99bf69"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a433c00cd0971d89f58188dae1b99bf69">time</a> () const </td></tr>
-<tr class="memdesc:a433c00cd0971d89f58188dae1b99bf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timestamp.  <a href="#a433c00cd0971d89f58188dae1b99bf69">More...</a><br /></td></tr>
+<tr class="memitem:a433c00cd0971d89f58188dae1b99bf69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a433c00cd0971d89f58188dae1b99bf69"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a433c00cd0971d89f58188dae1b99bf69">time</a> () const </td></tr>
+<tr class="memdesc:a433c00cd0971d89f58188dae1b99bf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timestamp. <br /></td></tr>
 <tr class="separator:a433c00cd0971d89f58188dae1b99bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a8b790cc4d466fe8cc4d0d088123db7bb">services</a> () const </td></tr>
-<tr class="memdesc:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the services.  <a href="#a8b790cc4d466fe8cc4d0d088123db7bb">More...</a><br /></td></tr>
+<tr class="memitem:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b790cc4d466fe8cc4d0d088123db7bb"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#a8b790cc4d466fe8cc4d0d088123db7bb">services</a> () const </td></tr>
+<tr class="memdesc:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the services. <br /></td></tr>
 <tr class="separator:a8b790cc4d466fe8cc4d0d088123db7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef9c14f9ddd31be3ec45e2fd9b732fc0"><td class="memItemLeft" align="right" valign="top">uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#aef9c14f9ddd31be3ec45e2fd9b732fc0">ipv6</a> () const </td></tr>
-<tr class="memdesc:aef9c14f9ddd31be3ec45e2fd9b732fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the IP address in IPV6 form.  <a href="#aef9c14f9ddd31be3ec45e2fd9b732fc0">More...</a><br /></td></tr>
+<tr class="memitem:aef9c14f9ddd31be3ec45e2fd9b732fc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef9c14f9ddd31be3ec45e2fd9b732fc0"></a>
+uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#aef9c14f9ddd31be3ec45e2fd9b732fc0">ipv6</a> () const </td></tr>
+<tr class="memdesc:aef9c14f9ddd31be3ec45e2fd9b732fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the IP address in IPV6 form. <br /></td></tr>
 <tr class="separator:aef9c14f9ddd31be3ec45e2fd9b732fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca26d0001fd084e25840b07abc735ad8"><td class="memItemLeft" align="right" valign="top">uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#aca26d0001fd084e25840b07abc735ad8">ipv4</a> () const </td></tr>
-<tr class="memdesc:aca26d0001fd084e25840b07abc735ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the IP address in IPV6 form.  <a href="#aca26d0001fd084e25840b07abc735ad8">More...</a><br /></td></tr>
+<tr class="memitem:aca26d0001fd084e25840b07abc735ad8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca26d0001fd084e25840b07abc735ad8"></a>
+uint8_t const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#aca26d0001fd084e25840b07abc735ad8">ipv4</a> () const </td></tr>
+<tr class="memdesc:aca26d0001fd084e25840b07abc735ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the IP address in IPV6 form. <br /></td></tr>
 <tr class="separator:aca26d0001fd084e25840b07abc735ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6edabefaad0a649a5a82b1617796bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#acf6edabefaad0a649a5a82b1617796bd">port</a> () const </td></tr>
-<tr class="memdesc:acf6edabefaad0a649a5a82b1617796bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the port.  <a href="#acf6edabefaad0a649a5a82b1617796bd">More...</a><br /></td></tr>
+<tr class="memitem:acf6edabefaad0a649a5a82b1617796bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf6edabefaad0a649a5a82b1617796bd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_network_1_1_address.html#acf6edabefaad0a649a5a82b1617796bd">port</a> () const </td></tr>
+<tr class="memdesc:acf6edabefaad0a649a5a82b1617796bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the port. <br /></td></tr>
 <tr class="separator:acf6edabefaad0a649a5a82b1617796bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
-<tr class="separator:a22d1afab10f65e97f99df66115b0a716 inherit pub_methods_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Overrides Serializable</div></td></tr>
+<tr class="memitem:a5f231ea85df2d7f014c8147630715108"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f231ea85df2d7f014c8147630715108"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
+<tr class="separator:a5f231ea85df2d7f014c8147630715108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebe311ff3aa83767a0d3f3e0702faaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ebe311ff3aa83767a0d3f3e0702faaa"></a>
+virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a4ebe311ff3aa83767a0d3f3e0702faaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
+<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
+<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A description of a network node. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_network_1_1_version_message.html" title="A version message. ">VersionMessage</a>, <a class="el" href="class_network_1_1_address_message.html" title="An address message. ">AddressMessage</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5fe11dcde4bef5bd4b564cfa8955e31c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Network::Address::Address </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a6736ea9e7b2ee534fd23949ebdf87952"></a>
 <div class="memitem">
 <div class="memproto">
@@ -240,163 +236,9 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aca26d0001fd084e25840b07abc735ad8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t const* Network::Address::ipv4 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the IP address in IPV6 form. </p>
-
-</div>
-</div>
-<a class="anchor" id="aef9c14f9ddd31be3ec45e2fd9b732fc0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t const* Network::Address::ipv6 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the IP address in IPV6 form. </p>
-
-</div>
-</div>
-<a class="anchor" id="acf6edabefaad0a649a5a82b1617796bd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Network::Address::port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the port. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5f231ea85df2d7f014c8147630715108"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Address::serialize </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Overrides Serializable. </p>
-
-<p>Implements <a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">P2p::Serializable</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8b790cc4d466fe8cc4d0d088123db7bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Network::Address::services </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the services. </p>
-
-</div>
-</div>
-<a class="anchor" id="a433c00cd0971d89f58188dae1b99bf69"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Network::Address::time </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the timestamp. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>network/<a class="el" href="network_2_address_8h_source.html">Address.h</a></li>
-<li>network/<a class="el" href="network_2_address_8cpp.html">Address.cpp</a></li>
+<li>network/Address.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

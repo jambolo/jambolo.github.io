@@ -49,7 +49,6 @@ var searchData=
   ['op_5fendif',['OP_ENDIF',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a1573e93f23ee60303ddde28420b15ef7',1,'Equity::Instruction']]],
   ['op_5fequal',['OP_EQUAL',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9ac75126d93605e9b9ab0f4c9b7fa9bcd4',1,'Equity::Instruction']]],
   ['op_5fequalverify',['OP_EQUALVERIFY',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a92a67e53aa0ec8b6abc8442c8f129e47',1,'Equity::Instruction']]],
-  ['op_5ffalse',['OP_FALSE',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a6ef213c4cfe7920c11082b8d4b6b904c',1,'Equity::Instruction']]],
   ['op_5ffromaltstack',['OP_FROMALTSTACK',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a20625e245dee5dcbfcdf14bd458f1747',1,'Equity::Instruction']]],
   ['op_5fgreaterthan',['OP_GREATERTHAN',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a6cb0b564de98c3fc2b7c691db33fd860',1,'Equity::Instruction']]],
   ['op_5fgreaterthanorequal',['OP_GREATERTHANOREQUAL',['../class_equity_1_1_instruction.html#a7d8b5dcb946f144d8a8ee2ecc52948f9a189926bfef676df2ed9bec5977e4e9eb',1,'Equity::Instruction']]],

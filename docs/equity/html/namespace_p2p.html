@@ -122,6 +122,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p2p_1_1_serialize_array_impl_3_01uint8__t_00_01_n_01_4.html">SerializeArrayImpl&lt; uint8_t, N &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class for serialization of an std::array of uint8_t.  <a href="struct_p2p_1_1_serialize_array_impl_3_01uint8__t_00_01_n_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p2p_1_1_to_json_array_impl.html">ToJsonArrayImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class for converting an std::array to JSON.  <a href="struct_p2p_1_1_to_json_array_impl.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p2p_1_1_to_json_array_impl_3_01uint8__t_00_01_n_01_4.html">ToJsonArrayImpl&lt; uint8_t, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class for converting an std::array&lt;uint8_t, N&gt; to JSON.  <a href="struct_p2p_1_1_to_json_array_impl_3_01uint8__t_00_01_n_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_var_array.html">VarArray</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of objects.  <a href="class_p2p_1_1_var_array.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,10 +164,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7c01c7580c4eeebfe136fbd27f2c9db7">serialize</a> (char const *s, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
 <tr class="memdesc:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a string.  <a href="#a7c01c7580c4eeebfe136fbd27f2c9db7">More...</a><br /></td></tr>
 <tr class="separator:a7c01c7580c4eeebfe136fbd27f2c9db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad222c0ef81e148f528349999d73177aa"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ad222c0ef81e148f528349999d73177aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#ad222c0ef81e148f528349999d73177aa">serializeVector&lt; uint8_t &gt;</a> (std::vector&lt; uint8_t &gt; const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:ad222c0ef81e148f528349999d73177aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a vector of uint8_t.  <a href="#ad222c0ef81e148f528349999d73177aa">More...</a><br /></td></tr>
-<tr class="separator:ad222c0ef81e148f528349999d73177aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc64fe7214841beb0a927aa9de1318fc"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:afc64fe7214841beb0a927aa9de1318fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#afc64fe7214841beb0a927aa9de1318fc">serialize&lt; uint8_t &gt;</a> (std::vector&lt; uint8_t &gt; const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:afc64fe7214841beb0a927aa9de1318fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a vector of uint8_t.  <a href="#afc64fe7214841beb0a927aa9de1318fc">More...</a><br /></td></tr>
+<tr class="separator:afc64fe7214841beb0a927aa9de1318fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e3e36226c756c40f147744c086031a"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a39e3e36226c756c40f147744c086031a"><td class="memTemplItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a39e3e36226c756c40f147744c086031a">deserialize&lt; uint8_t &gt;</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a39e3e36226c756c40f147744c086031a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a uint8_t.  <a href="#a39e3e36226c756c40f147744c086031a">More...</a><br /></td></tr>
@@ -185,21 +191,43 @@ Functions</h2></td></tr>
 <tr class="memitem:a47499741e9b765479f21734e2a498e91"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a47499741e9b765479f21734e2a498e91">deserializeString</a> (size_t n, uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a47499741e9b765479f21734e2a498e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a string.  <a href="#a47499741e9b765479f21734e2a498e91">More...</a><br /></td></tr>
 <tr class="separator:a47499741e9b765479f21734e2a498e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbc22c718e2a84d64a6a5d1f1fdec6e"><td class="memTemplParams" colspan="2"><a class="anchor" id="aafbc22c718e2a84d64a6a5d1f1fdec6e"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:aafbc22c718e2a84d64a6a5d1f1fdec6e"><td class="memTemplItemLeft" align="right" valign="top">Serializable::cJSON_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#aafbc22c718e2a84d64a6a5d1f1fdec6e">toJson</a> (std::vector&lt; uint8_t &gt; const &amp;v)</td></tr>
+<tr class="memdesc:aafbc22c718e2a84d64a6a5d1f1fdec6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a std::vector&lt;uint8_t&gt; to a JSON hex string. <br /></td></tr>
+<tr class="separator:aafbc22c718e2a84d64a6a5d1f1fdec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7f5246f964750e9b1f75b9e3d09d6eb6">serialize</a> (<a class="el" href="class_p2p_1_1_serializable.html">Serializable</a> const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
 <tr class="memdesc:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>.  <a href="#a7f5246f964750e9b1f75b9e3d09d6eb6">More...</a><br /></td></tr>
 <tr class="separator:a7f5246f964750e9b1f75b9e3d09d6eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6664dcd5a38e0bf510fe17900b87383a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6664dcd5a38e0bf510fe17900b87383a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a6664dcd5a38e0bf510fe17900b87383a">serializeVector</a> (std::vector&lt; T &gt; const &amp;v, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:a6664dcd5a38e0bf510fe17900b87383a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::vector.  <a href="#a6664dcd5a38e0bf510fe17900b87383a">More...</a><br /></td></tr>
-<tr class="separator:a6664dcd5a38e0bf510fe17900b87383a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ccb54849220887de76a8644cedf1fa0"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a3ccb54849220887de76a8644cedf1fa0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a3ccb54849220887de76a8644cedf1fa0">serializeVector</a> (std::vector&lt; std::array&lt; T, N &gt; &gt; const &amp;v, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:a3ccb54849220887de76a8644cedf1fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a vector of std::array.  <a href="#a3ccb54849220887de76a8644cedf1fa0">More...</a><br /></td></tr>
-<tr class="separator:a3ccb54849220887de76a8644cedf1fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a147d92d3f1fdc8e1e42c57b317bdba78"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a147d92d3f1fdc8e1e42c57b317bdba78"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a147d92d3f1fdc8e1e42c57b317bdba78">serializeArray</a> (T const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
-<tr class="memdesc:a147d92d3f1fdc8e1e42c57b317bdba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::array.  <a href="#a147d92d3f1fdc8e1e42c57b317bdba78">More...</a><br /></td></tr>
-<tr class="separator:a147d92d3f1fdc8e1e42c57b317bdba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1623d49e82057c12591bbf4d9fdecaa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa1623d49e82057c12591bbf4d9fdecaa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#aa1623d49e82057c12591bbf4d9fdecaa">serialize</a> (std::vector&lt; T &gt; const &amp;v, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:aa1623d49e82057c12591bbf4d9fdecaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::vector.  <a href="#aa1623d49e82057c12591bbf4d9fdecaa">More...</a><br /></td></tr>
+<tr class="separator:aa1623d49e82057c12591bbf4d9fdecaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767e390260f433ae2561d863d5c1ae86"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a767e390260f433ae2561d863d5c1ae86"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a767e390260f433ae2561d863d5c1ae86">serialize</a> (std::vector&lt; std::array&lt; T, N &gt; &gt; const &amp;v, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a767e390260f433ae2561d863d5c1ae86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a vector of std::array.  <a href="#a767e390260f433ae2561d863d5c1ae86">More...</a><br /></td></tr>
+<tr class="separator:a767e390260f433ae2561d863d5c1ae86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7521cd35d5079eebdb7f9bfcc9e18deb"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a7521cd35d5079eebdb7f9bfcc9e18deb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7521cd35d5079eebdb7f9bfcc9e18deb">serialize</a> (std::array&lt; T, N &gt; const &amp;a, std::vector&lt; uint8_t &gt; &amp;out)</td></tr>
+<tr class="memdesc:a7521cd35d5079eebdb7f9bfcc9e18deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes an std::array.  <a href="#a7521cd35d5079eebdb7f9bfcc9e18deb">More...</a><br /></td></tr>
+<tr class="separator:a7521cd35d5079eebdb7f9bfcc9e18deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2372436e4666d7c29e10ac0a4b6ceddc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2372436e4666d7c29e10ac0a4b6ceddc"></a>
+Serializable::cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> (<a class="el" href="class_p2p_1_1_serializable.html">Serializable</a> const &amp;x)</td></tr>
+<tr class="separator:a2372436e4666d7c29e10ac0a4b6ceddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289eacc540969a84e4d2396c8142e343"><td class="memTemplParams" colspan="2"><a class="anchor" id="a289eacc540969a84e4d2396c8142e343"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a289eacc540969a84e4d2396c8142e343"><td class="memTemplItemLeft" align="right" valign="top">Serializable::cJSON_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a289eacc540969a84e4d2396c8142e343">toJson</a> (T const *v, size_t size)</td></tr>
+<tr class="memdesc:a289eacc540969a84e4d2396c8142e343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a generic array to a JSON array value. <br /></td></tr>
+<tr class="separator:a289eacc540969a84e4d2396c8142e343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e535def49709a8eabf98eb055eebf3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a37e535def49709a8eabf98eb055eebf3"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a37e535def49709a8eabf98eb055eebf3"><td class="memTemplItemLeft" align="right" valign="top">Serializable::cJSON_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a37e535def49709a8eabf98eb055eebf3">toJson</a> (std::vector&lt; T &gt; const &amp;v)</td></tr>
+<tr class="memdesc:a37e535def49709a8eabf98eb055eebf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a generic vector to a JSON array value. <br /></td></tr>
+<tr class="separator:a37e535def49709a8eabf98eb055eebf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a34408c4512e747a6ba1b2b434a2b99"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a7a34408c4512e747a6ba1b2b434a2b99"><td class="memTemplItemLeft" align="right" valign="top">Serializable::cJSON_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a7a34408c4512e747a6ba1b2b434a2b99">toJson</a> (std::array&lt; T, N &gt; const &amp;a)</td></tr>
+<tr class="memdesc:a7a34408c4512e747a6ba1b2b434a2b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a generic std::array to a JSON array value.  <a href="#a7a34408c4512e747a6ba1b2b434a2b99">More...</a><br /></td></tr>
+<tr class="separator:a7a34408c4512e747a6ba1b2b434a2b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74dc6a6562533fe0fe09ea2abbd53edc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a74dc6a6562533fe0fe09ea2abbd53edc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_p2p.html#a74dc6a6562533fe0fe09ea2abbd53edc">deserialize</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="memdesc:a74dc6a6562533fe0fe09ea2abbd53edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes an object with a deserialization constructor.  <a href="#a74dc6a6562533fe0fe09ea2abbd53edc">More...</a><br /></td></tr>
@@ -218,7 +246,7 @@ Functions</h2></td></tr>
 <tr class="separator:a11dbac90e8b4e3237a8626c5b707ec6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Move to Serializer class in <a class="el" href="namespace_network.html" title="Bitcoin Network Layer. ">Network</a> namespace </dd></dl>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Move to Serializer class in <a class="el" href="namespace_network.html" title="Bitcoin Network Layer. ">Network</a> namespace </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a74dc6a6562533fe0fe09ea2abbd53edc"></a>
 <div class="memitem">
@@ -760,49 +788,6 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7f5246f964750e9b1f75b9e3d09d6eb6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void P2p::serialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_p2p_1_1_serializable.html">Serializable</a> const &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>object to be serialized </td></tr>
-    <tr><td class="paramname">out</td><td>destination </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ac51bbe42bc42c69bb359f7f8789eed65"></a>
 <div class="memitem">
 <div class="memproto">
@@ -873,16 +858,17 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a147d92d3f1fdc8e1e42c57b317bdba78"></a>
+<a class="anchor" id="a7f5246f964750e9b1f75b9e3d09d6eb6"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void P2p::serializeArray </td>
+          <td class="memname">void P2p::serialize </td>
           <td>(</td>
-          <td class="paramtype">T const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_p2p_1_1_serializable.html">Serializable</a> const &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -897,28 +883,32 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Serializes an std::array. </p>
+<p>Serializes a <a class="el" href="class_p2p_1_1_serializable.html" title="An abstract class that enables an object to be serialized by the serialization functions. ">Serializable</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>std::array to be serialized </td></tr>
-    <tr><td class="paramname">out</td><td>destination</td></tr>
+    <tr><td class="paramname">a</td><td>object to be serialized </td></tr>
+    <tr><td class="paramname">out</td><td>destination </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The reason for this ridiculous code is that partial template specialization is not allowed with functions </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6664dcd5a38e0bf510fe17900b87383a"></a>
+<a class="anchor" id="aa1623d49e82057c12591bbf4d9fdecaa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void P2p::serializeVector </td>
+          <td class="memname">void P2p::serialize </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em>, </td>
@@ -948,14 +938,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3ccb54849220887de76a8644cedf1fa0"></a>
+<a class="anchor" id="a767e390260f433ae2561d863d5c1ae86"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T , size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void P2p::serializeVector </td>
+          <td class="memname">void P2p::serialize </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; std::array&lt; T, N &gt; &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em>, </td>
@@ -985,14 +975,52 @@ template&lt;typename T , size_t N&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad222c0ef81e148f528349999d73177aa"></a>
+<a class="anchor" id="a7521cd35d5079eebdb7f9bfcc9e18deb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void P2p::serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serializes an std::array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>std::array to be serialized </td></tr>
+    <tr><td class="paramname">out</td><td>destination</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The reason for this ridiculous code is that partial template specialization is not allowed with functions </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc64fe7214841beb0a927aa9de1318fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="namespace_p2p.html#a6664dcd5a38e0bf510fe17900b87383a">P2p::serializeVector</a>&lt; uint8_t &gt; </td>
+          <td class="memname">void <a class="el" href="namespace_p2p.html#a9e0eb0263a405289ab6290e145f05652">P2p::serialize</a>&lt; uint8_t &gt; </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; uint8_t &gt; const &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -1019,6 +1047,34 @@ template&lt;&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a34408c4512e747a6ba1b2b434a2b99"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Serializable::cJSON_ptr P2p::toJson </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; T, N &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a generic std::array to a JSON array value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>std::array to be serialized </td></tr>
+    <tr><td class="paramname">out</td><td>destination</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The reason for this ridiculous code is that partial template specialization is not allowed with functions </dd></dl>
 
 </div>
 </div>

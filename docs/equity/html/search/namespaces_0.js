@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['crypto',['Crypto',['../namespace_crypto.html',1,'']]]
+  ['base58check',['Base58Check',['../namespace_equity_1_1_base58_check.html',1,'Equity']]]
 ];

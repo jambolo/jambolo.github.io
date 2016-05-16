@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['name',['name',['../struct_equity_1_1_instruction_1_1_description.html#a208d09738b94ac9b610acb8f435dd1c4',1,'Equity::Instruction::Description']]],
   ['network',['network',['../struct_network_1_1_configuration.html#a9f67b10a49a6d7207950b8599ebf556b',1,'Network::Configuration']]],
   ['nhashfuncs_5f',['nHashFuncs_',['../class_network_1_1_filter_load_message.html#ad9fffe3e1b10f19b85f7480e72c41486',1,'Network::FilterLoadMessage']]],
   ['nonce',['nonce',['../struct_equity_1_1_block_1_1_header.html#a3229782f5b4c2b1d3df55c2cb37aa328',1,'Equity::Block::Header']]],

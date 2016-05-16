@@ -90,6 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_p2p_1_1_serializable-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -114,7 +116,7 @@ Inheritance diagram for P2p::Serializable:</div>
 <area href="class_equity_1_1_transaction.html" alt="Equity::Transaction" shape="rect" coords="230,280,450,304"/>
 <area href="struct_equity_1_1_transaction_1_1_input.html" title="A transaction input. " alt="Equity::Transaction::Input" shape="rect" coords="230,336,450,360"/>
 <area href="struct_equity_1_1_transaction_1_1_output.html" title="A transaction output. " alt="Equity::Transaction::Output" shape="rect" coords="230,392,450,416"/>
-<area href="struct_equity_1_1_txid.html" alt="Equity::Txid" shape="rect" coords="230,448,450,472"/>
+<area href="struct_equity_1_1_txid.html" title="A transaction ID. " alt="Equity::Txid" shape="rect" coords="230,448,450,472"/>
 <area href="class_network_1_1_address.html" title="A description of a network node. " alt="Network::Address" shape="rect" coords="230,504,450,528"/>
 <area href="struct_network_1_1_inventory_id.html" title="Represents an object in an inventory message. " alt="Network::InventoryId" shape="rect" coords="230,560,450,584"/>
 <area href="class_network_1_1_message.html" title="Message base class. " alt="Network::Message" shape="rect" coords="230,616,450,640"/>
@@ -128,41 +130,29 @@ Inheritance diagram for P2p::Serializable:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
+<tr class="separator:ac19696f126689edec6c35c5d4f45b56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a22d1afab10f65e97f99df66115b0a716"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a22d1afab10f65e97f99df66115b0a716">~Serializable</a> ()</td></tr>
-<tr class="separator:a22d1afab10f65e97f99df66115b0a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  =0</td></tr>
 <tr class="memdesc:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the object.  <a href="#af0fc0cbdf2ba2296b2f48528b5aa3729">More...</a><br /></td></tr>
 <tr class="separator:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57399f2dd02d5cf5a9940587be219384"><td class="memItemLeft" align="right" valign="top">virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a57399f2dd02d5cf5a9940587be219384">toJson</a> () const  =0</td></tr>
+<tr class="memdesc:a57399f2dd02d5cf5a9940587be219384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the object to a JSON string.  <a href="#a57399f2dd02d5cf5a9940587be219384">More...</a><br /></td></tr>
+<tr class="separator:a57399f2dd02d5cf5a9940587be219384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class that enables an object to be serialized by the serialization functions. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a22d1afab10f65e97f99df66115b0a716"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual P2p::Serializable::~Serializable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af0fc0cbdf2ba2296b2f48528b5aa3729"></a>
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +184,31 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Must be overriden </dd></dl>
 
-<p>Implemented in <a class="el" href="class_p2p_1_1_var_string.html#a859c718c11652a57b943d4286749156b">P2p::VarString</a>, <a class="el" href="class_p2p_1_1_bit_array.html#a24ab1dd80789091cf751e12ccb7967fc">P2p::BitArray</a>, <a class="el" href="class_p2p_1_1_var_array_3_01uint8__t_01_4.html#ac514866af910b3f9ed5a878f56f95e63">P2p::VarArray&lt; uint8_t &gt;</a>, <a class="el" href="class_p2p_1_1_var_array_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a77b2289666a6cef960b9fd48f976012c">P2p::VarArray&lt; std::array&lt; T, N &gt; &gt;</a>, <a class="el" href="class_p2p_1_1_var_array.html#aaab70a3a66251d61a14795166e3b18b5">P2p::VarArray&lt; T &gt;</a>, <a class="el" href="class_p2p_1_1_v_a_size.html#a149b85508405d5721e2cd763b4d2131c">P2p::VASize</a>, <a class="el" href="class_equity_1_1_instruction.html#aaf8a2f2d3202f451bacc71856564b404">Equity::Instruction</a>, <a class="el" href="class_equity_1_1_transaction.html#a58ac8f8db1585c0e111bcba442dca8d3">Equity::Transaction</a>, <a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a5703d4b572f5806236cc6998fe746a0b">Equity::Transaction::Output</a>, <a class="el" href="class_p2p_1_1_message_1_1_header.html#a6e65cdd50fc967ca0061daa03b63615a">P2p::Message::Header</a>, <a class="el" href="class_equity_1_1_block.html#a7e1cb6deab83ec51873dcead81c23bbc">Equity::Block</a>, <a class="el" href="class_network_1_1_reject_message.html#a9709c681ee5adec69cf2a1a8b4640125">Network::RejectMessage</a>, <a class="el" href="struct_equity_1_1_block_1_1_header.html#a47f59b666af5ed65bd3cd4fd11356dcc">Equity::Block::Header</a>, <a class="el" href="struct_equity_1_1_transaction_1_1_input.html#af05b1ed03f9dfcbeecce44393a941ca6">Equity::Transaction::Input</a>, <a class="el" href="class_network_1_1_merkle_block_message.html#a3b9a8f6997143466944c71c204b6b556">Network::MerkleBlockMessage</a>, <a class="el" href="class_network_1_1_filter_load_message.html#a8b5e7d060609a3f582eeb1524d43862a">Network::FilterLoadMessage</a>, <a class="el" href="class_network_1_1_version_message.html#a97aaa3ae47abd41025a2dfa8019cf055">Network::VersionMessage</a>, <a class="el" href="class_network_1_1_address.html#a5f231ea85df2d7f014c8147630715108">Network::Address</a>, <a class="el" href="class_network_1_1_filter_add_message.html#a250bea59e8bc8dc13ee6f419d218df07">Network::FilterAddMessage</a>, <a class="el" href="class_network_1_1_headers_message.html#a2210145b5802b765513d3d82eadf76a8">Network::HeadersMessage</a>, <a class="el" href="class_network_1_1_get_blocks_message.html#a7d957999240b98cad2645874cd1d1c50">Network::GetBlocksMessage</a>, <a class="el" href="class_network_1_1_get_headers_message.html#a0c12b56a2290ca255938e461386f8dd0">Network::GetHeadersMessage</a>, <a class="el" href="class_network_1_1_alert_message.html#a4e2a80770d2f22c0af8924e842537093">Network::AlertMessage</a>, <a class="el" href="class_network_1_1_request_transactions_message.html#ac247a2bf2f3830e3669102394c909048">Network::RequestTransactionsMessage</a>, <a class="el" href="struct_network_1_1_inventory_id.html#a0f59abe42cd0012422263e79555968ac">Network::InventoryId</a>, <a class="el" href="class_network_1_1_get_data_message.html#ac8ad2c1d83ce64bf7558e5bc0cce1cab">Network::GetDataMessage</a>, <a class="el" href="class_network_1_1_not_found_message.html#abab9a1e1f2abc5aa805348e90a70046e">Network::NotFoundMessage</a>, <a class="el" href="class_network_1_1_address_message.html#a9c5e6e3b3328f3ca6823cc12e1d40293">Network::AddressMessage</a>, <a class="el" href="class_network_1_1_inventory_message.html#acfe94dd47239e7b2ba11bc93d66a3efc">Network::InventoryMessage</a>, <a class="el" href="class_network_1_1_block_message.html#a51c70e616817ff3fb911274d5a1f9279">Network::BlockMessage</a>, <a class="el" href="class_network_1_1_ping_message.html#a80d177f4f17f3da15c25411bd16e26ae">Network::PingMessage</a>, <a class="el" href="class_network_1_1_pong_message.html#a4c5356ea2c1e63eaf06ee0a553048494">Network::PongMessage</a>, <a class="el" href="class_network_1_1_send_headers_message.html#adda8fc54732c6455866ab8d83362b089">Network::SendHeadersMessage</a>, <a class="el" href="class_network_1_1_transaction_message.html#a9a6160c39ee8fa88d7e2d3c933a4fc8b">Network::TransactionMessage</a>, <a class="el" href="class_network_1_1_filter_clear_message.html#a64441ea4ddfc091c809ad42aaf25e3d4">Network::FilterClearMessage</a>, <a class="el" href="class_network_1_1_reply_message.html#a97ee9139e31ca98d4fef4dca9ee23179">Network::ReplyMessage</a>, <a class="el" href="class_network_1_1_submit_order_message.html#a817778f97dbae1c57ea015b40c05142b">Network::SubmitOrderMessage</a>, <a class="el" href="class_network_1_1_check_order_message.html#a21fa6e57e167dd11d9a66ad432037087">Network::CheckOrderMessage</a>, <a class="el" href="class_network_1_1_get_addr_message.html#a4fbbc04885aae6aa47d06b497cacda7c">Network::GetAddrMessage</a>, <a class="el" href="class_network_1_1_verack_message.html#ab1c827cedc34d2777e429b68a6ee3dd8">Network::VerackMessage</a>, <a class="el" href="class_equity_1_1_script.html#ac47cd793d969c7267ccd40b211b5e81c">Equity::Script</a>, and <a class="el" href="struct_equity_1_1_txid.html#ac39c4ee6e271e29f634ab960c68e00ee">Equity::Txid</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a57399f2dd02d5cf5a9940587be219384"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual cJSON_ptr P2p::Serializable::toJson </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the object to a JSON string. </p>
+<dl class="section note"><dt>Note</dt><dd>Must be overriden </dd></dl>
 
 </div>
 </div>
