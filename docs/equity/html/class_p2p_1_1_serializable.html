@@ -90,8 +90,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_p2p_1_1_serializable-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -112,14 +110,14 @@ Inheritance diagram for P2p::Serializable:</div>
 <area href="class_equity_1_1_block.html" title="A block in the block chain. " alt="Equity::Block" shape="rect" coords="230,56,450,80"/>
 <area href="struct_equity_1_1_block_1_1_header.html" title="A standard block header. " alt="Equity::Block::Header" shape="rect" coords="230,112,450,136"/>
 <area href="class_equity_1_1_instruction.html" title="A script instruction. " alt="Equity::Instruction" shape="rect" coords="230,168,450,192"/>
-<area href="class_equity_1_1_script.html" alt="Equity::Script" shape="rect" coords="230,224,450,248"/>
-<area href="class_equity_1_1_transaction.html" alt="Equity::Transaction" shape="rect" coords="230,280,450,304"/>
+<area href="class_equity_1_1_script.html" title="A transaction script. " alt="Equity::Script" shape="rect" coords="230,224,450,248"/>
+<area href="class_equity_1_1_transaction.html" title="A Bitcoin transaction. " alt="Equity::Transaction" shape="rect" coords="230,280,450,304"/>
 <area href="struct_equity_1_1_transaction_1_1_input.html" title="A transaction input. " alt="Equity::Transaction::Input" shape="rect" coords="230,336,450,360"/>
 <area href="struct_equity_1_1_transaction_1_1_output.html" title="A transaction output. " alt="Equity::Transaction::Output" shape="rect" coords="230,392,450,416"/>
 <area href="struct_equity_1_1_txid.html" title="A transaction ID. " alt="Equity::Txid" shape="rect" coords="230,448,450,472"/>
 <area href="class_network_1_1_address.html" title="A description of a network node. " alt="Network::Address" shape="rect" coords="230,504,450,528"/>
 <area href="struct_network_1_1_inventory_id.html" title="Represents an object in an inventory message. " alt="Network::InventoryId" shape="rect" coords="230,560,450,584"/>
-<area href="class_network_1_1_message.html" title="Message base class. " alt="Network::Message" shape="rect" coords="230,616,450,640"/>
+<area href="class_network_1_1_message.html" title="All network message classes are derived from this class. " alt="Network::Message" shape="rect" coords="230,616,450,640"/>
 <area href="class_p2p_1_1_bit_array.html" title="An array of bits. " alt="P2p::BitArray" shape="rect" coords="230,672,450,696"/>
 <area href="class_p2p_1_1_message_1_1_header.html" title="A P2P network message header. " alt="P2p::Message::Header" shape="rect" coords="230,728,450,752"/>
 <area href="class_p2p_1_1_var_array.html" title="An array of objects. " alt="P2p::VarArray&lt; T &gt;" shape="rect" coords="230,784,450,808"/>
@@ -130,25 +128,14 @@ Inheritance diagram for P2p::Serializable:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#af0fc0cbdf2ba2296b2f48528b5aa3729">serialize</a> (std::vector&lt; uint8_t &gt; &amp;out) const  =0</td></tr>
 <tr class="memdesc:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the object.  <a href="#af0fc0cbdf2ba2296b2f48528b5aa3729">More...</a><br /></td></tr>
 <tr class="separator:af0fc0cbdf2ba2296b2f48528b5aa3729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57399f2dd02d5cf5a9940587be219384"><td class="memItemLeft" align="right" valign="top">virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a57399f2dd02d5cf5a9940587be219384">toJson</a> () const  =0</td></tr>
-<tr class="memdesc:a57399f2dd02d5cf5a9940587be219384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the object to a JSON string.  <a href="#a57399f2dd02d5cf5a9940587be219384">More...</a><br /></td></tr>
-<tr class="separator:a57399f2dd02d5cf5a9940587be219384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374eadfa13b8c230cdb2bcc163946c0f"><td class="memItemLeft" align="right" valign="top">virtual json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_serializable.html#a374eadfa13b8c230cdb2bcc163946c0f">toJson</a> () const  =0</td></tr>
+<tr class="memdesc:a374eadfa13b8c230cdb2bcc163946c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the object to a JSON string.  <a href="#a374eadfa13b8c230cdb2bcc163946c0f">More...</a><br /></td></tr>
+<tr class="separator:a374eadfa13b8c230cdb2bcc163946c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class that enables an object to be serialized by the serialization functions. </p>
@@ -182,11 +169,11 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Must be overriden </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must be overridden </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a57399f2dd02d5cf5a9940587be219384"></a>
+<a class="anchor" id="a374eadfa13b8c230cdb2bcc163946c0f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -194,7 +181,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual cJSON_ptr P2p::Serializable::toJson </td>
+          <td class="memname">virtual json P2p::Serializable::toJson </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -208,7 +195,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Converts the object to a JSON string. </p>
-<dl class="section note"><dt>Note</dt><dd>Must be overriden </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must be overridden </dd></dl>
 
 </div>
 </div>

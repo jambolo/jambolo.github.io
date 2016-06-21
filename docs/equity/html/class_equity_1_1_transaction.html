@@ -98,6 +98,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Equity::Transaction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Bitcoin transaction.  
+ <a href="class_equity_1_1_transaction.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_transaction_8h_source.html">Transaction.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Equity::Transaction:</div>
 <div class="dyncontent">
@@ -127,38 +132,37 @@ Public Types</h2></td></tr>
 </td></tr>
 <tr class="separator:ab8d6660a3047f6c98d1161d9428905e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade263307f380bb27e00a6e8b8bd7d7b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade263307f380bb27e00a6e8b8bd7d7b5"></a>
-typedef std::vector&lt; <a class="el" href="struct_equity_1_1_transaction_1_1_input.html">Input</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InputList</b></td></tr>
+typedef std::vector&lt; <a class="el" href="struct_equity_1_1_transaction_1_1_input.html">Input</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a></td></tr>
+<tr class="memdesc:ade263307f380bb27e00a6e8b8bd7d7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of transactions inputs. <br /></td></tr>
 <tr class="separator:ade263307f380bb27e00a6e8b8bd7d7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845003826f8f318940ce4c8a9f72426e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a845003826f8f318940ce4c8a9f72426e"></a>
 typedef std::vector&lt; <a class="el" href="struct_equity_1_1_transaction_1_1_output.html">Output</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a></td></tr>
 <tr class="memdesc:a845003826f8f318940ce4c8a9f72426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of outputs. <br /></td></tr>
 <tr class="separator:a845003826f8f318940ce4c8a9f72426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a357e63097efc1d7b05cdb4942ab4df7a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Transaction</b> (int version, InputList const &amp;inputs, <a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a> const &amp;outputs, uint32_t lockTime)</td></tr>
+<tr class="memitem:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a357e63097efc1d7b05cdb4942ab4df7a">Transaction</a> (int <a class="el" href="class_equity_1_1_transaction.html#a1b46c714dcbc48289ee998f2ac5073df">version</a>, <a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#ab213c635b467c95549bbb9da23f5e933">inputs</a>, <a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a> const &amp;<a class="el" href="class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b">outputs</a>, uint32_t <a class="el" href="class_equity_1_1_transaction.html#af09555887f2b459315f9ca43b3a84add">lockTime</a>)</td></tr>
 <tr class="separator:a357e63097efc1d7b05cdb4942ab4df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28357af355df57dbf5a2d21a3ed0258a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28357af355df57dbf5a2d21a3ed0258a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Transaction</b> (std::string const &amp;json)</td></tr>
+<tr class="memitem:a28357af355df57dbf5a2d21a3ed0258a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a28357af355df57dbf5a2d21a3ed0258a">Transaction</a> (std::string const &amp;json)</td></tr>
 <tr class="separator:a28357af355df57dbf5a2d21a3ed0258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f255393199ea4be9fcf3919abbfc1cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a1f255393199ea4be9fcf3919abbfc1cc">Transaction</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a1f255393199ea4be9fcf3919abbfc1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b46c714dcbc48289ee998f2ac5073df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b46c714dcbc48289ee998f2ac5073df"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> () const </td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a1b46c714dcbc48289ee998f2ac5073df">version</a> () const </td></tr>
+<tr class="memdesc:a1b46c714dcbc48289ee998f2ac5073df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version. <br /></td></tr>
 <tr class="separator:a1b46c714dcbc48289ee998f2ac5073df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab213c635b467c95549bbb9da23f5e933"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab213c635b467c95549bbb9da23f5e933"></a>
-InputList&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b> () const </td></tr>
+<a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#ab213c635b467c95549bbb9da23f5e933">inputs</a> () const </td></tr>
+<tr class="memdesc:ab213c635b467c95549bbb9da23f5e933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transaction's inputs. <br /></td></tr>
 <tr class="separator:ab213c635b467c95549bbb9da23f5e933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4575946f709190e615f72c5a477a029b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4575946f709190e615f72c5a477a029b"></a>
-<a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b> () const </td></tr>
+<a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a4575946f709190e615f72c5a477a029b">outputs</a> () const </td></tr>
+<tr class="memdesc:a4575946f709190e615f72c5a477a029b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transaction's outputs. <br /></td></tr>
 <tr class="separator:a4575946f709190e615f72c5a477a029b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af09555887f2b459315f9ca43b3a84add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af09555887f2b459315f9ca43b3a84add"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>lockTime</b> () const </td></tr>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#af09555887f2b459315f9ca43b3a84add">lockTime</a> () const </td></tr>
+<tr class="memdesc:af09555887f2b459315f9ca43b3a84add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the locktime value. <br /></td></tr>
 <tr class="separator:af09555887f2b459315f9ca43b3a84add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ccf663f1d8b2b0f07a701f2165dbf85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ccf663f1d8b2b0f07a701f2165dbf85"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_transaction.html#a6ccf663f1d8b2b0f07a701f2165dbf85">valid</a> () const </td></tr>
@@ -168,11 +172,83 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a58ac8f8db1585c0e111bcba442dca8d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58ac8f8db1585c0e111bcba442dca8d3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a58ac8f8db1585c0e111bcba442dca8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1937433594f303dcd9831e1a93d03a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f1937433594f303dcd9831e1a93d03a"></a>
-virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
-<tr class="separator:a2f1937433594f303dcd9831e1a93d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45da394f2f85c730c664195614eea7e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45da394f2f85c730c664195614eea7e7"></a>
+virtual json&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a45da394f2f85c730c664195614eea7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Bitcoin transaction. </p>
+<p>A Bitcoin transaction moves bitcoins from outputs of other transactions to new outputs. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a357e63097efc1d7b05cdb4942ab4df7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transaction::Transaction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5">InputList</a> const &amp;&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e">OutputList</a> const &amp;&#160;</td>
+          <td class="paramname"><em>outputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lockTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">version</td><td>version </td></tr>
+    <tr><td class="paramname">inputs</td><td>list of inputs </td></tr>
+    <tr><td class="paramname">outputs</td><td>list of outputs </td></tr>
+    <tr><td class="paramname">lockTime</td><td>locktime value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a28357af355df57dbf5a2d21a3ed0258a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transaction::Transaction </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>transaction in JSON form </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a1f255393199ea4be9fcf3919abbfc1cc"></a>
 <div class="memitem">
 <div class="memproto">

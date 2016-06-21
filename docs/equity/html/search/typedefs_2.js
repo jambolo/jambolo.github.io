@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['privatekey',['PrivateKey',['../class_crypto_1_1_ecdsa.html#a0af4168602a28f71869d594d757b534b',1,'Crypto::Ecdsa']]],
-  ['publickey',['PublicKey',['../class_crypto_1_1_ecdsa.html#ae421cf4b4355ecea0610555eeb110fea',1,'Crypto::Ecdsa']]]
+  ['outputlist',['OutputList',['../class_equity_1_1_transaction.html#a845003826f8f318940ce4c8a9f72426e',1,'Equity::Transaction']]]
 ];

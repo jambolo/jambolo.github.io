@@ -106,11 +106,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9b54f10f067c6005bcc130f88c9abe98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b54f10f067c6005bcc130f88c9abe98"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Target</b> (Crypto::Sha256Hash const &amp;hash)</td></tr>
+<tr class="memitem:a9b54f10f067c6005bcc130f88c9abe98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_target.html#a9b54f10f067c6005bcc130f88c9abe98">Target</a> (Crypto::Sha256Hash const &amp;hash)</td></tr>
 <tr class="separator:a9b54f10f067c6005bcc130f88c9abe98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf86c19cc7d9ccaf03513cdcb80c02c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf86c19cc7d9ccaf03513cdcb80c02c7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Target</b> (uint32_t compact)</td></tr>
+<tr class="memitem:abf86c19cc7d9ccaf03513cdcb80c02c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_target.html#abf86c19cc7d9ccaf03513cdcb80c02c7">Target</a> (uint32_t compact)</td></tr>
 <tr class="separator:abf86c19cc7d9ccaf03513cdcb80c02c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a7fa77162c5fe75562569dda3ea56b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62a7fa77162c5fe75562569dda3ea56b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_target.html#a62a7fa77162c5fe75562569dda3ea56b">operator Crypto::Sha256Hash</a> () const </td></tr>
@@ -152,9 +150,70 @@ static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a target value in both 256-bit hash form and compact form. </p>
-<p>31 0 Format of the compact form: eeeeeeeemmmmmmmmmmmmmmmmmmmmmmmm</p>
-<p>e is an 8-bit exponent (0 &lt;= e &lt;= 0x1d) and m is a 24-bit signed mantissa (0 &lt;= m &lt;= 0x7fffff). The value represented by the compact form is m * 256^(e-3). </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p>31 0 Format of the compact form: eeeeeeeesmmmmmmmmmmmmmmmmmmmmmmm</p>
+<p>e is an 8-bit exponent (0 &lt;= e &lt;= 0x1d), s is a sign bit and m is a 23-bit unsigned mantissa (0 &lt;= m &lt;= 0x7fffff). The value represented by the compact form is m * 256^(e-3). Note that since the target value is always positive, s is always 0. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a9b54f10f067c6005bcc130f88c9abe98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Target::Target </td>
+          <td>(</td>
+          <td class="paramtype">Crypto::Sha256Hash const &amp;&#160;</td>
+          <td class="paramname"><em>hash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hash</td><td>target in hash form </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abf86c19cc7d9ccaf03513cdcb80c02c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Target::Target </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>compact</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">compact</td><td>target in compact form </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ab88abdc95c53311f054781f6c8f9072a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +231,7 @@ static uint32_t const&#160;</td><td class="memItemRight" valign="bottom"><a clas
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div><div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">}</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    {</div><div class="line">        0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div><div class="line">        0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment -->
 <p><a class="el" href="class_equity_1_1_target.html" title="Represents a target value in both 256-bit hash form and compact form. ">Target</a> in hash form of difficulty 1. </p>
 
 </div>

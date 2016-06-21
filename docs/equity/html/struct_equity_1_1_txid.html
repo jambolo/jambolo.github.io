@@ -114,18 +114,17 @@ Inheritance diagram for Equity::Txid:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a031cdd4eaef78cdfa2489139ba6e2981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a031cdd4eaef78cdfa2489139ba6e2981"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Txid</b> (std::string const &amp;json)</td></tr>
-<tr class="separator:a031cdd4eaef78cdfa2489139ba6e2981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd3f5b557890c7f98a1f5716e951181"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#affd3f5b557890c7f98a1f5716e951181">Txid</a> (json const &amp;json)</td></tr>
+<tr class="separator:affd3f5b557890c7f98a1f5716e951181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33dd6be4d978db98ac9416c670c3178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#ad33dd6be4d978db98ac9416c670c3178">Txid</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:ad33dd6be4d978db98ac9416c670c3178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Overrides Serializable</div></td></tr>
 <tr class="memitem:ac39c4ee6e271e29f634ab960c68e00ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac39c4ee6e271e29f634ab960c68e00ee"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:ac39c4ee6e271e29f634ab960c68e00ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5c48c6d904a9e99cb723d8de3b51e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb5c48c6d904a9e99cb723d8de3b51e3"></a>
-virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
-<tr class="separator:adb5c48c6d904a9e99cb723d8de3b51e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85120f005cf5c5a569b02ca6784a2af9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85120f005cf5c5a569b02ca6784a2af9"></a>
+virtual json&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a85120f005cf5c5a569b02ca6784a2af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -133,17 +132,41 @@ Public Attributes</h2></td></tr>
 Crypto::Sha256Hash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_txid.html#a8d2367d632cce386d8b886a695e1deb1">hash_</a></td></tr>
 <tr class="memdesc:a8d2367d632cce386d8b886a695e1deb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transaction ID in binary form. <br /></td></tr>
 <tr class="separator:a8d2367d632cce386d8b886a695e1deb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A transaction ID. </p>
+<p>This object is used to reference a transaction in the block chain. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="affd3f5b557890c7f98a1f5716e951181"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Txid::Txid </td>
+          <td>(</td>
+          <td class="paramtype">json const &amp;&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>A json representation of the txid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ad33dd6be4d978db98ac9416c670c3178"></a>
 <div class="memitem">
 <div class="memproto">

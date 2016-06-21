@@ -1,9 +1,10 @@
 var searchData=
 [
   ['script',['Script',['../class_equity_1_1_script.html',1,'Equity']]],
-  ['script',['script',['../struct_equity_1_1_transaction_1_1_input.html#a34e535d4742ccab0c0e80f2f114b555a',1,'Equity::Transaction::Input::script()'],['../struct_equity_1_1_transaction_1_1_output.html#aedb2f7ed1b962cf1693aceb3e38a6b83',1,'Equity::Transaction::Output::script()']]],
+  ['script',['Script',['../class_equity_1_1_script.html#a34d979c5f271f8bdef52ccb1c601cc31',1,'Equity::Script::Script()'],['../struct_equity_1_1_transaction_1_1_input.html#a34e535d4742ccab0c0e80f2f114b555a',1,'Equity::Transaction::Input::script()'],['../struct_equity_1_1_transaction_1_1_output.html#aedb2f7ed1b962cf1693aceb3e38a6b83',1,'Equity::Transaction::Output::script()']]],
   ['scriptengine',['ScriptEngine',['../class_equity_1_1_script_engine.html',1,'Equity']]],
   ['scriptparsingerror',['ScriptParsingError',['../class_equity_1_1_script_parsing_error.html',1,'Equity']]],
+  ['seed',['seed',['../class_equity_1_1_mnemonic.html#a6aa2bda24c9699443d01141509f467ea',1,'Equity::Mnemonic']]],
   ['sendheadersmessage',['SendHeadersMessage',['../class_network_1_1_send_headers_message.html',1,'Network']]],
   ['sendheadersmessage',['SendHeadersMessage',['../class_network_1_1_send_headers_message.html#ae1144fec55786dcc039867f12fec6c94',1,'Network::SendHeadersMessage']]],
   ['sequence',['sequence',['../struct_equity_1_1_transaction_1_1_input.html#adc680abfd2ed0a4ccb95fe2ddb6504e4',1,'Equity::Transaction::Input']]],
@@ -16,7 +17,10 @@ var searchData=
   ['services_5f',['services_',['../class_network_1_1_version_message.html#a92f5582bea1e8f59bdd09138769f0f8e',1,'Network::VersionMessage']]],
   ['set',['set',['../class_p2p_1_1_bit_array.html#a91c13dadfe4ec45dd315dad9cf41690a',1,'P2p::BitArray']]],
   ['setcompressed',['setCompressed',['../class_equity_1_1_private_key.html#a2b02ed8296f60b1c5306055aea1605c4',1,'Equity::PrivateKey']]],
+  ['sign',['sign',['../namespace_crypto_1_1_ecc.html#af4b7b8ad219c6746502ae6eedf2ee335',1,'Crypto::Ecc']]],
+  ['signature',['Signature',['../namespace_crypto_1_1_ecc.html#a3d132ac9468f0f71b992f2bf3e9179cc',1,'Crypto::Ecc']]],
   ['size',['size',['../class_equity_1_1_instruction.html#acc399783ba354ca009645f03008254f9',1,'Equity::Instruction::size()'],['../class_p2p_1_1_message.html#a7da3492bb2d8fd4c4036d9b2f394448c',1,'P2p::Message::size()'],['../class_equity_1_1_address.html#a374e492b605a3abad79c2f627411c013',1,'Equity::Address::SIZE()'],['../class_equity_1_1_private_key.html#a40a4a98184fc9a74ad9cbc8e7de9b9f1',1,'Equity::PrivateKey::SIZE()']]],
   ['submitordermessage',['SubmitOrderMessage',['../class_network_1_1_submit_order_message.html#a3c70b62e7fe9e295708897ff974d7931',1,'Network::SubmitOrderMessage']]],
-  ['submitordermessage',['SubmitOrderMessage',['../class_network_1_1_submit_order_message.html',1,'Network']]]
+  ['submitordermessage',['SubmitOrderMessage',['../class_network_1_1_submit_order_message.html',1,'Network']]],
+  ['suggestions',['suggestions',['../class_equity_1_1_mnemonic.html#a136ad92143221d8b34a3dd7ee5f1b02e',1,'Equity::Mnemonic']]]
 ];

@@ -120,8 +120,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6febe5c5ab994caf9456ba33efc64ba3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6febe5c5ab994caf9456ba33efc64ba3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Block</b> (<a class="el" href="struct_equity_1_1_block_1_1_header.html">Header</a> const &amp;<a class="el" href="class_equity_1_1_block.html#ae170ebd2c9c95d36d341328e95cd0075">header</a>, TransactionList const &amp;<a class="el" href="class_equity_1_1_block.html#a92ffa8df8314b764bb8c0a910ace6a0f">transactions</a>)</td></tr>
+<tr class="memitem:a6febe5c5ab994caf9456ba33efc64ba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#a6febe5c5ab994caf9456ba33efc64ba3">Block</a> (<a class="el" href="struct_equity_1_1_block_1_1_header.html">Header</a> const &amp;<a class="el" href="class_equity_1_1_block.html#ae170ebd2c9c95d36d341328e95cd0075">header</a>, TransactionList const &amp;<a class="el" href="class_equity_1_1_block.html#a92ffa8df8314b764bb8c0a910ace6a0f">transactions</a>)</td></tr>
 <tr class="separator:a6febe5c5ab994caf9456ba33efc64ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee927abf2c791f9fec5ef54676557832"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_block.html#aee927abf2c791f9fec5ef54676557832">Block</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:aee927abf2c791f9fec5ef54676557832"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,21 +136,47 @@ TransactionList&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memitem:a7e1cb6deab83ec51873dcead81c23bbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e1cb6deab83ec51873dcead81c23bbc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a7e1cb6deab83ec51873dcead81c23bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada47b59c7586624797e23966b8e2f671"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada47b59c7586624797e23966b8e2f671"></a>
-virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
-<tr class="separator:ada47b59c7586624797e23966b8e2f671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9207ecab4cc3e98d90f7921654406c97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9207ecab4cc3e98d90f7921654406c97"></a>
+virtual json&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a9207ecab4cc3e98d90f7921654406c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A block in the block chain. </p>
 <p>A <a class="el" href="class_equity_1_1_block.html" title="A block in the block chain. ">Block</a> contains a list of validated transactions and information about its inclusion in the block chain </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6febe5c5ab994caf9456ba33efc64ba3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Block::Block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_equity_1_1_block_1_1_header.html">Header</a> const &amp;&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TransactionList const &amp;&#160;</td>
+          <td class="paramname"><em>transactions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">header</td><td>block header </td></tr>
+    <tr><td class="paramname">transactions</td><td>transactions included in the block </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aee927abf2c791f9fec5ef54676557832"></a>
 <div class="memitem">
 <div class="memproto">

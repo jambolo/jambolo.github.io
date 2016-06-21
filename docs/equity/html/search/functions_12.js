@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wallet',['Wallet',['../class_equity_1_1_wallet.html#ad9be9e49244b78db9099fcaeccd1af04',1,'Equity::Wallet']]]
+  ['words',['words',['../class_equity_1_1_mnemonic.html#a9936a9d59ac59587919d2aeb1b68042c',1,'Equity::Mnemonic']]]
 ];

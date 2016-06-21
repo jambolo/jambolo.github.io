@@ -115,8 +115,7 @@ Inheritance diagram for P2p::VASize:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3eab74b46aa865fd4d85e5a05aa7133a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_v_a_size.html#a3eab74b46aa865fd4d85e5a05aa7133a">VASize</a> (uint64_t v)</td></tr>
 <tr class="separator:a3eab74b46aa865fd4d85e5a05aa7133a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65904ef59d4af104b9c7d61fd3df0768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65904ef59d4af104b9c7d61fd3df0768"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VASize</b> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
+<tr class="memitem:a65904ef59d4af104b9c7d61fd3df0768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_v_a_size.html#a65904ef59d4af104b9c7d61fd3df0768">VASize</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a65904ef59d4af104b9c7d61fd3df0768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5438a550ef55e2d262d585c09d6b45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa5438a550ef55e2d262d585c09d6b45"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p2p_1_1_v_a_size.html#aaa5438a550ef55e2d262d585c09d6b45">value</a> () const </td></tr>
@@ -126,16 +125,9 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memitem:a149b85508405d5721e2cd763b4d2131c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a149b85508405d5721e2cd763b4d2131c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a149b85508405d5721e2cd763b4d2131c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cb0df191f3e2d314ef867e46f71565"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57cb0df191f3e2d314ef867e46f71565"></a>
-virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
-<tr class="separator:a57cb0df191f3e2d314ef867e46f71565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4101054761999068368ab310bf6e9e43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4101054761999068368ab310bf6e9e43"></a>
+virtual json&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:a4101054761999068368ab310bf6e9e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A compressed 64-bit value. </p>
@@ -166,6 +158,39 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std:
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>The value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a65904ef59d4af104b9c7d61fd3df0768"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">P2p::VASize::VASize </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t const *&amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>pointer to the next byte to deserialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>number of bytes remaining in the serialized stream </td></tr>
   </table>
   </dd>
 </dl>

@@ -114,8 +114,7 @@ Inheritance diagram for Equity::Transaction::Output:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c9ff3650ba154b8b24adf6addd7f2fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c9ff3650ba154b8b24adf6addd7f2fe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Output</b> (std::string const &amp;json)</td></tr>
+<tr class="memitem:a0c9ff3650ba154b8b24adf6addd7f2fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a0c9ff3650ba154b8b24adf6addd7f2fe">Output</a> (std::string const &amp;json)</td></tr>
 <tr class="separator:a0c9ff3650ba154b8b24adf6addd7f2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d33cf896c586b697e5428841433c7e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#a3d33cf896c586b697e5428841433c7e5">Output</a> (uint8_t const *&amp;in, size_t &amp;size)</td></tr>
 <tr class="separator:a3d33cf896c586b697e5428841433c7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5703d4b572f5806236cc6998fe746a0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5703d4b572f5806236cc6998fe746a0b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (std::vector&lt; uint8_t &gt; &amp;out) const  override</td></tr>
 <tr class="separator:a5703d4b572f5806236cc6998fe746a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b02ca7de9d4fcbe278ca50612cdbba9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b02ca7de9d4fcbe278ca50612cdbba9"></a>
-virtual cJSON_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
-<tr class="separator:a4b02ca7de9d4fcbe278ca50612cdbba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c1478dbbc6e0f55e9dfd13b823b5af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0c1478dbbc6e0f55e9dfd13b823b5af"></a>
+virtual json&#160;</td><td class="memItemRight" valign="bottom"><b>toJson</b> () const  override</td></tr>
+<tr class="separator:ae0c1478dbbc6e0f55e9dfd13b823b5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -137,17 +136,32 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html#aedb2f7ed1b962cf1693aceb3e38a6b83">script</a></td></tr>
 <tr class="memdesc:aedb2f7ed1b962cf1693aceb3e38a6b83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_equity_1_1_transaction_1_1_output.html" title="A transaction output. ">Output</a> script. <br /></td></tr>
 <tr class="separator:aedb2f7ed1b962cf1693aceb3e38a6b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_p2p_1_1_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_p2p_1_1_serializable')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_p2p_1_1_serializable.html">P2p::Serializable</a></td></tr>
-<tr class="memitem:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac19696f126689edec6c35c5d4f45b56e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>cJSON_ptr</b> = std::unique_ptr&lt; <a class="el" href="class_p2p_1_1_serializable_1_1cpp_j_s_o_n.html">cppJSON</a> &gt;</td></tr>
-<tr class="separator:ac19696f126689edec6c35c5d4f45b56e inherit pub_types_class_p2p_1_1_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A transaction output. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0c9ff3650ba154b8b24adf6addd7f2fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Equity::Transaction::Output::Output </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>json</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>A json representation of the output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a3d33cf896c586b697e5428841433c7e5"></a>
 <div class="memitem">
 <div class="memproto">
