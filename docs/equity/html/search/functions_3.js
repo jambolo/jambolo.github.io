@@ -13,5 +13,6 @@ var searchData=
   ['deserializestring',['deserializeString',['../namespace_p2p.html#a47499741e9b765479f21734e2a498e91',1,'P2p']]],
   ['deserializevector',['deserializeVector',['../namespace_p2p.html#ab34fa046eced9035d77b39e7e683a71a',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)'],['../namespace_p2p.html#a526263e8b8f5aa83eff8a52c69728e74',1,'P2p::deserializeVector(size_t n, uint8_t const *&amp;in, size_t &amp;size)']]],
   ['deserializevector_3c_20uint8_5ft_20_3e',['deserializeVector&lt; uint8_t &gt;',['../namespace_p2p.html#a6cace374d2eb220f2a5ea8b846584e45',1,'P2p']]],
-  ['difficulty',['difficulty',['../class_equity_1_1_target.html#ab7a4fdc4dd739410300d5ac29e839a7a',1,'Equity::Target']]]
+  ['difficulty',['difficulty',['../class_equity_1_1_target.html#ab7a4fdc4dd739410300d5ac29e839a7a',1,'Equity::Target']]],
+  ['doublesha256',['doubleSha256',['../namespace_crypto.html#a9e1c4b549f3b89d5d87b2ac470811dec',1,'Crypto::doubleSha256(std::vector&lt; uint8_t &gt; const &amp;input)'],['../namespace_crypto.html#ada1cf81e41c01973ac580c5ec63964e3',1,'Crypto::doubleSha256(uint8_t const *input, size_t length)']]]
 ];

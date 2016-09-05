@@ -21,5 +21,6 @@ var searchData=
   ['deserializevector_3c_20uint8_5ft_20_3e',['deserializeVector&lt; uint8_t &gt;',['../namespace_p2p.html#a6cace374d2eb220f2a5ea8b846584e45',1,'P2p']]],
   ['difficulty',['difficulty',['../class_equity_1_1_target.html#ab7a4fdc4dd739410300d5ac29e839a7a',1,'Equity::Target']]],
   ['difficulty_5f1',['DIFFICULTY_1',['../class_equity_1_1_target.html#ab88abdc95c53311f054781f6c8f9072a',1,'Equity::Target']]],
-  ['difficulty_5f1_5fcompact',['DIFFICULTY_1_COMPACT',['../class_equity_1_1_target.html#adf8a2490ef501d061bf090a616da6522',1,'Equity::Target']]]
+  ['difficulty_5f1_5fcompact',['DIFFICULTY_1_COMPACT',['../class_equity_1_1_target.html#adf8a2490ef501d061bf090a616da6522',1,'Equity::Target']]],
+  ['doublesha256',['doubleSha256',['../namespace_crypto.html#a9e1c4b549f3b89d5d87b2ac470811dec',1,'Crypto::doubleSha256(std::vector&lt; uint8_t &gt; const &amp;input)'],['../namespace_crypto.html#ada1cf81e41c01973ac580c5ec63964e3',1,'Crypto::doubleSha256(uint8_t const *input, size_t length)']]]
 ];

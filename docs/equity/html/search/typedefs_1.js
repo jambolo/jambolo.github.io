@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inputlist',['InputList',['../class_equity_1_1_transaction.html#ade263307f380bb27e00a6e8b8bd7d7b5',1,'Equity::Transaction']]],
-  ['inventorylist',['InventoryList',['../namespace_network.html#ad8dee8886c4526bd9253996aee625221',1,'Network']]]
+  ['entrylist',['EntryList',['../class_equity_1_1_wallet.html#acde5a10fbf90c12e3c198b5634f866c5',1,'Equity::Wallet']]]
 ];

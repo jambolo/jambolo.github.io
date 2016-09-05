@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_equity_1_1_mnemonic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Equity::Mnemonic Class Reference</div>  </div>
@@ -106,6 +106,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:af9e0e8f5a230723920d04af757fcdef9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9e0e8f5a230723920d04af757fcdef9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#af9e0e8f5a230723920d04af757fcdef9">Language</a> { <b>ENGLISH</b>
+ }<tr class="memdesc:af9e0e8f5a230723920d04af757fcdef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported languages. <br /></td></tr>
+</td></tr>
+<tr class="separator:af9e0e8f5a230723920d04af757fcdef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b748e3a6e9ff0b7d4c7d9d941864e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b748e3a6e9ff0b7d4c7d9d941864e8a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">WordList</a> = std::vector&lt; std::string &gt;</td></tr>
 <tr class="memdesc:a2b748e3a6e9ff0b7d4c7d9d941864e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of words. <br /></td></tr>
@@ -115,39 +119,49 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a500fc79681d02fafc6e14178ee2329a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a500fc79681d02fafc6e14178ee2329a1">Mnemonic</a> (<a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">WordList</a> const &amp;<a class="el" href="class_equity_1_1_mnemonic.html#a9936a9d59ac59587919d2aeb1b68042c">words</a>)</td></tr>
 <tr class="separator:a500fc79681d02fafc6e14178ee2329a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe1bc0fdfd6933fe188a1f50e4cecf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#abfe1bc0fdfd6933fe188a1f50e4cecf0">Mnemonic</a> (std::vector&lt; uint8_t &gt; const &amp;<a class="el" href="class_equity_1_1_mnemonic.html#a0688a92247c6dfe9f905f71f8ea01cfa">entropy</a>)</td></tr>
-<tr class="separator:abfe1bc0fdfd6933fe188a1f50e4cecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a649e604e07fa4cb6640c5e52ee582"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a82a649e604e07fa4cb6640c5e52ee582">Mnemonic</a> (uint8_t const *<a class="el" href="class_equity_1_1_mnemonic.html#a0688a92247c6dfe9f905f71f8ea01cfa">entropy</a>, size_t size)</td></tr>
-<tr class="separator:a82a649e604e07fa4cb6640c5e52ee582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106151270cea1e17b6c10e4edcea570d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a106151270cea1e17b6c10e4edcea570d">Mnemonic</a> (uint8_t const *<a class="el" href="class_equity_1_1_mnemonic.html#a0688a92247c6dfe9f905f71f8ea01cfa">entropy</a>, size_t size, <a class="el" href="class_equity_1_1_mnemonic.html#af9e0e8f5a230723920d04af757fcdef9">Language</a> language=ENGLISH)</td></tr>
+<tr class="separator:a106151270cea1e17b6c10e4edcea570d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76038b08398e7e4e591082ea45c76a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#ac76038b08398e7e4e591082ea45c76a4">Mnemonic</a> (std::vector&lt; uint8_t &gt; const &amp;<a class="el" href="class_equity_1_1_mnemonic.html#a0688a92247c6dfe9f905f71f8ea01cfa">entropy</a>, <a class="el" href="class_equity_1_1_mnemonic.html#af9e0e8f5a230723920d04af757fcdef9">Language</a> language=ENGLISH)</td></tr>
+<tr class="separator:ac76038b08398e7e4e591082ea45c76a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa2bda24c9699443d01141509f467ea"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a6aa2bda24c9699443d01141509f467ea">seed</a> (char const *password=&quot;&quot;) const </td></tr>
-<tr class="memdesc:a6aa2bda24c9699443d01141509f467ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the seed computed from the mnemonic sentence seed.  <a href="#a6aa2bda24c9699443d01141509f467ea">More...</a><br /></td></tr>
+<tr class="memdesc:a6aa2bda24c9699443d01141509f467ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 512-bit seed computed from the mnemonic sentence.  <a href="#a6aa2bda24c9699443d01141509f467ea">More...</a><br /></td></tr>
 <tr class="separator:a6aa2bda24c9699443d01141509f467ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0688a92247c6dfe9f905f71f8ea01cfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0688a92247c6dfe9f905f71f8ea01cfa"></a>
 std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a0688a92247c6dfe9f905f71f8ea01cfa">entropy</a> () const </td></tr>
 <tr class="memdesc:a0688a92247c6dfe9f905f71f8ea01cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original entropy data used to generate the mnemonic. <br /></td></tr>
 <tr class="separator:a0688a92247c6dfe9f905f71f8ea01cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0">sentence</a> () const </td></tr>
+<tr class="memdesc:ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mnemonic sentence.  <a href="#ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0">More...</a><br /></td></tr>
+<tr class="separator:ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9936a9d59ac59587919d2aeb1b68042c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9936a9d59ac59587919d2aeb1b68042c"></a>
 <a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">WordList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a9936a9d59ac59587919d2aeb1b68042c">words</a> () const </td></tr>
-<tr class="memdesc:a9936a9d59ac59587919d2aeb1b68042c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mnemonic sentence. <br /></td></tr>
+<tr class="memdesc:a9936a9d59ac59587919d2aeb1b68042c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mnemonic words. <br /></td></tr>
 <tr class="separator:a9936a9d59ac59587919d2aeb1b68042c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd9b9d688ca8364ccbc121a0171c9f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bd9b9d688ca8364ccbc121a0171c9f1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a7bd9b9d688ca8364ccbc121a0171c9f1">isValid</a> () const </td></tr>
 <tr class="memdesc:a7bd9b9d688ca8364ccbc121a0171c9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="class_equity_1_1_mnemonic.html" title="Mnemonic Generator. ">Mnemonic</a> is valid. <br /></td></tr>
 <tr class="separator:a7bd9b9d688ca8364ccbc121a0171c9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ea3ec729fa95c8249810ee92bbcb6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">WordList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a85ea3ec729fa95c8249810ee92bbcb6b">suggestions</a> (std::string const &amp;word, size_t max=0) const </td></tr>
+<tr class="memdesc:a85ea3ec729fa95c8249810ee92bbcb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the possible words given a partial word hint.  <a href="#a85ea3ec729fa95c8249810ee92bbcb6b">More...</a><br /></td></tr>
+<tr class="separator:a85ea3ec729fa95c8249810ee92bbcb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a136ad92143221d8b34a3dd7ee5f1b02e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">WordList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#a136ad92143221d8b34a3dd7ee5f1b02e">suggestions</a> (std::string const &amp;word, size_t max=0)</td></tr>
-<tr class="memdesc:a136ad92143221d8b34a3dd7ee5f1b02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of the possible words given a partial word hint.  <a href="#a136ad92143221d8b34a3dd7ee5f1b02e">More...</a><br /></td></tr>
-<tr class="separator:a136ad92143221d8b34a3dd7ee5f1b02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab0996f3cc5941d06598929103c1ad12c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0996f3cc5941d06598929103c1ad12c"></a>
+static size_t const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equity_1_1_mnemonic.html#ab0996f3cc5941d06598929103c1ad12c">NUM_LANGUAGES</a> = Language::ENGLISH + 1</td></tr>
+<tr class="memdesc:ab0996f3cc5941d06598929103c1ad12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of supported languages. <br /></td></tr>
+<tr class="separator:ab0996f3cc5941d06598929103c1ad12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_equity_1_1_mnemonic.html" title="Mnemonic Generator. ">Mnemonic</a> Generator. </p>
-<p>This class implement BIP-39. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki</a> </dd></dl>
+<p>This class implements BIP-39. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a500fc79681d02fafc6e14178ee2329a1"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Equity::Mnemonic::Mnemonic </td>
@@ -157,6 +171,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -168,40 +187,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abfe1bc0fdfd6933fe188a1f50e4cecf0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Equity::Mnemonic::Mnemonic </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; uint8_t &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>entropy</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entropy</td><td>entropy source </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The entropy data does not include a checksum </dd>
-<dd>
-The size of the entropy must be a multiple of 4. If not, <a class="el" href="class_equity_1_1_mnemonic.html#a7bd9b9d688ca8364ccbc121a0171c9f1" title="Returns true if the Mnemonic is valid. ">isValid()</a> will return false. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a82a649e604e07fa4cb6640c5e52ee582"></a>
+<a class="anchor" id="a106151270cea1e17b6c10e4edcea570d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -215,7 +201,13 @@ The size of the entropy must be a multiple of 4. If not, <a class="el" href="cla
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_equity_1_1_mnemonic.html#af9e0e8f5a230723920d04af757fcdef9">Language</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code>ENGLISH</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,6 +220,51 @@ The size of the entropy must be a multiple of 4. If not, <a class="el" href="cla
   <table class="params">
     <tr><td class="paramname">entropy</td><td>entropy source for the mnemonic </td></tr>
     <tr><td class="paramname">size</td><td>size of entropy data </td></tr>
+    <tr><td class="paramname">language</td><td>word list language (default: English) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The entropy data does not include a checksum </dd>
+<dd>
+The size of the entropy must be a multiple of 4. If not, <a class="el" href="class_equity_1_1_mnemonic.html#a7bd9b9d688ca8364ccbc121a0171c9f1" title="Returns true if the Mnemonic is valid. ">isValid()</a> will return false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac76038b08398e7e4e591082ea45c76a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Equity::Mnemonic::Mnemonic </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>entropy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_equity_1_1_mnemonic.html#af9e0e8f5a230723920d04af757fcdef9">Language</a>&#160;</td>
+          <td class="paramname"><em>language</em> = <code>ENGLISH</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entropy</td><td>entropy source </td></tr>
+    <tr><td class="paramname">language</td><td>word list language (default: English) </td></tr>
   </table>
   </dd>
 </dl>
@@ -252,23 +289,38 @@ The size of the entropy must be a multiple of 4. If not, <a class="el" href="cla
       </table>
 </div><div class="memdoc">
 
-<p>Returns the seed computed from the mnemonic sentence seed. </p>
+<p>Returns the 512-bit seed computed from the mnemonic sentence. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">password</td><td>password used to generate the seed (default: "") </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A seed value </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A 512-bit seed value </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a136ad92143221d8b34a3dd7ee5f1b02e"></a>
+<a class="anchor" id="ac0b9c9b0f5cdf0ba6bd2ce27422ec0c0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Equity::Mnemonic::sentence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mnemonic sentence. </p>
+<p>The sentence is simply a string containing the words in order separated by a spaces. </p>
+
+</div>
+</div>
+<a class="anchor" id="a85ea3ec729fa95c8249810ee92bbcb6b"></a>
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_equity_1_1_mnemonic.html#a2b748e3a6e9ff0b7d4c7d9d941864e8a">Mnemonic::WordList</a> Equity::Mnemonic::suggestions </td>
@@ -285,14 +337,9 @@ The size of the entropy must be a multiple of 4. If not, <a class="el" href="cla
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns a list of the possible words given a partial word hint. </p>
