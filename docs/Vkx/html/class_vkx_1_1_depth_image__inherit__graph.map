@@ -1,0 +1,4 @@
+<map id="Vkx::DepthImage" name="Vkx::DepthImage">
+<area shape="rect" id="node2" href="$class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="7,80,126,107"/>
+<area shape="rect" id="node3" href="$class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. " alt="" coords="23,5,111,32"/>
+</map>

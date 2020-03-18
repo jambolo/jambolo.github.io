@@ -22,6 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Vulkan API Extensions</div>
   </td>
@@ -86,14 +87,6 @@ Inheritance diagram for Vkx::HostBuffer:</div>
 <area shape="rect" id="node2" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. " alt="" coords="19,5,105,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Vkx::HostBuffer:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_vkx_1_1_host_buffer__coll__graph.png" border="0" usemap="#_vkx_1_1_host_buffer_coll__map" alt="Collaboration graph"/></div>
-<map name="_vkx_1_1_host_buffer_coll__map" id="_vkx_1_1_host_buffer_coll__map">
-<area shape="rect" id="node2" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. " alt="" coords="19,5,105,32"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -101,27 +94,27 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html#a67177f1262b71b33fb06ae2cff3d69e7">HostBuffer</a> ()=default</td></tr>
 <tr class="memdesc:a67177f1262b71b33fb06ae2cff3d69e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a67177f1262b71b33fb06ae2cff3d69e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3adce061d23060eab1a55bd0c2c9a3ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html#a3adce061d23060eab1a55bd0c2c9a3ed">HostBuffer</a> (vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, void const *src=nullptr, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td></tr>
-<tr class="memdesc:a3adce061d23060eab1a55bd0c2c9a3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a3adce061d23060eab1a55bd0c2c9a3ed">More...</a><br /></td></tr>
-<tr class="separator:a3adce061d23060eab1a55bd0c2c9a3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f36f2ceb5db0998c96286ac10d564d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html#ab5f36f2ceb5db0998c96286ac10d564d">set</a> (vk::Device const &amp;device, size_t offset, void const *src, size_t size)</td></tr>
-<tr class="memdesc:ab5f36f2ceb5db0998c96286ac10d564d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies CPU memory into the buffer.  <a href="#ab5f36f2ceb5db0998c96286ac10d564d">More...</a><br /></td></tr>
-<tr class="separator:ab5f36f2ceb5db0998c96286ac10d564d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e80347a3f6cf7ebb05a9fef14b10c89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html#a1e80347a3f6cf7ebb05a9fef14b10c89">HostBuffer</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt; device, size_t size, vk::BufferUsageFlags usage, void const *src=nullptr, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td></tr>
+<tr class="memdesc:a1e80347a3f6cf7ebb05a9fef14b10c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1e80347a3f6cf7ebb05a9fef14b10c89">More...</a><br /></td></tr>
+<tr class="separator:a1e80347a3f6cf7ebb05a9fef14b10c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f549f30c976793a1f4ba740b4e41662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html#a8f549f30c976793a1f4ba740b4e41662">set</a> (size_t offset, void const *src, size_t size)</td></tr>
+<tr class="memdesc:a8f549f30c976793a1f4ba740b4e41662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies CPU memory into the buffer.  <a href="#a8f549f30c976793a1f4ba740b4e41662">More...</a><br /></td></tr>
+<tr class="separator:a8f549f30c976793a1f4ba740b4e41662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_vkx_1_1_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vkx_1_1_buffer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td></tr>
 <tr class="memitem:a5c96c95d643919521c45bd855cbd6edd inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="a5c96c95d643919521c45bd855cbd6edd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a5c96c95d643919521c45bd855cbd6edd">Buffer</a> ()=default</td></tr>
 <tr class="memdesc:a5c96c95d643919521c45bd855cbd6edd inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a5c96c95d643919521c45bd855cbd6edd inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e5f1f115f1c514e633781b8fb7549ce inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a9e5f1f115f1c514e633781b8fb7549ce">Buffer</a> (vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td></tr>
-<tr class="memdesc:a9e5f1f115f1c514e633781b8fb7549ce inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_vkx_1_1_buffer.html#a9e5f1f115f1c514e633781b8fb7549ce">More...</a><br /></td></tr>
-<tr class="separator:a9e5f1f115f1c514e633781b8fb7549ce inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4ce6fbcba0e83718f495099b227d46 inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a1a4ce6fbcba0e83718f495099b227d46">Buffer</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt; device, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td></tr>
+<tr class="memdesc:a1a4ce6fbcba0e83718f495099b227d46 inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="class_vkx_1_1_buffer.html#a1a4ce6fbcba0e83718f495099b227d46">More...</a><br /></td></tr>
+<tr class="separator:a1a4ce6fbcba0e83718f495099b227d46 inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70193c7bb871be6cf73ed3d2d480e2f7 inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a70193c7bb871be6cf73ed3d2d480e2f7">Buffer</a> (<a class="el" href="class_vkx_1_1_buffer.html">Buffer</a> &amp;&amp;src)</td></tr>
 <tr class="memdesc:a70193c7bb871be6cf73ed3d2d480e2f7 inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="class_vkx_1_1_buffer.html#a70193c7bb871be6cf73ed3d2d480e2f7">More...</a><br /></td></tr>
 <tr class="separator:a70193c7bb871be6cf73ed3d2d480e2f7 inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cf568ba811e9855fada591f28fba28 inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="af3cf568ba811e9855fada591f28fba28"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#af3cf568ba811e9855fada591f28fba28">~Buffer</a> ()=default</td></tr>
-<tr class="memdesc:af3cf568ba811e9855fada591f28fba28 inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:af3cf568ba811e9855fada591f28fba28 inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a40d90d78d8c8203540ba4fafb355c inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="ae3a40d90d78d8c8203540ba4fafb355c"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#ae3a40d90d78d8c8203540ba4fafb355c">~Buffer</a> ()</td></tr>
+<tr class="memdesc:ae3a40d90d78d8c8203540ba4fafb355c inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:ae3a40d90d78d8c8203540ba4fafb355c inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7656af2324b4a0ccd043d0125e81caf4 inherit pub_methods_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vkx_1_1_buffer.html">Buffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a7656af2324b4a0ccd043d0125e81caf4">operator=</a> (<a class="el" href="class_vkx_1_1_buffer.html">Buffer</a> &amp;&amp;rhs)</td></tr>
 <tr class="memdesc:a7656af2324b4a0ccd043d0125e81caf4 inherit pub_methods_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assignment operator.  <a href="class_vkx_1_1_buffer.html#a7656af2324b4a0ccd043d0125e81caf4">More...</a><br /></td></tr>
 <tr class="separator:a7656af2324b4a0ccd043d0125e81caf4 inherit pub_methods_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,20 +130,24 @@ vk::DeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_vkx_1_1_buffer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_vkx_1_1_buffer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td></tr>
-<tr class="memitem:aa954965b0aefa50246938abee83ab9a2 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="aa954965b0aefa50246938abee83ab9a2"></a>
-vk::UniqueDeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#aa954965b0aefa50246938abee83ab9a2">allocation_</a></td></tr>
-<tr class="memdesc:aa954965b0aefa50246938abee83ab9a2 inherit pro_attribs_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. ">Buffer</a> allocation. <br /></td></tr>
-<tr class="separator:aa954965b0aefa50246938abee83ab9a2 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08be2516c8795b445228f97261d9cb9b inherit pro_attribs_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="a08be2516c8795b445228f97261d9cb9b"></a>
-vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a08be2516c8795b445228f97261d9cb9b">buffer_</a></td></tr>
-<tr class="memdesc:a08be2516c8795b445228f97261d9cb9b inherit pro_attribs_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vulkan buffer. <br /></td></tr>
-<tr class="separator:a08be2516c8795b445228f97261d9cb9b inherit pro_attribs_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9003696805bbecc2f10bf881b68474 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="a9b9003696805bbecc2f10bf881b68474"></a>
+std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a9b9003696805bbecc2f10bf881b68474">device_</a></td></tr>
+<tr class="memdesc:a9b9003696805bbecc2f10bf881b68474 inherit pro_attribs_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_vkx_1_1_device.html" title="A RAII extension to vk::Device. ">Device</a> associated with this buffer. <br /></td></tr>
+<tr class="separator:a9b9003696805bbecc2f10bf881b68474 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d8ce39479ea29127ffc7ab186699a7 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="a82d8ce39479ea29127ffc7ab186699a7"></a>
+vk::DeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a82d8ce39479ea29127ffc7ab186699a7">allocation_</a></td></tr>
+<tr class="memdesc:a82d8ce39479ea29127ffc7ab186699a7 inherit pro_attribs_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer allocation <br /></td></tr>
+<tr class="separator:a82d8ce39479ea29127ffc7ab186699a7 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1dd43742bf41757615d37f4fd8d0c4 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memItemLeft" align="right" valign="top"><a id="a7f1dd43742bf41757615d37f4fd8d0c4"></a>
+vk::Buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html#a7f1dd43742bf41757615d37f4fd8d0c4">buffer_</a></td></tr>
+<tr class="memdesc:a7f1dd43742bf41757615d37f4fd8d0c4 inherit pro_attribs_class_vkx_1_1_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vulkan buffer. <br /></td></tr>
+<tr class="separator:a7f1dd43742bf41757615d37f4fd8d0c4 inherit pro_attribs_class_vkx_1_1_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. ">Buffer</a> that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3adce061d23060eab1a55bd0c2c9a3ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3adce061d23060eab1a55bd0c2c9a3ed">&#9670;&nbsp;</a></span>HostBuffer()</h2>
+<a id="a1e80347a3f6cf7ebb05a9fef14b10c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e80347a3f6cf7ebb05a9fef14b10c89">&#9670;&nbsp;</a></span>HostBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,14 +155,8 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
         <tr>
           <td class="memname">Vkx::HostBuffer::HostBuffer </td>
           <td>(</td>
-          <td class="paramtype">vk::Device const &amp;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::PhysicalDevice const &amp;&#160;</td>
-          <td class="paramname"><em>physicalDevice</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,7 +194,6 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Logical device associated with the buffer </td></tr>
-    <tr><td class="paramname">physicalDevice</td><td>Physical device associated with the buffer's allocation </td></tr>
     <tr><td class="paramname">size</td><td>Nominal size of the buffer </td></tr>
     <tr><td class="paramname">usage</td><td>Usage flags </td></tr>
     <tr><td class="paramname">src</td><td>Data to be copied into the buffer, or nullptr if nothing to copy (default: nullptr) </td></tr>
@@ -215,8 +205,8 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab5f36f2ceb5db0998c96286ac10d564d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f36f2ceb5db0998c96286ac10d564d">&#9670;&nbsp;</a></span>set()</h2>
+<a id="a8f549f30c976793a1f4ba740b4e41662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f549f30c976793a1f4ba740b4e41662">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,12 +214,6 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
         <tr>
           <td class="memname">void Vkx::HostBuffer::set </td>
           <td>(</td>
-          <td class="paramtype">vk::Device const &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>offset</em>, </td>
         </tr>
@@ -256,7 +240,6 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <p>Copies CPU memory into the buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>Logical device associated with the buffer </td></tr>
     <tr><td class="paramname">offset</td><td>Where in the buffer to put the copied data </td></tr>
     <tr><td class="paramname">src</td><td>Data to be copied into the buffer </td></tr>
     <tr><td class="paramname">size</td><td>Size of the data to copy </td></tr>
@@ -266,10 +249,6 @@ vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Buffer.h</li>
-<li>Buffer.cpp</li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

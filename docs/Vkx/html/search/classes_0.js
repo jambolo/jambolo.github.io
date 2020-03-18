@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer',['Buffer',['../class_vkx_1_1_buffer.html',1,'Vkx']]]
+  ['ambientlight',['AmbientLight',['../class_vkx_1_1_ambient_light.html',1,'Vkx']]]
 ];

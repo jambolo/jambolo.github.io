@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['localbuffer',['LocalBuffer',['../class_vkx_1_1_local_buffer.html',1,'Vkx']]],
-  ['localimage',['LocalImage',['../class_vkx_1_1_local_image.html',1,'Vkx']]]
+  ['hostbuffer',['HostBuffer',['../class_vkx_1_1_host_buffer.html',1,'Vkx']]],
+  ['hostimage',['HostImage',['../class_vkx_1_1_host_image.html',1,'Vkx']]]
 ];

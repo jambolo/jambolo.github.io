@@ -22,6 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Vulkan API Extensions</div>
   </td>
@@ -76,21 +77,68 @@ $(function() {
 <area shape="rect" id="node3" href="class_vkx_1_1_local_buffer.html" title="A Buffer that is visible only to the GPU (eDeviceLocal). " alt="" coords="140,56,257,83"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#_vkx_1_1_device"/>
-<map name="_vkx_1_1_device" id="_vkx_1_1_device">
-<area shape="rect" id="node1" href="class_vkx_1_1_device.html" title="A RAII extension to vk::Device. " alt="" coords="5,5,96,32"/>
+<tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#_vkx_1_1_camera"/>
+<map name="_vkx_1_1_camera" id="_vkx_1_1_camera">
+<area shape="rect" id="node1" href="class_vkx_1_1_camera.html" title="A camera. " alt="" coords="5,5,104,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#_vkx_1_1_image"/>
+<tr><td><img src="inherit_graph_2.png" border="0" alt="" usemap="#_vkx_1_1_device"/>
+<map name="_vkx_1_1_device" id="_vkx_1_1_device">
+<area shape="rect" id="node2" href="class_vkx_1_1_device.html" title="A RAII extension to vk::Device. " alt="" coords="113,5,204,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#_vkx_1_1_frame"/>
+<map name="_vkx_1_1_frame" id="_vkx_1_1_frame">
+<area shape="rect" id="node1" href="class_vkx_1_1_frame.html" title="A frame of reference including translation, scale, and orientation. " alt="" coords="5,5,96,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#_vkx_1_1_image"/>
 <map name="_vkx_1_1_image" id="_vkx_1_1_image">
-<area shape="rect" id="node1" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory. " alt="" coords="5,31,93,57"/>
+<area shape="rect" id="node1" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. " alt="" coords="5,31,93,57"/>
 <area shape="rect" id="node2" href="class_vkx_1_1_host_image.html" title="An Image that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="143,5,258,32"/>
 <area shape="rect" id="node3" href="class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="141,56,260,83"/>
+<area shape="rect" id="node4" href="class_vkx_1_1_depth_image.html" title="A LocalImage for use as a depth buffer (vk::ImageAspect::eDEPTH). " alt="" coords="313,5,436,32"/>
+<area shape="rect" id="node5" href="class_vkx_1_1_resolve_image.html" title="A LocalImage for use as a MSAA buffer (vk::ImageLayout::eColorAttachmentOptimal). ..." alt="" coords="308,56,441,83"/>
+<area shape="rect" id="node6" href="class_vkx_1_1_texture.html" title="Vkx::Texture" alt="" coords="327,107,423,133"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" alt="" usemap="#_vkx_1_1_instance"/>
+<tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_vkx_1_1_instance"/>
 <map name="_vkx_1_1_instance" id="_vkx_1_1_instance">
 <area shape="rect" id="node2" href="class_vkx_1_1_instance.html" title="A RAII extension to vk::Instance. " alt="" coords="124,5,227,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_vkx_1_1_light"/>
+<map name="_vkx_1_1_light" id="_vkx_1_1_light">
+<area shape="rect" id="node1" href="class_vkx_1_1_light.html" title="A base class for lights. " alt="" coords="5,81,87,108"/>
+<area shape="rect" id="node2" href="class_vkx_1_1_ambient_light.html" title="An ambient light. " alt="" coords="141,5,271,32"/>
+<area shape="rect" id="node3" href="class_vkx_1_1_directional_light.html" title="A directional light. " alt="" coords="135,56,277,83"/>
+<area shape="rect" id="node4" href="class_vkx_1_1_point_light.html" title="A point light. " alt="" coords="151,107,261,133"/>
+<area shape="rect" id="node5" href="class_vkx_1_1_spot_light.html" title="A spot light. " alt="" coords="152,157,260,184"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_vkx_1_1_material"/>
+<map name="_vkx_1_1_material" id="_vkx_1_1_material">
+<area shape="rect" id="node1" href="class_vkx_1_1_material.html" title="Vkx::Material" alt="" coords="5,5,104,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_vkx_1_1_physical_device"/>
+<map name="_vkx_1_1_physical_device" id="_vkx_1_1_physical_device">
+<area shape="rect" id="node2" href="class_vkx_1_1_physical_device.html" title="A RAII extension to vk::PhysicalDevice. " alt="" coords="164,5,305,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_vkx_1_1_random_direction"/>
+<map name="_vkx_1_1_random_direction" id="_vkx_1_1_random_direction">
+<area shape="rect" id="node1" href="class_vkx_1_1_random_direction.html" title="A LCG pseudo&#45;random number generator that generates directions. " alt="" coords="5,5,157,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_vkx_1_1_random_orientation"/>
+<map name="_vkx_1_1_random_orientation" id="_vkx_1_1_random_orientation">
+<area shape="rect" id="node1" href="class_vkx_1_1_random_orientation.html" title="A LCG pseudo&#45;random number generator that generates orientations. " alt="" coords="5,5,169,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" alt="" usemap="#_vkx_1_1_texture_manager"/>
+<map name="_vkx_1_1_texture_manager" id="_vkx_1_1_texture_manager">
+<area shape="rect" id="node1" href="class_vkx_1_1_texture_manager.html" title="An abstract class that loads and manages textures. " alt="" coords="5,5,152,32"/>
 </map>
 </td></tr>
 </table>

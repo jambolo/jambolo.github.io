@@ -1,0 +1,4 @@
+<map id="Vkx::ResolveImage" name="Vkx::ResolveImage">
+<area shape="rect" id="node2" href="$class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="13,80,131,107"/>
+<area shape="rect" id="node3" href="$class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. " alt="" coords="28,5,116,32"/>
+</map>

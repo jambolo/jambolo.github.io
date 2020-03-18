@@ -1,3 +1,6 @@
 <map id="Vkx::LocalImage" name="Vkx::LocalImage">
-<area shape="rect" id="node2" href="$class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory. " alt="" coords="21,5,109,32"/>
+<area shape="rect" id="node3" href="$class_vkx_1_1_depth_image.html" title="A LocalImage for use as a depth buffer (vk::ImageAspect::eDEPTH). " alt="" coords="5,155,128,181"/>
+<area shape="rect" id="node4" href="$class_vkx_1_1_resolve_image.html" title="A LocalImage for use as a MSAA buffer (vk::ImageLayout::eColorAttachmentOptimal). ..." alt="" coords="152,155,285,181"/>
+<area shape="rect" id="node5" href="$class_vkx_1_1_texture.html" title="Vkx::Texture" alt="" coords="309,155,405,181"/>
+<area shape="rect" id="node2" href="$class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. " alt="" coords="175,5,263,32"/>
 </map>

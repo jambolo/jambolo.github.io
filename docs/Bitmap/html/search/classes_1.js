@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['bgr',['BGR',['../struct_b_g_r.html',1,'']]],
-  ['bgra',['BGRA',['../struct_b_g_r_a.html',1,'']]],
-  ['bitmap',['Bitmap',['../class_bitmap.html',1,'']]],
-  ['bitmap_3c_20pixel8_20_3e',['Bitmap&lt; Pixel8 &gt;',['../class_bitmap.html',1,'']]]
+  ['palette',['Palette',['../class_palette.html',1,'']]],
+  ['palette_3c_20color_20_3e',['Palette&lt; Color &gt;',['../class_palette.html',1,'']]],
+  ['palettizedbitmap',['PalettizedBitmap',['../class_palettized_bitmap.html',1,'']]],
+  ['pixel16',['Pixel16',['../class_pixel16.html',1,'']]],
+  ['pixel24',['Pixel24',['../class_pixel24.html',1,'']]],
+  ['pixel32',['Pixel32',['../class_pixel32.html',1,'']]]
 ];

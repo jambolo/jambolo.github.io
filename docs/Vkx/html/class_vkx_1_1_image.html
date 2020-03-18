@@ -22,6 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Vulkan API Extensions</div>
   </td>
@@ -68,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_vkx_1_1_image-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -75,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>An extension to vk::Image that supports ownership of the memory.  
+<p>An extension to vk::Image that supports ownership of the memory and the view.  
  <a href="class_vkx_1_1_image.html#details">More...</a></p>
 
 <p><code>#include &lt;Vkx/Image.h&gt;</code></p>
@@ -84,8 +86,11 @@ Inheritance diagram for Vkx::Image:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_vkx_1_1_image__inherit__graph.png" border="0" usemap="#_vkx_1_1_image_inherit__map" alt="Inheritance graph"/></div>
 <map name="_vkx_1_1_image_inherit__map" id="_vkx_1_1_image_inherit__map">
-<area shape="rect" id="node2" href="class_vkx_1_1_host_image.html" title="An Image that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="145,80,263,107"/>
+<area shape="rect" id="node2" href="class_vkx_1_1_host_image.html" title="An Image that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="20,80,135,107"/>
+<area shape="rect" id="node3" href="class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="159,80,278,107"/>
+<area shape="rect" id="node4" href="class_vkx_1_1_depth_image.html" title="A LocalImage for use as a depth buffer (vk::ImageAspect::eDEPTH). " alt="" coords="5,155,128,181"/>
+<area shape="rect" id="node5" href="class_vkx_1_1_resolve_image.html" title="A LocalImage for use as a MSAA buffer (vk::ImageLayout::eColorAttachmentOptimal). ..." alt="" coords="152,155,285,181"/>
+<area shape="rect" id="node6" href="class_vkx_1_1_texture.html" title="Vkx::Texture" alt="" coords="309,155,405,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -95,16 +100,16 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a3609b83d8d4988d4b06b47fe76d3e65f">Image</a> ()=default</td></tr>
 <tr class="memdesc:a3609b83d8d4988d4b06b47fe76d3e65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:a3609b83d8d4988d4b06b47fe76d3e65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46311ef1435d0e1f3100de2f6ca76697"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a46311ef1435d0e1f3100de2f6ca76697">Image</a> (vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, vk::ImageCreateInfo const &amp;<a class="el" href="class_vkx_1_1_image.html#aab316cc1a367fb6ddf6eb0a98af78184">info</a>, vk::MemoryPropertyFlags memoryProperties)</td></tr>
-<tr class="memdesc:a46311ef1435d0e1f3100de2f6ca76697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a46311ef1435d0e1f3100de2f6ca76697">More...</a><br /></td></tr>
-<tr class="separator:a46311ef1435d0e1f3100de2f6ca76697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79534db0b08ea7e9312e2c20425729a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#ad79534db0b08ea7e9312e2c20425729a">Image</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt; device, vk::ImageCreateInfo const &amp;<a class="el" href="class_vkx_1_1_image.html#aab316cc1a367fb6ddf6eb0a98af78184">info</a>, vk::MemoryPropertyFlags memoryProperties, vk::ImageAspectFlags aspect)</td></tr>
+<tr class="memdesc:ad79534db0b08ea7e9312e2c20425729a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad79534db0b08ea7e9312e2c20425729a">More...</a><br /></td></tr>
+<tr class="separator:ad79534db0b08ea7e9312e2c20425729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1041f1df3fc85e7efd6a656a9fe99803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a1041f1df3fc85e7efd6a656a9fe99803">Image</a> (<a class="el" href="class_vkx_1_1_image.html">Image</a> &amp;&amp;src)</td></tr>
 <tr class="memdesc:a1041f1df3fc85e7efd6a656a9fe99803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a1041f1df3fc85e7efd6a656a9fe99803">More...</a><br /></td></tr>
 <tr class="separator:a1041f1df3fc85e7efd6a656a9fe99803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a87a76b74515837abd78c16624bdb58"><td class="memItemLeft" align="right" valign="top"><a id="a0a87a76b74515837abd78c16624bdb58"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a0a87a76b74515837abd78c16624bdb58">~Image</a> ()=default</td></tr>
-<tr class="memdesc:a0a87a76b74515837abd78c16624bdb58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:a0a87a76b74515837abd78c16624bdb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6200f5cb314655c3a866e3a6c65f551"><td class="memItemLeft" align="right" valign="top"><a id="af6200f5cb314655c3a866e3a6c65f551"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#af6200f5cb314655c3a866e3a6c65f551">~Image</a> ()</td></tr>
+<tr class="memdesc:af6200f5cb314655c3a866e3a6c65f551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:af6200f5cb314655c3a866e3a6c65f551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d34fdc89bc6d34b13ca473bec0782e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vkx_1_1_image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a64d34fdc89bc6d34b13ca473bec0782e">operator=</a> (<a class="el" href="class_vkx_1_1_image.html">Image</a> &amp;&amp;rhs)</td></tr>
 <tr class="memdesc:a64d34fdc89bc6d34b13ca473bec0782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assignment operator.  <a href="#a64d34fdc89bc6d34b13ca473bec0782e">More...</a><br /></td></tr>
 <tr class="separator:a64d34fdc89bc6d34b13ca473bec0782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,32 +121,50 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 vk::DeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a5dc263752858f209c6576373aeafd325">allocation</a> () const</td></tr>
 <tr class="memdesc:a5dc263752858f209c6576373aeafd325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the DeviceMemory handle. <br /></td></tr>
 <tr class="separator:a5dc263752858f209c6576373aeafd325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0caac5a0412eb15730d60e8581256c9a"><td class="memItemLeft" align="right" valign="top"><a id="a0caac5a0412eb15730d60e8581256c9a"></a>
+vk::ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a0caac5a0412eb15730d60e8581256c9a">view</a> () const</td></tr>
+<tr class="memdesc:a0caac5a0412eb15730d60e8581256c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the view. <br /></td></tr>
+<tr class="separator:a0caac5a0412eb15730d60e8581256c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab316cc1a367fb6ddf6eb0a98af78184"><td class="memItemLeft" align="right" valign="top"><a id="aab316cc1a367fb6ddf6eb0a98af78184"></a>
 vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#aab316cc1a367fb6ddf6eb0a98af78184">info</a> () const</td></tr>
 <tr class="memdesc:aab316cc1a367fb6ddf6eb0a98af78184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the creation info. <br /></td></tr>
 <tr class="separator:aab316cc1a367fb6ddf6eb0a98af78184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6a19fa22aa81d163f4344fcd7545720f"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a6a19fa22aa81d163f4344fcd7545720f">computeMaxMipLevels</a> (uint32_t width, uint32_t height)</td></tr>
+<tr class="memdesc:a6a19fa22aa81d163f4344fcd7545720f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of mip levels needed for the given with and height.  <a href="#a6a19fa22aa81d163f4344fcd7545720f">More...</a><br /></td></tr>
+<tr class="separator:a6a19fa22aa81d163f4344fcd7545720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a07c7381ab1e5edac7f4adbbf1b598543"><td class="memItemLeft" align="right" valign="top"><a id="a07c7381ab1e5edac7f4adbbf1b598543"></a>
-vk::UniqueDeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a07c7381ab1e5edac7f4adbbf1b598543">allocation_</a></td></tr>
-<tr class="memdesc:a07c7381ab1e5edac7f4adbbf1b598543"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image data. <br /></td></tr>
-<tr class="separator:a07c7381ab1e5edac7f4adbbf1b598543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab277f31a8784d60c1bf2a1a00427e9cc"><td class="memItemLeft" align="right" valign="top"><a id="ab277f31a8784d60c1bf2a1a00427e9cc"></a>
-vk::UniqueImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#ab277f31a8784d60c1bf2a1a00427e9cc">image_</a></td></tr>
-<tr class="memdesc:ab277f31a8784d60c1bf2a1a00427e9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image. <br /></td></tr>
-<tr class="separator:ab277f31a8784d60c1bf2a1a00427e9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b1cd1006a7222338777b0a09671f1f"><td class="memItemLeft" align="right" valign="top"><a id="a50b1cd1006a7222338777b0a09671f1f"></a>
+std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a50b1cd1006a7222338777b0a09671f1f">device_</a></td></tr>
+<tr class="memdesc:a50b1cd1006a7222338777b0a09671f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_vkx_1_1_device.html" title="A RAII extension to vk::Device. ">Device</a> associated with this image. <br /></td></tr>
+<tr class="separator:a50b1cd1006a7222338777b0a09671f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59068441f06680ebe0ccbc63d9ac6b7"><td class="memItemLeft" align="right" valign="top"><a id="af59068441f06680ebe0ccbc63d9ac6b7"></a>
 vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#af59068441f06680ebe0ccbc63d9ac6b7">info_</a></td></tr>
 <tr class="memdesc:af59068441f06680ebe0ccbc63d9ac6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about the image. <br /></td></tr>
 <tr class="separator:af59068441f06680ebe0ccbc63d9ac6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbd7c4812868e6a5364081a469a7ce6"><td class="memItemLeft" align="right" valign="top"><a id="acdbd7c4812868e6a5364081a469a7ce6"></a>
+vk::DeviceMemory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#acdbd7c4812868e6a5364081a469a7ce6">allocation_</a></td></tr>
+<tr class="memdesc:acdbd7c4812868e6a5364081a469a7ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image data. <br /></td></tr>
+<tr class="separator:acdbd7c4812868e6a5364081a469a7ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0edbe511909b92a3eeaea6c7f740dc"><td class="memItemLeft" align="right" valign="top"><a id="a4b0edbe511909b92a3eeaea6c7f740dc"></a>
+vk::Image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a4b0edbe511909b92a3eeaea6c7f740dc">image_</a></td></tr>
+<tr class="memdesc:a4b0edbe511909b92a3eeaea6c7f740dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image. <br /></td></tr>
+<tr class="separator:a4b0edbe511909b92a3eeaea6c7f740dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e39488ba6b752731f7c1820d70f2203"><td class="memItemLeft" align="right" valign="top"><a id="a0e39488ba6b752731f7c1820d70f2203"></a>
+vk::ImageView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html#a0e39488ba6b752731f7c1820d70f2203">view_</a></td></tr>
+<tr class="memdesc:a0e39488ba6b752731f7c1820d70f2203"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image view. <br /></td></tr>
+<tr class="separator:a0e39488ba6b752731f7c1820d70f2203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An extension to vk::Image that supports ownership of the memory. </p>
+<div class="textblock"><p>An extension to vk::Image that supports ownership of the memory and the view. </p>
 <dl class="section note"><dt>Note</dt><dd>Instances can be moved, but cannot be copied. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a46311ef1435d0e1f3100de2f6ca76697"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46311ef1435d0e1f3100de2f6ca76697">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/2]</span></h2>
+<a id="ad79534db0b08ea7e9312e2c20425729a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79534db0b08ea7e9312e2c20425729a">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,14 +172,8 @@ vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class=
         <tr>
           <td class="memname">Vkx::Image::Image </td>
           <td>(</td>
-          <td class="paramtype">vk::Device const &amp;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::PhysicalDevice const &amp;&#160;</td>
-          <td class="paramname"><em>physicalDevice</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -168,7 +185,13 @@ vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class=
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">vk::MemoryPropertyFlags&#160;</td>
-          <td class="paramname"><em>memoryProperties</em>&#160;</td>
+          <td class="paramname"><em>memoryProperties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::ImageAspectFlags&#160;</td>
+          <td class="paramname"><em>aspect</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -182,9 +205,9 @@ vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class=
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Logical device associated with the image </td></tr>
-    <tr><td class="paramname">physicalDevice</td><td>Physical device associated with the image's allocation </td></tr>
     <tr><td class="paramname">info</td><td>Creation info </td></tr>
-    <tr><td class="paramname">memoryProperties</td><td>Memory properties</td></tr>
+    <tr><td class="paramname">memoryProperties</td><td>Memory properties </td></tr>
+    <tr><td class="paramname">aspect</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -220,6 +243,53 @@ vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6a19fa22aa81d163f4344fcd7545720f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a19fa22aa81d163f4344fcd7545720f">&#9670;&nbsp;</a></span>computeMaxMipLevels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Vkx::Image::computeMaxMipLevels </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum number of mip levels needed for the given with and height. </p>
+<p>This function returns the number of mip levels needed to reach a 1x1 texture, assuming that the values are integers and the length of a side is computed as: Length<sub>i</sub> = Length<sub>i-1</sub> &gt; 1 ? Length<sub>i-1</sub> / 2 : 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Width of the image </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the image</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of levels </dd></dl>
+
+</div>
+</div>
 <a id="a64d34fdc89bc6d34b13ca473bec0782e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64d34fdc89bc6d34b13ca473bec0782e">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -246,10 +316,6 @@ vk::ImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Image.h</li>
-<li>Image.cpp</li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

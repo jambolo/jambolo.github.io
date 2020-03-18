@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['palette',['Palette',['../class_palette.html',1,'']]],
-  ['palette_3c_20color_20_3e',['Palette&lt; Color &gt;',['../class_palette.html',1,'']]],
-  ['palettizedbitmap',['PalettizedBitmap',['../class_palettized_bitmap.html',1,'']]],
-  ['pixel16',['Pixel16',['../class_pixel16.html',1,'']]],
-  ['pixel24',['Pixel24',['../class_pixel24.html',1,'']]],
-  ['pixel32',['Pixel32',['../class_pixel32.html',1,'']]],
-  ['pixel8',['Pixel8',['../class_pixel8.html',1,'']]]
+  ['colortype',['ColorType',['../class_palettized_bitmap.html#a99754f24ff61e649146028b0aefe406d',1,'PalettizedBitmap']]],
+  ['copy',['copy',['../class_bitmap.html#ae591334159bb4c9e0305d0b6048d196a',1,'Bitmap']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['image',['Image',['../class_vkx_1_1_image.html#a3609b83d8d4988d4b06b47fe76d3e65f',1,'Vkx::Image::Image()=default'],['../class_vkx_1_1_image.html#a46311ef1435d0e1f3100de2f6ca76697',1,'Vkx::Image::Image(vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, vk::ImageCreateInfo const &amp;info, vk::MemoryPropertyFlags memoryProperties)'],['../class_vkx_1_1_image.html#a1041f1df3fc85e7efd6a656a9fe99803',1,'Vkx::Image::Image(Image &amp;&amp;src)']]],
-  ['info',['info',['../class_vkx_1_1_image.html#aab316cc1a367fb6ddf6eb0a98af78184',1,'Vkx::Image']]],
-  ['instance',['Instance',['../class_vkx_1_1_instance.html#a6ea919243307e1db3ea3a8ade09e994f',1,'Vkx::Instance']]]
+  ['generatemipmaps',['generateMipmaps',['../class_vkx_1_1_local_image.html#afdf9461a1dbe6ed0a232580a013bcb50',1,'Vkx::LocalImage']]],
+  ['getattenuation',['getAttenuation',['../class_vkx_1_1_point_light.html#ad80e7edc0d4706d3b1e29f5dd84d25c5',1,'Vkx::PointLight::getAttenuation()'],['../class_vkx_1_1_spot_light.html#ae82cbfc226043b129a67c449d2248ae3',1,'Vkx::SpotLight::getAttenuation()']]]
 ];
