@@ -24,7 +24,7 @@
    <div id="projectname">Confetti
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Particle System</div>
+   <div id="projectbrief">A C++ particle system using Vulkan</div>
   </td>
  </tr>
  </tbody>
@@ -83,28 +83,28 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0f00d4441b53106f8819e04bd8e829de"><td class="memItemLeft" align="right" valign="top"><a id="a0f00d4441b53106f8819e04bd8e829de"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>lifetime_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>lifetime_</b> = 1.0f</td></tr>
 <tr class="separator:a0f00d4441b53106f8819e04bd8e829de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32481e0d82218c460fa4ef9707b0322e"><td class="memItemLeft" align="right" valign="top"><a id="a32481e0d82218c460fa4ef9707b0322e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>age_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>age_</b> = 0.0f</td></tr>
 <tr class="separator:a32481e0d82218c460fa4ef9707b0322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d142fba429361c5e2f2208ec7374c1"><td class="memItemLeft" align="right" valign="top"><a id="a15d142fba429361c5e2f2208ec7374c1"></a>
-glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>position_</b></td></tr>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>position_</b> { 0.0f, 0.0f, 0.0f }</td></tr>
 <tr class="separator:a15d142fba429361c5e2f2208ec7374c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223e675405393d15222e3a9d34121c71"><td class="memItemLeft" align="right" valign="top"><a id="a223e675405393d15222e3a9d34121c71"></a>
-glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_</b></td></tr>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_</b> { 0.0f, 0.0f, 0.0f }</td></tr>
 <tr class="separator:a223e675405393d15222e3a9d34121c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c15a6ba8224c440f8734ff035341e9d"><td class="memItemLeft" align="right" valign="top"><a id="a2c15a6ba8224c440f8734ff035341e9d"></a>
-glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
+glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b> { 0.0f, 0.0f, 0.0f, 0.0f }</td></tr>
 <tr class="separator:a2c15a6ba8224c440f8734ff035341e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967162d2f73e9a5fbc972ad769630550"><td class="memItemLeft" align="right" valign="top"><a id="a967162d2f73e9a5fbc972ad769630550"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>radius_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>radius_</b> = 1.0f</td></tr>
 <tr class="separator:a967162d2f73e9a5fbc972ad769630550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd25311fed08748e22c058ea95cd151"><td class="memItemLeft" align="right" valign="top"><a id="a7fd25311fed08748e22c058ea95cd151"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>rotation_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>rotation_</b> = 0.0f</td></tr>
 <tr class="separator:a7fd25311fed08748e22c058ea95cd151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7177595fa068abace39c818e8c6074f8"><td class="memItemLeft" align="right" valign="top"><a id="a7177595fa068abace39c818e8c6074f8"></a>
-glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>orientation_</b></td></tr>
+glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>orientation_</b> { 0.0f, 0.0f, 0.0f, 1.0f }</td></tr>
 <tr class="separator:a7177595fa068abace39c818e8c6074f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

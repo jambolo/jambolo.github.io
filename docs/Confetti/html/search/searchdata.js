@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "acdeilnprstv",
   5: "aces",
   6: "cep",
-  7: "e"
+  7: "c"
 };
 
 var indexSectionNames =

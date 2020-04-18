@@ -24,7 +24,7 @@
    <div id="projectname">Confetti
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Particle System</div>
+   <div id="projectbrief">A C++ particle system using Vulkan</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_confetti_1_1_basic_emitter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Confetti::BasicEmitter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___emitters.html">Emitter Types</a></div></div>  </div>
@@ -93,9 +94,9 @@ Inheritance diagram for Confetti::BasicEmitter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adabd6879174a498f30372ec01b43c27f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#adabd6879174a498f30372ec01b43c27f">BasicEmitter</a> (std::shared_ptr&lt; Vkx::Device &gt; device, int size, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt; volume, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_environment.html">Environment</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#accbd85845d6d449f8889701890dbdf10">environment</a>, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_appearance.html">Appearance</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#ae1f64773179bbf91045421ab39aa9419">appearance</a>, bool <a class="el" href="class_confetti_1_1_basic_emitter.html#ad80b9e9541763a86b531973ea4b8e648">sorted</a>)</td></tr>
-<tr class="memdesc:adabd6879174a498f30372ec01b43c27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adabd6879174a498f30372ec01b43c27f">More...</a><br /></td></tr>
-<tr class="separator:adabd6879174a498f30372ec01b43c27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31633a50a26a1790b2da18f7a93e5d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#aa31633a50a26a1790b2da18f7a93e5d7">BasicEmitter</a> (std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt; volume, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_environment.html">Environment</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#accbd85845d6d449f8889701890dbdf10">environment</a>, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_appearance.html">Appearance</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#ae1f64773179bbf91045421ab39aa9419">appearance</a>, bool <a class="el" href="class_confetti_1_1_basic_emitter.html#ad80b9e9541763a86b531973ea4b8e648">sorted</a>)</td></tr>
+<tr class="memdesc:aa31633a50a26a1790b2da18f7a93e5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aa31633a50a26a1790b2da18f7a93e5d7">More...</a><br /></td></tr>
+<tr class="separator:aa31633a50a26a1790b2da18f7a93e5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc366caf374d7a8ddde8dd3d0fbb1f2"><td class="memItemLeft" align="right" valign="top"><a id="a4bc366caf374d7a8ddde8dd3d0fbb1f2"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#a4bc366caf374d7a8ddde8dd3d0fbb1f2">~BasicEmitter</a> ()=default</td></tr>
 <tr class="memdesc:a4bc366caf374d7a8ddde8dd3d0fbb1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -143,13 +144,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a866e1cce6c8c17c40015310b84d34f67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#a866e1cce6c8c17c40015310b84d34f67">draw</a> () const =0</td></tr>
 <tr class="memdesc:a866e1cce6c8c17c40015310b84d34f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws all the emitter's particles.  <a href="#a866e1cce6c8c17c40015310b84d34f67">More...</a><br /></td></tr>
 <tr class="separator:a866e1cce6c8c17c40015310b84d34f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae2f3a13ae7ed327f88cce28dec42688e"><td class="memItemLeft" align="right" valign="top"><a id="ae2f3a13ae7ed327f88cce28dec42688e"></a>
+Vkx::LocalBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>vertexes_</b></td></tr>
+<tr class="separator:ae2f3a13ae7ed327f88cce28dec42688e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a5a8fc00247349f6d74eafef09b61c"><td class="memItemLeft" align="right" valign="top"><a id="a63a5a8fc00247349f6d74eafef09b61c"></a>
+Vkx::LocalBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>indexes_</b></td></tr>
+<tr class="separator:a63a5a8fc00247349f6d74eafef09b61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A particle emitter. </p>
 <dl class="section note"><dt>Note</dt><dd>This class is an abstract base class and must be derived from in order to be used. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adabd6879174a498f30372ec01b43c27f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adabd6879174a498f30372ec01b43c27f">&#9670;&nbsp;</a></span>BasicEmitter()</h2>
+<a id="aa31633a50a26a1790b2da18f7a93e5d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31633a50a26a1790b2da18f7a93e5d7">&#9670;&nbsp;</a></span>BasicEmitter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,18 +167,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">Confetti::BasicEmitter::BasicEmitter </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; Vkx::Device &gt;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt;&#160;</td>
           <td class="paramname"><em>volume</em>, </td>
         </tr>
@@ -201,16 +199,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">particles</td><td>Array of particles (the emitter assumes ownership). </td></tr>
     <tr><td class="paramname">volume</td><td>Emitter volume. </td></tr>
     <tr><td class="paramname">environment</td><td><a class="el" href="class_confetti_1_1_environment.html" title="An external (to any particle or emitter) set of factors that affect a particle&#39;s position and velocit...">Environment</a> applied to all particles. </td></tr>
     <tr><td class="paramname">appearance</td><td><a class="el" href="class_confetti_1_1_appearance.html" title="Appearance characteristics shared by multiple particles. ">Appearance</a> shared by all particles. </td></tr>
-    <tr><td class="paramname">n</td><td>Number of particles in the array. </td></tr>
-    <tr><td class="paramname">spread</td><td>Emission angle (actual meaning is specific to the type of emitter).</td></tr>
+    <tr><td class="paramname">sorted</td><td>True, if the particles should be sorted back-to-front when updated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>particles must have been allocated with new[]. </dd></dl>
 
 </div>
 </div>

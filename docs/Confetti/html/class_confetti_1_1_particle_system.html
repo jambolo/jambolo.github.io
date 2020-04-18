@@ -24,7 +24,7 @@
    <div id="projectname">Confetti
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Particle System</div>
+   <div id="projectbrief">A C++ particle system using Vulkan</div>
   </td>
  </tr>
  </tbody>
@@ -82,9 +82,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96abfec9c6b0d4bccff6f03068ba13ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_particle_system.html#a96abfec9c6b0d4bccff6f03068ba13ec">ParticleSystem</a> (std::shared_ptr&lt; Vkx::Device &gt; device)</td></tr>
-<tr class="memdesc:a96abfec9c6b0d4bccff6f03068ba13ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a96abfec9c6b0d4bccff6f03068ba13ec">More...</a><br /></td></tr>
-<tr class="separator:a96abfec9c6b0d4bccff6f03068ba13ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c34f42e10be4720b45e254394ef4fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_particle_system.html#a64c34f42e10be4720b45e254394ef4fa">ParticleSystem</a> (std::shared_ptr&lt; Vkx::Device &gt; device, vk::CommandPool const &amp;commandPool, vk::Queue const &amp;queue)</td></tr>
+<tr class="memdesc:a64c34f42e10be4720b45e254394ef4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a64c34f42e10be4720b45e254394ef4fa">More...</a><br /></td></tr>
+<tr class="separator:a64c34f42e10be4720b45e254394ef4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9bf88009f4d1db6c341465aafb34655"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_particle_system.html#ad9bf88009f4d1db6c341465aafb34655">update</a> (float dt)</td></tr>
 <tr class="memdesc:ad9bf88009f4d1db6c341465aafb34655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the system.  <a href="#ad9bf88009f4d1db6c341465aafb34655">More...</a><br /></td></tr>
 <tr class="separator:ad9bf88009f4d1db6c341465aafb34655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,8 +113,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="textblock"><p>The particle system. </p>
 <p>This class updates and draws particles associated with a set of emitters using a set of appearances and environments. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a96abfec9c6b0d4bccff6f03068ba13ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96abfec9c6b0d4bccff6f03068ba13ec">&#9670;&nbsp;</a></span>ParticleSystem()</h2>
+<a id="a64c34f42e10be4720b45e254394ef4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c34f42e10be4720b45e254394ef4fa">&#9670;&nbsp;</a></span>ParticleSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,8 +123,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="memname">Confetti::ParticleSystem::ParticleSystem </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; Vkx::Device &gt;&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">vk::CommandPool const &amp;&#160;</td>
+          <td class="paramname"><em>commandPool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::Queue const &amp;&#160;</td>
+          <td class="paramname"><em>queue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

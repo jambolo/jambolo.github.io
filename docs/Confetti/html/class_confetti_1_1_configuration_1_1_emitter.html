@@ -24,7 +24,7 @@
    <div id="projectname">Confetti
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Particle System</div>
+   <div id="projectbrief">A C++ particle system using Vulkan</div>
   </td>
  </tr>
  </tbody>
@@ -105,41 +105,41 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>environment_</
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>appearance_</b></td></tr>
 <tr class="separator:a2e8da96ba57388973d123a9fafa65be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a794623da5842c27d820a2ff6fead53ab"><td class="memItemLeft" align="right" valign="top"><a id="a794623da5842c27d820a2ff6fead53ab"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>minSpeed_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>minSpeed_</b> = 0.0f</td></tr>
 <tr class="separator:a794623da5842c27d820a2ff6fead53ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42fb49e8b1ce0c5356455b566663eed1"><td class="memItemLeft" align="right" valign="top"><a id="a42fb49e8b1ce0c5356455b566663eed1"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>maxSpeed_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>maxSpeed_</b> = 0.0f</td></tr>
 <tr class="separator:a42fb49e8b1ce0c5356455b566663eed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8391144ae0aa4cdd8bbfb7062918df66"><td class="memItemLeft" align="right" valign="top"><a id="a8391144ae0aa4cdd8bbfb7062918df66"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>count_</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count_</b> = 0</td></tr>
 <tr class="separator:a8391144ae0aa4cdd8bbfb7062918df66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740615fa1851bc01eb89f192b84ee1b3"><td class="memItemLeft" align="right" valign="top"><a id="a740615fa1851bc01eb89f192b84ee1b3"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>lifetime_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>lifetime_</b> = 1.0f</td></tr>
 <tr class="separator:a740615fa1851bc01eb89f192b84ee1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b27d2165618f3c8260b98c9d163ca1d"><td class="memItemLeft" align="right" valign="top"><a id="a3b27d2165618f3c8260b98c9d163ca1d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>spread_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>spread_</b> = 0.0f</td></tr>
 <tr class="separator:a3b27d2165618f3c8260b98c9d163ca1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd39e60fe31f272fa0b75e5d9de5bf4"><td class="memItemLeft" align="right" valign="top"><a id="a5bd39e60fe31f272fa0b75e5d9de5bf4"></a>
-glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b></td></tr>
+glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><b>color_</b> { 0.0f, 0.0f, 0.0f, 1.0f }</td></tr>
 <tr class="separator:a5bd39e60fe31f272fa0b75e5d9de5bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2323a4e2142f80321c789981a02cddd9"><td class="memItemLeft" align="right" valign="top"><a id="a2323a4e2142f80321c789981a02cddd9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>radius_</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>radius_</b> = 1.0f</td></tr>
 <tr class="separator:a2323a4e2142f80321c789981a02cddd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80266b87d6837e5772c14c4361de6c3e"><td class="memItemLeft" align="right" valign="top"><a id="a80266b87d6837e5772c14c4361de6c3e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>sorted_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sorted_</b> = false</td></tr>
 <tr class="separator:a80266b87d6837e5772c14c4361de6c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad089be4823e6ba6fd437e30d09b72835"><td class="memItemLeft" align="right" valign="top"><a id="ad089be4823e6ba6fd437e30d09b72835"></a>
-glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>position_</b></td></tr>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>position_</b> { 0.0f, 0.0f, 0.0f }</td></tr>
 <tr class="separator:ad089be4823e6ba6fd437e30d09b72835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdad4608a3daa0978f7a8b9eb0f92cf"><td class="memItemLeft" align="right" valign="top"><a id="a3cdad4608a3daa0978f7a8b9eb0f92cf"></a>
-glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>orientation_</b></td></tr>
+glm::quat&#160;</td><td class="memItemRight" valign="bottom"><b>orientation_</b> { 0.0f, 0.0f, 0.0f, 1.0f }</td></tr>
 <tr class="separator:a3cdad4608a3daa0978f7a8b9eb0f92cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7445250d5a3ed341db9031a957d659d"><td class="memItemLeft" align="right" valign="top"><a id="af7445250d5a3ed341db9031a957d659d"></a>
-glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_</b></td></tr>
+glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_</b> { 0.0f, 0.0f, 0.0f }</td></tr>
 <tr class="separator:af7445250d5a3ed341db9031a957d659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5888067acc7cef721fb0b29b6f70b044"><td class="memItemLeft" align="right" valign="top"><a id="a5888067acc7cef721fb0b29b6f70b044"></a>
-ParticleVector&#160;</td><td class="memItemRight" valign="bottom"><b>particleVector_</b></td></tr>
-<tr class="separator:a5888067acc7cef721fb0b29b6f70b044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c9799816fda590650cb749f37c1e95"><td class="memItemLeft" align="right" valign="top"><a id="a35c9799816fda590650cb749f37c1e95"></a>
+ParticleVector&#160;</td><td class="memItemRight" valign="bottom"><b>particles_</b></td></tr>
+<tr class="separator:a35c9799816fda590650cb749f37c1e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_confetti_1_1_configuration_1_1_emitter.html" title="Emitter configuration. ">Emitter</a> configuration. </p>

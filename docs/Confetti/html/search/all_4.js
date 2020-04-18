@@ -21,6 +21,5 @@ var searchData=
   ['enabled',['enabled',['../class_confetti_1_1_basic_emitter.html#a08b060ca22696c99cb04cb7c6ec1d5ae',1,'Confetti::BasicEmitter']]],
   ['environment',['Environment',['../class_confetti_1_1_configuration_1_1_environment.html',1,'Confetti::Configuration::Environment'],['../class_confetti_1_1_environment.html',1,'Confetti::Environment'],['../class_confetti_1_1_basic_emitter.html#accbd85845d6d449f8889701890dbdf10',1,'Confetti::BasicEmitter::environment()'],['../class_confetti_1_1_environment.html#ab9ddbb4db51c4c734def3a71c0123850',1,'Confetti::Environment::Environment()']]],
   ['environmentmap',['EnvironmentMap',['../class_confetti_1_1_configuration.html#a7d1de493f8c83b7159932bc182fcff88',1,'Confetti::Configuration']]],
-  ['environments_5f',['environments_',['../class_confetti_1_1_configuration.html#a24dbe0483c1bc59cb025a8628d7167d0',1,'Confetti::Configuration']]],
-  ['effect_20of_20drag_20on_20particle_20motion',['Effect of Drag on Particle Motion',['../md__effect_of__drag_on__particle__motion.html',1,'']]]
+  ['environments_5f',['environments_',['../class_confetti_1_1_configuration.html#a24dbe0483c1bc59cb025a8628d7167d0',1,'Confetti::Configuration']]]
 ];

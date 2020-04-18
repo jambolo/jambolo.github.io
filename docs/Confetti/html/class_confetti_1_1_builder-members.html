@@ -24,7 +24,7 @@
    <div id="projectname">Confetti
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Particle System</div>
+   <div id="projectbrief">A C++ particle system using Vulkan</div>
   </td>
  </tr>
  </tbody>
@@ -80,7 +80,7 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#a24db34be5bb84b14c80fb4652c81fb6a">buildEmitterVolume</a>(Configuration::EmitterVolume const &amp;configuration)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#aa5a7f09083921ff66d1b89e43ccdb057">buildEnvironment</a>(Configuration::Environment const &amp;configuration)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#ac1a5273c70496ed1ca1b7c6758ab4039">Builder</a>(std::minstd_rand &amp;rng)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#ab54d98b63ba132ca550a14325a22be49">buildParticleSystem</a>(Configuration const &amp;configuration, std::shared_ptr&lt; Vkx::Device &gt; device, Vkx::Camera const *camera)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#a48a4111096906fcadde31613a88f146b">buildParticleSystem</a>(Configuration const &amp;configuration, std::shared_ptr&lt; Vkx::Device &gt; device, vk::CommandPool const &amp;commandPool, vk::Queue const &amp;queue, Vkx::Camera const *camera)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#a4a3f885275b83215a4e9c993d250bb30">buildPointParticles</a>(int n, Configuration::Emitter const &amp;emitterConfiguration, EmitterVolume const &amp;volume, Environment const &amp;environment, Appearance const &amp;appearance)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#a5741427c92501cec7dd2149a4b73786a">buildPointParticles</a>(Configuration::Emitter::ParticleVector const &amp;configurations)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_confetti_1_1_builder.html#a1ea82417d0dd7b8307b94b3bc7a32836">buildSphereParticles</a>(int n, Configuration::Emitter const &amp;emitterConfiguration, EmitterVolume const &amp;volume, Environment const &amp;environment, Appearance const &amp;appearance)</td><td class="entry"><a class="el" href="class_confetti_1_1_builder.html">Confetti::Builder</a></td><td class="entry"></td></tr>

@@ -13,5 +13,6 @@ var searchData=
   ['configuration',['Configuration',['../class_confetti_1_1_configuration.html',1,'Confetti']]],
   ['common_20appearance_20and_20behavior',['Common Appearance and Behavior',['../group___controls.html',1,'']]],
   ['currentposition',['currentPosition',['../class_confetti_1_1_basic_emitter.html#ac8cd7eecf7af70ea78875c391e0d213f',1,'Confetti::BasicEmitter']]],
-  ['currentvelocity',['currentVelocity',['../class_confetti_1_1_basic_emitter.html#a042b21c03cb482a901006fe47cdd8c8a',1,'Confetti::BasicEmitter']]]
+  ['currentvelocity',['currentVelocity',['../class_confetti_1_1_basic_emitter.html#a042b21c03cb482a901006fe47cdd8c8a',1,'Confetti::BasicEmitter']]],
+  ['confetti',['Confetti',['../index.html',1,'']]]
 ];
