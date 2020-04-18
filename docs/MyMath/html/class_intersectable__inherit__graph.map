@@ -1,0 +1,14 @@
+<map id="Intersectable" name="Intersectable">
+<area shape="rect" id="node2" href="$class_a_a_box.html" title="Axis&#45;aligned box that can detect and compute intersections with other intersectables. " alt="" coords="5,80,68,107"/>
+<area shape="rect" id="node3" href="$class_box.html" title="Oriented box that can detect and compute intersections with other intersectables. ..." alt="" coords="93,80,138,107"/>
+<area shape="rect" id="node4" href="$class_cone.html" title="A cone that can detect and compute intersections with other intersectable objects. " alt="" coords="163,80,215,107"/>
+<area shape="rect" id="node5" href="$class_frustum.html" title="A frustum that can detect and compute intersections with other intersectables. " alt="" coords="239,80,309,107"/>
+<area shape="rect" id="node6" href="$class_half_space.html" title="A half&#45;space that can detect and compute intersections with other intersectable objects. " alt="" coords="333,80,415,107"/>
+<area shape="rect" id="node7" href="$class_line.html" title="A line that can detect and compute intersections with other intersectables. " alt="" coords="439,80,485,107"/>
+<area shape="rect" id="node8" href="$class_plane.html" title="A plane that can detect and compute intersections with other intersectable objects. " alt="" coords="509,80,564,107"/>
+<area shape="rect" id="node10" href="$class_point.html" title="A point that can detect and compute intersections with other intersectable objects. " alt="" coords="588,80,640,107"/>
+<area shape="rect" id="node11" href="$class_ray.html" title="A ray that can detect and compute intersections with other intersectables. " alt="" coords="665,80,710,107"/>
+<area shape="rect" id="node12" href="$class_segment.html" title="A line segment that can detect and compute intersections with other intersectables. " alt="" coords="734,80,809,107"/>
+<area shape="rect" id="node13" href="$class_sphere.html" title="A sphere that can detect and compute intersections with other intersectable objects. " alt="" coords="833,80,896,107"/>
+<area shape="rect" id="node9" href="$class_poly.html" title="A planar polygon that can detect and compute intersections with other intersectable objects..." alt="" coords="513,155,561,181"/>
+</map>
