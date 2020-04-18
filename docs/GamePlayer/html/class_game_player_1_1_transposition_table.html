@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">GamePlayer
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Abstract game tree based game player</div>
+   <div id="projectbrief">A game player for two-player perfect information games, implemented using a min-max game tree</div>
   </td>
  </tr>
  </tbody>
@@ -79,7 +80,7 @@ $(function() {
 <p>A map of game state values referenced by the states' fingerprints.  
  <a href="class_game_player_1_1_transposition_table.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_transposition_table_8h_source.html">TranspositionTable.h</a>&gt;</code></p>
+<p><code>#include &lt;GamePlayer/TranspositionTable.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -120,8 +121,9 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A map of game state values referenced by the states' fingerprints. </p>
-<p>A game state can be the result of different sequences of the same (or a different) set of moves. This technique is used to cache the value of a game state regardless of the moves used to reach it, thus the name "transposition" table. The purpose of the "transposition" table has been extended to become simply a cache game state values, so it is more aptly named "game state value cache" &ndash; but the old name persists.</p>
-<p>As a speed and memory optimization in this implementation, slots in the table are not unique to the state being stored, and a value may be overwritten when a new value is added. A value is overwritten only when its "quality" is less than or equal to the "quality" of the value being added. </p>
+<p>A game state can be the result of different sequences of the same (or a different) set of moves. This technique is used to cache the value of a game state regardless of the moves used to reach it, thus the name "transposition" table. The purpose of the "transposition" table has been extended to become simply a cache of game state values, so it is more aptly named "game state value cache" &ndash; but the old name persists.</p>
+<p>As a speed and memory optimization in this implementation, slots in the table are not unique to the state being stored, and a value may be overwritten when a new value is added. A value is overwritten only when its "quality" is less than or equal to the "quality" of the value being added.</p>
+<dl class="section note"><dt>Note</dt><dd>The fingerprint is assumed to be random and uniformly distibuted. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a964f80654e547c8f508878f499b23b04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a964f80654e547c8f508878f499b23b04">&#9670;&nbsp;</a></span>age()</h2>
@@ -333,10 +335,6 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/GamePlayer/<a class="el" href="_transposition_table_8h_source.html">TranspositionTable.h</a></li>
-<li>TranspositionTable.cpp</li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
