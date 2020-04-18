@@ -24,7 +24,7 @@
    <div id="projectname">Vkx
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Vulkan API Extensions</div>
+   <div id="projectbrief">Vulkan C++ extensions</div>
   </td>
  </tr>
  </tbody>
@@ -71,11 +71,11 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_vkx_1_1_physical_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Vkx::PhysicalDevice Class Reference</div>  </div>
+<div class="title">Vkx::PhysicalDevice Class Reference<div class="ingroups"><a class="el" href="group___devices.html">Device Types</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A RAII extension to vk::PhysicalDevice.  
+<p>A destructible extension to vk::PhysicalDevice.  
  <a href="class_vkx_1_1_physical_device.html#details">More...</a></p>
 
 <p><code>#include &lt;Vkx/Device.h&gt;</code></p>
@@ -83,23 +83,36 @@ $(function() {
 Inheritance diagram for Vkx::PhysicalDevice:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_vkx_1_1_physical_device__inherit__graph.png" border="0" usemap="#_vkx_1_1_physical_device_inherit__map" alt="Inheritance graph"/></div>
+<map name="_vkx_1_1_physical_device_inherit__map" id="_vkx_1_1_physical_device_inherit__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14870a767407c2bb89b5b8be56bc655c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_physical_device.html#a14870a767407c2bb89b5b8be56bc655c">PhysicalDevice</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a> &gt; &amp;<a class="el" href="class_vkx_1_1_physical_device.html#a6944c1cb7c0ebb45049dfc0e4f0833cf">instance</a>, std::function&lt; vk::PhysicalDevice(std::vector&lt; vk::PhysicalDevice &gt; const &amp;)&gt; chooser)</td></tr>
-<tr class="memdesc:a14870a767407c2bb89b5b8be56bc655c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a14870a767407c2bb89b5b8be56bc655c">More...</a><br /></td></tr>
-<tr class="separator:a14870a767407c2bb89b5b8be56bc655c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb93fa9b3363c9281ba48dc3c8be6cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_physical_device.html#a9eb93fa9b3363c9281ba48dc3c8be6cc">PhysicalDevice</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a> &gt; &amp;<a class="el" href="class_vkx_1_1_physical_device.html#a6944c1cb7c0ebb45049dfc0e4f0833cf">instance</a>, vk::SurfaceKHR <a class="el" href="class_vkx_1_1_physical_device.html#aaebc0293c69db1b389ea3add1e97010e">surface</a>, std::function&lt; vk::PhysicalDevice(std::vector&lt; vk::PhysicalDevice &gt; const &amp;)&gt; chooser)</td></tr>
+<tr class="memdesc:a9eb93fa9b3363c9281ba48dc3c8be6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a9eb93fa9b3363c9281ba48dc3c8be6cc">More...</a><br /></td></tr>
+<tr class="separator:a9eb93fa9b3363c9281ba48dc3c8be6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073135e7e17de9747b675061c151c489"><td class="memItemLeft" align="right" valign="top"><a id="a073135e7e17de9747b675061c151c489"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PhysicalDevice</b> (<a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &amp;&amp;src)</td></tr>
+<tr class="separator:a073135e7e17de9747b675061c151c489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267b9d6ec7ecd85308d0c9bbf43ea7c8"><td class="memItemLeft" align="right" valign="top"><a id="a267b9d6ec7ecd85308d0c9bbf43ea7c8"></a>
+<a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a267b9d6ec7ecd85308d0c9bbf43ea7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6944c1cb7c0ebb45049dfc0e4f0833cf"><td class="memItemLeft" align="right" valign="top"><a id="a6944c1cb7c0ebb45049dfc0e4f0833cf"></a>
 std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_physical_device.html#a6944c1cb7c0ebb45049dfc0e4f0833cf">instance</a> () const</td></tr>
-<tr class="memdesc:a6944c1cb7c0ebb45049dfc0e4f0833cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance this physical device is associated with. <br /></td></tr>
+<tr class="memdesc:a6944c1cb7c0ebb45049dfc0e4f0833cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance associated with this physical device. <br /></td></tr>
 <tr class="separator:a6944c1cb7c0ebb45049dfc0e4f0833cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebc0293c69db1b389ea3add1e97010e"><td class="memItemLeft" align="right" valign="top"><a id="aaebc0293c69db1b389ea3add1e97010e"></a>
+vk::SurfaceKHR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_physical_device.html#aaebc0293c69db1b389ea3add1e97010e">surface</a> () const</td></tr>
+<tr class="memdesc:aaebc0293c69db1b389ea3add1e97010e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the surface associated with this physical device. <br /></td></tr>
+<tr class="separator:aaebc0293c69db1b389ea3add1e97010e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A RAII extension to vk::PhysicalDevice. </p>
+<div class="textblock"><p>A destructible extension to vk::PhysicalDevice. </p>
+<dl class="section note"><dt>Note</dt><dd>A <a class="el" href="class_vkx_1_1_physical_device.html" title="A destructible extension to vk::PhysicalDevice. ">PhysicalDevice</a> can be moved, but cannot be copied. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a14870a767407c2bb89b5b8be56bc655c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14870a767407c2bb89b5b8be56bc655c">&#9670;&nbsp;</a></span>PhysicalDevice()</h2>
+<a id="a9eb93fa9b3363c9281ba48dc3c8be6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb93fa9b3363c9281ba48dc3c8be6cc">&#9670;&nbsp;</a></span>PhysicalDevice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,6 +122,12 @@ std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vk::SurfaceKHR&#160;</td>
+          <td class="paramname"><em>surface</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -127,7 +146,7 @@ std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_instance.html">Instance</a
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">instance</td><td><a class="el" href="class_vkx_1_1_instance.html" title="A RAII extension to vk::Instance. ">Instance</a> providing the physical device </td></tr>
+    <tr><td class="paramname">instance</td><td><a class="el" href="class_vkx_1_1_instance.html" title="A destructible extension to vk::Instance. ">Instance</a> providing the physical device </td></tr>
     <tr><td class="paramname">chooser</td><td>Chooses which vk::PhysicalDevice this object wraps </td></tr>
   </table>
   </dd>

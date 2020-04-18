@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['light_20types',['Light Types',['../group___lights.html',1,'']]]
+  ['device_20types',['Device Types',['../group___devices.html',1,'']]]
 ];
