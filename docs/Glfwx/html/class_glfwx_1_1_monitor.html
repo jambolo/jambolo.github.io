@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>Glfwx</b></li><li class="navelem"><a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_glfwx.html">Glfwx</a></li><li class="navelem"><a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper for GLFW monitor.  
+<p>C++ wrapper for a GLFW monitor.  
  <a href="class_glfwx_1_1_monitor.html#details">More...</a></p>
 
 <p><code>#include &lt;Glfwx/Monitor.h&gt;</code></p>
@@ -94,8 +94,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a45ec76fcaa5178a9365b18e90ebbce5b"><td class="memItemLeft" align="right" valign="top"><a id="a45ec76fcaa5178a9365b18e90ebbce5b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Monitor</b> (GLFWmonitor *m)</td></tr>
+<tr class="memitem:a45ec76fcaa5178a9365b18e90ebbce5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_monitor.html#a45ec76fcaa5178a9365b18e90ebbce5b">Monitor</a> (GLFWmonitor *m)</td></tr>
+<tr class="memdesc:a45ec76fcaa5178a9365b18e90ebbce5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a45ec76fcaa5178a9365b18e90ebbce5b">More...</a><br /></td></tr>
 <tr class="separator:a45ec76fcaa5178a9365b18e90ebbce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3697cf0d907fbfb1f0a8f9c1e5b6694c"><td class="memItemLeft" align="right" valign="top"><a id="a3697cf0d907fbfb1f0a8f9c1e5b6694c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_monitor.html#a3697cf0d907fbfb1f0a8f9c1e5b6694c">operator GLFWmonitor *</a> () const</td></tr>
@@ -151,8 +151,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abebb651baf72cc0e22d76fd9d1bcf160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper for GLFW monitor. </p>
-<dl class="section see"><dt>See also</dt><dd>GLFWmonitor </dd></dl>
+<div class="textblock"><p>C++ wrapper for a GLFW monitor. </p>
+<dl class="section see"><dt>See also</dt><dd>GLFWmonitor</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This implementation is provisional. Everything will probably be different once I figure out how it should really be implemented </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a589a6169cde7b5daf928357ce1e28f90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a589a6169cde7b5daf928357ce1e28f90">&#9670;&nbsp;</a></span>VideoMode</h2>
@@ -168,6 +169,41 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Video mode information. </p>
 <dl class="section see"><dt>See also</dt><dd>GLFWvidmode </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a45ec76fcaa5178a9365b18e90ebbce5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ec76fcaa5178a9365b18e90ebbce5b">&#9670;&nbsp;</a></span>Monitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Glfwx::Monitor::Monitor </td>
+          <td>(</td>
+          <td class="paramtype">GLFWmonitor *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Underlying GLFWmonitor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +252,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a list of copies of the available monitors. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of copies of the available monitors</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetMonitors </dd></dl>
 
 </div>
@@ -236,6 +273,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the available video modes for the monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of available video modes</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetVideoModes </dd></dl>
 
 </div>
@@ -256,6 +294,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current gamma ramp for the monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current gamma ramp</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetGammaRamp </dd></dl>
 
 </div>
@@ -276,6 +315,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the name of the monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the monitor</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetMonitorName </dd></dl>
 
 </div>
@@ -342,6 +382,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a copy of the primary monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the primary monitor</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetPrimaryMonitor </dd></dl>
 
 </div>
@@ -554,6 +595,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current mode of the monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current mode of the monitor</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>glfwGetVideoMode </dd></dl>
 
 </div>

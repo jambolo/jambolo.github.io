@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7ewindow',['~Window',['../class_glfwx_1_1_window.html#a24710bcc5bac1050596ac246b0e9880b',1,'Glfwx::Window']]]
+  ['version',['version',['../namespace_glfwx.html#aa634d8d8763362dde1a78fcf5e30bfc2',1,'Glfwx']]],
+  ['videomode',['videoMode',['../class_glfwx_1_1_monitor.html#a1973b11813f8cf3e4492ea7ac99ca732',1,'Glfwx::Monitor']]]
 ];

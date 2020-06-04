@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hint',['hint',['../class_glfwx_1_1_window.html#a4e80a52f7f06246b3d83155e3e836499',1,'Glfwx::Window']]]
+  ['gammaramp',['gammaRamp',['../class_glfwx_1_1_monitor.html#addfc1eea57c88718ae310f480e076ed1',1,'Glfwx::Monitor']]]
 ];

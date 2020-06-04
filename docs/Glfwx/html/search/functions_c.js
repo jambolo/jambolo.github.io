@@ -1,4 +1,20 @@
 var searchData=
 [
-  ['videomode',['videoMode',['../class_glfwx_1_1_monitor.html#a1973b11813f8cf3e4492ea7ac99ca732',1,'Glfwx::Monitor']]]
+  ['scale',['scale',['../class_glfwx_1_1_monitor.html#a1c25a9238102ed6f0ed05345ef11dd5a',1,'Glfwx::Monitor']]],
+  ['setaspectratio',['setAspectRatio',['../class_glfwx_1_1_window.html#a69f87639710e9ff94869422410f3eeec',1,'Glfwx::Window']]],
+  ['setattribute',['setAttribute',['../class_glfwx_1_1_window.html#a256058bf94a5cb61907b05ec3e466469',1,'Glfwx::Window']]],
+  ['setconnectionchangedcallback',['setConnectionChangedCallback',['../class_glfwx_1_1_monitor.html#abebb651baf72cc0e22d76fd9d1bcf160',1,'Glfwx::Monitor']]],
+  ['setcontext',['setContext',['../class_glfwx_1_1_monitor.html#a36ca676bb7a6c0844d4f4490dafa9072',1,'Glfwx::Monitor::setContext()'],['../class_glfwx_1_1_window.html#a9dd86fc244cb1c4b46b7fafa5877b574',1,'Glfwx::Window::setContext()']]],
+  ['seterrorcallback',['setErrorCallback',['../namespace_glfwx.html#af2f4dae1af8e6950c59cc3c59534a270',1,'Glfwx']]],
+  ['setgamma',['setGamma',['../class_glfwx_1_1_monitor.html#aa1438daf3516f298daf01a6a661900cc',1,'Glfwx::Monitor']]],
+  ['setgammaramp',['setGammaRamp',['../class_glfwx_1_1_monitor.html#af755422fa2f9fb423dd2bfdfd85483b3',1,'Glfwx::Monitor']]],
+  ['seticon',['setIcon',['../class_glfwx_1_1_window.html#ad4cae3a236fa8b56d3373ab70128dcb8',1,'Glfwx::Window']]],
+  ['setmonitor',['setMonitor',['../class_glfwx_1_1_window.html#a1578a72e4d832b1f4b9c4db9d9b79d68',1,'Glfwx::Window']]],
+  ['setposition',['setPosition',['../class_glfwx_1_1_window.html#a52a5d7c89587a1d703af10f581d98712',1,'Glfwx::Window']]],
+  ['setsize',['setSize',['../class_glfwx_1_1_window.html#af66e4da1639f33a96d10c9f3d9f0fdaf',1,'Glfwx::Window']]],
+  ['setsizelimits',['setSizeLimits',['../class_glfwx_1_1_window.html#aef06c8a17558b8b767bf01aa6855261b',1,'Glfwx::Window']]],
+  ['settitle',['setTitle',['../class_glfwx_1_1_window.html#ac37d983f24f6b0f8ea9bfdd2fd2ac1c7',1,'Glfwx::Window']]],
+  ['show',['show',['../class_glfwx_1_1_window.html#a635fe9c507c0a22054f1d1d1b43640d7',1,'Glfwx::Window']]],
+  ['size',['size',['../class_glfwx_1_1_monitor.html#aa3359cef7a5819ea2a9f98628677f8ee',1,'Glfwx::Monitor::size()'],['../class_glfwx_1_1_window.html#aa9b5ded5d17b5e721ba2e2066210bd38',1,'Glfwx::Window::size()']]],
+  ['status',['status',['../namespace_glfwx.html#a427299e04c6b845091ac41dc1a37dfb4',1,'Glfwx']]]
 ];

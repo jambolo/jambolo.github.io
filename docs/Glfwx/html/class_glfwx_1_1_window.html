@@ -63,11 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>Glfwx</b></li><li class="navelem"><a class="el" href="class_glfwx_1_1_window.html">Window</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_glfwx.html">Glfwx</a></li><li class="navelem"><a class="el" href="class_glfwx_1_1_window.html">Window</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_glfwx_1_1_window-members.html">List of all members</a>  </div>
@@ -76,11 +77,110 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper for GLFW window.  
+<p>C++ wrapper for a GLFW window.  
  <a href="class_glfwx_1_1_window.html#details">More...</a></p>
 
 <p><code>#include &lt;Glfwx/Window.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a84b5de0e49984d2954a12af3c266aef7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7">Hint</a> { <br />
+&#160;&#160;<b>FOCUSED</b> = GLFW_FOCUSED, 
+<b>ICONIFIED</b> = GLFW_ICONIFIED, 
+<b>RESIZABLE</b> = GLFW_RESIZABLE, 
+<b>VISIBLE</b> = GLFW_VISIBLE, 
+<br />
+&#160;&#160;<b>DECORATED</b> = GLFW_DECORATED, 
+<b>AUTO_ICONIFY</b> = GLFW_AUTO_ICONIFY, 
+<b>FLOATING</b> = GLFW_FLOATING, 
+<b>MAXIMIZED</b> = GLFW_MAXIMIZED, 
+<br />
+&#160;&#160;<b>CENTER_CURSOR</b> = GLFW_CENTER_CURSOR, 
+<b>TRANSPARENT_FRAMEBUFFER</b> = GLFW_TRANSPARENT_FRAMEBUFFER, 
+<b>HOVERED</b> = GLFW_HOVERED, 
+<b>FOCUS_ON_SHOW</b> = GLFW_FOCUS_ON_SHOW, 
+<br />
+&#160;&#160;<b>RED_BITS</b> = GLFW_RED_BITS, 
+<b>GREEN_BITS</b> = GLFW_GREEN_BITS, 
+<b>BLUE_BITS</b> = GLFW_BLUE_BITS, 
+<b>ALPHA_BITS</b> = GLFW_ALPHA_BITS, 
+<br />
+&#160;&#160;<b>DEPTH_BITS</b> = GLFW_DEPTH_BITS, 
+<b>STENCIL_BITS</b> = GLFW_STENCIL_BITS, 
+<b>ACCUM_RED_BITS</b> = GLFW_ACCUM_RED_BITS, 
+<b>ACCUM_GREEN_BITS</b> = GLFW_ACCUM_GREEN_BITS, 
+<br />
+&#160;&#160;<b>ACCUM_BLUE_BITS</b> = GLFW_ACCUM_BLUE_BITS, 
+<b>ACCUM_ALPHA_BITS</b> = GLFW_ACCUM_ALPHA_BITS, 
+<b>AUX_BUFFERS</b> = GLFW_AUX_BUFFERS, 
+<b>STEREO</b> = GLFW_STEREO, 
+<br />
+&#160;&#160;<b>SAMPLES</b> = GLFW_SAMPLES, 
+<b>SRGB_CAPABLE</b> = GLFW_SRGB_CAPABLE, 
+<b>REFRESH_RATE</b> = GLFW_REFRESH_RATE, 
+<b>DOUBLEBUFFER</b> = GLFW_DOUBLEBUFFER, 
+<br />
+&#160;&#160;<b>CLIENT_API</b> = GLFW_CLIENT_API, 
+<b>CONTEXT_VERSION_MAJOR</b> = GLFW_CONTEXT_VERSION_MAJOR, 
+<b>CONTEXT_VERSION_MINOR</b> = GLFW_CONTEXT_VERSION_MINOR, 
+<b>CONTEXT_REVISION</b> = GLFW_CONTEXT_REVISION, 
+<br />
+&#160;&#160;<b>CONTEXT_ROBUSTNESS</b> = GLFW_CONTEXT_ROBUSTNESS, 
+<b>OPENGL_FORWARD_COMPAT</b> = GLFW_OPENGL_FORWARD_COMPAT, 
+<b>OPENGL_DEBUG_CONTEXT</b> = GLFW_OPENGL_DEBUG_CONTEXT, 
+<b>OPENGL_PROFILE</b> = GLFW_OPENGL_PROFILE, 
+<br />
+&#160;&#160;<b>CONTEXT_RELEASE_BEHAVIOR</b> = GLFW_CONTEXT_RELEASE_BEHAVIOR, 
+<b>CONTEXT_NO_ERROR</b> = GLFW_CONTEXT_NO_ERROR, 
+<b>CONTEXT_CREATION_API</b> = GLFW_CONTEXT_CREATION_API, 
+<b>SCALE_TO_MONITOR</b> = GLFW_SCALE_TO_MONITOR, 
+<br />
+&#160;&#160;<b>COCOA_RETINA_FRAMEBUFFER</b> = GLFW_COCOA_RETINA_FRAMEBUFFER, 
+<b>COCOA_FRAME_NAME</b> = GLFW_COCOA_FRAME_NAME, 
+<b>COCOA_GRAPHICS_SWITCHING</b> = GLFW_COCOA_GRAPHICS_SWITCHING, 
+<b>X11_CLASS_NAME</b> = GLFW_X11_CLASS_NAME, 
+<br />
+&#160;&#160;<b>X11_INSTANCE_NAME</b> = GLFW_X11_INSTANCE_NAME, 
+<b>JOYSTICK_HAT_BUTTONS</b> = GLFW_JOYSTICK_HAT_BUTTONS, 
+<b>COCOA_CHDIR_RESOURCES</b> = GLFW_COCOA_CHDIR_RESOURCES, 
+<b>COCOA_MENUBAR</b> = GLFW_COCOA_MENUBAR
+<br />
+ }</td></tr>
+<tr class="memdesc:a84b5de0e49984d2954a12af3c266aef7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_glfwx_1_1_window.html" title="C++ wrapper for a GLFW window. ">Window</a> hints.  <a href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7">More...</a><br /></td></tr>
+<tr class="separator:a84b5de0e49984d2954a12af3c266aef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539e2dbf94948ae112954a1c612bc6f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Attribute</a> { <br />
+&#160;&#160;<b>FOCUSED</b> = GLFW_FOCUSED, 
+<b>ICONIFIED</b> = GLFW_ICONIFIED, 
+<b>VISIBLE</b> = GLFW_VISIBLE, 
+<b>DECORATED</b> = GLFW_DECORATED, 
+<br />
+&#160;&#160;<b>AUTO_ICONIFY</b> = GLFW_AUTO_ICONIFY, 
+<b>RESIZABLE</b> = GLFW_RESIZABLE, 
+<b>FLOATING</b> = GLFW_FLOATING, 
+<b>MAXIMIZED</b> = GLFW_MAXIMIZED, 
+<br />
+&#160;&#160;<b>TRANSPARENT_FRAMEBUFFER</b> = GLFW_TRANSPARENT_FRAMEBUFFER, 
+<b>HOVERED</b> = GLFW_HOVERED, 
+<b>FOCUS_ON_SHOW</b> = GLFW_FOCUS_ON_SHOW, 
+<b>CLIENT_API</b> = GLFW_CLIENT_API, 
+<br />
+&#160;&#160;<b>CONTEXT_VERSION_MAJOR</b> = GLFW_CONTEXT_VERSION_MAJOR, 
+<b>CONTEXT_VERSION_MINOR</b> = GLFW_CONTEXT_VERSION_MINOR, 
+<b>CONTEXT_REVISION</b> = GLFW_CONTEXT_REVISION, 
+<b>CONTEXT_ROBUSTNESS</b> = GLFW_CONTEXT_ROBUSTNESS, 
+<br />
+&#160;&#160;<b>OPENGL_FORWARD_COMPAT</b> = GLFW_OPENGL_FORWARD_COMPAT, 
+<b>OPENGL_DEBUG_CONTEXT</b> = GLFW_OPENGL_DEBUG_CONTEXT, 
+<b>OPENGL_PROFILE</b> = GLFW_OPENGL_PROFILE, 
+<b>CONTEXT_RELEASE_BEHAVIOR</b> = GLFW_CONTEXT_RELEASE_BEHAVIOR, 
+<br />
+&#160;&#160;<b>CONTEXT_NO_ERROR</b> = GLFW_CONTEXT_NO_ERROR, 
+<b>CONTEXT_CREATION_API</b> = GLFW_CONTEXT_CREATION_API
+<br />
+ }</td></tr>
+<tr class="memdesc:a5539e2dbf94948ae112954a1c612bc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_glfwx_1_1_window.html" title="C++ wrapper for a GLFW window. ">Window</a> attributes.  <a href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">More...</a><br /></td></tr>
+<tr class="separator:a5539e2dbf94948ae112954a1c612bc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ed042f8b36f8042b9142fba2ead62c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a4ed042f8b36f8042b9142fba2ead62c6">Window</a> (int width, int height, char const *title, <a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a> *<a class="el" href="class_glfwx_1_1_window.html#ab3cbab077e2237086b128281f8f34773">monitor</a>=nullptr, GLFWwindow *share=nullptr)</td></tr>
@@ -101,28 +201,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a1ae3101604e98b67c20a563525bb1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a2a1ae3101604e98b67c20a563525bb1d">position</a> (int &amp;x, int &amp;y) const</td></tr>
 <tr class="memdesc:a2a1ae3101604e98b67c20a563525bb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window's position.  <a href="#a2a1ae3101604e98b67c20a563525bb1d">More...</a><br /></td></tr>
 <tr class="separator:a2a1ae3101604e98b67c20a563525bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af66e4da1639f33a96d10c9f3d9f0fdaf"><td class="memItemLeft" align="right" valign="top"><a id="af66e4da1639f33a96d10c9f3d9f0fdaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#af66e4da1639f33a96d10c9f3d9f0fdaf">setSize</a> (int width, int height)</td></tr>
-<tr class="memdesc:af66e4da1639f33a96d10c9f3d9f0fdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the window. <br /></td></tr>
+<tr class="memitem:af66e4da1639f33a96d10c9f3d9f0fdaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#af66e4da1639f33a96d10c9f3d9f0fdaf">setSize</a> (int width, int height)</td></tr>
+<tr class="memdesc:af66e4da1639f33a96d10c9f3d9f0fdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the window.  <a href="#af66e4da1639f33a96d10c9f3d9f0fdaf">More...</a><br /></td></tr>
 <tr class="separator:af66e4da1639f33a96d10c9f3d9f0fdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b5ded5d17b5e721ba2e2066210bd38"><td class="memItemLeft" align="right" valign="top"><a id="aa9b5ded5d17b5e721ba2e2066210bd38"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#aa9b5ded5d17b5e721ba2e2066210bd38">size</a> (int &amp;width, int &amp;height) const</td></tr>
-<tr class="memdesc:aa9b5ded5d17b5e721ba2e2066210bd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width and height of the window. <br /></td></tr>
+<tr class="memitem:aa9b5ded5d17b5e721ba2e2066210bd38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#aa9b5ded5d17b5e721ba2e2066210bd38">size</a> (int &amp;width, int &amp;height) const</td></tr>
+<tr class="memdesc:aa9b5ded5d17b5e721ba2e2066210bd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width and height of the window.  <a href="#aa9b5ded5d17b5e721ba2e2066210bd38">More...</a><br /></td></tr>
 <tr class="separator:aa9b5ded5d17b5e721ba2e2066210bd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56634068fcc7314adbca6e42e2980d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a56634068fcc7314adbca6e42e2980d67">contentScale</a> (float &amp;x, float &amp;y) const</td></tr>
+<tr class="memdesc:a56634068fcc7314adbca6e42e2980d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content scale.  <a href="#a56634068fcc7314adbca6e42e2980d67">More...</a><br /></td></tr>
+<tr class="separator:a56634068fcc7314adbca6e42e2980d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef06c8a17558b8b767bf01aa6855261b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#aef06c8a17558b8b767bf01aa6855261b">setSizeLimits</a> (int minWidth=-1, int minHeight=-1, int maxWidth=-1, int maxHeight=-1)</td></tr>
 <tr class="memdesc:aef06c8a17558b8b767bf01aa6855261b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limits the size of the window.  <a href="#aef06c8a17558b8b767bf01aa6855261b">More...</a><br /></td></tr>
 <tr class="separator:aef06c8a17558b8b767bf01aa6855261b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f87639710e9ff94869422410f3eeec"><td class="memItemLeft" align="right" valign="top"><a id="a69f87639710e9ff94869422410f3eeec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a69f87639710e9ff94869422410f3eeec">setAspectRatio</a> (int n, int d)</td></tr>
-<tr class="memdesc:a69f87639710e9ff94869422410f3eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window's aspect ratio. <br /></td></tr>
+<tr class="memitem:a69f87639710e9ff94869422410f3eeec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a69f87639710e9ff94869422410f3eeec">setAspectRatio</a> (int n, int d)</td></tr>
+<tr class="memdesc:a69f87639710e9ff94869422410f3eeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window's aspect ratio.  <a href="#a69f87639710e9ff94869422410f3eeec">More...</a><br /></td></tr>
 <tr class="separator:a69f87639710e9ff94869422410f3eeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f3d1db323fe299c606ea33dc17b154"><td class="memItemLeft" align="right" valign="top"><a id="a00f3d1db323fe299c606ea33dc17b154"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a00f3d1db323fe299c606ea33dc17b154">framebufferSize</a> (int &amp;width, int &amp;height) const</td></tr>
-<tr class="memdesc:a00f3d1db323fe299c606ea33dc17b154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width and height of the window's framebuffer. <br /></td></tr>
+<tr class="memitem:a00f3d1db323fe299c606ea33dc17b154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a00f3d1db323fe299c606ea33dc17b154">framebufferSize</a> (int &amp;width, int &amp;height) const</td></tr>
+<tr class="memdesc:a00f3d1db323fe299c606ea33dc17b154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width and height of the window's framebuffer.  <a href="#a00f3d1db323fe299c606ea33dc17b154">More...</a><br /></td></tr>
 <tr class="separator:a00f3d1db323fe299c606ea33dc17b154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2192d52c6c30d41eaed892e1bcc27ce"><td class="memItemLeft" align="right" valign="top"><a id="af2192d52c6c30d41eaed892e1bcc27ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#af2192d52c6c30d41eaed892e1bcc27ce">frame</a> (int &amp;left, int &amp;top, int &amp;right, int &amp;bottom) const</td></tr>
-<tr class="memdesc:af2192d52c6c30d41eaed892e1bcc27ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the locations of the edges of the window's frame. <br /></td></tr>
+<tr class="memitem:af2192d52c6c30d41eaed892e1bcc27ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#af2192d52c6c30d41eaed892e1bcc27ce">frame</a> (int &amp;left, int &amp;top, int &amp;right, int &amp;bottom) const</td></tr>
+<tr class="memdesc:af2192d52c6c30d41eaed892e1bcc27ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the locations of the edges of the window's frame.  <a href="#af2192d52c6c30d41eaed892e1bcc27ce">More...</a><br /></td></tr>
 <tr class="separator:af2192d52c6c30d41eaed892e1bcc27ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8440cb2091995a5fdf17c4db18bebee"><td class="memItemLeft" align="right" valign="top"><a id="ac8440cb2091995a5fdf17c4db18bebee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ac8440cb2091995a5fdf17c4db18bebee">iconify</a> ()</td></tr>
@@ -136,75 +234,210 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a7b2d9f77e8b70e29c0f0ef6b76c92f6c">maximize</a> ()</td></tr>
 <tr class="memdesc:a7b2d9f77e8b70e29c0f0ef6b76c92f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fits the window to the size of the screen. <br /></td></tr>
 <tr class="separator:a7b2d9f77e8b70e29c0f0ef6b76c92f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635fe9c507c0a22054f1d1d1b43640d7"><td class="memItemLeft" align="right" valign="top"><a id="a635fe9c507c0a22054f1d1d1b43640d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a635fe9c507c0a22054f1d1d1b43640d7">show</a> (bool shown=true)</td></tr>
-<tr class="memdesc:a635fe9c507c0a22054f1d1d1b43640d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows or hides the window. <br /></td></tr>
+<tr class="memitem:a635fe9c507c0a22054f1d1d1b43640d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a635fe9c507c0a22054f1d1d1b43640d7">show</a> (bool shown=true)</td></tr>
+<tr class="memdesc:a635fe9c507c0a22054f1d1d1b43640d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows or hides the window.  <a href="#a635fe9c507c0a22054f1d1d1b43640d7">More...</a><br /></td></tr>
 <tr class="separator:a635fe9c507c0a22054f1d1d1b43640d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2635c8c739bb24349a46b207ccc2896"><td class="memItemLeft" align="right" valign="top"><a id="ad2635c8c739bb24349a46b207ccc2896"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ad2635c8c739bb24349a46b207ccc2896">focus</a> ()</td></tr>
 <tr class="memdesc:ad2635c8c739bb24349a46b207ccc2896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the focus to the window. <br /></td></tr>
 <tr class="separator:ad2635c8c739bb24349a46b207ccc2896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3cbab077e2237086b128281f8f34773"><td class="memItemLeft" align="right" valign="top"><a id="ab3cbab077e2237086b128281f8f34773"></a>
-<a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ab3cbab077e2237086b128281f8f34773">monitor</a> () const</td></tr>
-<tr class="memdesc:ab3cbab077e2237086b128281f8f34773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window's monitor. <br /></td></tr>
+<tr class="memitem:ab3cbab077e2237086b128281f8f34773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ab3cbab077e2237086b128281f8f34773">monitor</a> () const</td></tr>
+<tr class="memdesc:ab3cbab077e2237086b128281f8f34773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the window's monitor.  <a href="#ab3cbab077e2237086b128281f8f34773">More...</a><br /></td></tr>
 <tr class="separator:ab3cbab077e2237086b128281f8f34773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1578a72e4d832b1f4b9c4db9d9b79d68"><td class="memItemLeft" align="right" valign="top"><a id="a1578a72e4d832b1f4b9c4db9d9b79d68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a1578a72e4d832b1f4b9c4db9d9b79d68">setMonitor</a> (GLFWmonitor *<a class="el" href="class_glfwx_1_1_window.html#ab3cbab077e2237086b128281f8f34773">monitor</a>, int x, int y, int width, int height, int refreshRate)</td></tr>
-<tr class="memdesc:a1578a72e4d832b1f4b9c4db9d9b79d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window's monitor parameters. <br /></td></tr>
+<tr class="memitem:a1578a72e4d832b1f4b9c4db9d9b79d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a1578a72e4d832b1f4b9c4db9d9b79d68">setMonitor</a> (GLFWmonitor *<a class="el" href="class_glfwx_1_1_window.html#ab3cbab077e2237086b128281f8f34773">monitor</a>, int x, int y, int width, int height, int refreshRate)</td></tr>
+<tr class="memdesc:a1578a72e4d832b1f4b9c4db9d9b79d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the window's monitor parameters.  <a href="#a1578a72e4d832b1f4b9c4db9d9b79d68">More...</a><br /></td></tr>
 <tr class="separator:a1578a72e4d832b1f4b9c4db9d9b79d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a360a4cb38416b1a9040cc74221ae16"><td class="memItemLeft" align="right" valign="top"><a id="a0a360a4cb38416b1a9040cc74221ae16"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a0a360a4cb38416b1a9040cc74221ae16">getAttribute</a> (int attr) const</td></tr>
-<tr class="memdesc:a0a360a4cb38416b1a9040cc74221ae16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the specified attribute. <br /></td></tr>
-<tr class="separator:a0a360a4cb38416b1a9040cc74221ae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd86fc244cb1c4b46b7fafa5877b574"><td class="memItemLeft" align="right" valign="top"><a id="a9dd86fc244cb1c4b46b7fafa5877b574"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a9dd86fc244cb1c4b46b7fafa5877b574">setContext</a> (void *<a class="el" href="class_glfwx_1_1_window.html#a928fd3b58d97bbca63916c93cb11d7ea">context</a>)</td></tr>
-<tr class="memdesc:a9dd86fc244cb1c4b46b7fafa5877b574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a context for the window. <br /></td></tr>
+<tr class="memitem:a256058bf94a5cb61907b05ec3e466469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a256058bf94a5cb61907b05ec3e466469">setAttribute</a> (<a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Attribute</a> id, int value)</td></tr>
+<tr class="memdesc:a256058bf94a5cb61907b05ec3e466469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the specified attribute.  <a href="#a256058bf94a5cb61907b05ec3e466469">More...</a><br /></td></tr>
+<tr class="separator:a256058bf94a5cb61907b05ec3e466469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60009810f4479abef3964398029f597b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a60009810f4479abef3964398029f597b">attribute</a> (<a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Attribute</a> id) const</td></tr>
+<tr class="memdesc:a60009810f4479abef3964398029f597b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the specified attribute.  <a href="#a60009810f4479abef3964398029f597b">More...</a><br /></td></tr>
+<tr class="separator:a60009810f4479abef3964398029f597b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd86fc244cb1c4b46b7fafa5877b574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a9dd86fc244cb1c4b46b7fafa5877b574">setContext</a> (void *<a class="el" href="class_glfwx_1_1_window.html#a928fd3b58d97bbca63916c93cb11d7ea">context</a>)</td></tr>
+<tr class="memdesc:a9dd86fc244cb1c4b46b7fafa5877b574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a context for the window.  <a href="#a9dd86fc244cb1c4b46b7fafa5877b574">More...</a><br /></td></tr>
 <tr class="separator:a9dd86fc244cb1c4b46b7fafa5877b574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a928fd3b58d97bbca63916c93cb11d7ea"><td class="memItemLeft" align="right" valign="top"><a id="a928fd3b58d97bbca63916c93cb11d7ea"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a928fd3b58d97bbca63916c93cb11d7ea">context</a> () const</td></tr>
 <tr class="memdesc:a928fd3b58d97bbca63916c93cb11d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the previously set context, or nullptr. <br /></td></tr>
 <tr class="separator:a928fd3b58d97bbca63916c93cb11d7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a837e0c004cb1543f29cd4ee414537392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a837e0c004cb1543f29cd4ee414537392">setPositionChangedCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:a837e0c004cb1543f29cd4ee414537392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window's position changes size.  <a href="#a837e0c004cb1543f29cd4ee414537392">More...</a><br /></td></tr>
-<tr class="separator:a837e0c004cb1543f29cd4ee414537392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a6e64b0677f05ebbdbfd9236aed102b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a8a6e64b0677f05ebbdbfd9236aed102b">setWindowSizeChangedCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:a8a6e64b0677f05ebbdbfd9236aed102b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window changes size.  <a href="#a8a6e64b0677f05ebbdbfd9236aed102b">More...</a><br /></td></tr>
-<tr class="separator:a8a6e64b0677f05ebbdbfd9236aed102b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fdf355e658911e421e7cdc9da0621dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a0fdf355e658911e421e7cdc9da0621dd">setCloseCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:a0fdf355e658911e421e7cdc9da0621dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window is about to close.  <a href="#a0fdf355e658911e421e7cdc9da0621dd">More...</a><br /></td></tr>
-<tr class="separator:a0fdf355e658911e421e7cdc9da0621dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68dfc2e20a7c7d5b808c04999aa2e0eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a68dfc2e20a7c7d5b808c04999aa2e0eb">setRefreshCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:a68dfc2e20a7c7d5b808c04999aa2e0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window needs to be refreshed.  <a href="#a68dfc2e20a7c7d5b808c04999aa2e0eb">More...</a><br /></td></tr>
-<tr class="separator:a68dfc2e20a7c7d5b808c04999aa2e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4209289a7d4ad76d027ebbaf6506a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#af4209289a7d4ad76d027ebbaf6506a85">setFocusChangedCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, bool)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:af4209289a7d4ad76d027ebbaf6506a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window gains or loses focus.  <a href="#af4209289a7d4ad76d027ebbaf6506a85">More...</a><br /></td></tr>
-<tr class="separator:af4209289a7d4ad76d027ebbaf6506a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc08f108b980af8e38c5f523391d92d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#abc08f108b980af8e38c5f523391d92d3">setIconifyChangedCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:abc08f108b980af8e38c5f523391d92d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window's iconified status has changed.  <a href="#abc08f108b980af8e38c5f523391d92d3">More...</a><br /></td></tr>
-<tr class="separator:abc08f108b980af8e38c5f523391d92d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57a472a54bc402186dc8b2d007ae4dfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a57a472a54bc402186dc8b2d007ae4dfc">setFramebufferSizeChangedCallback</a> (std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;cb)</td></tr>
-<tr class="memdesc:a57a472a54bc402186dc8b2d007ae4dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function to be called when the window's framebuffer changes size.  <a href="#a57a472a54bc402186dc8b2d007ae4dfc">More...</a><br /></td></tr>
-<tr class="separator:a57a472a54bc402186dc8b2d007ae4dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a4b143385460bedc46a38dfdf8859c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a78a4b143385460bedc46a38dfdf8859c">processEvents</a> ()</td></tr>
 <tr class="memdesc:a78a4b143385460bedc46a38dfdf8859c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes any window activity.  <a href="#a78a4b143385460bedc46a38dfdf8859c">More...</a><br /></td></tr>
 <tr class="separator:a78a4b143385460bedc46a38dfdf8859c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30e1c615db0e9d653f8233130dcf94f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a30e1c615db0e9d653f8233130dcf94f0">waitEvents</a> ()</td></tr>
 <tr class="memdesc:a30e1c615db0e9d653f8233130dcf94f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for any window activity and processes it.  <a href="#a30e1c615db0e9d653f8233130dcf94f0">More...</a><br /></td></tr>
 <tr class="separator:a30e1c615db0e9d653f8233130dcf94f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Vulkan-specific</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These methods are specific to Vulkan and defined only when GLFW_INCLUDE_VULKAN is defined </p>
+</div></td></tr>
+<tr class="memitem:a30c39e03229076ca4e9171e38b0086cd"><td class="memItemLeft" align="right" valign="top">VkSurfaceKHR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a30c39e03229076ca4e9171e38b0086cd">createSurface</a> (VkInstance instance, VkAllocationCallbacks *allocator) const</td></tr>
+<tr class="memdesc:a30c39e03229076ca4e9171e38b0086cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a device-specific Vulkan surface.  <a href="#a30c39e03229076ca4e9171e38b0086cd">More...</a><br /></td></tr>
+<tr class="separator:a30c39e03229076ca4e9171e38b0086cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a78f9ae406c323542f318526813249c28"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a78f9ae406c323542f318526813249c28">resetHints</a> ()</td></tr>
 <tr class="memdesc:a78f9ae406c323542f318526813249c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all window hints back to default values.  <a href="#a78f9ae406c323542f318526813249c28">More...</a><br /></td></tr>
 <tr class="separator:a78f9ae406c323542f318526813249c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e80a52f7f06246b3d83155e3e836499"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a4e80a52f7f06246b3d83155e3e836499">hint</a> (Hint id, int value)</td></tr>
+<tr class="memitem:a4e80a52f7f06246b3d83155e3e836499"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a4e80a52f7f06246b3d83155e3e836499">hint</a> (<a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7">Hint</a> id, int value)</td></tr>
 <tr class="memdesc:a4e80a52f7f06246b3d83155e3e836499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides some window initialization context.  <a href="#a4e80a52f7f06246b3d83155e3e836499">More...</a><br /></td></tr>
 <tr class="separator:a4e80a52f7f06246b3d83155e3e836499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Client API attribute values</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>CLIENT_API </dd></dl>
+</div></td></tr>
+<tr class="memitem:a0c5decb4747c2c9981b1656ca94f2adc"><td class="memItemLeft" align="right" valign="top"><a id="a0c5decb4747c2c9981b1656ca94f2adc"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>NO_API</b> = GLFW_NO_API</td></tr>
+<tr class="separator:a0c5decb4747c2c9981b1656ca94f2adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c64bd5c339ed9b76dad20dfcb4b1205"><td class="memItemLeft" align="right" valign="top"><a id="a4c64bd5c339ed9b76dad20dfcb4b1205"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OPENGL_API</b> = GLFW_OPENGL_API</td></tr>
+<tr class="separator:a4c64bd5c339ed9b76dad20dfcb4b1205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ba9bc331ea5918d4eac2f6eae34672"><td class="memItemLeft" align="right" valign="top"><a id="a72ba9bc331ea5918d4eac2f6eae34672"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OPENGL_ES_API</b> = GLFW_OPENGL_ES_API</td></tr>
+<tr class="separator:a72ba9bc331ea5918d4eac2f6eae34672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Context robustness attribute values</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>CONTEXT_ROBUSTNESS </dd></dl>
+</div></td></tr>
+<tr class="memitem:a5bf67156e8b930960f46d2343c4ac9ea"><td class="memItemLeft" align="right" valign="top"><a id="a5bf67156e8b930960f46d2343c4ac9ea"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>NO_ROBUSTNESS</b> = GLFW_NO_ROBUSTNESS</td></tr>
+<tr class="separator:a5bf67156e8b930960f46d2343c4ac9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9ae5a4974a703e945b821443501525"><td class="memItemLeft" align="right" valign="top"><a id="a7d9ae5a4974a703e945b821443501525"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>NO_RESET_NOTIFICATION</b> = GLFW_NO_RESET_NOTIFICATION</td></tr>
+<tr class="separator:a7d9ae5a4974a703e945b821443501525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a60e6fabe9fbab0988d978e3cd0864f"><td class="memItemLeft" align="right" valign="top"><a id="a5a60e6fabe9fbab0988d978e3cd0864f"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>LOSE_CONTEXT_ON_RESET</b> = GLFW_LOSE_CONTEXT_ON_RESET</td></tr>
+<tr class="separator:a5a60e6fabe9fbab0988d978e3cd0864f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">OpenGL profile attribute values</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>OPENGL_PROFILE </dd></dl>
+</div></td></tr>
+<tr class="memitem:af9b2866f0bc75951fa61bfe92af5a80e"><td class="memItemLeft" align="right" valign="top"><a id="af9b2866f0bc75951fa61bfe92af5a80e"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OPENGL_ANY_PROFILE</b> = GLFW_OPENGL_ANY_PROFILE</td></tr>
+<tr class="separator:af9b2866f0bc75951fa61bfe92af5a80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3404f76de5075b08ffa945307bc105ae"><td class="memItemLeft" align="right" valign="top"><a id="a3404f76de5075b08ffa945307bc105ae"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OPENGL_CORE_PROFILE</b> = GLFW_OPENGL_CORE_PROFILE</td></tr>
+<tr class="separator:a3404f76de5075b08ffa945307bc105ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f177d4b6d6fdf5eff2dba7185ba52a"><td class="memItemLeft" align="right" valign="top"><a id="ad3f177d4b6d6fdf5eff2dba7185ba52a"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OPENGL_COMPAT_PROFILE</b> = GLFW_OPENGL_COMPAT_PROFILE</td></tr>
+<tr class="separator:ad3f177d4b6d6fdf5eff2dba7185ba52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Context release behavior attribute values</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>CONTEXT_RELEASE_BEHAVIOR </dd></dl>
+</div></td></tr>
+<tr class="memitem:a201287ec04ad113717bddf7ba6513a12"><td class="memItemLeft" align="right" valign="top"><a id="a201287ec04ad113717bddf7ba6513a12"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>ANY_RELEASE_BEHAVIOR</b> = GLFW_ANY_RELEASE_BEHAVIOR</td></tr>
+<tr class="separator:a201287ec04ad113717bddf7ba6513a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b121e7b3d016688da2fb5f881151ebb"><td class="memItemLeft" align="right" valign="top"><a id="a6b121e7b3d016688da2fb5f881151ebb"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>RELEASE_BEHAVIOR_FLUSH</b> = GLFW_RELEASE_BEHAVIOR_FLUSH</td></tr>
+<tr class="separator:a6b121e7b3d016688da2fb5f881151ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f391fc86644378252e5287ec842825d"><td class="memItemLeft" align="right" valign="top"><a id="a2f391fc86644378252e5287ec842825d"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>RELEASE_BEHAVIOR_NONE</b> = GLFW_RELEASE_BEHAVIOR_NONE</td></tr>
+<tr class="separator:a2f391fc86644378252e5287ec842825d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Context creation API attribute values</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>CONTEXT_CREATION_API </dd></dl>
+</div></td></tr>
+<tr class="memitem:afcdaf0ca13237905067a7b0fa1ac5508"><td class="memItemLeft" align="right" valign="top"><a id="afcdaf0ca13237905067a7b0fa1ac5508"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>NATIVE_CONTEXT_API</b> = GLFW_NATIVE_CONTEXT_API</td></tr>
+<tr class="separator:afcdaf0ca13237905067a7b0fa1ac5508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb0ed3ce29af17a63dae2bc880406e7"><td class="memItemLeft" align="right" valign="top"><a id="a8eb0ed3ce29af17a63dae2bc880406e7"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>EGL_CONTEXT_API</b> = GLFW_EGL_CONTEXT_API</td></tr>
+<tr class="separator:a8eb0ed3ce29af17a63dae2bc880406e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae8ec96598ac193a3f0baa2c3ec1688"><td class="memItemLeft" align="right" valign="top"><a id="a9ae8ec96598ac193a3f0baa2c3ec1688"></a>
+static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>OSMESA_CONTEXT_API</b> = GLFW_OSMESA_CONTEXT_API</td></tr>
+<tr class="separator:a9ae8ec96598ac193a3f0baa2c3ec1688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Overridable Notifications</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These methods must be overridden in order to receive the appropriate notifications. </p>
+</div></td></tr>
+<tr class="memitem:a847448cd4ab1e61d942df5ae80023b39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a847448cd4ab1e61d942df5ae80023b39">onPositionChanged</a> (int x, int y)</td></tr>
+<tr class="memdesc:a847448cd4ab1e61d942df5ae80023b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window position is changed.  <a href="#a847448cd4ab1e61d942df5ae80023b39">More...</a><br /></td></tr>
+<tr class="separator:a847448cd4ab1e61d942df5ae80023b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06d2f557eea831460ae61f565e0c0b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ae06d2f557eea831460ae61f565e0c0b3">onSizeChanged</a> (int width, int height)</td></tr>
+<tr class="memdesc:ae06d2f557eea831460ae61f565e0c0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the size of the window is changed.  <a href="#ae06d2f557eea831460ae61f565e0c0b3">More...</a><br /></td></tr>
+<tr class="separator:ae06d2f557eea831460ae61f565e0c0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad696caeced3d3780cb20293662b4e7eb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ad696caeced3d3780cb20293662b4e7eb">onClose</a> ()</td></tr>
+<tr class="memdesc:ad696caeced3d3780cb20293662b4e7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before the window is closed.  <a href="#ad696caeced3d3780cb20293662b4e7eb">More...</a><br /></td></tr>
+<tr class="separator:ad696caeced3d3780cb20293662b4e7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366bf45a91ca3d870ba053cc3c6d7592"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a366bf45a91ca3d870ba053cc3c6d7592">onRefresh</a> ()</td></tr>
+<tr class="memdesc:a366bf45a91ca3d870ba053cc3c6d7592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the contents of the window need to be refreshed.  <a href="#a366bf45a91ca3d870ba053cc3c6d7592">More...</a><br /></td></tr>
+<tr class="separator:a366bf45a91ca3d870ba053cc3c6d7592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7306d3140b82996f9d8e272b66ad1544"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a7306d3140b82996f9d8e272b66ad1544">onFocusChanged</a> (int gained)</td></tr>
+<tr class="memdesc:a7306d3140b82996f9d8e272b66ad1544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window focused has changed to or from the window.  <a href="#a7306d3140b82996f9d8e272b66ad1544">More...</a><br /></td></tr>
+<tr class="separator:a7306d3140b82996f9d8e272b66ad1544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5dd6d512f4dedcef6c0032b81ef7b19"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#ae5dd6d512f4dedcef6c0032b81ef7b19">onIconifyChanged</a> (int iconified)</td></tr>
+<tr class="memdesc:ae5dd6d512f4dedcef6c0032b81ef7b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window has changed to or from the icon state.  <a href="#ae5dd6d512f4dedcef6c0032b81ef7b19">More...</a><br /></td></tr>
+<tr class="separator:ae5dd6d512f4dedcef6c0032b81ef7b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b2bcbb87cce1f81b198404129c6a40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#aa1b2bcbb87cce1f81b198404129c6a40">onMaximizeChanged</a> (int maximized)</td></tr>
+<tr class="memdesc:aa1b2bcbb87cce1f81b198404129c6a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the when changes to or from maximized state.  <a href="#aa1b2bcbb87cce1f81b198404129c6a40">More...</a><br /></td></tr>
+<tr class="separator:aa1b2bcbb87cce1f81b198404129c6a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9043906c55ea0b541bc8a8e0c8a1308f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a9043906c55ea0b541bc8a8e0c8a1308f">onFramebufferSizeChanged</a> (int width, int height)</td></tr>
+<tr class="memdesc:a9043906c55ea0b541bc8a8e0c8a1308f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the size of the window's framebuffer changes.  <a href="#a9043906c55ea0b541bc8a8e0c8a1308f">More...</a><br /></td></tr>
+<tr class="separator:a9043906c55ea0b541bc8a8e0c8a1308f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f028194abd9899ef0046de82d9572e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_glfwx_1_1_window.html#a70f028194abd9899ef0046de82d9572e">onContentScaleChanged</a> (float x, float y)</td></tr>
+<tr class="memdesc:a70f028194abd9899ef0046de82d9572e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window's content scale changes.  <a href="#a70f028194abd9899ef0046de82d9572e">More...</a><br /></td></tr>
+<tr class="separator:a70f028194abd9899ef0046de82d9572e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Wrapper for GLFW window. </p>
+<div class="textblock"><p>C++ wrapper for a GLFW window. </p>
 <dl class="section see"><dt>See also</dt><dd>GLFWwindow </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5539e2dbf94948ae112954a1c612bc6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5539e2dbf94948ae112954a1c612bc6f">&#9670;&nbsp;</a></span>Attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Glfwx::Window::Attribute</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_glfwx_1_1_window.html" title="C++ wrapper for a GLFW window. ">Window</a> attributes. </p>
+<dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+
+</div>
+</div>
+<a id="a84b5de0e49984d2954a12af3c266aef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84b5de0e49984d2954a12af3c266aef7">&#9670;&nbsp;</a></span>Hint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7">Glfwx::Window::Hint</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_glfwx_1_1_window.html" title="C++ wrapper for a GLFW window. ">Window</a> hints. </p>
+<dl class="section note"><dt>Note</dt><dd>as of GLFW 3.3.2 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ed042f8b36f8042b9142fba2ead62c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ed042f8b36f8042b9142fba2ead62c6">&#9670;&nbsp;</a></span>Window()</h2>
 
@@ -252,15 +485,16 @@ Static Public Member Functions</h2></td></tr>
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">width</td><td></td></tr>
-    <tr><td class="paramname">height</td><td></td></tr>
-    <tr><td class="paramname">name</td><td></td></tr>
-    <tr><td class="paramname">monitor</td><td></td></tr>
-    <tr><td class="paramname">share</td><td></td></tr>
+    <tr><td class="paramname">width</td><td>The desired width of the window (must be &gt; 0) </td></tr>
+    <tr><td class="paramname">height</td><td>The desired height of the window (must be &gt; 0) </td></tr>
+    <tr><td class="paramname">title</td><td>The initial UTF-8 window title </td></tr>
+    <tr><td class="paramname">monitor</td><td>The monitor to use for full screen mode, or nullptr for windowed mode (optional) </td></tr>
+    <tr><td class="paramname">share</td><td>The window whose context to share resources with, or nullptr to not share resources (optional)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_glfwx_1_1_window.html#a4e80a52f7f06246b3d83155e3e836499" title="Provides some window initialization context. ">hint()</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>GLFW requires that the window be constructed in the main thread. </dd></dl>
 
 </div>
 </div>
@@ -293,6 +527,197 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a60009810f4479abef3964398029f597b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60009810f4479abef3964398029f597b">&#9670;&nbsp;</a></span>attribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Glfwx::Window::attribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Attribute</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the value of the specified attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The attribute to query</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attribute's value </dd></dl>
+
+</div>
+</div>
+<a id="a56634068fcc7314adbca6e42e2980d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56634068fcc7314adbca6e42e2980d67">&#9670;&nbsp;</a></span>contentScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Glfwx::Window::contentScale </td>
+          <td>(</td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the content scale. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">x</td><td>Scale </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>Scale </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30c39e03229076ca4e9171e38b0086cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c39e03229076ca4e9171e38b0086cd">&#9670;&nbsp;</a></span>createSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkSurfaceKHR Glfwx::Window::createSurface </td>
+          <td>(</td>
+          <td class="paramtype">VkInstance&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkAllocationCallbacks *&#160;</td>
+          <td class="paramname"><em>allocator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a device-specific Vulkan surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>Vulkan instance </td></tr>
+    <tr><td class="paramname">allocator</td><td>Vulkan allocator</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vulkan surface</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>glfwCreateWindowSurface </dd></dl>
+
+</div>
+</div>
+<a id="af2192d52c6c30d41eaed892e1bcc27ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2192d52c6c30d41eaed892e1bcc27ce">&#9670;&nbsp;</a></span>frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Glfwx::Window::frame </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>bottom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the locations of the edges of the window's frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">left</td><td>Location of the left edge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">top</td><td>Location of the top edge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">right</td><td>Location of the right edge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bottom</td><td>Location of the bottom edge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00f3d1db323fe299c606ea33dc17b154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f3d1db323fe299c606ea33dc17b154">&#9670;&nbsp;</a></span>framebufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Glfwx::Window::framebufferSize </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the width and height of the window's framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>Width </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>Height </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4e80a52f7f06246b3d83155e3e836499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e80a52f7f06246b3d83155e3e836499">&#9670;&nbsp;</a></span>hint()</h2>
 
@@ -305,7 +730,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static void Glfwx::Window::hint </td>
           <td>(</td>
-          <td class="paramtype">Hint&#160;</td>
+          <td class="paramtype"><a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7">Hint</a>&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -335,7 +760,374 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>glfwWindowHint </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7" title="Window hints. ">Hint</a> </dd>
+<dd>
+glfwWindowHint </dd></dl>
+
+</div>
+</div>
+<a id="ab3cbab077e2237086b128281f8f34773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cbab077e2237086b128281f8f34773">&#9670;&nbsp;</a></span>monitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_glfwx_1_1_monitor.html">Monitor</a> Glfwx::Window::monitor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the window's monitor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The window's monitor </dd></dl>
+
+</div>
+</div>
+<a id="ad696caeced3d3780cb20293662b4e7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad696caeced3d3780cb20293662b4e7eb">&#9670;&nbsp;</a></span>onClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before the window is closed. </p>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="a70f028194abd9899ef0046de82d9572e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f028194abd9899ef0046de82d9572e">&#9670;&nbsp;</a></span>onContentScaleChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onContentScaleChanged </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the window's content scale changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>New scale </td></tr>
+    <tr><td class="paramname">y</td><td>New scale</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="a7306d3140b82996f9d8e272b66ad1544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7306d3140b82996f9d8e272b66ad1544">&#9670;&nbsp;</a></span>onFocusChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onFocusChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gained</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the window focused has changed to or from the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gained</td><td>1 if the window gains focus. 0 if the window loses focus.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="a9043906c55ea0b541bc8a8e0c8a1308f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9043906c55ea0b541bc8a8e0c8a1308f">&#9670;&nbsp;</a></span>onFramebufferSizeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onFramebufferSizeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the size of the window's framebuffer changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>New framebuffer size </td></tr>
+    <tr><td class="paramname">height</td><td>New framebuffer size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="ae5dd6d512f4dedcef6c0032b81ef7b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5dd6d512f4dedcef6c0032b81ef7b19">&#9670;&nbsp;</a></span>onIconifyChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onIconifyChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iconified</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the window has changed to or from the icon state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iconified</td><td>1 if the window is iconified. 0 if the window is opened.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="aa1b2bcbb87cce1f81b198404129c6a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b2bcbb87cce1f81b198404129c6a40">&#9670;&nbsp;</a></span>onMaximizeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onMaximizeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maximized</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the when changes to or from maximized state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maximized</td><td>1 if the window is maximized, 0 if the window returns to normal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="a847448cd4ab1e61d942df5ae80023b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847448cd4ab1e61d942df5ae80023b39">&#9670;&nbsp;</a></span>onPositionChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onPositionChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the window position is changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>New location </td></tr>
+    <tr><td class="paramname">y</td><td>New location</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="a366bf45a91ca3d870ba053cc3c6d7592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366bf45a91ca3d870ba053cc3c6d7592">&#9670;&nbsp;</a></span>onRefresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onRefresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the contents of the window need to be refreshed. </p>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
+
+</div>
+</div>
+<a id="ae06d2f557eea831460ae61f565e0c0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06d2f557eea831460ae61f565e0c0b3">&#9670;&nbsp;</a></span>onSizeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Glfwx::Window::onSizeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the size of the window is changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>New size </td></tr>
+    <tr><td class="paramname">height</td><td>New size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Override this method to be notified of this event </dd></dl>
 
 </div>
 </div>
@@ -424,82 +1216,108 @@ glfwWindowShouldClose </dd></dl>
 </div><div class="memdoc">
 
 <p>Resets all window hints back to default values. </p>
-<dl class="section see"><dt>See also</dt><dd>glfwDefaultWindowHints </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_glfwx_1_1_window.html#a84b5de0e49984d2954a12af3c266aef7" title="Window hints. ">Hint</a> </dd>
+<dd>
+glfwDefaultWindowHints </dd></dl>
 
 </div>
 </div>
-<a id="a0fdf355e658911e421e7cdc9da0621dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fdf355e658911e421e7cdc9da0621dd">&#9670;&nbsp;</a></span>setCloseCallback()</h2>
+<a id="a69f87639710e9ff94869422410f3eeec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f87639710e9ff94869422410f3eeec">&#9670;&nbsp;</a></span>setAspectRatio()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setCloseCallback </td>
+          <td class="memname">void Glfwx::Window::setAspectRatio </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window is about to close. </p>
+<p>Sets the window's aspect ratio. </p>
+<p>The aspect ratio is set the value of the fraction n/d.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">n</td><td>numerator </td></tr>
+    <tr><td class="paramname">d</td><td>denominator </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="af4209289a7d4ad76d027ebbaf6506a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4209289a7d4ad76d027ebbaf6506a85">&#9670;&nbsp;</a></span>setFocusChangedCallback()</h2>
+<a id="a256058bf94a5cb61907b05ec3e466469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256058bf94a5cb61907b05ec3e466469">&#9670;&nbsp;</a></span>setAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setFocusChangedCallback </td>
+          <td class="memname">void Glfwx::Window::setAttribute </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, bool)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f">Attribute</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window gains or loses focus. </p>
+<p>Sets the value of the specified attribute. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">id</td><td>The attribute to change </td></tr>
+    <tr><td class="paramname">value</td><td>THe value to set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_glfwx_1_1_window.html#a5539e2dbf94948ae112954a1c612bc6f" title="Window attributes. ">Attribute</a> </dd></dl>
 
 </div>
 </div>
-<a id="a57a472a54bc402186dc8b2d007ae4dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57a472a54bc402186dc8b2d007ae4dfc">&#9670;&nbsp;</a></span>setFramebufferSizeChangedCallback()</h2>
+<a id="a9dd86fc244cb1c4b46b7fafa5877b574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd86fc244cb1c4b46b7fafa5877b574">&#9670;&nbsp;</a></span>setContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setFramebufferSizeChangedCallback </td>
+          <td class="memname">void Glfwx::Window::setContext </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window's framebuffer changes size. </p>
+<p>Saves a context for the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">context</td><td>Value to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -535,26 +1353,65 @@ GLFWimage </dd></dl>
 
 </div>
 </div>
-<a id="abc08f108b980af8e38c5f523391d92d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc08f108b980af8e38c5f523391d92d3">&#9670;&nbsp;</a></span>setIconifyChangedCallback()</h2>
+<a id="a1578a72e4d832b1f4b9c4db9d9b79d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1578a72e4d832b1f4b9c4db9d9b79d68">&#9670;&nbsp;</a></span>setMonitor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setIconifyChangedCallback </td>
+          <td class="memname">void Glfwx::Window::setMonitor </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramtype">GLFWmonitor *&#160;</td>
+          <td class="paramname"><em>monitor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refreshRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window's iconified status has changed. </p>
+<p>Sets the window's monitor parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">monitor</td><td><a class="el" href="class_glfwx_1_1_monitor.html" title="C++ wrapper for a GLFW monitor. ">Monitor</a> to display window </td></tr>
+    <tr><td class="paramname">x</td><td>Location </td></tr>
+    <tr><td class="paramname">y</td><td>Location </td></tr>
+    <tr><td class="paramname">width</td><td>Size </td></tr>
+    <tr><td class="paramname">height</td><td>Size </td></tr>
+    <tr><td class="paramname">refreshRate</td><td>Refresh rate </td></tr>
   </table>
   </dd>
 </dl>
@@ -599,52 +1456,37 @@ GLFWimage </dd></dl>
 
 </div>
 </div>
-<a id="a837e0c004cb1543f29cd4ee414537392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a837e0c004cb1543f29cd4ee414537392">&#9670;&nbsp;</a></span>setPositionChangedCallback()</h2>
+<a id="af66e4da1639f33a96d10c9f3d9f0fdaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66e4da1639f33a96d10c9f3d9f0fdaf">&#9670;&nbsp;</a></span>setSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setPositionChangedCallback </td>
+          <td class="memname">void Glfwx::Window::setSize </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the function to be called when the window's position changes size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a68dfc2e20a7c7d5b808c04999aa2e0eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68dfc2e20a7c7d5b808c04999aa2e0eb">&#9670;&nbsp;</a></span>setRefreshCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setRefreshCallback </td>
-          <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window needs to be refreshed. </p>
+<p>Sets the size of the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">width</td><td>Size </td></tr>
+    <tr><td class="paramname">height</td><td>Size </td></tr>
   </table>
   </dd>
 </dl>
@@ -692,10 +1534,10 @@ GLFWimage </dd></dl>
 <p>Limits the size of the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minWidth</td><td></td></tr>
-    <tr><td class="paramname">minHeight</td><td></td></tr>
-    <tr><td class="paramname">maxWidth</td><td></td></tr>
-    <tr><td class="paramname">maxHeight</td><td></td></tr>
+    <tr><td class="paramname">minWidth</td><td>Minimum size (-1 = no limit, optional, default is -1) </td></tr>
+    <tr><td class="paramname">minHeight</td><td>Minimum size (-1 = no limit, optional, default is -1) </td></tr>
+    <tr><td class="paramname">maxWidth</td><td>Maximum size (-1 = no limit, optional, default is -1) </td></tr>
+    <tr><td class="paramname">maxHeight</td><td>Maximum size (-1 = no limit, optional, default is -1)</td></tr>
   </table>
   </dd>
 </dl>
@@ -730,26 +1572,63 @@ GLFWimage </dd></dl>
 
 </div>
 </div>
-<a id="a8a6e64b0677f05ebbdbfd9236aed102b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a6e64b0677f05ebbdbfd9236aed102b">&#9670;&nbsp;</a></span>setWindowSizeChangedCallback()</h2>
+<a id="a635fe9c507c0a22054f1d1d1b43640d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635fe9c507c0a22054f1d1d1b43640d7">&#9670;&nbsp;</a></span>show()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Glfwx::Window::setWindowSizeChangedCallback </td>
+          <td class="memname">void Glfwx::Window::show </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_glfwx_1_1_window.html">Window</a> *, int, int)&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>shown</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the function to be called when the window changes size. </p>
+<p>Shows or hides the window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>Callback function </td></tr>
+    <tr><td class="paramname">shown</td><td>Shows if true, hides if false (optional, default is true) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9b5ded5d17b5e721ba2e2066210bd38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b5ded5d17b5e721ba2e2066210bd38">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Glfwx::Window::size </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the width and height of the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">width</td><td>Size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">height</td><td>Size </td></tr>
   </table>
   </dd>
 </dl>

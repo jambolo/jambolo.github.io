@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gammaramp',['gammaRamp',['../class_glfwx_1_1_monitor.html#addfc1eea57c88718ae310f480e076ed1',1,'Glfwx::Monitor']]],
-  ['getattribute',['getAttribute',['../class_glfwx_1_1_window.html#a0a360a4cb38416b1a9040cc74221ae16',1,'Glfwx::Window']]]
+  ['focus',['focus',['../class_glfwx_1_1_window.html#ad2635c8c739bb24349a46b207ccc2896',1,'Glfwx::Window']]],
+  ['frame',['frame',['../class_glfwx_1_1_window.html#af2192d52c6c30d41eaed892e1bcc27ce',1,'Glfwx::Window']]],
+  ['framebuffersize',['framebufferSize',['../class_glfwx_1_1_window.html#a00f3d1db323fe299c606ea33dc17b154',1,'Glfwx::Window']]]
 ];

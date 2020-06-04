@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_20glfwmonitor_20_2a',['operator GLFWmonitor *',['../class_glfwx_1_1_monitor.html#a3697cf0d907fbfb1f0a8f9c1e5b6694c',1,'Glfwx::Monitor']]]
+  ['name',['name',['../class_glfwx_1_1_monitor.html#a599a0df2237b81a093645c99416b3b3e',1,'Glfwx::Monitor']]]
 ];
