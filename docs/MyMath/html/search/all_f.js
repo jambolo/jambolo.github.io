@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['range',['Range',['../class_my_math_1_1_range.html',1,'MyMath::Range&lt; T, lower_closed, upper_closed &gt;'],['../group___range.html#ga9e3e069872ab416f560b5b9fe96df7e9',1,'MyMath::Range::Range()'],['../group___range.html',1,'(Global Namespace)']]],
-  ['ray',['Ray',['../class_ray.html',1,'Ray'],['../class_ray.html#a4c8d138f48dbd8c05e2bb38989d0a5eb',1,'Ray::Ray()=default'],['../class_ray.html#a0d401e1dc34db21f7e20fd37476f066e',1,'Ray::Ray(Vector3 const &amp;m, Vector3 const &amp;b)']]],
-  ['reflect',['Reflect',['../class_plane.html#a952cab270afe9e563da1802352d4730e',1,'Plane']]],
-  ['reflectvector',['ReflectVector',['../class_plane.html#abed7c90e0026ecad311b153ac513a9b7',1,'Plane']]],
-  ['result',['Result',['../class_intersectable.html#a55bb0a62f2d1e6938831a80b7f92ca76',1,'Intersectable']]],
-  ['rotate',['Rotate',['../class_vector2.html#af167154d3efc3b28325383c5d28cbddd',1,'Vector2::Rotate()'],['../class_vector2d.html#a238d7408a316e40071e9abd41ea2267a',1,'Vector2d::Rotate()'],['../class_vector3.html#ae68a6c92189de23cde15d1dbe6f86f03',1,'Vector3::Rotate(Vector3 const &amp;axis, float angle)'],['../class_vector3.html#a36c8a87e0a5450198d461416b1cf9cf6',1,'Vector3::Rotate(Quaternion const &amp;q)'],['../class_vector3d.html#aa8fcd6942657e3c313113642b3d071e5',1,'Vector3d::Rotate(Vector3d const &amp;axis, double angle)'],['../class_vector3d.html#a082fdfe29fe53301d37f7892e3bdbdb1',1,'Vector3d::Rotate(Quaternion const &amp;q)'],['../class_vector4.html#a955e717a9d44d9ab63f0f8647be362e0',1,'Vector4::Rotate(Vector4 const &amp;axis, float angle)'],['../class_vector4.html#a03ab5e5ff2698b3cd49e5e1552dbb8e6',1,'Vector4::Rotate(Quaternion const &amp;q)'],['../class_vector4d.html#a16f53487f7812fefc4de9d37779010b9',1,'Vector4d::Rotate(Vector4d const &amp;axis, double angle)'],['../class_vector4d.html#a58eb0cd96e515ad3ea74a9d20203db72',1,'Vector4d::Rotate(Quaternion const &amp;q)']]]
-];

@@ -1,4 +1,0 @@
-<map id="Poly" name="Poly">
-<area shape="rect" id="node2" href="$class_plane.html" title="A plane that can detect and compute intersections with other intersectable objects. " alt="" coords="26,80,81,107"/>
-<area shape="rect" id="node3" href="$class_intersectable.html" title="A class that can detect and compute intersections with other instances. " alt="" coords="5,5,101,32"/>
-</map>
