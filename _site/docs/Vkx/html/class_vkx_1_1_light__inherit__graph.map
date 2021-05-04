@@ -1,0 +1,6 @@
+<map id="Vkx::Light" name="Vkx::Light">
+<area shape="rect" id="node2" href="$class_vkx_1_1_ambient_light.html" title="An ambient light. " alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$class_vkx_1_1_directional_light.html" title="A directional light. " alt="" coords="159,80,301,107"/>
+<area shape="rect" id="node4" href="$class_vkx_1_1_point_light.html" title="A point light. " alt="" coords="325,80,436,107"/>
+<area shape="rect" id="node5" href="$class_vkx_1_1_spot_light.html" title="A spot light. " alt="" coords="460,80,568,107"/>
+</map>

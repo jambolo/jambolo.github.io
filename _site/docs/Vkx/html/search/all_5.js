@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['hostbuffer',['HostBuffer',['../class_vkx_1_1_host_buffer.html',1,'Vkx::HostBuffer'],['../class_vkx_1_1_host_buffer.html#a67177f1262b71b33fb06ae2cff3d69e7',1,'Vkx::HostBuffer::HostBuffer()=default'],['../class_vkx_1_1_host_buffer.html#a3adce061d23060eab1a55bd0c2c9a3ed',1,'Vkx::HostBuffer::HostBuffer(vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, void const *src=nullptr, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)']]],
-  ['hostimage',['HostImage',['../class_vkx_1_1_host_image.html',1,'Vkx::HostImage'],['../class_vkx_1_1_host_image.html#afbb9777bc0a5179069c084997576a5fd',1,'Vkx::HostImage::HostImage()=default'],['../class_vkx_1_1_host_image.html#afe1d5ecf99213b01fbed6e218bd871dc',1,'Vkx::HostImage::HostImage(vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, vk::ImageCreateInfo const &amp;info, void const *src=nullptr, size_t size=0)']]]
+  ['facing',['facing',['../class_vkx_1_1_camera.html#a89938acf3750f1748de09a84f7ab3de5',1,'Vkx::Camera']]],
+  ['falloff',['falloff',['../class_vkx_1_1_spot_light.html#af16f41ca6e022da6b8acdfb7197faa34',1,'Vkx::SpotLight']]],
+  ['fardistance',['farDistance',['../class_vkx_1_1_camera.html#a6dc57cc46efe806d3549c9eb08044c02',1,'Vkx::Camera']]],
+  ['fardistance_5f',['farDistance_',['../class_vkx_1_1_camera.html#a3887a3ee83294127bda65e768d3a44e1',1,'Vkx::Camera']]],
+  ['findappropriatememorytype',['findAppropriateMemoryType',['../group___utilities.html#gacd4cf49284c8835155b65da15c4ae272',1,'Vkx']]],
+  ['format',['format',['../class_vkx_1_1_swap_chain.html#ac6b413cb91c6cf038b48c90dfd5a700c',1,'Vkx::SwapChain']]],
+  ['frame',['Frame',['../class_vkx_1_1_frame.html',1,'Vkx::Frame'],['../class_vkx_1_1_camera.html#ac0ebfd85e7bc2936967fce90283cb00f',1,'Vkx::Camera::frame()'],['../class_vkx_1_1_frame.html#a4d13842bb05d86e831e07c308561f156',1,'Vkx::Frame::Frame(glm::mat4x4 const &amp;m=glm::mat4x4(1.0f))'],['../class_vkx_1_1_frame.html#a861ab23e66f276704f3ef12e8705e10b',1,'Vkx::Frame::Frame(glm::vec3 const &amp;translation, glm::quat const &amp;rotation, glm::vec3 const &amp;scale=glm::vec3(1.0f))']]],
+  ['frame_5f',['frame_',['../class_vkx_1_1_camera.html#a15059f9efa034f0bf6d92ccc0ea3b65f',1,'Vkx::Camera']]]
 ];

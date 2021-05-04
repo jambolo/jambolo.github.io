@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Vulkan API Extensions</div>
+   <div id="projectbrief">Vulkan C++ extensions</div>
   </td>
  </tr>
  </tbody>
@@ -67,9 +68,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_vkx_1_1_buffer.html#a9e5f1f115f1c514e633781b8fb7549ce">Vkx::Buffer::Buffer</a>  (vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</dt>
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_vkx_1_1_buffer.html#a1a4ce6fbcba0e83718f495099b227d46">Vkx::Buffer::Buffer</a>  (std::shared_ptr&lt; Device &gt; device, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</dt>
 <dd>"... you're not supposed to actually call vkAllocateMemory for every individual buffer. ... The right way to allocate memory for a large number of objects at the same time is to create a custom allocator that splits up a single allocation among many different objects by using the offset parameters that we've seen in many functions."  &lt;/dd&gt; &lt;dt&gt;\anchor _todo000002
-\_setscope Vkx::Image Member \_internalref class_vkx_1_1_image#a46311ef1435d0e1f3100de2f6ca76697 "<a class="el" href="class_vkx_1_1_image.html#a3609b83d8d4988d4b06b47fe76d3e65f" title="Constructor. ">Vkx::Image::Image</a>" (vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, vk::ImageCreateInfo const &amp;info, vk::MemoryPropertyFlags memoryProperties)&lt;/dt&gt;&lt;dd&gt; "... you're not supposed to actually call vkAllocateMemory for every individual image. ... The right way to allocate memory for a large number of objects at the same time is to create a custom allocator that splits up a single allocation among many different objects by using the offset parameters that we've seen in many functions." </dd>
+\_setscope Vkx::Image Member \_internalref class_vkx_1_1_image#ad79534db0b08ea7e9312e2c20425729a "<a class="el" href="class_vkx_1_1_image.html#a3609b83d8d4988d4b06b47fe76d3e65f" title="Constructor. ">Vkx::Image::Image</a>" (std::shared_ptr&lt; Device &gt; device, vk::ImageCreateInfo const &amp;info, vk::MemoryPropertyFlags memoryProperties, vk::ImageAspectFlags aspect)&lt;/dt&gt;&lt;dd&gt; "... you're not supposed to actually call vkAllocateMemory for every individual image. ... The right way to allocate memory for a large number of objects at the same time is to create a custom allocator that splits up a single allocation among many different objects by using the offset parameters that we've seen in many functions." </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->

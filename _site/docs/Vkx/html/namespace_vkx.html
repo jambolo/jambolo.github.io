@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Vulkan API Extensions</div>
+   <div id="projectbrief">Vulkan C++ extensions</div>
   </td>
  </tr>
  </tbody>
@@ -63,8 +64,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Vkx Namespace Reference</div>  </div>
 </div><!--header-->
@@ -73,77 +76,269 @@ $(function() {
 <p>Extensions to Vulkan.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespace_vkx_1_1_debug_utils"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx_1_1_debug_utils.html">DebugUtils</a></td></tr>
+<tr class="memdesc:namespace_vkx_1_1_debug_utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extensions to vk Debug Utilities. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_ambient_light.html">AmbientLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An ambient light.  <a href="class_vkx_1_1_ambient_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_buffer.html">Buffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extension of vk::Buffer that supports ownership of the memory.  <a href="class_vkx_1_1_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_camera.html">Camera</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A camera.  <a href="class_vkx_1_1_camera.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_depth_image.html">DepthImage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). ">LocalImage</a> for use as a depth buffer (vk::ImageAspect::eDEPTH).  <a href="class_vkx_1_1_depth_image.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html">Device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A RAII extension to vk::Device.  <a href="class_vkx_1_1_device.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructible extension to vk::Device.  <a href="class_vkx_1_1_device.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_directional_light.html">DirectionalLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A directional light.  <a href="class_vkx_1_1_directional_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_frame.html">Frame</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A frame of reference including translation, scale, and orientation.  <a href="class_vkx_1_1_frame.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_buffer.html">HostBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. ">Buffer</a> that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent).  <a href="class_vkx_1_1_host_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_host_image.html">HostImage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory. ">Image</a> that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent).  <a href="class_vkx_1_1_host_image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. ">Image</a> that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent).  <a href="class_vkx_1_1_host_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_image.html">Image</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extension to vk::Image that supports ownership of the memory.  <a href="class_vkx_1_1_image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extension to vk::Image that supports ownership of the memory and the view.  <a href="class_vkx_1_1_image.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_instance.html">Instance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A RAII extension to vk::Instance.  <a href="class_vkx_1_1_instance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructible extension to vk::Instance.  <a href="class_vkx_1_1_instance.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_light.html">Light</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for lights.  <a href="class_vkx_1_1_light.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_local_buffer.html">LocalBuffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_vkx_1_1_buffer.html" title="An extension of vk::Buffer that supports ownership of the memory. ">Buffer</a> that is visible only to the GPU (eDeviceLocal).  <a href="class_vkx_1_1_local_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_local_image.html">LocalImage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory. ">Image</a> that is accessible only to the GPU (eDeviceLocal).  <a href="class_vkx_1_1_local_image.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class_vkx_1_1_image.html" title="An extension to vk::Image that supports ownership of the memory and the view. ">Image</a> that is accessible only to the GPU (eDeviceLocal).  <a href="class_vkx_1_1_local_image.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_material.html">Material</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructible extension to vk::PhysicalDevice.  <a href="class_vkx_1_1_physical_device.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_point_light.html">PointLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A point light.  <a href="class_vkx_1_1_point_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_random_direction.html">RandomDirection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LCG pseudo-random number generator that generates directions.  <a href="class_vkx_1_1_random_direction.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_random_orientation.html">RandomOrientation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A LCG pseudo-random number generator that generates orientations.  <a href="class_vkx_1_1_random_orientation.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_resolve_image.html">ResolveImage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). ">LocalImage</a> for use as a MSAA buffer (vk::ImageLayout::eColorAttachmentOptimal).  <a href="class_vkx_1_1_resolve_image.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_spot_light.html">SpotLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spot light.  <a href="class_vkx_1_1_spot_light.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_swap_chain.html">SwapChain</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_texture.html">Texture</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_texture_manager.html">TextureManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract class that loads and manages textures.  <a href="class_vkx_1_1_texture_manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abc5f26558ef6f3e54238cdff8d1a1488"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#abc5f26558ef6f3e54238cdff8d1a1488">extensionIsSupported</a> (std::vector&lt; vk::ExtensionProperties &gt; &amp;extensions, char const *name)</td></tr>
-<tr class="memdesc:abc5f26558ef6f3e54238cdff8d1a1488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the extension is supported.  <a href="#abc5f26558ef6f3e54238cdff8d1a1488">More...</a><br /></td></tr>
-<tr class="separator:abc5f26558ef6f3e54238cdff8d1a1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19cf5986a173d3c8b37519e72a90f86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#ae19cf5986a173d3c8b37519e72a90f86">allExtensionsSupported</a> (vk::PhysicalDevice const &amp;physicalDevice, std::vector&lt; char const * &gt; const &amp;extensions)</td></tr>
-<tr class="memdesc:ae19cf5986a173d3c8b37519e72a90f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all extensions are supported by the device.  <a href="#ae19cf5986a173d3c8b37519e72a90f86">More...</a><br /></td></tr>
-<tr class="separator:ae19cf5986a173d3c8b37519e72a90f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcee99cbb2143f3844cd7e827407e6a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#adcee99cbb2143f3844cd7e827407e6a8">layerIsAvailable</a> (std::vector&lt; vk::LayerProperties &gt; layers, char const *name)</td></tr>
-<tr class="memdesc:adcee99cbb2143f3844cd7e827407e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the layer is available.  <a href="#adcee99cbb2143f3844cd7e827407e6a8">More...</a><br /></td></tr>
-<tr class="separator:adcee99cbb2143f3844cd7e827407e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9b5abf299ba40ff521f03023cc25dbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#ab9b5abf299ba40ff521f03023cc25dbb">allLayersAvailable</a> (std::vector&lt; char const * &gt; const &amp;requested)</td></tr>
-<tr class="memdesc:ab9b5abf299ba40ff521f03023cc25dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all of the specified extensions are available.  <a href="#ab9b5abf299ba40ff521f03023cc25dbb">More...</a><br /></td></tr>
-<tr class="separator:ab9b5abf299ba40ff521f03023cc25dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8986015684f83f20fc00b40de71f194"><td class="memItemLeft" align="right" valign="top">vk::ShaderModule&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#ae8986015684f83f20fc00b40de71f194">loadShaderModule</a> (std::string const &amp;path, vk::Device &amp;device, vk::ShaderModuleCreateFlags flags=vk::ShaderModuleCreateFlags())</td></tr>
-<tr class="memdesc:ae8986015684f83f20fc00b40de71f194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shader.  <a href="#ae8986015684f83f20fc00b40de71f194">More...</a><br /></td></tr>
-<tr class="separator:ae8986015684f83f20fc00b40de71f194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf7d8d9c469fdd87efcb4be4eec8f38"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#a9bf7d8d9c469fdd87efcb4be4eec8f38">findAppropriateMemoryType</a> (vk::PhysicalDevice const &amp;physicalDevice, uint32_t types, vk::MemoryPropertyFlags properties)</td></tr>
-<tr class="memdesc:a9bf7d8d9c469fdd87efcb4be4eec8f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an appropriate memory type provided by the physical device.  <a href="#a9bf7d8d9c469fdd87efcb4be4eec8f38">More...</a><br /></td></tr>
-<tr class="separator:a9bf7d8d9c469fdd87efcb4be4eec8f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956c79d75c794acdc7f9a229ee78687a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#a956c79d75c794acdc7f9a229ee78687a">executeOnceSynched</a> (vk::Device const &amp;device, vk::CommandPool const &amp;commandPool, vk::Queue const &amp;queue, std::function&lt; void(vk::CommandBuffer)&gt; commands)</td></tr>
-<tr class="memdesc:a956c79d75c794acdc7f9a229ee78687a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function creates a one-time command buffer and executes it.  <a href="#a956c79d75c794acdc7f9a229ee78687a">More...</a><br /></td></tr>
-<tr class="separator:a956c79d75c794acdc7f9a229ee78687a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac986feda2d161236422ead354db0cab4"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#ac986feda2d161236422ead354db0cab4">ComputeFaceNormal</a> (glm::vec3 const &amp;v0, glm::vec3 const &amp;v1, glm::vec3 const &amp;v2, glm::vec3 *pN)</td></tr>
+<tr class="separator:ac986feda2d161236422ead354db0cab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc3d7b87bfc5a3a92fe171a7668ef4d"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#acbc3d7b87bfc5a3a92fe171a7668ef4d">ComputeGridNormal</a> (float z1, float z2, float z3, float z4, float scale, glm::vec3 *pN)</td></tr>
+<tr class="separator:acbc3d7b87bfc5a3a92fe171a7668ef4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3223779fa04c2f64a3b26c689293bd2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#aa3223779fa04c2f64a3b26c689293bd2">StripGrid</a> (int w, int h, uint16_t *pData)</td></tr>
+<tr class="memdesc:aa3223779fa04c2f64a3b26c689293bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates an array of vertex indexes for stripping a w by h grid of vertexes.  <a href="#aa3223779fa04c2f64a3b26c689293bd2">More...</a><br /></td></tr>
+<tr class="separator:aa3223779fa04c2f64a3b26c689293bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278f8a9796e2f9d17ed6d05081abd2aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_vkx.html#a278f8a9796e2f9d17ed6d05081abd2aa">StripGrid</a> (int w, int h, uint32_t *pData)</td></tr>
+<tr class="memdesc:a278f8a9796e2f9d17ed6d05081abd2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates an array of vertex indexes for stripping a w by h grid of vertexes.  <a href="#a278f8a9796e2f9d17ed6d05081abd2aa">More...</a><br /></td></tr>
+<tr class="separator:a278f8a9796e2f9d17ed6d05081abd2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5f26558ef6f3e54238cdff8d1a1488"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gabc5f26558ef6f3e54238cdff8d1a1488">extensionIsSupported</a> (std::vector&lt; vk::ExtensionProperties &gt; &amp;extensions, char const *name)</td></tr>
+<tr class="memdesc:gabc5f26558ef6f3e54238cdff8d1a1488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the extension is supported.  <a href="group___utilities.html#gabc5f26558ef6f3e54238cdff8d1a1488">More...</a><br /></td></tr>
+<tr class="separator:gabc5f26558ef6f3e54238cdff8d1a1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae19cf5986a173d3c8b37519e72a90f86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gae19cf5986a173d3c8b37519e72a90f86">allExtensionsSupported</a> (vk::PhysicalDevice const &amp;physicalDevice, std::vector&lt; char const * &gt; const &amp;extensions)</td></tr>
+<tr class="memdesc:gae19cf5986a173d3c8b37519e72a90f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all extensions are supported by the device.  <a href="group___utilities.html#gae19cf5986a173d3c8b37519e72a90f86">More...</a><br /></td></tr>
+<tr class="separator:gae19cf5986a173d3c8b37519e72a90f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcee99cbb2143f3844cd7e827407e6a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gadcee99cbb2143f3844cd7e827407e6a8">layerIsAvailable</a> (std::vector&lt; vk::LayerProperties &gt; layers, char const *name)</td></tr>
+<tr class="memdesc:gadcee99cbb2143f3844cd7e827407e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the layer is available.  <a href="group___utilities.html#gadcee99cbb2143f3844cd7e827407e6a8">More...</a><br /></td></tr>
+<tr class="separator:gadcee99cbb2143f3844cd7e827407e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9b5abf299ba40ff521f03023cc25dbb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gab9b5abf299ba40ff521f03023cc25dbb">allLayersAvailable</a> (std::vector&lt; char const * &gt; const &amp;requested)</td></tr>
+<tr class="memdesc:gab9b5abf299ba40ff521f03023cc25dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all of the specified extensions are available.  <a href="group___utilities.html#gab9b5abf299ba40ff521f03023cc25dbb">More...</a><br /></td></tr>
+<tr class="separator:gab9b5abf299ba40ff521f03023cc25dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e383bbfe44776ee06e919e1177780d8"><td class="memItemLeft" align="right" valign="top">vk::ShaderModule&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#ga3e383bbfe44776ee06e919e1177780d8">loadShaderModule</a> (std::string const &amp;path, std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt; device, vk::ShaderModuleCreateFlags flags=vk::ShaderModuleCreateFlags())</td></tr>
+<tr class="memdesc:ga3e383bbfe44776ee06e919e1177780d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a shader.  <a href="group___utilities.html#ga3e383bbfe44776ee06e919e1177780d8">More...</a><br /></td></tr>
+<tr class="separator:ga3e383bbfe44776ee06e919e1177780d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd4cf49284c8835155b65da15c4ae272"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gacd4cf49284c8835155b65da15c4ae272">findAppropriateMemoryType</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &gt; physicalDevice, uint32_t types, vk::MemoryPropertyFlags properties)</td></tr>
+<tr class="memdesc:gacd4cf49284c8835155b65da15c4ae272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an appropriate memory type provided by the physical device.  <a href="group___utilities.html#gacd4cf49284c8835155b65da15c4ae272">More...</a><br /></td></tr>
+<tr class="separator:gacd4cf49284c8835155b65da15c4ae272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d1d2a043b4a6b695aa5632058830d5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#ga3d1d2a043b4a6b695aa5632058830d5a">executeOnceSynched</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_device.html">Device</a> &gt; device, vk::CommandPool const &amp;commandPool, vk::Queue const &amp;queue, std::function&lt; void(vk::CommandBuffer &amp;)&gt; commands)</td></tr>
+<tr class="memdesc:ga3d1d2a043b4a6b695aa5632058830d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function creates a one-time command buffer and executes it.  <a href="group___utilities.html#ga3d1d2a043b4a6b695aa5632058830d5a">More...</a><br /></td></tr>
+<tr class="separator:ga3d1d2a043b4a6b695aa5632058830d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa45c32851fb68a91b7d961b4c10dd2eb"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#gaa45c32851fb68a91b7d961b4c10dd2eb">stripGrid</a> (int w, int h, uint16_t *pData)</td></tr>
+<tr class="memdesc:gaa45c32851fb68a91b7d961b4c10dd2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strips a grid generating 16-bit indexes. <br /></td></tr>
+<tr class="separator:gaa45c32851fb68a91b7d961b4c10dd2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85df17aa0fdd439c350ca7f8ca5d5513"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utilities.html#ga85df17aa0fdd439c350ca7f8ca5d5513">stripGrid</a> (int w, int h, uint32_t *pData)</td></tr>
+<tr class="memdesc:ga85df17aa0fdd439c350ca7f8ca5d5513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strips a grid generating 32-bit indexes. <br /></td></tr>
+<tr class="separator:ga85df17aa0fdd439c350ca7f8ca5d5513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae6b8631f91aad17301cc41bde9ccab23"><td class="memItemLeft" align="right" valign="top"><a id="ae6b8631f91aad17301cc41bde9ccab23"></a>
+vk::UniqueBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="separator:ae6b8631f91aad17301cc41bde9ccab23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extensions to Vulkan. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ae19cf5986a173d3c8b37519e72a90f86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae19cf5986a173d3c8b37519e72a90f86">&#9670;&nbsp;</a></span>allExtensionsSupported()</h2>
+<a id="ac986feda2d161236422ead354db0cab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac986feda2d161236422ead354db0cab4">&#9670;&nbsp;</a></span>ComputeFaceNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Vkx::allExtensionsSupported </td>
+          <td class="memname">glm::vec3 Vkx::ComputeFaceNormal </td>
           <td>(</td>
-          <td class="paramtype">vk::PhysicalDevice const &amp;&#160;</td>
-          <td class="paramname"><em>physicalDevice</em>, </td>
+          <td class="paramtype">glm::vec3 const &amp;&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; char const *&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>extensions</em>&#160;</td>
+          <td class="paramtype">glm::vec3 const &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 const &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 *&#160;</td>
+          <td class="paramname"><em>pN</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v0,v1,v2</td><td>Vertexes. The order of the vertexes is important. They should be clockwise. </td></tr>
+    <tr><td class="paramname">pN</td><td>Location to store the normal (if not nullptr)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The face normal </dd></dl>
+
+</div>
+</div>
+<a id="acbc3d7b87bfc5a3a92fe171a7668ef4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc3d7b87bfc5a3a92fe171a7668ef4d">&#9670;&nbsp;</a></span>ComputeGridNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 Vkx::ComputeGridNormal </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">glm::vec3 *&#160;</td>
+          <td class="paramname"><em>pN</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">z1</td><td>Z of the +X vertex </td></tr>
+    <tr><td class="paramname">z2</td><td>Z of the +Y vertex </td></tr>
+    <tr><td class="paramname">z3</td><td>Z of the -X vertex </td></tr>
+    <tr><td class="paramname">z4</td><td>Z of the -Y vertex </td></tr>
+    <tr><td class="paramname">scale</td><td>Ratio of Sxy / Sz, where Sxy is the distance between vertices and Sz scales the specified Z values to the actual Z values. </td></tr>
+    <tr><td class="paramname">pN</td><td>Where to put the normal (if not nullptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3223779fa04c2f64a3b26c689293bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3223779fa04c2f64a3b26c689293bd2">&#9670;&nbsp;</a></span>StripGrid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Vkx::StripGrid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>pData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -153,72 +348,53 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if all extensions are supported by the device. </p>
+<p>This function generates an array of vertex indexes for stripping a w by h grid of vertexes. </p>
+<p>The strip is created like this:</p><ul>
+<li>For every two rows in the grid:<ul>
+<li>Strip a row from left to right</li>
+<li>Use degenerate triangles to continue the strip down to the end of the next row.</li>
+<li>Continue stripping the next row from right to left.</li>
+<li>Use degenerate triangles to continue the strip down to the beginning of the next row.</li>
+</ul>
+</li>
+</ul>
+<p>The vertexes are stripped for a CW front-face.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">physicalDevice</td><td></td></tr>
-    <tr><td class="paramname">extensions</td><td></td></tr>
+    <tr><td class="paramname">w</td><td>Width of the grid (note: this is the number of vertexes &ndash; the number of quads is w - 1) </td></tr>
+    <tr><td class="paramname">h</td><td>Height of the grid (note: this is the number of vertexes &ndash; the number of quads is h - 1) </td></tr>
+    <tr><td class="paramname">pData</td><td>Where to place the indexes. Index values range 0 - 65535. The buffer must be big enough to hold at least ( h - 1 ) * ( 2 * w + 2 ) - 2 indexes.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of vertex indexes generated: ( h - 1 ) * ( 2 * w + 2 ) - 2</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>w * h must be less than 65536 </dd></dl>
 
 </div>
 </div>
-<a id="ab9b5abf299ba40ff521f03023cc25dbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9b5abf299ba40ff521f03023cc25dbb">&#9670;&nbsp;</a></span>allLayersAvailable()</h2>
+<a id="a278f8a9796e2f9d17ed6d05081abd2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278f8a9796e2f9d17ed6d05081abd2aa">&#9670;&nbsp;</a></span>StripGrid() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Vkx::allLayersAvailable </td>
+          <td class="memname">int Vkx::StripGrid </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; char const *&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>requested</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if all of the specified extensions are available. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">requested</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a956c79d75c794acdc7f9a229ee78687a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a956c79d75c794acdc7f9a229ee78687a">&#9670;&nbsp;</a></span>executeOnceSynched()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Vkx::executeOnceSynched </td>
-          <td>(</td>
-          <td class="paramtype">vk::Device const &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vk::CommandPool const &amp;&#160;</td>
-          <td class="paramname"><em>commandPool</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vk::Queue const &amp;&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(vk::CommandBuffer)&gt;&#160;</td>
-          <td class="paramname"><em>commands</em>&#160;</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>pData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -228,185 +404,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function creates a one-time command buffer and executes it. </p>
-<p>Creates and executes a one-time command buffer.</p>
-<p>The function returns when the queue is idle.</p>
-<p>The function parameter should add commands as normal to the command buffer parameter, like this: </p><div class="fragment"><div class="line">executeOnceSynced(device, commandPool, queue, [src, dst, size] (vk::CommandBuffer commands) {</div><div class="line">    commands.copyBuffer(src, dst, vk::BufferCopy(0, 0, size));</div><div class="line">});</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>The command buffer is allocated from this device </td></tr>
-    <tr><td class="paramname">commandPool</td><td>Commands are allocated from this pool </td></tr>
-    <tr><td class="paramname">queue</td><td>The command buffer is executed in this queue </td></tr>
-    <tr><td class="paramname">commands</td><td>Adds commands to the specified command buffer</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>commandPool should specify a pool optimized for transient command buffers </dd></dl>
-
-</div>
-</div>
-<a id="abc5f26558ef6f3e54238cdff8d1a1488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc5f26558ef6f3e54238cdff8d1a1488">&#9670;&nbsp;</a></span>extensionIsSupported()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Vkx::extensionIsSupported </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; vk::ExtensionProperties &gt; &amp;&#160;</td>
-          <td class="paramname"><em>extensions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if the extension is supported. </p>
+<p>This function generates an array of vertex indexes for stripping a w by h grid of vertexes. </p>
+<p>The strip is created like this:</p><ul>
+<li>For every two rows in the grid:<ul>
+<li>Strip a row from left to right</li>
+<li>Use degenerate triangles to continue the strip down to the end of the next row.</li>
+<li>Continue stripping the next row from right to left.</li>
+<li>Use degenerate triangles to continue the strip down to the beginning of the next row.</li>
+</ul>
+</li>
+</ul>
+<p>The vertexes are stripped for a CW front-face.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">extensions</td><td></td></tr>
-    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">w</td><td>Width of the grid (note: this is the number of vertexes &ndash; the number of quads is w - 1) </td></tr>
+    <tr><td class="paramname">h</td><td>Height of the grid (note: this is the number of vertexes &ndash; the number of quads is h - 1) </td></tr>
+    <tr><td class="paramname">pData</td><td>Where to place the indexes. The buffer must be big enough to hold at least ( h - 1 ) * ( 2 * w + 2 ) - 2 indexes.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a9bf7d8d9c469fdd87efcb4be4eec8f38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bf7d8d9c469fdd87efcb4be4eec8f38">&#9670;&nbsp;</a></span>findAppropriateMemoryType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Vkx::findAppropriateMemoryType </td>
-          <td>(</td>
-          <td class="paramtype">vk::PhysicalDevice const &amp;&#160;</td>
-          <td class="paramname"><em>physicalDevice</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>types</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::MemoryPropertyFlags&#160;</td>
-          <td class="paramname"><em>properties</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Finds an appropriate memory type provided by the physical device. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">physicalDevice</td><td>The physical device that will allocate the memory </td></tr>
-    <tr><td class="paramname">types</td><td>Acceptable memory types as determined by vk::Device::getBufferMemoryRequirements() </td></tr>
-    <tr><td class="paramname">properties</td><td>Necessary properties</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>index of the type of memory provided by the physical device that matches the request</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>A std::runtime_error is thrown if an appropriate type is not available </dd></dl>
-
-</div>
-</div>
-<a id="adcee99cbb2143f3844cd7e827407e6a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcee99cbb2143f3844cd7e827407e6a8">&#9670;&nbsp;</a></span>layerIsAvailable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Vkx::layerIsAvailable </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; vk::LayerProperties &gt;&#160;</td>
-          <td class="paramname"><em>layers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if the layer is available. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">layers</td><td></td></tr>
-    <tr><td class="paramname">name</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae8986015684f83f20fc00b40de71f194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8986015684f83f20fc00b40de71f194">&#9670;&nbsp;</a></span>loadShaderModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">vk::ShaderModule Vkx::loadShaderModule </td>
-          <td>(</td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::Device &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vk::ShaderModuleCreateFlags&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Loads a shader. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Path to shader file </td></tr>
-    <tr><td class="paramname">device</td><td>Logical device managing the shader </td></tr>
-    <tr><td class="paramname">flags</td><td>Creation flags (default: none)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>shader module handle</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>std::runtime_error is thrown if the file cannot be opened </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of vertex indexes generated: ( h - 1 ) * ( 2 * w + 2 ) - 2 </dd></dl>
 
 </div>
 </div>

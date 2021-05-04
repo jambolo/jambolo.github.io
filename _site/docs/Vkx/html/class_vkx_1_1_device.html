@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Vulkan API Extensions</div>
+   <div id="projectbrief">Vulkan C++ extensions</div>
   </td>
  </tr>
  </tbody>
@@ -70,36 +71,44 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_vkx_1_1_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Vkx::Device Class Reference</div>  </div>
+<div class="title">Vkx::Device Class Reference<div class="ingroups"><a class="el" href="group___devices.html">Device Types</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A RAII extension to vk::Device.  
+<p>A destructible extension to vk::Device.  
  <a href="class_vkx_1_1_device.html#details">More...</a></p>
 
 <p><code>#include &lt;Vkx/Device.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Vkx::Device:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_vkx_1_1_device__inherit__graph.png" border="0" usemap="#_vkx_1_1_device_inherit__map" alt="Inheritance graph"/></div>
+<map name="_vkx_1_1_device_inherit__map" id="_vkx_1_1_device_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a74f8411c51100aa09270a4c6b027d0c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#a74f8411c51100aa09270a4c6b027d0c4">Device</a> (vk::PhysicalDevice const &amp;physicalDevice, vk::DeviceCreateInfo const &amp;info)</td></tr>
-<tr class="memdesc:a74f8411c51100aa09270a4c6b027d0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a74f8411c51100aa09270a4c6b027d0c4">More...</a><br /></td></tr>
-<tr class="separator:a74f8411c51100aa09270a4c6b027d0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726c64a603c092542be61e0bb49a8e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#a726c64a603c092542be61e0bb49a8e9d">Device</a> (std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &gt; physicalDevice, vk::DeviceCreateInfo const &amp;info)</td></tr>
+<tr class="memdesc:a726c64a603c092542be61e0bb49a8e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a726c64a603c092542be61e0bb49a8e9d">More...</a><br /></td></tr>
+<tr class="separator:a726c64a603c092542be61e0bb49a8e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5422da038556403fae995d1aa13b8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#adf5422da038556403fae995d1aa13b8e">Device</a> (<a class="el" href="class_vkx_1_1_device.html">Device</a> &amp;&amp;src)</td></tr>
 <tr class="memdesc:adf5422da038556403fae995d1aa13b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#adf5422da038556403fae995d1aa13b8e">More...</a><br /></td></tr>
 <tr class="separator:adf5422da038556403fae995d1aa13b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4206eadfa47d37ea3018180f60e425d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vkx_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#a4206eadfa47d37ea3018180f60e425d1">operator=</a> (<a class="el" href="class_vkx_1_1_device.html">Device</a> &amp;&amp;rhs)</td></tr>
 <tr class="memdesc:a4206eadfa47d37ea3018180f60e425d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assignment operator.  <a href="#a4206eadfa47d37ea3018180f60e425d1">More...</a><br /></td></tr>
 <tr class="separator:a4206eadfa47d37ea3018180f60e425d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9288c7c3460183f31a5f44e3cd6e327e"><td class="memItemLeft" align="right" valign="top"><a id="a9288c7c3460183f31a5f44e3cd6e327e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#a9288c7c3460183f31a5f44e3cd6e327e">operator vk::Device</a> () const</td></tr>
-<tr class="memdesc:a9288c7c3460183f31a5f44e3cd6e327e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicitly coverts to vk::Device. <br /></td></tr>
-<tr class="separator:a9288c7c3460183f31a5f44e3cd6e327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbac813f914dc045d4e90f0c92d3f032"><td class="memItemLeft" align="right" valign="top"><a id="acbac813f914dc045d4e90f0c92d3f032"></a>
+std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vkx_1_1_device.html#acbac813f914dc045d4e90f0c92d3f032">physical</a> () const</td></tr>
+<tr class="memdesc:acbac813f914dc045d4e90f0c92d3f032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the physical device this device is associated with. <br /></td></tr>
+<tr class="separator:acbac813f914dc045d4e90f0c92d3f032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A RAII extension to vk::Device. </p>
+<div class="textblock"><p>A destructible extension to vk::Device. </p>
+<dl class="section note"><dt>Note</dt><dd>A <a class="el" href="class_vkx_1_1_device.html" title="A destructible extension to vk::Device. ">Device</a> can be moved, but cannot be copied. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a74f8411c51100aa09270a4c6b027d0c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74f8411c51100aa09270a4c6b027d0c4">&#9670;&nbsp;</a></span>Device() <span class="overload">[1/2]</span></h2>
+<a id="a726c64a603c092542be61e0bb49a8e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726c64a603c092542be61e0bb49a8e9d">&#9670;&nbsp;</a></span>Device() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +116,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Vkx::Device::Device </td>
           <td>(</td>
-          <td class="paramtype">vk::PhysicalDevice const &amp;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_vkx_1_1_physical_device.html">PhysicalDevice</a> &gt;&#160;</td>
           <td class="paramname"><em>physicalDevice</em>, </td>
         </tr>
         <tr>
@@ -188,10 +197,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>Device.h</li>
-<li>Device.cpp</li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['executeoncesynched',['executeOnceSynched',['../namespace_vkx.html#a956c79d75c794acdc7f9a229ee78687a',1,'Vkx']]],
-  ['extensionissupported',['extensionIsSupported',['../namespace_vkx.html#abc5f26558ef6f3e54238cdff8d1a1488',1,'Vkx']]]
+  ['depthimage',['DepthImage',['../class_vkx_1_1_depth_image.html#a161a7785cca20b3e716c775b2e463947',1,'Vkx::DepthImage::DepthImage()=default'],['../class_vkx_1_1_depth_image.html#aa8d211db1512d8a8c63d950fe10156f8',1,'Vkx::DepthImage::DepthImage(std::shared_ptr&lt; Device &gt; device, vk::CommandPool const &amp;commandPool, vk::Queue const &amp;queue, vk::ImageCreateInfo info)']]],
+  ['device',['Device',['../class_vkx_1_1_device.html#a726c64a603c092542be61e0bb49a8e9d',1,'Vkx::Device::Device(std::shared_ptr&lt; PhysicalDevice &gt; physicalDevice, vk::DeviceCreateInfo const &amp;info)'],['../class_vkx_1_1_device.html#adf5422da038556403fae995d1aa13b8e',1,'Vkx::Device::Device(Device &amp;&amp;src)']]],
+  ['diffusecolor',['diffuseColor',['../class_vkx_1_1_point_light.html#a6b19bc99178414ad06268672cd771061',1,'Vkx::PointLight::diffuseColor()'],['../class_vkx_1_1_directional_light.html#aeda53279f9a64e02cade69d5b74c7520',1,'Vkx::DirectionalLight::diffuseColor()'],['../class_vkx_1_1_spot_light.html#a231f15ba5733a19bd625bdbeed67d532',1,'Vkx::SpotLight::diffuseColor()']]],
+  ['direction',['direction',['../class_vkx_1_1_directional_light.html#a08ee4095f47129a331b17f52ae1c9c28',1,'Vkx::DirectionalLight::direction()'],['../class_vkx_1_1_spot_light.html#a13c850205f13b5fb1e437de78dd78d9e',1,'Vkx::SpotLight::direction()']]],
+  ['directionallight',['DirectionalLight',['../class_vkx_1_1_directional_light.html#a8f3a595e79478854fba8770560be3d92',1,'Vkx::DirectionalLight::DirectionalLight(int id)'],['../class_vkx_1_1_directional_light.html#a36dd4a214eae16eb4efb07dc2b215be8',1,'Vkx::DirectionalLight::DirectionalLight(int id, glm::vec4 const &amp;ambient, glm::vec4 const &amp;diffuse, glm::vec4 const &amp;specular, glm::vec3 const &amp;direction)']]]
 ];

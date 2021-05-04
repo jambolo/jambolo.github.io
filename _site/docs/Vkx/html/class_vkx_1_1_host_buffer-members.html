@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Vkx
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
-   <div id="projectbrief">Vulkan API Extensions</div>
+   <div id="projectbrief">Vulkan C++ extensions</div>
   </td>
  </tr>
  </tbody>
@@ -74,17 +75,18 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a15d88126447f235ea72f5b46fd41ec7a">allocation</a>() const</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#aa954965b0aefa50246938abee83ab9a2">allocation_</a></td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a82d8ce39479ea29127ffc7ab186699a7">allocation_</a></td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a5c96c95d643919521c45bd855cbd6edd">Buffer</a>()=default</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a9e5f1f115f1c514e633781b8fb7549ce">Buffer</a>(vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a1a4ce6fbcba0e83718f495099b227d46">Buffer</a>(std::shared_ptr&lt; Device &gt; device, size_t size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags memoryProperties, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a70193c7bb871be6cf73ed3d2d480e2f7">Buffer</a>(Buffer &amp;&amp;src)</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a08be2516c8795b445228f97261d9cb9b">buffer_</a></td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#a67177f1262b71b33fb06ae2cff3d69e7">HostBuffer</a>()=default</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#a3adce061d23060eab1a55bd0c2c9a3ed">HostBuffer</a>(vk::Device const &amp;device, vk::PhysicalDevice const &amp;physicalDevice, size_t size, vk::BufferUsageFlags usage, void const *src=nullptr, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a4e646e4d436e4d21dab8bcf3e5c79961">operator vk::Buffer</a>() const</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a7656af2324b4a0ccd043d0125e81caf4">operator=</a>(Buffer &amp;&amp;rhs)</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#ab5f36f2ceb5db0998c96286ac10d564d">set</a>(vk::Device const &amp;device, size_t offset, void const *src, size_t size)</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#af3cf568ba811e9855fada591f28fba28">~Buffer</a>()=default</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a7f1dd43742bf41757615d37f4fd8d0c4">buffer_</a></td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a9b9003696805bbecc2f10bf881b68474">device_</a></td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#a67177f1262b71b33fb06ae2cff3d69e7">HostBuffer</a>()=default</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#a1e80347a3f6cf7ebb05a9fef14b10c89">HostBuffer</a>(std::shared_ptr&lt; Device &gt; device, size_t size, vk::BufferUsageFlags usage, void const *src=nullptr, vk::SharingMode sharingMode=vk::SharingMode::eExclusive)</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a4e646e4d436e4d21dab8bcf3e5c79961">operator vk::Buffer</a>() const</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#a7656af2324b4a0ccd043d0125e81caf4">operator=</a>(Buffer &amp;&amp;rhs)</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html#a8f549f30c976793a1f4ba740b4e41662">set</a>(size_t offset, void const *src, size_t size)</td><td class="entry"><a class="el" href="class_vkx_1_1_host_buffer.html">Vkx::HostBuffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html#ae3a40d90d78d8c8203540ba4fafb355c">~Buffer</a>()</td><td class="entry"><a class="el" href="class_vkx_1_1_buffer.html">Vkx::Buffer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

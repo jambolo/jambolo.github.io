@@ -1,4 +1,7 @@
 <map id="Vkx::Image" name="Vkx::Image">
-<area shape="rect" id="node2" href="$class_vkx_1_1_host_image.html" title="An Image that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="$class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="145,80,263,107"/>
+<area shape="rect" id="node2" href="$class_vkx_1_1_host_image.html" title="An Image that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="20,80,135,107"/>
+<area shape="rect" id="node3" href="$class_vkx_1_1_local_image.html" title="An Image that is accessible only to the GPU (eDeviceLocal). " alt="" coords="159,80,278,107"/>
+<area shape="rect" id="node4" href="$class_vkx_1_1_depth_image.html" title="A LocalImage for use as a depth buffer (vk::ImageAspect::eDEPTH). " alt="" coords="5,155,128,181"/>
+<area shape="rect" id="node5" href="$class_vkx_1_1_resolve_image.html" title="A LocalImage for use as a MSAA buffer (vk::ImageLayout::eColorAttachmentOptimal). ..." alt="" coords="152,155,285,181"/>
+<area shape="rect" id="node6" href="$class_vkx_1_1_texture.html" title="Vkx::Texture" alt="" coords="309,155,405,181"/>
 </map>
