@@ -94,9 +94,9 @@ Inheritance diagram for Confetti::BasicEmitter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa31633a50a26a1790b2da18f7a93e5d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#aa31633a50a26a1790b2da18f7a93e5d7">BasicEmitter</a> (std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt; volume, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_environment.html">Environment</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#accbd85845d6d449f8889701890dbdf10">environment</a>, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_appearance.html">Appearance</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#ae1f64773179bbf91045421ab39aa9419">appearance</a>, bool <a class="el" href="class_confetti_1_1_basic_emitter.html#ad80b9e9541763a86b531973ea4b8e648">sorted</a>)</td></tr>
-<tr class="memdesc:aa31633a50a26a1790b2da18f7a93e5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aa31633a50a26a1790b2da18f7a93e5d7">More...</a><br /></td></tr>
-<tr class="separator:aa31633a50a26a1790b2da18f7a93e5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa711e3c9880c22443421e6bfe95261"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#abaa711e3c9880c22443421e6bfe95261">BasicEmitter</a> (std::shared_ptr&lt; Vkx::Device &gt; device, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt; volume, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_environment.html">Environment</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#accbd85845d6d449f8889701890dbdf10">environment</a>, std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_appearance.html">Appearance</a> &gt; <a class="el" href="class_confetti_1_1_basic_emitter.html#ae1f64773179bbf91045421ab39aa9419">appearance</a>, bool <a class="el" href="class_confetti_1_1_basic_emitter.html#ad80b9e9541763a86b531973ea4b8e648">sorted</a>)</td></tr>
+<tr class="memdesc:abaa711e3c9880c22443421e6bfe95261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#abaa711e3c9880c22443421e6bfe95261">More...</a><br /></td></tr>
+<tr class="separator:abaa711e3c9880c22443421e6bfe95261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc366caf374d7a8ddde8dd3d0fbb1f2"><td class="memItemLeft" align="right" valign="top"><a id="a4bc366caf374d7a8ddde8dd3d0fbb1f2"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_confetti_1_1_basic_emitter.html#a4bc366caf374d7a8ddde8dd3d0fbb1f2">~BasicEmitter</a> ()=default</td></tr>
 <tr class="memdesc:a4bc366caf374d7a8ddde8dd3d0fbb1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -153,13 +153,16 @@ Vkx::LocalBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>vertexes_
 <tr class="memitem:a63a5a8fc00247349f6d74eafef09b61c"><td class="memItemLeft" align="right" valign="top"><a id="a63a5a8fc00247349f6d74eafef09b61c"></a>
 Vkx::LocalBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>indexes_</b></td></tr>
 <tr class="separator:a63a5a8fc00247349f6d74eafef09b61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074b84be3e07458e777a7c735025e56d"><td class="memItemLeft" align="right" valign="top"><a id="a074b84be3e07458e777a7c735025e56d"></a>
+std::shared_ptr&lt; Vkx::Device &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>device_</b></td></tr>
+<tr class="separator:a074b84be3e07458e777a7c735025e56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A particle emitter. </p>
 <dl class="section note"><dt>Note</dt><dd>This class is an abstract base class and must be derived from in order to be used. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa31633a50a26a1790b2da18f7a93e5d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa31633a50a26a1790b2da18f7a93e5d7">&#9670;&nbsp;</a></span>BasicEmitter()</h2>
+<a id="abaa711e3c9880c22443421e6bfe95261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa711e3c9880c22443421e6bfe95261">&#9670;&nbsp;</a></span>BasicEmitter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,6 +170,12 @@ Vkx::LocalBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>indexes_<
         <tr>
           <td class="memname">Confetti::BasicEmitter::BasicEmitter </td>
           <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; Vkx::Device &gt;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_confetti_1_1_emitter_volume.html">EmitterVolume</a> &gt;&#160;</td>
           <td class="paramname"><em>volume</em>, </td>
         </tr>
