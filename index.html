@@ -1,116 +1,215 @@
 ---
 layout: default
 ---
-<h1>Equity</h1>
-An implementation of a Bitcoin node
-<ul>
-  <li><a href=https://github.com/jambolo/Equity#equity>Project on GitHub</a></li>
-  <li><a href=docs/equity/html/index.html>API Documentation</a></li>
-</ul>
-<h1>ClueSolver</h1>
-A simple solver for the game of Clue, both Classic and Master Detective rules
-<ul>
-  <li><a href=https://github.com/jambolo/ClueSolver#cluesolver>Project on GitHub</a></li>
-</ul>
-<h1>Beast</h1>
-A boolean expression simplifier
-<ul>
-  <li><a href=https://github.com/jambolo/Beast#beast>Project on GitHub</a></li>
-</ul>
-<h1>Not A Clue</h1>
-An application that assists with the game of Clue (derived from ClueSolver above) (Coffeescript)
-<ul>
-  <li><a href=https://github.com/jambolo/not-a-clue#not-a-clue>Project on GitHub</a></li>
-  <li><a href=https://jambolo.github.io/not-a-clue>Try it!</a></li>
-</ul>
-<h1>sudokujs</h1>
-A sudoku game (forked from joedrago/sudokujs) (Coffeescript)
-<ul>
-  <li><a href=https://github.com/jambolo/sudokujs#sudokujs>Project on GitHub</a></li>
-  <li><a href=https://jambolo.github.io/sudokujs>Try it!</a></li>
-</ul>
-<h1>Sudoku</h1>
-Sudoku puzzle solver, generator, move suggester, and difficulty rater
-<ul>
-  <li><a href=https://github.com/jambolo/Sudoku#sudoku>Project on GitHub</a></li>
-</ul>
-<h1>drawArc</h1>
-A function that computes the first endpoint for drawing an arbitrary arc using the HTML arcTo method. (Coffeescript)
-<ul>
-  <li><a href=https://github.com/jambolo/drawArc#drawArc>Project on GitHub</a></li>
-  <li><a href=https://jambolo.github.io/drawArc>Try it!</a></li>
-</ul>
-<h1>Libraries</h1>
-Many many libraries that do lots of different things ...
-<ul>
-  <li><h3>BloomFilter</h3>
-    A generic bloom filter
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33%;
+  padding: 10px;
+}
+</style>
+
+<div class="row">
+  <div class="column">
+    <h1>Applications</h1>
+
+    <h3>ClueSolver</h3>
+    A simple solver for the game of Clue, supporting both Classic and Master Detective rules.
     <ul>
-      <li><a href=docs/BloomFilter/html/index.html>API Documentation</a>
-      <li><a href=https://github.com/jambolo/BloomFilter#BloomFilter>Project on GitHub</a></li>
+      <li><a href=https://github.com/jambolo/ClueSolver#cluesolver>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>Confetti</h3>
-    A particle system rendered using Vulkan
+    <h3>Not A Clue</h3>
+    An application that assists with the game of Clue. (derived from ClueSolver above) (Coffeescript)
     <ul>
-      <li><a href=docs/Confetti/html/index.html>API Documentation</a>
-      <li><a href=https://github.com/jambolo/Confetti#confetti>Project on GitHub</a></li>
+      <li><a href=https://github.com/jambolo/not-a-clue#not-a-clue>Project on GitHub</a></li>
+      <li><a href=https://jambolo.github.io/not-a-clue>Try it!</a></li>
     </ul>
-  </li>
-  <li><h3>Equity</h3>
-    Bitcoin library
+    <h3>Sudoku</h3>
+    Sudoku puzzle solver, generator, move suggester, and difficulty rater.
+    <ul>
+      <li><a href=https://github.com/jambolo/Sudoku#sudoku>Project on GitHub</a></li>
+    </ul>
+    <h3>bip39</h3>
+    Various BIP-39 tools. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/bip39#bip39>Project on GitHub</a></li>
+    </ul>
+    <h3>blackjack</h3>
+    Various tools for analyzing the game of Blackjack. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/blackjack#blackjack>Project on GitHub</a></li>
+    </ul>
+    <h3>craps</h3>
+    Various tools for analyzing the game of craps. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/craps#craps>Project on GitHub</a></li>
+    </ul>
+    <h3>factors</h3>
+    An application that finds all prime factors of a given number between 2 and 9007199254740991. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/factors#factors>Project on GitHub</a></li>
+    </ul>
+    <h3>fallout76</h3>
+    Various tools for fallout76. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/fallout76>Project on GitHub</a></li>
+    </ul>
+    <h3>git-helpers</h3>
+    Scripts and aliases that make git easier to use (bash)
+    <ul>
+      <li><a href=https://github.com/jambolo/git-helpers>Project on GitHub</a></li>
+    </ul>
+    <h3>kamisolver</h3>
+    A solver for the game KAMI. (forked from joedrago/kamisolver) (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/kamisolver>Project on GitHub</a></li>
+    </ul>
+    <h3>sudokujs</h3>
+    A sudoku game. (forked from joedrago/sudokujs) (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/sudokujs#sudokujs>Project on GitHub</a></li>
+      <li><a href=https://jambolo.github.io/sudokujs>Try it!</a></li>
+    </ul>
+    <h3>Bad Guy Minesweeper</h3>
+    A version of minesweeper that requires less guessing (forked from joedrago/bgm) (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/bgm>Project on GitHub</a></li>
+    </ul>
+    <h3>Sieve</h3>
+    Finds all primes up to a limit using a Sieve of Eratosthenes.
+    <ul>
+      <li><a href=https://github.com/jambolo/Sieve>Project on GitHub</a></li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <h1>Libraries</h1>
+    Many many libraries that do a lot of different things ...
+
+    <h3>drawArc</h3>
+    A function that computes the first endpoint for drawing an arbitrary arc using the HTML arcTo method. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/drawArc#drawArc>Project on GitHub</a></li>
+      <li><a href=https://jambolo.github.io/drawArc>Try it!</a></li>
+    </ul>
+    <h3>GamePlayer</h3>
+    A game player for two-player perfect information games, implemented using a min-max game tree, alpha-beta pruning, and a transposition table, along with a variety of heuristics.
     <ul>
       <li><a href=docs/GamePlayer/html/index.html>API Documentation</a>
       <li><a href=https://github.com/jambolo/GamePlayer#GamePlayer>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>GamePlayer</h3>
-    A game player for two-player perfect information games, implemented using a min-max game tree
-    <ul>
-      <li><a href=docs/GamePlayer/html/index.html>API Documentation</a>
-      <li><a href=https://github.com/jambolo/GamePlayer#GamePlayer>Project on GitHub</a></li>
-    </ul>
-  </li>
-  <li><h3>Glfwx</h3>
-    A C++ wrapper around GLFW
-    <ul>
-      <li><a href=docs/Glfwx/html/index.html>API Documentation</a>
-      <li><a href=https://github.com/jambolo/Glfwx#Glfwx>Project on GitHub</a></li>
-    </ul>
-  </li>
-  <li><h3>Misc</h3>
-    Miscellaneous features, functions and helpers
+    <h3>Misc</h3>
+    Miscellanous features and functionality not worthy of individual projects.
     <ul>
       <li><a href=docs/Misc/html/index.html>API Documentation</a>
       <li><a href=https://github.com/jambolo/Misc#Misc>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>Msxmlx</h3>
+    <h3>Msxmlx</h3>
     MSXML Extensions
     <ul>
       <li><a href=docs/Msxmlx/html/index.html>API Documentation</a>
       <li><a href=https://github.com/jambolo/Msxmlx#Msxmlx>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>PathFinder</h3>
+    <h3>PathFinder</h3>
     An path-finder implementation using A*
     <ul>
       <li><a href=docs/PathFinder/html/index.html>API Documentation</a>
       <li><a href=https://github.com/jambolo/PathFinder#PathFinder>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>Vkx</h3>
-    C++ Extensions to Vulkan
+    <h3>TgaFile</h3>
+    TGA format and file support.
     <ul>
-      <li><a href=docs/Vkx/html/index.html>API Documentation</a>
-      <li><a href=https://github.com/jambolo/Vkx#Vkx>Project on GitHub</a></li>
+      <li><a href=https://github.com/jambolo/TgaFile>Project on GitHub</a></li>
     </ul>
-  </li>
-  <li><h3>Wx</h3>
+    <h3>Wx</h3>
     Windows API extensions
     <ul>
       <li><a href=docs/Wx/html/index.html>API Documentation</a>
       <li><a href=https://github.com/jambolo/Wx#Wx>Project on GitHub</a></li>
     </ul>
-  </li>
-</ul>
+  </div>
+
+  <div class="column">
+    <h1>WIP</h1>
+    Mostly-unfinished stuff. Check the Github repo to see how long it has been collecting dust.
+
+    <h3>Backgammon</h3>
+    (WIP) A backgammon-player.
+    <ul>
+      <li><a href=https://github.com/jambolo/Backgammon>Project on GitHub</a></li>
+    </ul>
+    <h3>Beast</h3>
+    (WIP) A boolean expression simplifier
+    <ul>
+      <li><a href=https://github.com/jambolo/Beast#beast>Project on GitHub</a></li>
+    </ul>
+    <h3>bitcoin-keys-demo</h3>
+    (WIP) Various demonstrations of the derivations and features of Bitcoin keys. (Coffeescript)
+    <ul>
+      <li><a href=https://github.com/jambolo/bitcoin-keys-demo#bitcoin-keys-demo>Project on GitHub</a></li>
+    </ul>
+    <h3>BloomFilter</h3>
+    (WIP) A generic bloom filter
+    <ul>
+      <li><a href=docs/BloomFilter/html/index.html>API Documentation</a>
+      <li><a href=https://github.com/jambolo/BloomFilter#BloomFilter>Project on GitHub</a></li>
+    </ul>
+    <h3>Chess</h3>
+    (WIP) A chess-player.
+    <ul>
+      <li><a href=https://github.com/jambolo/Chess>Project on GitHub</a></li>
+    </ul>
+    <h3>Confetti</h3>
+    (WIP) A Vulkan-based particle system.
+    <ul>
+      <li><a href=docs/Confetti/html/index.html>API Documentation</a>
+      <li><a href=https://github.com/jambolo/Confetti#confetti>Project on GitHub</a></li>
+    </ul>
+    <h3>ConfettiMachine</h3>
+    (WIP) A particle system construction kit using the Confetti library.
+    <ul>
+      <li><a href=https://github.com/jambolo/ConfettiMachine>Project on GitHub</a></li>
+    </ul>
+    <h3>Equity</h3>
+    (WIP) An implementation of a Bitcoin node
+    <ul>
+      <li><a href=https://github.com/jambolo/Equity#equity>Project on GitHub</a></li>
+      <li><a href=docs/equity/html/index.html>API Documentation</a></li>
+    </ul>
+    <h3>Glfwx</h3>
+    (WIP) A C++ wrapper around GLFW
+    <ul>
+      <li><a href=docs/Glfwx/html/index.html>API Documentation</a>
+      <li><a href=https://github.com/jambolo/Glfwx#Glfwx>Project on GitHub</a></li>
+    </ul>
+    <h3>NameGenerator</h3>
+    (WIP) Generates random names.
+    <ul>
+      <li><a href=https://github.com/jambolo/NameGenerator>Project on GitHub</a></li>
+    </ul>
+    <h3>StateMachine</h3>
+    (WIP) A generic state machine implementation
+    <ul>
+      <li><a href=https://github.com/jambolo/StateMachine>Project on GitHub</a></li>
+    </ul>
+    <h3>Tsunami</h3>
+    (WIP) A go-player.
+    <ul>
+      <li><a href=https://github.com/jambolo/Tsunami>Project on GitHub</a></li>
+    </ul>
+    <h3>Vkx</h3>
+    (WIP) Extensions to the Vulkan library
+    <ul>
+      <li><a href=docs/Vkx/html/index.html>API Documentation</a>
+      <li><a href=https://github.com/jambolo/Vkx#Vkx>Project on GitHub</a></li>
+    </ul>
+  </div>
+</div>

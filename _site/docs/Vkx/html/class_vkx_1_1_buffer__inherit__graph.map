@@ -1,4 +1,0 @@
-<map id="Vkx::Buffer" name="Vkx::Buffer">
-<area shape="rect" id="node2" href="$class_vkx_1_1_host_buffer.html" title="A Buffer that is visible to the CPU and is automatically kept in sync (eHostVisible | eHostCoherent)..." alt="" coords="5,80,119,107"/>
-<area shape="rect" id="node3" href="$class_vkx_1_1_local_buffer.html" title="A Buffer that is visible only to the GPU (eDeviceLocal). " alt="" coords="143,80,261,107"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_confetti_1_1_basic_emitter.html" title="A particle emitter. " alt="" coords="5,81,155,108"/>
-<area shape="rect" id="node2" href="$class_confetti_1_1_point_emitter.html" title="An Emitter that emits PointParticles. " alt="" coords="213,5,359,32"/>
-<area shape="rect" id="node3" href="$class_confetti_1_1_sphere_emitter.html" title="An Emitter that emits SphereParticles. " alt="" coords="207,56,365,83"/>
-<area shape="rect" id="node4" href="$class_confetti_1_1_streak_emitter.html" title="An Emitter that emits StreakParticles. " alt="" coords="209,107,363,133"/>
-<area shape="rect" id="node5" href="$class_confetti_1_1_textured_emitter.html" title="An Emitter that emits TexturedParticles. " alt="" coords="203,157,369,184"/>
-</map>
