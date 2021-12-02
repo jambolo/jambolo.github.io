@@ -69,62 +69,114 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_game_player_1_1_transposition_table-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GamePlayer::TranspositionTable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A map of game state values referenced by the states' fingerprints.  
+<p>A dictionary of game state values indexed by the state fingerprints.  
  <a href="class_game_player_1_1_transposition_table.html#details">More...</a></p>
 
 <p><code>#include &lt;GamePlayer/TranspositionTable.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab4b942d5f4f10edf36692d09460875f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">CheckResult</a> = std::pair&lt; float, int &gt;</td></tr>
+<tr class="memdesc:ab4b942d5f4f10edf36692d09460875f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type returned by <a class="el" href="class_game_player_1_1_transposition_table.html#ab628572c4337ff64f114afbed4b80e96" title="Returns the stored value and quality of the given state. ">check()</a>.  <a href="#ab4b942d5f4f10edf36692d09460875f2">More...</a><br /></td></tr>
+<tr class="separator:ab4b942d5f4f10edf36692d09460875f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6e979e87105caa2cfca4d5af791ea3a3"><td class="memItemLeft" align="right" valign="top"><a id="a6e979e87105caa2cfca4d5af791ea3a3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a6e979e87105caa2cfca4d5af791ea3a3">TranspositionTable</a> ()</td></tr>
-<tr class="memdesc:a6e979e87105caa2cfca4d5af791ea3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
-<tr class="separator:a6e979e87105caa2cfca4d5af791ea3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f3f161f4153886bad3db83e6f5f164"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#ae8f3f161f4153886bad3db83e6f5f164">check</a> (<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;state, float *pReturnedValue=nullptr, int *pReturnedQuality=nullptr) const</td></tr>
-<tr class="memdesc:ae8f3f161f4153886bad3db83e6f5f164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored value and quality of the given state.  <a href="#ae8f3f161f4153886bad3db83e6f5f164">More...</a><br /></td></tr>
-<tr class="separator:ae8f3f161f4153886bad3db83e6f5f164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a703afd695758145bb0b125500006490f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a703afd695758145bb0b125500006490f">check</a> (<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;state, int minQ, float *pReturnedValue=nullptr, int *pReturnedQuality=nullptr) const</td></tr>
-<tr class="memdesc:a703afd695758145bb0b125500006490f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored value and quality of the given state.  <a href="#a703afd695758145bb0b125500006490f">More...</a><br /></td></tr>
-<tr class="separator:a703afd695758145bb0b125500006490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19cebdf4c0519a247fe9ea33480e3e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a19cebdf4c0519a247fe9ea33480e3e98">update</a> (<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;state, float value, int quality)</td></tr>
-<tr class="memdesc:a19cebdf4c0519a247fe9ea33480e3e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a value in the table if the quality of the value it would overwrite (if any) is lower than its quality.  <a href="#a19cebdf4c0519a247fe9ea33480e3e98">More...</a><br /></td></tr>
-<tr class="separator:a19cebdf4c0519a247fe9ea33480e3e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023897cf712d73a229fb1c2cfcc26322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a023897cf712d73a229fb1c2cfcc26322">set</a> (<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;state, float value, int quality)</td></tr>
-<tr class="memdesc:a023897cf712d73a229fb1c2cfcc26322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a value in the table regardless of the quality.  <a href="#a023897cf712d73a229fb1c2cfcc26322">More...</a><br /></td></tr>
-<tr class="separator:a023897cf712d73a229fb1c2cfcc26322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee661ed8d33ed303804fa5134a546cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a6ee661ed8d33ed303804fa5134a546cd">TranspositionTable</a> (size_t indexSize, int maxAge)</td></tr>
+<tr class="memdesc:a6ee661ed8d33ed303804fa5134a546cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6ee661ed8d33ed303804fa5134a546cd">More...</a><br /></td></tr>
+<tr class="separator:a6ee661ed8d33ed303804fa5134a546cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab628572c4337ff64f114afbed4b80e96"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">CheckResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#ab628572c4337ff64f114afbed4b80e96">check</a> (uint64_t fingerprint) const</td></tr>
+<tr class="memdesc:ab628572c4337ff64f114afbed4b80e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored value and quality of the given state.  <a href="#ab628572c4337ff64f114afbed4b80e96">More...</a><br /></td></tr>
+<tr class="separator:ab628572c4337ff64f114afbed4b80e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b15bbdc8ae75e8840e9516ce67d8a91"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">CheckResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a3b15bbdc8ae75e8840e9516ce67d8a91">check</a> (uint64_t fingerprint, int minQ) const</td></tr>
+<tr class="memdesc:a3b15bbdc8ae75e8840e9516ce67d8a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored value and quality of the given state.  <a href="#a3b15bbdc8ae75e8840e9516ce67d8a91">More...</a><br /></td></tr>
+<tr class="separator:a3b15bbdc8ae75e8840e9516ce67d8a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded563bd6c87583e727091025931a8d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#aded563bd6c87583e727091025931a8d0">update</a> (uint64_t fingerprint, float value, int quality)</td></tr>
+<tr class="memdesc:aded563bd6c87583e727091025931a8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a value in the table if the quality of its value is higher.  <a href="#aded563bd6c87583e727091025931a8d0">More...</a><br /></td></tr>
+<tr class="separator:aded563bd6c87583e727091025931a8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe207bc23e6662ee4f4bc418ad94f8be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#abe207bc23e6662ee4f4bc418ad94f8be">set</a> (uint64_t fingerprint, float value, int quality)</td></tr>
+<tr class="memdesc:abe207bc23e6662ee4f4bc418ad94f8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a value in the table regardless of the quality.  <a href="#abe207bc23e6662ee4f4bc418ad94f8be">More...</a><br /></td></tr>
+<tr class="separator:abe207bc23e6662ee4f4bc418ad94f8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a964f80654e547c8f508878f499b23b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a964f80654e547c8f508878f499b23b04">age</a> ()</td></tr>
 <tr class="memdesc:a964f80654e547c8f508878f499b23b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bumps the ages of table entries so that they can eventually be replaced by newer entries.  <a href="#a964f80654e547c8f508878f499b23b04">More...</a><br /></td></tr>
 <tr class="separator:a964f80654e547c8f508878f499b23b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ab92fc5b5fd15842749703eddadcbecac"><td class="memItemLeft" align="right" valign="top"><a id="ab92fc5b5fd15842749703eddadcbecac"></a>
-static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#ab92fc5b5fd15842749703eddadcbecac">INDEX_SIZE</a> = 19</td></tr>
-<tr class="memdesc:ab92fc5b5fd15842749703eddadcbecac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bits in the table's index. <br /></td></tr>
-<tr class="separator:ab92fc5b5fd15842749703eddadcbecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55eb6339098f27954d1d57f288aa8a1f"><td class="memItemLeft" align="right" valign="top"><a id="a55eb6339098f27954d1d57f288aa8a1f"></a>
-static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a55eb6339098f27954d1d57f288aa8a1f">SIZE</a> = 1 &lt;&lt; <a class="el" href="class_game_player_1_1_transposition_table.html#ab92fc5b5fd15842749703eddadcbecac">INDEX_SIZE</a></td></tr>
-<tr class="memdesc:a55eb6339098f27954d1d57f288aa8a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of entries in the table. <br /></td></tr>
-<tr class="separator:a55eb6339098f27954d1d57f288aa8a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba7e8fed3076841742882835aa3977d"><td class="memItemLeft" align="right" valign="top"><a id="a8ba7e8fed3076841742882835aa3977d"></a>
-static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_transposition_table.html#a8ba7e8fed3076841742882835aa3977d">MAX_AGE</a> = 1</td></tr>
-<tr class="memdesc:a8ba7e8fed3076841742882835aa3977d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entries not referenced in this many turns are removed by <a class="el" href="class_game_player_1_1_transposition_table.html#a964f80654e547c8f508878f499b23b04" title="Bumps the ages of table entries so that they can eventually be replaced by newer entries. ">age()</a> <br /></td></tr>
-<tr class="separator:a8ba7e8fed3076841742882835aa3977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A map of game state values referenced by the states' fingerprints. </p>
+<div class="textblock"><p>A dictionary of game state values indexed by the state fingerprints. </p>
 <p>A game state can be the result of different sequences of the same (or a different) set of moves. This technique is used to cache the value of a game state regardless of the moves used to reach it, thus the name "transposition" table. The purpose of the "transposition" table has been extended to become simply a cache of game state values, so it is more aptly named "game state value cache" &ndash; but the old name persists.</p>
 <p>As a speed and memory optimization in this implementation, slots in the table are not unique to the state being stored, and a value may be overwritten when a new value is added. A value is overwritten only when its "quality" is less than or equal to the "quality" of the value being added.</p>
-<dl class="section note"><dt>Note</dt><dd>The fingerprint is assumed to be random and uniformly distibuted. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<dl class="section note"><dt>Note</dt><dd>The fingerprint is assumed to be random and uniformly distributed. </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab4b942d5f4f10edf36692d09460875f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b942d5f4f10edf36692d09460875f2">&#9670;&nbsp;</a></span>CheckResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">GamePlayer::TranspositionTable::CheckResult</a> =  std::pair&lt;float, int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Result type returned by <a class="el" href="class_game_player_1_1_transposition_table.html#ab628572c4337ff64f114afbed4b80e96" title="Returns the stored value and quality of the given state. ">check()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_0</td><td>value of the state </td></tr>
+    <tr><td class="paramname">_1</td><td>quality of the returned value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6ee661ed8d33ed303804fa5134a546cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee661ed8d33ed303804fa5134a546cd">&#9670;&nbsp;</a></span>TranspositionTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GamePlayer::TranspositionTable::TranspositionTable </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxAge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Number of entries in the table </td></tr>
+    <tr><td class="paramname">maxAge</td><td>Maximum age of entries allowed in the table </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a964f80654e547c8f508878f499b23b04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a964f80654e547c8f508878f499b23b04">&#9670;&nbsp;</a></span>age()</h2>
 
@@ -146,34 +198,18 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<a id="ae8f3f161f4153886bad3db83e6f5f164"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8f3f161f4153886bad3db83e6f5f164">&#9670;&nbsp;</a></span>check() <span class="overload">[1/2]</span></h2>
+<a id="ab628572c4337ff64f114afbed4b80e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab628572c4337ff64f114afbed4b80e96">&#9670;&nbsp;</a></span>check() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool GamePlayer::TranspositionTable::check </td>
+          <td class="memname">std::optional&lt; <a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">TranspositionTable::CheckResult</a> &gt; GamePlayer::TranspositionTable::check </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>pReturnedValue</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>pReturnedQuality</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fingerprint</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,45 +219,31 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Otherwise, false is returned and the return values are not modified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>State to be checked for </td></tr>
-    <tr><td class="paramname">pReturnedValue</td><td>Where to return the state's value if not NULL (default: NULL) </td></tr>
-    <tr><td class="paramname">pReturnedQuality</td><td>Where to return the value's quality if not NULL (default: NULL)</td></tr>
+    <tr><td class="paramname">fingerprint</td><td>Fingerprint of state to be checked for</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, if the state's value was found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>optional CheckResult </dd></dl>
 
 </div>
 </div>
-<a id="a703afd695758145bb0b125500006490f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a703afd695758145bb0b125500006490f">&#9670;&nbsp;</a></span>check() <span class="overload">[2/2]</span></h2>
+<a id="a3b15bbdc8ae75e8840e9516ce67d8a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b15bbdc8ae75e8840e9516ce67d8a91">&#9670;&nbsp;</a></span>check() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool GamePlayer::TranspositionTable::check </td>
+          <td class="memname">std::optional&lt; <a class="el" href="class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2">TranspositionTable::CheckResult</a> &gt; GamePlayer::TranspositionTable::check </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fingerprint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>minQ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>pReturnedValue</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>pReturnedQuality</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>minQ</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -232,23 +254,21 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 
 <p>Returns the stored value and quality of the given state. </p>
-<p>This function returns the value of a state if the value is stored in the table, but only if the stored value's quality is above the specified minimum.</p>
-<p>Otherwise, false is returned and the return values are not modified.</p>
+<p>This function returns the value of a state if the value is stored in the table and its quality is above the specified minimum.</p>
+<p>Otherwise, nothing is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>State to be checked for </td></tr>
-    <tr><td class="paramname">minQ</td><td>Minimum quality </td></tr>
-    <tr><td class="paramname">pReturnedValue</td><td>Where to return the state's value if not NULL (default: NULL) </td></tr>
-    <tr><td class="paramname">pReturnedQuality</td><td>Where to return the value's quality if not NULL (default: NULL)</td></tr>
+    <tr><td class="paramname">fingerprint</td><td>Fingerprint of state to be checked for </td></tr>
+    <tr><td class="paramname">minQ</td><td>Minimum quality</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true, if the state was found and its value's quality is higher than the minimum </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>optional CheckResult </dd></dl>
 
 </div>
 </div>
-<a id="a023897cf712d73a229fb1c2cfcc26322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023897cf712d73a229fb1c2cfcc26322">&#9670;&nbsp;</a></span>set()</h2>
+<a id="abe207bc23e6662ee4f4bc418ad94f8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe207bc23e6662ee4f4bc418ad94f8be">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,8 +276,8 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
         <tr>
           <td class="memname">void GamePlayer::TranspositionTable::set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fingerprint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -282,7 +302,7 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Stores a value in the table regardless of the quality. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>State whose value is to be stored </td></tr>
+    <tr><td class="paramname">fingerprint</td><td>Fingerprint of state to be stored </td></tr>
     <tr><td class="paramname">value</td><td>Value to be stored </td></tr>
     <tr><td class="paramname">quality</td><td>Quality of the value </td></tr>
   </table>
@@ -291,8 +311,8 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 </div>
 </div>
-<a id="a19cebdf4c0519a247fe9ea33480e3e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19cebdf4c0519a247fe9ea33480e3e98">&#9670;&nbsp;</a></span>update()</h2>
+<a id="aded563bd6c87583e727091025931a8d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded563bd6c87583e727091025931a8d0">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,8 +320,8 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
         <tr>
           <td class="memname">void GamePlayer::TranspositionTable::update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fingerprint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -323,10 +343,10 @@ static int constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
 </div><div class="memdoc">
 
-<p>Stores a value in the table if the quality of the value it would overwrite (if any) is lower than its quality. </p>
+<p>Stores a value in the table if the quality of its value is higher. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">state</td><td>State whose value is to be stored </td></tr>
+    <tr><td class="paramname">fingerprint</td><td>Fingerprint of state to be stored </td></tr>
     <tr><td class="paramname">value</td><td>Value to be stored </td></tr>
     <tr><td class="paramname">quality</td><td>Quality of the value </td></tr>
   </table>

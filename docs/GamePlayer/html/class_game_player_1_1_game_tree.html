@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_game_player_1_1_game_tree-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,20 +82,52 @@ $(function() {
 
 <p><code>#include &lt;GamePlayer/GameTree.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:adccd2a2c5da6910b2b4a76ce393076fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_tree.html#adccd2a2c5da6910b2b4a76ce393076fe">ResponseGenerator</a> = std::function&lt; std::vector&lt; <a class="el" href="class_game_player_1_1_game_state.html">GameState</a> * &gt;(<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp;state, int depth)&gt;</td></tr>
+<tr class="memdesc:adccd2a2c5da6910b2b4a76ce393076fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response generator function object type.  <a href="#adccd2a2c5da6910b2b4a76ce393076fe">More...</a><br /></td></tr>
+<tr class="separator:adccd2a2c5da6910b2b4a76ce393076fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad96c2063e24bb87a7d385a83fd3a3c86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_tree.html#ad96c2063e24bb87a7d385a83fd3a3c86">GameTree</a> (std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_transposition_table.html">TranspositionTable</a> &gt; tt, std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_static_evaluator.html">StaticEvaluator</a> &gt; sef, int maxDepth)</td></tr>
-<tr class="memdesc:ad96c2063e24bb87a7d385a83fd3a3c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad96c2063e24bb87a7d385a83fd3a3c86">More...</a><br /></td></tr>
-<tr class="separator:ad96c2063e24bb87a7d385a83fd3a3c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8619509b5deaa43a2c055f412c22a4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_tree.html#ac8619509b5deaa43a2c055f412c22a4c">GameTree</a> (std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_transposition_table.html">TranspositionTable</a> &gt; tt, std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_static_evaluator.html">StaticEvaluator</a> &gt; sef, <a class="el" href="class_game_player_1_1_game_tree.html#adccd2a2c5da6910b2b4a76ce393076fe">ResponseGenerator</a> rg, int maxDepth)</td></tr>
+<tr class="memdesc:ac8619509b5deaa43a2c055f412c22a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ac8619509b5deaa43a2c055f412c22a4c">More...</a><br /></td></tr>
+<tr class="separator:ac8619509b5deaa43a2c055f412c22a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5a164136fef003dbe7ad2e8b6121db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_tree.html#a6c5a164136fef003dbe7ad2e8b6121db">findBestResponse</a> (std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_game_state.html">GameState</a> &gt; &amp;s0) const</td></tr>
 <tr class="memdesc:a6c5a164136fef003dbe7ad2e8b6121db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for the best response to the given state.  <a href="#a6c5a164136fef003dbe7ad2e8b6121db">More...</a><br /></td></tr>
 <tr class="separator:a6c5a164136fef003dbe7ad2e8b6121db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A game tree search implementation using min-max strategy, alpha-beta pruning, and a transposition table. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad96c2063e24bb87a7d385a83fd3a3c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad96c2063e24bb87a7d385a83fd3a3c86">&#9670;&nbsp;</a></span>GameTree()</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="adccd2a2c5da6910b2b4a76ce393076fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adccd2a2c5da6910b2b4a76ce393076fe">&#9670;&nbsp;</a></span>ResponseGenerator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_game_player_1_1_game_tree.html#adccd2a2c5da6910b2b4a76ce393076fe">GamePlayer::GameTree::ResponseGenerator</a> =  std::function&lt;std::vector&lt;<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> *&gt;(<a class="el" href="class_game_player_1_1_game_state.html">GameState</a> const &amp; state, int depth)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Response generator function object type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>state to respond to </td></tr>
+    <tr><td class="paramname">depth</td><td>current ply </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>list of all possible responses </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The caller gains ownership of the returned states. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac8619509b5deaa43a2c055f412c22a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8619509b5deaa43a2c055f412c22a4c">&#9670;&nbsp;</a></span>GameTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,6 +143,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_static_evaluator.html">StaticEvaluator</a> &gt;&#160;</td>
           <td class="paramname"><em>sef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_player_1_1_game_tree.html#adccd2a2c5da6910b2b4a76ce393076fe">ResponseGenerator</a>&#160;</td>
+          <td class="paramname"><em>rg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -130,6 +169,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">tt</td><td>A transposition table to be used in a search. The table is assumed to be persistent. </td></tr>
     <tr><td class="paramname">sef</td><td>The static evaluation function </td></tr>
+    <tr><td class="paramname">rg</td><td>The response generator </td></tr>
     <tr><td class="paramname">maxDepth</td><td>The maximum number of plies to search </td></tr>
   </table>
   </dd>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['response_5f',['response_',['../class_game_player_1_1_game_state.html#a4f5e7b9a99a6910a5f554c8d44b56115',1,'GamePlayer::GameState']]]
+  ['transpositiontable',['TranspositionTable',['../class_game_player_1_1_transposition_table.html',1,'GamePlayer::TranspositionTable'],['../class_game_player_1_1_transposition_table.html#a6ee661ed8d33ed303804fa5134a546cd',1,'GamePlayer::TranspositionTable::TranspositionTable()']]]
 ];

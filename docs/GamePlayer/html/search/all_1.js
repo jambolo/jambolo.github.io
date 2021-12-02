@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['check',['check',['../class_game_player_1_1_transposition_table.html#ae8f3f161f4153886bad3db83e6f5f164',1,'GamePlayer::TranspositionTable::check(GameState const &amp;state, float *pReturnedValue=nullptr, int *pReturnedQuality=nullptr) const'],['../class_game_player_1_1_transposition_table.html#a703afd695758145bb0b125500006490f',1,'GamePlayer::TranspositionTable::check(GameState const &amp;state, int minQ, float *pReturnedValue=nullptr, int *pReturnedQuality=nullptr) const']]]
+  ['check',['check',['../class_game_player_1_1_transposition_table.html#ab628572c4337ff64f114afbed4b80e96',1,'GamePlayer::TranspositionTable::check(uint64_t fingerprint) const'],['../class_game_player_1_1_transposition_table.html#a3b15bbdc8ae75e8840e9516ce67d8a91',1,'GamePlayer::TranspositionTable::check(uint64_t fingerprint, int minQ) const']]],
+  ['checkresult',['CheckResult',['../class_game_player_1_1_transposition_table.html#ab4b942d5f4f10edf36692d09460875f2',1,'GamePlayer::TranspositionTable']]]
 ];

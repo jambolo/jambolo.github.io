@@ -95,9 +95,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08a40e5c676c5c8c0f04fb08036773d2"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_state.html#a08a40e5c676c5c8c0f04fb08036773d2">fingerprint</a> () const =0</td></tr>
 <tr class="memdesc:a08a40e5c676c5c8c0f04fb08036773d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a fingerprint for this state.  <a href="#a08a40e5c676c5c8c0f04fb08036773d2">More...</a><br /></td></tr>
 <tr class="separator:a08a40e5c676c5c8c0f04fb08036773d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa589d70a22ce4e1acdc2b89ef5b0d4dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_state.html#aa589d70a22ce4e1acdc2b89ef5b0d4dd">generateResponses</a> (int depth, std::vector&lt; <a class="el" href="class_game_player_1_1_game_state.html">GamePlayer::GameState</a> *&gt; &amp;responses) const =0</td></tr>
-<tr class="memdesc:aa589d70a22ce4e1acdc2b89ef5b0d4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a list of all possible responses to this state.  <a href="#aa589d70a22ce4e1acdc2b89ef5b0d4dd">More...</a><br /></td></tr>
-<tr class="separator:aa589d70a22ce4e1acdc2b89ef5b0d4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d1312564fab10a1ac388857dfaf52c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_game_player_1_1_game_state.html#a8519cb0e3b85ca751d2b3c231ad126bd">PlayerId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_player_1_1_game_state.html#af0d1312564fab10a1ac388857dfaf52c">whoseTurn</a> () const =0</td></tr>
 <tr class="memdesc:af0d1312564fab10a1ac388857dfaf52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the player that will respond to this state.  <a href="#af0d1312564fab10a1ac388857dfaf52c">More...</a><br /></td></tr>
 <tr class="separator:af0d1312564fab10a1ac388857dfaf52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,56 +133,7 @@ std::shared_ptr&lt; <a class="el" href="class_game_player_1_1_game_state.html">G
 </div><div class="memdoc">
 
 <p>Returns a fingerprint for this state. </p>
-<dl class="section return"><dt>Returns</dt><dd>The fingerprint of the state</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The fingerprint is assumed to be statistically unique. </dd>
-<dd>
-This function must be overridden. </dd></dl>
-
-</div>
-</div>
-<a id="aa589d70a22ce4e1acdc2b89ef5b0d4dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa589d70a22ce4e1acdc2b89ef5b0d4dd">&#9670;&nbsp;</a></span>generateResponses()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void GamePlayer::GameState::generateResponses </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>depth</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="class_game_player_1_1_game_state.html">GamePlayer::GameState</a> *&gt; &amp;&#160;</td>
-          <td class="paramname"><em>responses</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Generates a list of all possible responses to this state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">depth</td><td>The depth of the current ply </td></tr>
-    <tr><td class="paramname">responses</td><td>The list of returned responses</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The caller gains ownership of the returned states. </dd>
 <dd>
 This function must be overridden. </dd></dl>
 

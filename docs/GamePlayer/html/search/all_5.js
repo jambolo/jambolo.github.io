@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_5fsize',['INDEX_SIZE',['../class_game_player_1_1_transposition_table.html#ab92fc5b5fd15842749703eddadcbecac',1,'GamePlayer::TranspositionTable']]]
+  ['playerid',['PlayerId',['../class_game_player_1_1_game_state.html#a8519cb0e3b85ca751d2b3c231ad126bd',1,'GamePlayer::GameState']]]
 ];
