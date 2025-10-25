@@ -2,6 +2,11 @@
 layout: default
 ---
 
+- [Applications](#applications)
+- [Libraries](#libraries)
+- [Spark Projects](#spark-projects)
+- [Miscellaneous WIP](#wip)
+
 # Applications
 
 ### Wordle Solver
@@ -122,6 +127,28 @@ Windows API extensions
 
 * [API Documentation](docs/Wx/html/index.html)
 * [Project on GitHub](https://github.com/jambolo/Wx#Wx)
+
+* * *
+
+# Spark Projects
+Various projects implemented using Github Sparks
+
+### Blackjack Simulation
+* [Project on GitHub](https://github.com/jambolo/sudokujs#sudokujs)
+* [Try it!](https://blackjack-simulator--jambolo.github.app)
+
+### I Luv Suits Simulation
+* [Project on GitHub](https://github.com/jambolo/i-luv-suits)
+* [Try it!](https://i-luv-suits-simulati--jambolo.github.app)
+
+### D&D Dice Rolling Simulation
+* [Try it!](https://dd-stat-generator--jambolo.github.app)
+
+### Bitcoin Keys Demo
+This project is broken because I went beyond the limit of complexity that Spark can support. When you exceed that limit, Spark starts corrupting files and cannot recover.
+
+* [Project on GitHub](https://github.com/jambolo/bitcoin-keys-demo)
+* [Don't Bother Trying It!](https://bitcoin-keys-demo--jambolo.github.app)
 
 * * *
 
