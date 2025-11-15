@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":["mcts","minimax","state","static_evaluator","transposition_table"]};

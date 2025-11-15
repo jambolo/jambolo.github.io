@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Game Player"><title>game_player - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../static.files/rustdoc-e56847b5.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="game_player" data-themes="" data-resource-suffix="" data-rustdoc-version="1.91.1 (ed61e7d7e 2025-11-07)" data-channel="1.91.1" data-search-js="search-e256b49e.js" data-stringdex-js="stringdex-c3e638e9.js" data-settings-js="settings-c38705f0.js" ><script src="../static.files/storage-e2aeef58.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-6dc2a7f3.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-263c88ec.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-044be391.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Crate game_player</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../game_player/index.html">game_<wbr>player</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><ul class="block"><li><a id="all-types" href="all.html">All Items</a></li></ul><section id="rustdoc-toc"><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#minimax-search" title="Minimax Search">Minimax Search</a><ul><li><a href="#key-integration-points" title="Key Integration Points">Key Integration Points</a></li><li><a href="#example" title="Example">Example</a></li></ul></li></ul><h3><a href="#reexports">Crate Items</a></h3><ul class="block"><li><a href="#reexports" title="Re-exports">Re-exports</a></li><li><a href="#modules" title="Modules">Modules</a></li></ul></section><div id="rustdoc-modnav"></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content"><div class="main-heading"><h1>Crate <span>game_<wbr>player</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../src/game_player/lib.rs.html#1-140">Source</a> </span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Game Player</p>
+<p>This crate provides the foundational traits and structures needed to implement a player for two-person perfect and hidden
+information games.</p>
+<h2 id="minimax-search"><a class="doc-anchor" href="#minimax-search">§</a>Minimax Search</h2>
+<p>The crate includes a minimax search implementation with alpha-beta pruning and a transposition table to optimize performance.</p>
+<h3 id="key-integration-points"><a class="doc-anchor" href="#key-integration-points">§</a>Key Integration Points</h3>
+<ol>
+<li><strong>Implement <a href="state/trait.State.html" title="trait game_player::state::State"><code>State</code></a> trait</strong>: Provides game state management and move application with associated Action type</li>
+<li><strong>Implement <a href="static_evaluator/trait.StaticEvaluator.html" title="trait game_player::static_evaluator::StaticEvaluator"><code>StaticEvaluator</code></a> trait</strong>: Evaluates how good a position is for each player</li>
+<li><strong>Implement <a href="minimax/trait.ResponseGenerator.html" title="trait game_player::minimax::ResponseGenerator"><code>ResponseGenerator</code></a> trait</strong>: Generates all possible moves from a position</li>
+<li><strong>Use <a href="minimax/fn.search.html" title="fn game_player::minimax::search"><code>search</code></a></strong>: Combines everything to find the optimal move</li>
+<li><strong>Use <a href="transposition_table/struct.TranspositionTable.html" title="struct game_player::transposition_table::TranspositionTable"><code>TranspositionTable</code></a></strong>: Caches evaluations for better performance</li>
+</ol>
+<h3 id="example"><a class="doc-anchor" href="#example">§</a>Example</h3>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::cell::RefCell;
+<span class="kw">use </span>std::rc::Rc;
+<span class="kw">use </span>game_player::{PlayerId, State, StaticEvaluator, TranspositionTable};
+<span class="kw">use </span>game_player::minimax::{ResponseGenerator, search};
+
+<span class="comment">// Simple game structures (chess-like for demonstration)
+</span><span class="attr">#[derive(Debug, Clone, PartialEq)]
+</span><span class="kw">struct </span>GameMove { from: (u8, u8), to: (u8, u8) }
+
+<span class="attr">#[derive(Debug, Clone)]
+</span><span class="kw">struct </span>GameState {
+    board: u64,           <span class="comment">// Simplified board representation
+    </span>current_player: bool, <span class="comment">// true = white/alice, false = black/bob
+    </span>move_count: u32,
+}
+
+<span class="kw">impl </span>GameState {
+    <span class="kw">fn </span>new() -&gt; <span class="self">Self </span>{
+        <span class="self">Self </span>{ board: <span class="number">0x1234567890abcdef</span>, current_player: <span class="bool-val">true</span>, move_count: <span class="number">0 </span>}
+    }
+
+    <span class="kw">fn </span>is_game_over(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; bool { <span class="self">self</span>.move_count &gt; <span class="number">50 </span>}
+
+    <span class="kw">fn </span>get_possible_moves(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; Vec&lt;GameMove&gt; {
+        <span class="comment">// Simplified: generate a few dummy moves
+        </span><span class="macro">vec!</span>[
+            GameMove { from: (<span class="number">0</span>, <span class="number">0</span>), to: (<span class="number">1</span>, <span class="number">1</span>) },
+            GameMove { from: (<span class="number">0</span>, <span class="number">1</span>), to: (<span class="number">1</span>, <span class="number">0</span>) },
+            GameMove { from: (<span class="number">1</span>, <span class="number">0</span>), to: (<span class="number">2</span>, <span class="number">0</span>) },
+        ]
+    }
+}
+
+<span class="comment">// 1. Implement the State trait for your game
+</span><span class="kw">impl </span>State <span class="kw">for </span>GameState {
+    <span class="kw">type </span>Action = GameMove;
+
+    <span class="kw">fn </span>fingerprint(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; u64 {
+        <span class="comment">// Create unique hash for transposition table
+        </span><span class="self">self</span>.board ^ (<span class="self">self</span>.current_player <span class="kw">as </span>u64) &lt;&lt; <span class="number">63 </span>^ <span class="self">self</span>.move_count <span class="kw">as </span>u64
+    }
+
+    <span class="kw">fn </span>whose_turn(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; u8 {
+        <span class="kw">if </span><span class="self">self</span>.current_player { PlayerId::ALICE <span class="kw">as </span>u8 } <span class="kw">else </span>{ PlayerId::BOB <span class="kw">as </span>u8 }
+    }
+
+    <span class="kw">fn </span>is_terminal(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; bool {
+        <span class="self">self</span>.is_game_over()
+    }
+
+    <span class="kw">fn </span>apply(<span class="kw-2">&amp;</span><span class="self">self</span>, game_move: <span class="kw-2">&amp;</span><span class="self">Self</span>::Action) -&gt; <span class="self">Self </span>{
+        <span class="comment">// Apply move and return new state
+        </span><span class="self">Self </span>{
+            board: <span class="self">self</span>.board.wrapping_add(<span class="number">1</span>), <span class="comment">// Simplified board update
+            </span>current_player: !<span class="self">self</span>.current_player,
+            move_count: <span class="self">self</span>.move_count + <span class="number">1</span>,
+        }
+    }
+}
+
+<span class="comment">// 2. Implement static evaluation for your game
+</span><span class="kw">struct </span>GameEvaluator;
+
+<span class="kw">impl </span>StaticEvaluator&lt;GameState&gt; <span class="kw">for </span>GameEvaluator {
+    <span class="kw">fn </span>evaluate(<span class="kw-2">&amp;</span><span class="self">self</span>, state: <span class="kw-2">&amp;</span>GameState) -&gt; f32 {
+        <span class="kw">if </span>state.is_game_over() {
+            <span class="kw">return </span><span class="number">0.0</span>; <span class="comment">// Draw
+        </span>}
+        <span class="comment">// Simple evaluation: favor the player with more "material" (simplified)
+        </span>(state.board.count_ones() <span class="kw">as </span>f32 - <span class="number">16.0</span>) * <span class="kw">if </span>state.current_player { <span class="number">1.0 </span>} <span class="kw">else </span>{ -<span class="number">1.0 </span>}
+    }
+
+    <span class="kw">fn </span>alice_wins_value(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f32 { <span class="number">1000.0 </span>}
+    <span class="kw">fn </span>bob_wins_value(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f32 { -<span class="number">1000.0 </span>}
+}
+
+<span class="comment">// 3. Implement move generation for your game
+</span><span class="kw">struct </span>GameMoveGenerator;
+
+<span class="kw">impl </span>ResponseGenerator <span class="kw">for </span>GameMoveGenerator {
+    <span class="kw">type </span>State = GameState;
+
+    <span class="kw">fn </span>generate(<span class="kw-2">&amp;</span><span class="self">self</span>, state: <span class="kw-2">&amp;</span>Rc&lt;<span class="self">Self</span>::State&gt;, _depth: i32) -&gt; Vec&lt;Box&lt;<span class="self">Self</span>::State&gt;&gt; {
+        state.get_possible_moves()
+            .into_iter()
+            .map(|game_move| Box::new(state.apply(<span class="kw-2">&amp;</span>game_move)))
+            .collect()
+    }
+}
+
+<span class="comment">// 4. Use the minimax search to find the best move
+</span><span class="kw">fn </span>find_best_move() -&gt; <span class="prelude-ty">Option</span>&lt;GameState&gt; {
+    <span class="comment">// Set up the game components
+    </span><span class="kw">let </span>initial_state = Rc::new(GameState::new());
+    <span class="kw">let </span>evaluator = GameEvaluator;
+    <span class="kw">let </span>move_generator = GameMoveGenerator;
+    <span class="kw">let </span>transposition_table = Rc::new(RefCell::new(TranspositionTable::new(<span class="number">10000</span>, <span class="number">100</span>)));
+
+    <span class="comment">// Perform minimax search to find best move
+    </span>search(<span class="kw-2">&amp;</span>transposition_table, <span class="kw-2">&amp;</span>evaluator, <span class="kw-2">&amp;</span>move_generator, <span class="kw-2">&amp;</span>initial_state, <span class="number">6</span>)
+        .map(|best_state| (<span class="kw-2">*</span>best_state).clone())
+}
+
+<span class="comment">// Usage: Create an AI that can play your game
+</span><span class="kw">let </span>best_move = find_best_move();
+<span class="kw">match </span>best_move {
+    <span class="prelude-val">Some</span>(new_state) =&gt; <span class="macro">println!</span>(<span class="string">"AI found best move, new state: {:?}"</span>, new_state),
+    <span class="prelude-val">None </span>=&gt; <span class="macro">println!</span>(<span class="string">"No moves available"</span>),
+}</code></pre></div></div></details><h2 id="reexports" class="section-header">Re-exports<a href="#reexports" class="anchor">§</a></h2><dl class="item-table reexports"><dt id="reexport.PlayerId"><code>pub use state::<a class="enum" href="state/enum.PlayerId.html" title="enum game_player::state::PlayerId">PlayerId</a>;</code></dt><dt id="reexport.State"><code>pub use state::<a class="trait" href="state/trait.State.html" title="trait game_player::state::State">State</a>;</code></dt><dt id="reexport.StaticEvaluator"><code>pub use static_evaluator::<a class="trait" href="static_evaluator/trait.StaticEvaluator.html" title="trait game_player::static_evaluator::StaticEvaluator">StaticEvaluator</a>;</code></dt><dt id="reexport.TranspositionTable"><code>pub use transposition_table::<a class="struct" href="transposition_table/struct.TranspositionTable.html" title="struct game_player::transposition_table::TranspositionTable">TranspositionTable</a>;</code></dt></dl><h2 id="modules" class="section-header">Modules<a href="#modules" class="anchor">§</a></h2><dl class="item-table"><dt><a class="mod" href="mcts/index.html" title="mod game_player::mcts">mcts</a></dt><dd>Monte Carlo Tree Search (MCTS) module</dd><dt><a class="mod" href="minimax/index.html" title="mod game_player::minimax">minimax</a></dt><dd>Minimax Game Tree Search Implementation Module</dd><dt><a class="mod" href="state/index.html" title="mod game_player::state">state</a></dt><dd>Game State Module</dd><dt><a class="mod" href="static_evaluator/index.html" title="mod game_player::static_evaluator">static_<wbr>evaluator</a></dt><dd>Static Evaluation Function Module</dd><dt><a class="mod" href="transposition_table/index.html" title="mod game_player::transposition_table">transposition_<wbr>table</a></dt><dd>Transposition Table Module</dd></dl></section></div></main></body></html>

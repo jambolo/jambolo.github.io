@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Response generator function object trait."><title>ResponseGenerator in game_player::minimax - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../static.files/rustdoc-e56847b5.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="game_player" data-themes="" data-resource-suffix="" data-rustdoc-version="1.91.1 (ed61e7d7e 2025-11-07)" data-channel="1.91.1" data-search-js="search-e256b49e.js" data-stringdex-js="stringdex-c3e638e9.js" data-settings-js="settings-c38705f0.js" ><script src="../../static.files/storage-e2aeef58.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../static.files/main-6dc2a7f3.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-263c88ec.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-044be391.svg"></head><body class="rustdoc trait"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">ResponseGenerator</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../game_player/index.html">game_<wbr>player</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">Response<wbr>Generator</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#examples" title="Examples">Examples</a></li><li><a href="#implementation-notes" title="Implementation Notes">Implementation Notes</a></li></ul><h3><a href="#required-associated-types">Required Associated Types</a></h3><ul class="block"><li><a href="#associatedtype.State" title="State">State</a></li></ul><h3><a href="#required-methods">Required Methods</a></h3><ul class="block"><li><a href="#tymethod.generate" title="generate">generate</a></li></ul><h3><a href="#implementors">Implementors</a></h3></section><div id="rustdoc-modnav"><h2><a href="index.html">In game_<wbr>player::<wbr>minimax</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../index.html">game_player</a>::<wbr><a href="index.html">minimax</a></div><h1>Trait <span class="trait">Response<wbr>Generator</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../src/game_player/minimax.rs.html#89-122">Source</a> </span></div><pre class="rust item-decl"><code>pub trait ResponseGenerator {
+    type <a href="#associatedtype.State" class="associatedtype">State</a>: <a class="trait" href="../state/trait.State.html" title="trait game_player::state::State">State</a>;
+
+    // Required method
+    fn <a href="#tymethod.generate" class="fn">generate</a>(
+        &amp;self,
+        state: &amp;<a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/rc/struct.Rc.html" title="struct alloc::rc::Rc">Rc</a>&lt;Self::<a class="associatedtype" href="trait.ResponseGenerator.html#associatedtype.State" title="type game_player::minimax::ResponseGenerator::State">State</a>&gt;,
+        depth: <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.i32.html">i32</a>,
+    ) -&gt; <a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/boxed/struct.Box.html" title="struct alloc::boxed::Box">Box</a>&lt;Self::<a class="associatedtype" href="trait.ResponseGenerator.html#associatedtype.State" title="type game_player::minimax::ResponseGenerator::State">State</a>&gt;&gt;;
+}</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Response generator function object trait.</p>
+<p>This trait defines the interface for generating all possible responses from a given state. Implementers should provide
+game-specific logic for move generation.</p>
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::rc::Rc;
+<span class="kw">use </span><span class="kw">crate</span>::minimax::ResponseGenerator;
+
+<span class="kw">struct </span>MyResponseGenerator;
+
+<span class="kw">impl </span>ResponseGenerator <span class="kw">for </span>MyResponseGenerator {
+    <span class="kw">type </span>State = MyGameState;
+
+    <span class="kw">fn </span>generate(<span class="kw-2">&amp;</span><span class="self">self</span>, state: <span class="kw-2">&amp;</span>Rc&lt;<span class="self">Self</span>::State&gt;, depth: i32) -&gt; Vec&lt;Box&lt;<span class="self">Self</span>::State&gt;&gt; {
+        <span class="comment">// Generate all valid moves for the current player
+        </span><span class="kw">let </span><span class="kw-2">mut </span>responses = Vec::new();
+
+        <span class="comment">// Game-specific logic to generate moves
+        </span><span class="kw">for </span>possible_move <span class="kw">in </span>get_all_valid_moves(state) {
+            <span class="kw">let </span>new_state = state.apply_move(possible_move);
+            responses.push(Box::new(new_state));
+        }
+
+        responses
+    }
+}</code></pre></div><h2 id="implementation-notes"><a class="doc-anchor" href="#implementation-notes">§</a>Implementation Notes</h2>
+<ul>
+<li>Return an empty vector if no moves are available (player cannot respond)</li>
+<li>If passing is allowed in the game, include a “pass” move as a valid response</li>
+<li>The depth parameter can be used for depth-dependent move generation optimizations</li>
+</ul>
+</div></details><h2 id="required-associated-types" class="section-header">Required Associated Types<a href="#required-associated-types" class="anchor">§</a></h2><div class="methods"><details class="toggle" open><summary><section id="associatedtype.State" class="method"><a class="src rightside" href="../../src/game_player/minimax.rs.html#91">Source</a><h4 class="code-header">type <a href="#associatedtype.State" class="associatedtype">State</a>: <a class="trait" href="../state/trait.State.html" title="trait game_player::state::State">State</a></h4></section></summary><div class="docblock"><p>The type representing game states that this generator works with</p>
+</div></details></div><h2 id="required-methods" class="section-header">Required Methods<a href="#required-methods" class="anchor">§</a></h2><div class="methods"><details class="toggle method-toggle" open><summary><section id="tymethod.generate" class="method"><a class="src rightside" href="../../src/game_player/minimax.rs.html#121">Source</a><h4 class="code-header">fn <a href="#tymethod.generate" class="fn">generate</a>(&amp;self, state: &amp;<a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/rc/struct.Rc.html" title="struct alloc::rc::Rc">Rc</a>&lt;Self::<a class="associatedtype" href="trait.ResponseGenerator.html#associatedtype.State" title="type game_player::minimax::ResponseGenerator::State">State</a>&gt;, depth: <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.i32.html">i32</a>) -&gt; <a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;<a class="struct" href="https://doc.rust-lang.org/1.91.1/alloc/boxed/struct.Box.html" title="struct alloc::boxed::Box">Box</a>&lt;Self::<a class="associatedtype" href="trait.ResponseGenerator.html#associatedtype.State" title="type game_player::minimax::ResponseGenerator::State">State</a>&gt;&gt;</h4></section></summary><div class="docblock"><p>Generates a list of all possible responses to the given state.</p>
+<p>This method should return all legal moves available to the current player in the given state. The implementation
+should be game-specific and handle all rules and constraints of the particular game being played.</p>
+<h5 id="arguments"><a class="doc-anchor" href="#arguments">§</a>Arguments</h5>
+<ul>
+<li><code>state</code> - The current state to generate responses for</li>
+<li><code>depth</code> - Current search depth (ply number), useful for optimizations</li>
+</ul>
+<h5 id="returns"><a class="doc-anchor" href="#returns">§</a>Returns</h5>
+<p>A vector of boxed game states representing all possible moves.
+Returns an empty vector if no moves are available.</p>
+<h5 id="examples-1"><a class="doc-anchor" href="#examples-1">§</a>Examples</h5>
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">let </span>response_gen = MyResponseGenerator::new();
+<span class="kw">let </span>current_state = Rc::new(MyGameState::new());
+
+<span class="kw">let </span>possible_moves = response_gen.generate(<span class="kw-2">&amp;</span>current_state, <span class="number">0</span>);
+<span class="macro">println!</span>(<span class="string">"Found {} possible moves"</span>, possible_moves.len());</code></pre></div><h5 id="note"><a class="doc-anchor" href="#note">§</a>Note</h5>
+<p>The caller gains ownership of the returned states.</p>
+<h5 id="note-1"><a class="doc-anchor" href="#note-1">§</a>Note</h5>
+<p>Returning no responses indicates that the player cannot respond. It does not necessarily indicate that the game is
+over or that the player has passed. If passing is allowed, then a “pass” state should be a valid response.</p>
+</div></details></div><h2 id="implementors" class="section-header">Implementors<a href="#implementors" class="anchor">§</a></h2><div id="implementors-list"></div><script src="../../trait.impl/game_player/minimax/trait.ResponseGenerator.js" async></script></section></div></main></body></html>

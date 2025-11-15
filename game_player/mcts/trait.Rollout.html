@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Rollout trait for MCTS search"><title>Rollout in game_player::mcts - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../static.files/rustdoc-e56847b5.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="game_player" data-themes="" data-resource-suffix="" data-rustdoc-version="1.91.1 (ed61e7d7e 2025-11-07)" data-channel="1.91.1" data-search-js="search-e256b49e.js" data-stringdex-js="stringdex-c3e638e9.js" data-settings-js="settings-c38705f0.js" ><script src="../../static.files/storage-e2aeef58.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../static.files/main-6dc2a7f3.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-263c88ec.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-044be391.svg"></head><body class="rustdoc trait"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Rollout</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../game_player/index.html">game_<wbr>player</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">Rollout</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#type-parameters" title="Type Parameters">Type Parameters</a></li><li><a href="#examples" title="Examples">Examples</a></li></ul><h3><a href="#required-associated-types">Required Associated Types</a></h3><ul class="block"><li><a href="#associatedtype.ResponseGenerator" title="ResponseGenerator">ResponseGenerator</a></li><li><a href="#associatedtype.State" title="State">State</a></li></ul><h3><a href="#required-methods">Required Methods</a></h3><ul class="block"><li><a href="#tymethod.play" title="play">play</a></li></ul><h3><a href="#implementors">Implementors</a></h3></section><div id="rustdoc-modnav"><h2><a href="index.html">In game_<wbr>player::<wbr>mcts</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../index.html">game_player</a>::<wbr><a href="index.html">mcts</a></div><h1>Trait <span class="trait">Rollout</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../src/game_player/mcts.rs.html#78-96">Source</a> </span></div><pre class="rust item-decl"><code>pub trait Rollout {
+    type <a href="#associatedtype.State" class="associatedtype">State</a>: <a class="trait" href="../state/trait.State.html" title="trait game_player::state::State">State</a>;
+    type <a href="#associatedtype.ResponseGenerator" class="associatedtype">ResponseGenerator</a>: <a class="trait" href="trait.ResponseGenerator.html" title="trait game_player::mcts::ResponseGenerator">ResponseGenerator</a>&lt;State = Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.State" title="type game_player::mcts::Rollout::State">State</a>&gt;;
+
+    // Required method
+    fn <a href="#tymethod.play" class="fn">play</a>(
+        &amp;self,
+        state: &amp;Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.State" title="type game_player::mcts::Rollout::State">State</a>,
+        response_generator: &amp;Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.ResponseGenerator" title="type game_player::mcts::Rollout::ResponseGenerator">ResponseGenerator</a>,
+    ) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a>;
+}</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>Rollout trait for MCTS search</p>
+<p>The Rollout trait defines the interface for performing rollouts in a game state. It is used by the MCTS algorithm to simulate
+game play and evaluate the potential outcomes of different moves. It is implemented for specific game states in the
+game-specific code.</p>
+<h2 id="type-parameters"><a class="doc-anchor" href="#type-parameters">§</a>Type Parameters</h2>
+<ul>
+<li><code>S</code> - Game state type</li>
+</ul>
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="attr">#[derive(Debug, Clone, Default)]
+</span><span class="kw">struct </span>TestAction;
+<span class="kw">struct </span>TestResponseGen;
+<span class="kw">impl </span>ResponseGenerator <span class="kw">for </span>TestResponseGen {
+    <span class="kw">type </span>State = TestGameState;
+    <span class="kw">fn </span>generate(<span class="kw-2">&amp;</span><span class="self">self</span>, _state: <span class="kw-2">&amp;</span>TestGameState) -&gt; Vec&lt;TestAction&gt; { <span class="macro">vec!</span>[TestAction] }
+}
+<span class="kw">struct </span>TestRollout;
+<span class="kw">impl </span>Rollout <span class="kw">for </span>TestRollout {
+    <span class="kw">type </span>State = TestGameState;
+    <span class="kw">type </span>ResponseGenerator = TestResponseGen;
+    <span class="kw">fn </span>play(<span class="kw-2">&amp;</span><span class="self">self</span>, state: <span class="kw-2">&amp;</span>TestGameState, _rg: <span class="kw-2">&amp;</span>TestResponseGen) -&gt; f32 { state.value <span class="kw">as </span>f32 }
+}
+<span class="kw">let </span>state = TestGameState { value: <span class="number">42 </span>};
+<span class="kw">let </span>rollout = TestRollout;
+<span class="kw">let </span>rg = TestResponseGen;
+<span class="kw">let </span>score = rollout.play(<span class="kw-2">&amp;</span>state, <span class="kw-2">&amp;</span>rg);
+<span class="macro">assert_eq!</span>(score, <span class="number">42.0</span>);</code></pre></div></div></details><h2 id="required-associated-types" class="section-header">Required Associated Types<a href="#required-associated-types" class="anchor">§</a></h2><div class="methods"><details class="toggle" open><summary><section id="associatedtype.State" class="method"><a class="src rightside" href="../../src/game_player/mcts.rs.html#80">Source</a><h4 class="code-header">type <a href="#associatedtype.State" class="associatedtype">State</a>: <a class="trait" href="../state/trait.State.html" title="trait game_player::state::State">State</a></h4></section></summary><div class="docblock"><p>The type representing the game state</p>
+</div></details><section id="associatedtype.ResponseGenerator" class="method"><a class="src rightside" href="../../src/game_player/mcts.rs.html#81">Source</a><h4 class="code-header">type <a href="#associatedtype.ResponseGenerator" class="associatedtype">ResponseGenerator</a>: <a class="trait" href="trait.ResponseGenerator.html" title="trait game_player::mcts::ResponseGenerator">ResponseGenerator</a>&lt;State = Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.State" title="type game_player::mcts::Rollout::State">State</a>&gt;</h4></section></div><h2 id="required-methods" class="section-header">Required Methods<a href="#required-methods" class="anchor">§</a></h2><div class="methods"><details class="toggle method-toggle" open><summary><section id="tymethod.play" class="method"><a class="src rightside" href="../../src/game_player/mcts.rs.html#95">Source</a><h4 class="code-header">fn <a href="#tymethod.play" class="fn">play</a>(
+    &amp;self,
+    state: &amp;Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.State" title="type game_player::mcts::Rollout::State">State</a>,
+    response_generator: &amp;Self::<a class="associatedtype" href="trait.Rollout.html#associatedtype.ResponseGenerator" title="type game_player::mcts::Rollout::ResponseGenerator">ResponseGenerator</a>,
+) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a></h4></section></summary><div class="docblock"><p>Performs a rollout (simulation) from the given state using the provided response generator, and returns the evaluated value.</p>
+<p>The rollout is a simulation of the game from the given state to a terminal state, following simple heuristics or random
+moves. The result is a score in the range [-1.0, 1.0], where 1.0 indicates a win for the computer player, -1.0 indicates a
+loss, and 0.0 indicates a draw.</p>
+<h5 id="arguments"><a class="doc-anchor" href="#arguments">§</a>Arguments</h5>
+<ul>
+<li><code>state</code> - The game state to perform the rollout from</li>
+<li><code>response_generator</code> - The response generator for producing legal actions</li>
+</ul>
+<h5 id="returns"><a class="doc-anchor" href="#returns">§</a>Returns</h5>
+<p>[-1.0, 1.0] score representing the outcome of the rollout from the perspective of the computer player.</p>
+</div></details></div><h2 id="implementors" class="section-header">Implementors<a href="#implementors" class="anchor">§</a></h2><div id="implementors-list"></div><script src="../../trait.impl/game_player/mcts/trait.Rollout.js" async></script></section></div></main></body></html>

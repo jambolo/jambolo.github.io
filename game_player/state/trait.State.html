@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="A trait representing the state."><title>State in game_player::state - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../static.files/rustdoc-e56847b5.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="game_player" data-themes="" data-resource-suffix="" data-rustdoc-version="1.91.1 (ed61e7d7e 2025-11-07)" data-channel="1.91.1" data-search-js="search-e256b49e.js" data-stringdex-js="stringdex-c3e638e9.js" data-settings-js="settings-c38705f0.js" ><script src="../../static.files/storage-e2aeef58.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../static.files/main-6dc2a7f3.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-263c88ec.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-044be391.svg"></head><body class="rustdoc trait"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">State</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../game_player/index.html">game_<wbr>player</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">State</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#core-concepts" title="Core Concepts">Core Concepts</a><ul><li><a href="#fingerprinting" title="Fingerprinting">Fingerprinting</a></li><li><a href="#turn-management" title="Turn Management">Turn Management</a></li><li><a href="#state-transitions" title="State Transitions">State Transitions</a></li></ul></li><li><a href="#examples" title="Examples">Examples</a></li></ul><h3><a href="#required-associated-types">Required Associated Types</a></h3><ul class="block"><li><a href="#associatedtype.Action" title="Action">Action</a></li></ul><h3><a href="#required-methods">Required Methods</a></h3><ul class="block"><li><a href="#tymethod.apply" title="apply">apply</a></li><li><a href="#tymethod.fingerprint" title="fingerprint">fingerprint</a></li><li><a href="#tymethod.is_terminal" title="is_terminal">is_terminal</a></li><li><a href="#tymethod.whose_turn" title="whose_turn">whose_turn</a></li></ul><h3><a href="#dyn-compatibility">Dyn Compatibility</a></h3><h3><a href="#implementors">Implementors</a></h3></section><div id="rustdoc-modnav"><h2><a href="index.html">In game_<wbr>player::<wbr>state</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../index.html">game_player</a>::<wbr><a href="index.html">state</a></div><h1>Trait <span class="trait">State</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../src/game_player/state.rs.html#106-258">Source</a> </span></div><pre class="rust item-decl"><code>pub trait State: <a class="trait" href="https://doc.rust-lang.org/1.91.1/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a> {
+    type <a href="#associatedtype.Action" class="associatedtype">Action</a>: <a class="trait" href="https://doc.rust-lang.org/1.91.1/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a>;
+
+    // Required methods
+    fn <a href="#tymethod.fingerprint" class="fn">fingerprint</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.u64.html">u64</a>;
+<span class="item-spacer"></span>    fn <a href="#tymethod.whose_turn" class="fn">whose_turn</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.u8.html">u8</a>;
+<span class="item-spacer"></span>    fn <a href="#tymethod.is_terminal" class="fn">is_terminal</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.bool.html">bool</a>;
+<span class="item-spacer"></span>    fn <a href="#tymethod.apply" class="fn">apply</a>(&amp;self, action: &amp;Self::<a class="associatedtype" href="trait.State.html#associatedtype.Action" title="type game_player::state::State::Action">Action</a>) -&gt; Self;
+}</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>A trait representing the state.</p>
+<p>This trait defines the core interface that a game-specific state must implement.</p>
+<h2 id="core-concepts"><a class="doc-anchor" href="#core-concepts">§</a>Core Concepts</h2><h3 id="fingerprinting"><a class="doc-anchor" href="#fingerprinting">§</a>Fingerprinting</h3>
+<p>A state must provide a unique fingerprint (hash) that can be used for:</p>
+<ul>
+<li>Transposition tables in game tree search</li>
+<li>Duplicate position detection</li>
+<li>State caching and memoization</li>
+</ul>
+<h3 id="turn-management"><a class="doc-anchor" href="#turn-management">§</a>Turn Management</h3>
+<p>The trait tracks which player should move next, enabling:</p>
+<ul>
+<li>Alternating play enforcement</li>
+<li>Player-specific evaluation functions</li>
+<li>Turn-based game logic</li>
+</ul>
+<h3 id="state-transitions"><a class="doc-anchor" href="#state-transitions">§</a>State Transitions</h3>
+<p>Game states can store references to expected responses, allowing:</p>
+<ul>
+<li>Pre-computed move sequences</li>
+<li>Principal variation storage</li>
+<li>Game tree navigation</li>
+</ul>
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code>
+<span class="attr">#[derive(Clone, Default)]
+</span><span class="kw">struct </span>MyAction;
+
+<span class="attr">#[derive(Clone, Copy)]
+</span><span class="kw">struct </span>MyGameState {
+    board: [u8; <span class="number">64</span>],
+    current_player: PlayerId,
+    game_over: bool,
+    <span class="comment">// other game-specific fields...
+</span>}
+
+<span class="kw">impl </span>State <span class="kw">for </span>MyGameState {
+   <span class="kw">type </span>Action = MyAction;
+    <span class="kw">fn </span>fingerprint(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; u64 {
+        <span class="comment">// Generate unique hash for this position
+        // Implementation depends on game specifics
+        </span><span class="number">42 </span><span class="comment">// placeholder
+    </span>}
+
+    <span class="kw">fn </span>whose_turn(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; u8 {
+        <span class="self">self</span>.current_player <span class="kw">as </span>u8
+    }
+
+    <span class="kw">fn </span>is_terminal(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; bool {
+        <span class="self">self</span>.game_over
+    }
+
+    <span class="kw">fn </span>apply(<span class="kw-2">&amp;</span><span class="self">self</span>, _action: <span class="kw-2">&amp;</span>MyAction) -&gt; <span class="self">Self </span>{
+        MyGameState {
+            board: <span class="self">self</span>.board,
+            current_player: <span class="self">self</span>.current_player.other(),
+            game_over: <span class="bool-val">false</span>,
+        }
+    }
+}</code></pre></div></div></details><h2 id="required-associated-types" class="section-header">Required Associated Types<a href="#required-associated-types" class="anchor">§</a></h2><div class="methods"><details class="toggle" open><summary><section id="associatedtype.Action" class="method"><a class="src rightside" href="../../src/game_player/state.rs.html#108">Source</a><h4 class="code-header">type <a href="#associatedtype.Action" class="associatedtype">Action</a>: <a class="trait" href="https://doc.rust-lang.org/1.91.1/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a></h4></section></summary><div class="docblock"><p>The type representing actions/moves in this game</p>
+</div></details></div><h2 id="required-methods" class="section-header">Required Methods<a href="#required-methods" class="anchor">§</a></h2><div class="methods"><details class="toggle method-toggle" open><summary><section id="tymethod.fingerprint" class="method"><a class="src rightside" href="../../src/game_player/state.rs.html#147">Source</a><h4 class="code-header">fn <a href="#tymethod.fingerprint" class="fn">fingerprint</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.u64.html">u64</a></h4></section></summary><div class="docblock"><p>Returns a unique fingerprint (hash) for this state.</p>
+<p>The fingerprint must be statistically unique across all possible game states to avoid hash collisions in transposition
+tables and state caches. Identical game positions must always produce identical fingerprints.</p>
+<h5 id="implementation-requirements"><a class="doc-anchor" href="#implementation-requirements">§</a>Implementation Requirements</h5>
+<ul>
+<li><strong>Deterministic</strong>: Same position always produces same fingerprint</li>
+<li><strong>Collision-resistant</strong>: Different positions should produce different and uncorrelated fingerprints</li>
+<li><strong>Fast</strong>: Called frequently during game tree search</li>
+<li><strong>Position-dependent</strong>: Only depends on the current state and independent of move history.</li>
+</ul>
+<h5 id="returns"><a class="doc-anchor" href="#returns">§</a>Returns</h5>
+<p>A 64-bit unsigned integer representing the unique fingerprint</p>
+<h5 id="examples-1"><a class="doc-anchor" href="#examples-1">§</a>Examples</h5>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>state = create_initial_state();
+<span class="kw">let </span>fingerprint = state.fingerprint();
+
+<span class="comment">// Same position should produce same fingerprint
+</span><span class="kw">let </span>same_state = create_initial_state();
+<span class="macro">assert_eq!</span>(fingerprint, same_state.fingerprint());</code></pre></div></div></details><details class="toggle method-toggle" open><summary><section id="tymethod.whose_turn" class="method"><a class="src rightside" href="../../src/game_player/state.rs.html#175">Source</a><h4 class="code-header">fn <a href="#tymethod.whose_turn" class="fn">whose_turn</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.u8.html">u8</a></h4></section></summary><div class="docblock"><p>Returns the ID of the player whose turn it is to move.</p>
+<h5 id="returns-1"><a class="doc-anchor" href="#returns-1">§</a>Returns</h5>
+<p>The id of the player of the player who should move next</p>
+<h5 id="examples-2"><a class="doc-anchor" href="#examples-2">§</a>Examples</h5>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>state = MyGameState { current_player: PlayerId::ALICE };
+<span class="kw">match </span>state.whose_turn() {
+    <span class="number">0 </span>=&gt; <span class="macro">println!</span>(<span class="string">"Alice to move"</span>), <span class="comment">// PlayerId::ALICE as u8
+    </span><span class="number">1 </span>=&gt; <span class="macro">println!</span>(<span class="string">"Bob to move"</span>),   <span class="comment">// PlayerId::BOB as u8
+    </span><span class="kw">_ </span>=&gt; <span class="macro">unreachable!</span>(),
+}</code></pre></div></div></details><details class="toggle method-toggle" open><summary><section id="tymethod.is_terminal" class="method"><a class="src rightside" href="../../src/game_player/state.rs.html#199">Source</a><h4 class="code-header">fn <a href="#tymethod.is_terminal" class="fn">is_terminal</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.bool.html">bool</a></h4></section></summary><div class="docblock"><p>Checks if the game cannot continue.</p>
+<h5 id="returns-2"><a class="doc-anchor" href="#returns-2">§</a>Returns</h5>
+<p><code>true</code> if the game cannot continue, <code>false</code> otherwise.</p>
+<h5 id="examples-3"><a class="doc-anchor" href="#examples-3">§</a>Examples</h5>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>state = MyGameState { game_is_over: <span class="bool-val">true </span>};
+<span class="macro">assert!</span>(state.is_terminal());</code></pre></div></div></details><details class="toggle method-toggle" open><summary><section id="tymethod.apply" class="method"><a class="src rightside" href="../../src/game_player/state.rs.html#257">Source</a><h4 class="code-header">fn <a href="#tymethod.apply" class="fn">apply</a>(&amp;self, action: &amp;Self::<a class="associatedtype" href="trait.State.html#associatedtype.Action" title="type game_player::state::State::Action">Action</a>) -&gt; Self</h4></section></summary><div class="docblock"><p>Applies an action to the current state, returning a new state as a result of the action.</p>
+<p>This method creates a new state by applying the given action to the current state.
+The original state remains unchanged (immutable transformation).</p>
+<h5 id="arguments"><a class="doc-anchor" href="#arguments">§</a>Arguments</h5>
+<ul>
+<li><code>action</code> - The action to apply to the current state</li>
+</ul>
+<h5 id="returns-3"><a class="doc-anchor" href="#returns-3">§</a>Returns</h5>
+<p>A new state representing the position after applying the action</p>
+<h5 id="examples-4"><a class="doc-anchor" href="#examples-4">§</a>Examples</h5>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code>
+<span class="kw">let </span>initial_state = MyGameState {
+    current_player: PlayerId::ALICE,
+    move_count: <span class="number">0</span>,
+    game_over: <span class="bool-val">false
+</span>};
+<span class="kw">let </span>action = MyAction { move_type: <span class="string">"play_tile"</span>.to_string() };
+
+<span class="kw">let </span>new_state = initial_state.apply(<span class="kw-2">&amp;</span>action);
+
+<span class="comment">// State should be updated
+</span><span class="macro">assert_eq!</span>(new_state.whose_turn(), PlayerId::BOB <span class="kw">as </span>u8);
+<span class="macro">assert_ne!</span>(new_state.fingerprint(), initial_state.fingerprint());
+
+<span class="comment">// Original state unchanged
+</span><span class="macro">assert_eq!</span>(initial_state.whose_turn(), PlayerId::ALICE <span class="kw">as </span>u8);</code></pre></div></div></details></div><h2 id="dyn-compatibility" class="section-header">Dyn Compatibility<a href="#dyn-compatibility" class="anchor">§</a></h2><div class="dyn-compatibility-info"><p>This trait is <b>not</b> <a href="https://doc.rust-lang.org/1.91.1/reference/items/traits.html#dyn-compatibility">dyn compatible</a>.</p><p><i>In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.</i></p></div><h2 id="implementors" class="section-header">Implementors<a href="#implementors" class="anchor">§</a></h2><div id="implementors-list"></div><script src="../../trait.impl/game_player/state/trait.State.js" async></script></section></div></main></body></html>

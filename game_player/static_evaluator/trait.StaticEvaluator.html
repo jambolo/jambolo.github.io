@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="An interface for static evaluation functions."><title>StaticEvaluator in game_player::static_evaluator - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../../static.files/rustdoc-e56847b5.css"><meta name="rustdoc-vars" data-root-path="../../" data-static-root-path="../../static.files/" data-current-crate="game_player" data-themes="" data-resource-suffix="" data-rustdoc-version="1.91.1 (ed61e7d7e 2025-11-07)" data-channel="1.91.1" data-search-js="search-e256b49e.js" data-stringdex-js="stringdex-c3e638e9.js" data-settings-js="settings-c38705f0.js" ><script src="../../static.files/storage-e2aeef58.js"></script><script defer src="sidebar-items.js"></script><script defer src="../../static.files/main-6dc2a7f3.js"></script><noscript><link rel="stylesheet" href="../../static.files/noscript-263c88ec.css"></noscript><link rel="alternate icon" type="image/png" href="../../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../../static.files/favicon-044be391.svg"></head><body class="rustdoc trait"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">StaticEvaluator</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../../game_player/index.html">game_<wbr>player</a><span class="version">0.1.0</span></h2></div><div class="sidebar-elems"><section id="rustdoc-toc"><h2 class="location"><a href="#">Static<wbr>Evaluator</a></h2><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#examples" title="Examples">Examples</a></li></ul><h3><a href="#required-methods">Required Methods</a></h3><ul class="block"><li><a href="#tymethod.alice_wins_value" title="alice_wins_value">alice_wins_value</a></li><li><a href="#tymethod.bob_wins_value" title="bob_wins_value">bob_wins_value</a></li><li><a href="#tymethod.evaluate" title="evaluate">evaluate</a></li></ul><h3><a href="#implementors">Implementors</a></h3></section><div id="rustdoc-modnav"><h2><a href="index.html">In game_<wbr>player::<wbr>static_<wbr>evaluator</a></h2></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content"><div class="main-heading"><div class="rustdoc-breadcrumbs"><a href="../index.html">game_player</a>::<wbr><a href="index.html">static_evaluator</a></div><h1>Trait <span class="trait">Static<wbr>Evaluator</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../../src/game_player/static_evaluator.rs.html#90-120">Source</a> </span></div><pre class="rust item-decl"><code>pub trait StaticEvaluator&lt;G&gt; {
+    // Required methods
+    fn <a href="#tymethod.evaluate" class="fn">evaluate</a>(&amp;self, state: <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.reference.html">&amp;G</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a>;
+<span class="item-spacer"></span>    fn <a href="#tymethod.alice_wins_value" class="fn">alice_wins_value</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a>;
+<span class="item-spacer"></span>    fn <a href="#tymethod.bob_wins_value" class="fn">bob_wins_value</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a>;
+}</code></pre><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>An interface for static evaluation functions.</p>
+<p>A static evaluation function assigns a value to a game state without any lookahead. The value represents the
+“goodness” of the state from Alice’s perspective. Alice seeks to maximize the value and Bob seeks to minimize it.</p>
+<p>The values returned by the static evaluation function should be in the range [bobWinsValue(), aliceWinsValue()].
+If the game is over and Alice has won, then the function should return aliceWinsValue(). If the game is over and
+Bob has won, then the function should return bobWinsValue().</p>
+<h2 id="examples"><a class="doc-anchor" href="#examples">§</a>Examples</h2>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>game_player::StaticEvaluator;
+
+<span class="comment">// Simple game state for demonstration
+</span><span class="attr">#[derive(Debug)]
+</span><span class="kw">struct </span>MockGameState {
+    player_score: i32,
+    opponent_score: i32,
+    game_over: bool,
+    winner: <span class="prelude-ty">Option</span>&lt;bool&gt;, <span class="comment">// true = Alice wins, false = Bob wins
+</span>}
+
+<span class="comment">// Simple static evaluator implementation
+</span><span class="kw">struct </span>SimpleEvaluator;
+
+<span class="kw">impl </span>StaticEvaluator&lt;MockGameState&gt; <span class="kw">for </span>SimpleEvaluator {
+    <span class="kw">fn </span>evaluate(<span class="kw-2">&amp;</span><span class="self">self</span>, state: <span class="kw-2">&amp;</span>MockGameState) -&gt; f32 {
+        <span class="kw">if </span>state.game_over {
+            <span class="kw">match </span>state.winner {
+                <span class="prelude-val">Some</span>(<span class="bool-val">true</span>) =&gt; <span class="self">self</span>.alice_wins_value(),
+                <span class="prelude-val">Some</span>(<span class="bool-val">false</span>) =&gt; <span class="self">self</span>.bob_wins_value(),
+                <span class="prelude-val">None </span>=&gt; <span class="number">0.0</span>, <span class="comment">// Draw
+            </span>}
+        } <span class="kw">else </span>{
+            <span class="comment">// Simple score difference evaluation
+            </span><span class="kw">let </span>diff = state.player_score - state.opponent_score;
+            (diff <span class="kw">as </span>f32) * <span class="number">0.1 </span><span class="comment">// Scale to reasonable range
+        </span>}
+    }
+
+    <span class="kw">fn </span>alice_wins_value(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f32 {
+        <span class="number">1000.0
+    </span>}
+
+    <span class="kw">fn </span>bob_wins_value(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; f32 {
+        -<span class="number">1000.0
+    </span>}
+}
+
+<span class="kw">let </span>evaluator = SimpleEvaluator;
+
+<span class="comment">// Test ongoing game evaluation
+</span><span class="kw">let </span>ongoing_state = MockGameState {
+    player_score: <span class="number">15</span>,
+    opponent_score: <span class="number">10</span>,
+    game_over: <span class="bool-val">false</span>,
+    winner: <span class="prelude-val">None</span>,
+};
+<span class="kw">let </span>score = evaluator.evaluate(<span class="kw-2">&amp;</span>ongoing_state);
+<span class="macro">assert_eq!</span>(score, <span class="number">0.5</span>); <span class="comment">// (15 - 10) * 0.1
+
+// Test Alice wins
+</span><span class="kw">let </span>alice_wins_state = MockGameState {
+    player_score: <span class="number">21</span>,
+    opponent_score: <span class="number">15</span>,
+    game_over: <span class="bool-val">true</span>,
+    winner: <span class="prelude-val">Some</span>(<span class="bool-val">true</span>),
+};
+<span class="macro">assert_eq!</span>(evaluator.evaluate(<span class="kw-2">&amp;</span>alice_wins_state), <span class="number">1000.0</span>);
+
+<span class="comment">// Test Bob wins
+</span><span class="kw">let </span>bob_wins_state = MockGameState {
+    player_score: <span class="number">10</span>,
+    opponent_score: <span class="number">21</span>,
+    game_over: <span class="bool-val">true</span>,
+    winner: <span class="prelude-val">Some</span>(<span class="bool-val">false</span>),
+};
+<span class="macro">assert_eq!</span>(evaluator.evaluate(<span class="kw-2">&amp;</span>bob_wins_state), -<span class="number">1000.0</span>);
+
+<span class="comment">// Verify win values
+</span><span class="macro">assert_eq!</span>(evaluator.alice_wins_value(), <span class="number">1000.0</span>);
+<span class="macro">assert_eq!</span>(evaluator.bob_wins_value(), -<span class="number">1000.0</span>);
+<span class="macro">assert!</span>(evaluator.alice_wins_value() &gt; evaluator.bob_wins_value());</code></pre></div></div></details><h2 id="required-methods" class="section-header">Required Methods<a href="#required-methods" class="anchor">§</a></h2><div class="methods"><details class="toggle method-toggle" open><summary><section id="tymethod.evaluate" class="method"><a class="src rightside" href="../../src/game_player/static_evaluator.rs.html#101">Source</a><h4 class="code-header">fn <a href="#tymethod.evaluate" class="fn">evaluate</a>(&amp;self, state: <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.reference.html">&amp;G</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a></h4></section></summary><div class="docblock"><p>Evaluates the given state and returns its value from Alice’s perspective.</p>
+<h5 id="arguments"><a class="doc-anchor" href="#arguments">§</a>Arguments</h5>
+<ul>
+<li><code>state</code> - The state to be evaluated</li>
+</ul>
+<h5 id="returns"><a class="doc-anchor" href="#returns">§</a>Returns</h5>
+<p>The value of the state from Alice’s perspective</p>
+<h5 id="note"><a class="doc-anchor" href="#note">§</a>Note</h5>
+<p>This function must be implemented.</p>
+</div></details><details class="toggle method-toggle" open><summary><section id="tymethod.alice_wins_value" class="method"><a class="src rightside" href="../../src/game_player/static_evaluator.rs.html#110">Source</a><h4 class="code-header">fn <a href="#tymethod.alice_wins_value" class="fn">alice_wins_value</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a></h4></section></summary><div class="docblock"><p>Returns the value that indicates that Alice has won.</p>
+<h5 id="returns-1"><a class="doc-anchor" href="#returns-1">§</a>Returns</h5>
+<p>The value that indicates that Alice has won</p>
+<h5 id="note-1"><a class="doc-anchor" href="#note-1">§</a>Note</h5>
+<p>This function must be implemented.</p>
+</div></details><details class="toggle method-toggle" open><summary><section id="tymethod.bob_wins_value" class="method"><a class="src rightside" href="../../src/game_player/static_evaluator.rs.html#119">Source</a><h4 class="code-header">fn <a href="#tymethod.bob_wins_value" class="fn">bob_wins_value</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/1.91.1/std/primitive.f32.html">f32</a></h4></section></summary><div class="docblock"><p>Returns the value that indicates that Bob has won.</p>
+<h5 id="returns-2"><a class="doc-anchor" href="#returns-2">§</a>Returns</h5>
+<p>The value that indicates that Bob has won</p>
+<h5 id="note-2"><a class="doc-anchor" href="#note-2">§</a>Note</h5>
+<p>This function must be implemented.</p>
+</div></details></div><h2 id="implementors" class="section-header">Implementors<a href="#implementors" class="anchor">§</a></h2><div id="implementors-list"></div><script src="../../trait.impl/game_player/static_evaluator/trait.StaticEvaluator.js" async></script></section></div></main></body></html>

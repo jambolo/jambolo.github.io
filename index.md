@@ -112,10 +112,10 @@ A function that computes the first endpoint for drawing an arbitrary arc using t
 
 ### game-player
 
-Base component library for implementing a player for two-person games in Rust. Minimax search is implemented. MCTS is under construction. (Rust)
+**(WIP)** Base component library for implementing a player for two-person games in Rust. Minimax search is implemented. MCTS is under construction.
 
 - Rust
-- [API Documentation](docs/game-player/html/index.html)
+- [API Documentation](docs/game_player/index.html)
 - [Project on GitHub](https://github.com/jambolo/game-player)
 
 ### GamePlayer
