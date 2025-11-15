@@ -140,7 +140,7 @@ Various projects implemented using Github Spark
 ### BIP-39 Toolkit
 Various tools dealing with BIP-39.
 * [Project on GitHub](https://github.com/jambolo/mnemonic-toolkit-web)
-* [Try it!](https://mnemonic-toolkit-web--jambolo.github.app)
+* [Try it!](https://bip-39-toolkit--jambolo.github.app)
 
 ### Blackjack Simulation
 Simulates a huge number of Blackjack hands and records the results of basic strategy and advantage play.
