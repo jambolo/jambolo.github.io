@@ -17,7 +17,7 @@ layout: default
 
 I am experimenting in using AI (currently ChatGPT-Codex) to generate visualizations of the solutions to Advent of Code 2025. The designs and implementation of the visualizations are completely done by AI. I have only minimal input beyond implementing the instrumentation in the solutions.
 
-- [Project on Github](https://github.com/jambolo/advent-of-code-visualizations)
+- [Project on Github](https://github.com/jambolo/advent-of-code-2025-visualizations)
 - [Visualizations Browser](advent-of-code-2025-visualizations/index.html)
 
 ### Wordle Solver
