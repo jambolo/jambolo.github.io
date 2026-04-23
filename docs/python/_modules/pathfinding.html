@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pathfinding &#8212; python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for pathfinding</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Pathfinding</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">heapq</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span>
+
+<span class="n">uniqueId</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="aStar">
+<a class="viewcode-back" href="../index.html#pathfinding.aStar">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">aStar</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">neighborsOf</span><span class="p">,</span> <span class="n">IMPASSABLE</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the lowest cost path in a graph from the start to the goal.</span>
+
+<span class="sd">    If the returned path is empty, then there is no path.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        graph (list):               List of the nodes in the graph.</span>
+<span class="sd">        start (int):                Index of the starting node in the graph.</span>
+<span class="sd">        goal (int):                 Index of the goal node in the graph.</span>
+<span class="sd">        h (Callable):               Function h(n) -&gt; cost, estimates cost from node n to the goal.</span>
+<span class="sd">        neighborsOf (Callable):     Function neighborsOf(n) -&gt; [(n, cost), ...], returns neighbors of node n.</span>
+<span class="sd">        IMPASSABLE (Any):           Value greater than the longest possible path.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: The lowest cost path as a list of node indices.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># The &quot;open&quot; set is implemented as a priority queue in order to efficiently find the lowest cost node in each</span>
+    <span class="c1"># iteration. Queue elements consist of the estimated cost through the node, a unique id, and finally the node (or</span>
+    <span class="c1"># a marker indicating that the element has been freplaced). Lowest cost elements have the highest priority. Older</span>
+    <span class="c1"># elements of equal cost have higher priority due to the id. The id also prevents the node value from being</span>
+    <span class="c1"># involved in the priority calculation so that the node value can be changed without invalidating the heap.</span>
+    <span class="n">openSet</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># For node n, predecessors[n] is the node immediately preceding it on the cheapest path from start</span>
+    <span class="c1"># to n currently known.</span>
+    <span class="n">predecessors</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))]</span>
+
+    <span class="c1"># For node n, gScore[n] is the cost of the cheapest path from start to n currently known.</span>
+    <span class="n">gScore</span> <span class="o">=</span> <span class="p">[</span><span class="n">IMPASSABLE</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">))]</span>
+
+    <span class="c1"># Initially, only the start node is known.</span>
+    <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">openSet</span><span class="p">,</span> <span class="p">[</span><span class="n">h</span><span class="p">(</span><span class="n">start</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">uniqueId</span><span class="p">),</span> <span class="n">start</span><span class="p">])</span>
+    <span class="n">gScore</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Get the next node. &lt; 0 indicates a replaced entry</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">openSet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span>      <span class="c1"># Remove the current node</span>
+        <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">openSet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span>  <span class="c1"># Remove the current node</span>
+
+        <span class="c1"># If the goal is reached, then return the path by iteratively looking up the goal&#39;s predecessors</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">goal</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">while</span> <span class="n">goal</span> <span class="o">!=</span> <span class="n">start</span><span class="p">:</span>
+                <span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">goal</span><span class="p">)</span>
+                <span class="n">goal</span> <span class="o">=</span> <span class="n">predecessors</span><span class="p">[</span><span class="n">goal</span><span class="p">]</span>
+            <span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">path</span>
+
+        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">neighborsOf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">cost</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+            <span class="c1"># cost from start to the neighbor through the current node</span>
+            <span class="n">tentative_gScore</span> <span class="o">=</span> <span class="n">gScore</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">+</span> <span class="n">cost</span>
+
+            <span class="c1"># If this path to neighbor is better than any previous one, then save it (replacing any other instances</span>
+            <span class="c1"># already in the queue).</span>
+            <span class="k">if</span> <span class="n">tentative_gScore</span> <span class="o">&lt;</span> <span class="n">gScore</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]:</span>
+                <span class="n">predecessors</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span>  <span class="c1"># Any path to the neighbor should go through n</span>
+                <span class="n">gScore</span><span class="p">[</span><span class="n">neighbor</span><span class="p">]</span> <span class="o">=</span> <span class="n">tentative_gScore</span>
+                <span class="n">fScore</span> <span class="o">=</span> <span class="n">tentative_gScore</span> <span class="o">+</span> <span class="n">h</span><span class="p">(</span><span class="n">neighbor</span><span class="p">)</span>
+                <span class="c1"># Invalidate any instances of the neighbor already in the queue</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">openSet</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">neighbor</span><span class="p">:</span>
+                        <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="c1"># Add the new node to the open set</span>
+                <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">openSet</span><span class="p">,</span> <span class="p">[</span><span class="n">fScore</span><span class="p">,</span> <span class="nb">next</span><span class="p">(</span><span class="n">uniqueId</span><span class="p">),</span> <span class="n">neighbor</span><span class="p">])</span>
+
+    <span class="c1"># The open set is empty but goal was never reached. That means that there is no path from start to goal.</span>
+    <span class="k">return</span> <span class="p">[]</span></div>
+
+
+
+<div class="viewcode-block" id="dynamicAStar">
+<a class="viewcode-back" href="../index.html#pathfinding.dynamicAStar">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">dynamicAStar</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">goal</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">neighborsOf</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the lowest cost path in a dynamic graph from the start to the goal.</span>
+
+<span class="sd">    If the returned path is empty, then there is no path.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        start (int): Non-negative number representing the starting node.</span>
+<span class="sd">        goal (int): Non-negative number representing the goal node.</span>
+<span class="sd">        h (Callable): Function h(t, n) -&gt; cost, estimates cost from node n to the goal at time t.</span>
+<span class="sd">        neighborsOf (Callable): Function neighborsOf(t, n) -&gt; [(n, cost), ...], returns neighbors at time t.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        list: The lowest cost path as a list of node indices.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># The &quot;open&quot; set is implemented as a priority queue in order to efficiently find the lowest cost node in each</span>
+    <span class="c1"># iteration. Queue elements consist of the estimated cost through the node, a unique id, and finally the node (or</span>
+    <span class="c1"># a marker indicating that the element has been freplaced). Lowest cost elements have the highest priority. Older</span>
+    <span class="c1"># elements of equal cost have higher priority due to the id. The id also prevents the node value from being</span>
+    <span class="c1"># involved in the priority calculation so that the node value can be changed without invalidating the heap.</span>
+    <span class="n">openSet</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># For node n, predecessors[n] is the node immediately preceding it on the cheapest path from start</span>
+    <span class="c1"># to n currently known.</span>
+    <span class="n">predecessors</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># For node n, gScore[n] is the cost of the cheapest path from start to n currently known.</span>
+    <span class="n">gScore</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Initially, only the start node is known.</span>
+    <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">openSet</span><span class="p">,</span> <span class="p">[</span><span class="n">h</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">next</span><span class="p">(</span><span class="n">uniqueId</span><span class="p">),</span> <span class="n">start</span><span class="p">])</span>
+    <span class="n">gScore</span><span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Get the next node. &lt; 0 indicates a replaced entry</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">openSet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span>  <span class="c1"># Remove the current node</span>
+        <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">_</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">openSet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">heapq</span><span class="o">.</span><span class="n">heappop</span><span class="p">(</span><span class="n">openSet</span><span class="p">)</span>  <span class="c1"># Remove the current node</span>
+
+        <span class="c1"># If the goal is reached, then return the path by iteratively looking up the goal&#39;s predecessors</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">goal</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">end</span> <span class="o">=</span> <span class="n">goal</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">t0</span>
+            <span class="k">while</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+                <span class="n">t</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="n">predecessors</span><span class="p">[(</span><span class="n">t</span><span class="p">,</span> <span class="n">end</span><span class="p">)]</span>
+            <span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">path</span>
+
+        <span class="n">t1</span> <span class="o">=</span> <span class="n">t0</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">neighborsOf</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+            <span class="c1"># distance from start to the neighbor through the current node</span>
+            <span class="n">tentative_gScore</span> <span class="o">=</span> <span class="n">gScore</span><span class="p">[(</span><span class="n">t0</span><span class="p">,</span> <span class="n">n</span><span class="p">)]</span> <span class="o">+</span> <span class="n">d</span>
+            <span class="c1"># If this path to neighbor is better than any previous one, then save it (replacing any other instances</span>
+            <span class="c1"># already in the queue).</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">gScore</span> <span class="ow">or</span> <span class="n">tentative_gScore</span> <span class="o">&lt;</span> <span class="n">gScore</span><span class="p">[(</span><span class="n">t1</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">)]:</span>
+                <span class="n">predecessors</span><span class="p">[(</span><span class="n">t1</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>        <span class="c1"># Any path to the neighbor should go through n</span>
+                <span class="n">gScore</span><span class="p">[(</span><span class="n">t1</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">)]</span> <span class="o">=</span> <span class="n">tentative_gScore</span>
+                <span class="n">fScore</span> <span class="o">=</span> <span class="n">tentative_gScore</span> <span class="o">+</span> <span class="n">h</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">neighbor</span><span class="p">)</span>
+                <span class="c1"># Invalidate any instances of the neighbor already in the queue</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">openSet</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">t1</span> <span class="ow">and</span> <span class="n">i</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">neighbor</span><span class="p">:</span>
+                        <span class="n">i</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="c1"># Add the new node to the open set</span>
+                <span class="n">heapq</span><span class="o">.</span><span class="n">heappush</span><span class="p">(</span><span class="n">openSet</span><span class="p">,</span> <span class="p">[</span><span class="n">fScore</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="nb">next</span><span class="p">(</span><span class="n">uniqueId</span><span class="p">),</span> <span class="n">neighbor</span><span class="p">])</span>
+
+    <span class="c1"># The open set is empty but goal was never reached. That means that there is no path from start to goal.</span>
+    <span class="k">return</span> <span class="p">[]</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">python</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, John Bolton.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

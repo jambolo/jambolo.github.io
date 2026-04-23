@@ -1,0 +1,20 @@
+<map id="Material.h" name="Material.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="136,5,214,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,89,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,34,70,145,66,141,162,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,155,168,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,33,149,140,144,139,169,32"/>
+<area shape="rect" id="Node000004" href="$_rgba_8h.html" title=" " alt="" coords="178,80,241,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,31,200,65,195,67,179,34"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="265,80,368,107"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="201,30,279,70,277,75,198,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="182,110,90,150,88,145,180,105"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="200,109,165,145,161,141,196,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,155,251,181"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="214,107,220,139,214,140,209,108"/>
+<area shape="rect" id="Node000006" href="$_rgba_8inl.html" title=" " alt="" coords="275,155,344,181"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="222,105,274,144,271,148,218,109"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="298,156,245,117,248,113,301,152"/>
+<area shape="rect" id="Node000007" href="$_types_8h.html" title=" " alt="" coords="276,229,343,256"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="312,182,312,214,307,214,307,182"/>
+</map>

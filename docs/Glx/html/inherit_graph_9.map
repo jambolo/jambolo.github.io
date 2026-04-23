@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_glx_1_1_texture.html" title="A texture." alt="" coords="5,5,98,32"/>
+<area shape="rect" id="Node000001" href="$class_glx_1_1_mip_mapped_texture.html" title="A Texture that supports mipmapping." alt="" coords="146,5,305,32"/>
+<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="113,16,145,16,145,21,113,21"/>
+</map>

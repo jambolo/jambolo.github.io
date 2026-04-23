@@ -1,0 +1,7 @@
+<map id="Glx::Camera" name="Glx::Camera">
+<area shape="rect" id="Node000001" title="A basic camera.." alt="" coords="124,5,219,32"/>
+<area shape="rect" id="Node000002" href="$class_glx_1_1_direction_up_camera.html" title="A camera whose orientation is set by specifying its direction and up vectors." alt="" coords="5,80,170,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,45,104,82,100,78,144,40"/>
+<area shape="rect" id="Node000003" href="$class_glx_1_1_euler_camera.html" title="A camera whose orientation is set using Euler angles." alt="" coords="194,80,320,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,40,244,78,240,82,196,44"/>
+</map>

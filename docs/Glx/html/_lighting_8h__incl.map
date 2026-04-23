@@ -1,0 +1,18 @@
+<map id="Lighting.h" name="Lighting.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="102,5,179,32"/>
+<area shape="rect" id="Node000002" href="$_rgba_8h.html" title=" " alt="" coords="183,80,247,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,31,193,67,190,71,151,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,89,181"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="135,34,65,143,61,140,130,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="112,155,168,181"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="143,33,143,139,138,139,138,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,110,91,151,89,146,185,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="204,109,166,146,162,142,200,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,155,251,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="219,107,222,139,216,139,214,107"/>
+<area shape="rect" id="Node000006" href="$_rgba_8inl.html" title=" " alt="" coords="275,155,344,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="226,105,275,143,272,148,223,109"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="299,156,249,118,253,114,302,152"/>
+<area shape="rect" id="Node000007" href="$_types_8h.html" title=" " alt="" coords="276,229,343,256"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="312,182,312,214,307,214,307,182"/>
+</map>

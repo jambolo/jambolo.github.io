@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_glx_1_1_vertex.html" title="An immediate&#45;mode vertex." alt="" coords="5,56,92,83"/>
+<area shape="rect" id="Node000001" href="$class_glx_1_1_l_vertex.html" title="A lit Vertex." alt="" coords="144,5,236,32"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="101,48,149,30,151,35,103,53"/>
+<area shape="rect" id="Node000002" href="$class_glx_1_1_t_l_vertex.html" title="A textured and lit Vertex." alt="" coords="140,56,240,83"/>
+<area shape="poly" id="edge10_Node000000_Node000002" title=" " alt="" coords="107,67,139,67,139,72,107,72"/>
+<area shape="rect" id="Node000003" href="$class_glx_1_1_t_vertex.html" title="A textured Vertex." alt="" coords="143,107,237,133"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="103,86,151,104,149,109,101,91"/>
+</map>

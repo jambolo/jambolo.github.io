@@ -1,0 +1,5 @@
+<map id="Glx::AmbientLight" name="Glx::AmbientLight">
+<area shape="rect" id="Node000001" title="An ambient light." alt="" coords="5,80,131,107"/>
+<area shape="rect" id="Node000002" href="$class_glx_1_1_light.html" title="A basic light." alt="" coords="29,5,107,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,48,71,80,65,80,65,48"/>
+</map>

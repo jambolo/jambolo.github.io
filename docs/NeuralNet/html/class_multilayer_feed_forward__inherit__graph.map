@@ -1,0 +1,5 @@
+<map id="MultilayerFeedForward" name="MultilayerFeedForward">
+<area shape="rect" id="Node000001" title="A multilayer feed&#45;forward neural net with back&#45;propagation." alt="" coords="5,80,159,107"/>
+<area shape="rect" id="Node000002" href="$class_neural_net.html" title="A neural network interface." alt="" coords="42,5,122,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,48,85,80,79,80,79,48"/>
+</map>

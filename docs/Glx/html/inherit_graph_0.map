@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_glx_1_1_camera.html" title="A basic camera.." alt="" coords="5,31,101,57"/>
+<area shape="rect" id="Node000001" href="$class_glx_1_1_direction_up_camera.html" title="A camera whose orientation is set by specifying its direction and up vectors." alt="" coords="149,5,313,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="116,32,148,28,149,33,117,38"/>
+<area shape="rect" id="Node000002" href="$class_glx_1_1_euler_camera.html" title="A camera whose orientation is set using Euler angles." alt="" coords="168,56,294,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="117,50,168,58,168,63,116,56"/>
+</map>
