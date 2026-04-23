@@ -2,7 +2,7 @@
 layout: default
 ---
 
-**Table of Contents**
+## Table of Contents
 
 - [Applications](#applications)
 - [Libraries](#libraries)
@@ -114,56 +114,56 @@ Many libraries that do a lot of different things ...
 
 A function that computes the first endpoint for drawing an arbitrary arc using the HTML arcTo method.
 
-- Coffeescript  
+- Coffeescript
 - [Project on GitHub](https://github.com/jambolo/drawArc) &nbsp;|&nbsp; [Try it!](https://jambolo.github.io/drawArc)
 
 ### game-player
 
 **(WIP)** Base component library for implementing a player for two-person games in Rust. Minimax search is implemented. MCTS is under construction.
 
-- Rust  
+- Rust
 - [API Documentation](docs/game-player/game_player/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/game-player)
 
 ### GamePlayer
 
 A game player for two-player perfect information games, implemented using a min-max game tree, alpha-beta pruning, and a transposition table, along with a variety of heuristics.
 
-- C++  
+- C++
 - [API Documentation](docs/GamePlayer/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/GamePlayer)
 
 ### Misc
 
 Miscellaneous features and functionality not worthy of individual projects.
 
-- C++  
+- C++
 - [API Documentation](docs/Misc/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Misc)
 
 ### Msxmlx
 
 MSXML Extensions
 
-- C++, Windows  
+- C++, Windows
 - [API Documentation](docs/Msxmlx/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Msxmlx)
 
 ### PathFinder
 
 A path-finder implementation using A*
 
-- C++  
+- C++
 - [API Documentation](docs/PathFinder/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/PathFinder)
 
 ### TgaFile
 
 TGA format and file support.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/TgaFile)
 
 ### Wx
 
 Windows API extensions
 
-- C++, Windows  
+- C++, Windows
 - [API Documentation](docs/Wx/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Wx)
 
 * * *
@@ -198,10 +198,10 @@ Simulates D&D dice rolling to obtain expected results.
 
 ### Bitcoin Keys Demo
 
-Various demonstrations of the derivations and features of Bitcoin keys.  
+Various demonstrations of the derivations and features of Bitcoin keys.
 This project is broken because I went beyond the limit of complexity that GitHub Spark can support. When you exceed that limit, Spark starts corrupting files and cannot recover.
 
-- [Project on GitHub](https://github.com/jambolo/bitcoin-keys-demo)  
+- [Project on GitHub](https://github.com/jambolo/bitcoin-keys-demo)
 - [Don't Bother Trying It!](https://bitcoin-keys-demo--jambolo.github.app)
 
 * * *
@@ -214,91 +214,91 @@ Mostly-unfinished stuff. Check the Github repo to see how long it has been colle
 
 **(WIP)** A backgammon-player.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/Backgammon)
 
 ### Beast
 
 **(WIP)** A boolean expression simplifier
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/Beast)
 
 ### bitcoin-keys-demo-cs
 
 **(WIP)** Various demonstrations of the derivations and features of Bitcoin keys.
 
-- Coffeescript  
+- Coffeescript
 - [Project on GitHub](https://github.com/jambolo/bitcoin-keys-demo)
 
 ### BloomFilter
 
 **(WIP)** A generic bloom filter
 
-- C++  
+- C++
 - [API Documentation](docs/BloomFilter/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/BloomFilter)
 
 ### Chess
 
 **(WIP)** A chess-player.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/Chess)
 
 ### Confetti
 
 **(WIP)** A Vulkan-based particle system.
 
-- C++  
+- C++
 - [API Documentation](docs/Confetti/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Confetti)
 
 ### ConfettiMachine
 
 **(WIP)** A particle system construction kit using the Confetti library.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/ConfettiMachine)
 
 ### Equity
 
 **(WIP)** An implementation of a Bitcoin node
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/Equity) &nbsp;|&nbsp; [API Documentation](docs/equity/html/index.html)
 
 ### Glfwx
 
 **(WIP)** A C++ wrapper around GLFW
 
-- C++  
+- C++
 - [API Documentation](docs/Glfwx/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Glfwx)
 
 ### NameGenerator
 
 **(WIP)** Generates random names.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/NameGenerator)
 
 ### StateMachine
 
 **(WIP)** A generic state machine implementation
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/StateMachine)
 
 ### Tsunami
 
 **(WIP)** A go-player.
 
-- C++  
+- C++
 - [Project on GitHub](https://github.com/jambolo/Tsunami)
 
 ### Vkx
 
 **(WIP)** Extensions to the Vulkan library
 
-- C++  
+- C++
 - [API Documentation](docs/Vkx/html/index.html) &nbsp;|&nbsp; [Project on GitHub](https://github.com/jambolo/Vkx)
 
 ---

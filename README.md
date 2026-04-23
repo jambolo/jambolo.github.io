@@ -1,5 +1,7 @@
 [Website](http://jambolo.github.io)
 
+[![Deploy Jekyll site to Pages](https://github.com/jambolo/jambolo.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/jambolo/jambolo.github.io/actions/workflows/jekyll.yml)
+
 Copyright (c) 2025 John J. Bolton
 
 The Spark Template files and resources from GitHub are licensed under the
