@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Custom Theme CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="/" class="logo">
+              <span class="logo-text">jambolo</span>
+              <span class="logo-dot">.</span>
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Creative Coding</h1>
+            <p class="hero-tagline">{{ site.description }}</p>
+            <div class="hero-accent"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">Focus Areas</h2>
+          <p class="section-subtitle">Four decades of work across diverse domains</p>
+
+          <div class="focus-areas-grid">
+            <div class="focus-card" style="--accent-color: #00D9FF;">
+              <div class="focus-icon">🎮</div>
+              <h3>Game AI & Theory</h3>
+              <p>Building intelligent agents and solvers for strategic games and puzzles</p>
+            </div>
+            <div class="focus-card" style="--accent-color: #FF6B35;">
+              <div class="focus-icon">🔐</div>
+              <h3>Cryptography & Bitcoin</h3>
+              <p>Exploring blockchain, encryption, and financial tools</p>
+            </div>
+            <div class="focus-card" style="--accent-color: #00D96F;">
+              <div class="focus-icon">🎄</div>
+              <h3>Advent of Code</h3>
+              <p>Annual programming challenges across multiple languages</p>
+            </div>
+            <div class="focus-card" style="--accent-color: #B537F2;">
+              <div class="focus-icon">⚙️</div>
+              <h3>Algorithms & Data Structures</h3>
+              <p>Core computational foundations and efficiency optimization</p>
+            </div>
+            <div class="focus-card" style="--accent-color: #26A69A;">
+              <div class="focus-icon">🖼️</div>
+              <h3>Computer Graphics</h3>
+              <p>Rendering, visualization, and graphics-focused libraries and experiments</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK SECTION -->
+      <section id="tech" class="tech-stack">
+        <div class="container">
+          <h2 class="section-title">Technologies</h2>
+          <div class="tech-grid">
+            <span class="tech-tag">Rust</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Haskell</span>
+            <span class="tech-tag">Julia</span>
+            <span class="tech-tag">Go</span>
+            <span class="tech-tag">CoffeeScript</span>
+            <span class="tech-tag">Bash</span>
+            <span class="tech-tag">YAML</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Web3</span>
+            <span class="tech-tag">GitHub Actions</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+
+          <!-- Filter Controls -->
+          <div class="filter-controls">
+            <div class="filter-group" data-filter-group="type">
+              <p class="filter-group-title">Project Type</p>
+              <div class="filter-options">
+                <button class="filter-btn active" data-filter-group="type" data-filter="all">All</button>
+                <button class="filter-btn" data-filter-group="type" data-filter="applications">Applications</button>
+                <button class="filter-btn" data-filter-group="type" data-filter="libraries">Libraries</button>
+                <button class="filter-btn" data-filter-group="type" data-filter="aoc">Advent of Code</button>
+                <button class="filter-btn" data-filter-group="type" data-filter="builtbyai">Built By AI</button>
+              </div>
+            </div>
+            <div class="filter-group" data-filter-group="topic">
+              <p class="filter-group-title">Topic</p>
+              <div class="filter-options">
+                <button class="filter-btn active" data-filter-group="topic" data-filter="all">All</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="aoc">Advent of Code</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="gameai">Game AI & Theory</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="crypto">Cryptography & Bitcoin</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="algorithms">Algorithms & Data Structures</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="devtools">Development Tools</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="gameanalysis">Game Analysis</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="graphics">Computer Graphics</button>
+                <button class="filter-btn" data-filter-group="topic" data-filter="other">Other</button>
+              </div>
+            </div>
+            <div class="filter-group" data-filter-group="status">
+              <p class="filter-group-title">Status</p>
+              <div class="filter-options">
+                <button class="filter-btn active" data-filter-group="status" data-filter="all">All</button>
+                <button class="filter-btn" data-filter-group="status" data-filter="wip">WIP</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid" id="projects-grid">
+            <!-- Projects are injected here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <p>Found something interesting? Want to collaborate?</p>
+            <div class="social-links">
+              <a href="https://github.com/jambolo" class="social-link" target="_blank" rel="noopener">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 John Bolton. Built with Jekyll and ❤️</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Page Content (for Markdown) -->
+  <div class="markdown-content" style="display: none;">
+    {{ content }}
+  </div>
+
+  <!-- Interactive Projects Script -->
+  <script src="{{ '/assets/js/filter.js' | relative_url }}"></script>
+</body>
+</html>
