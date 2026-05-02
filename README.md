@@ -1,6 +1,6 @@
 [Website](http://jambolo.github.io)
 
-[![Deploy Jekyll site to Pages](https://github.com/jambolo/jambolo.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/jambolo/jambolo.github.io/actions/workflows/jekyll.yml)
+[![Deploy Jekyll site to Pages](https://github.com/jambolo/jambolo.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/jambolo/jambolo.github.io/actions/workflows/deploy.yml)
 
 Copyright (c) 2025 John J. Bolton
 
