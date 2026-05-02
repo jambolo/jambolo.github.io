@@ -5,7 +5,7 @@
 ## Environment
 
 - This repository is a minimal Jekyll site deployed with GitHub Pages.
-- The site uses the `jekyll-theme-architect` theme with no `_layouts/`, `_includes/`, or `_data/` customizations.
+- The site uses the `jekyll-theme-architect` theme with a custom layout at `_layouts/default.html`.
 - Use Windows-compatible commands and assumptions.
 - Use Ruby 3.2.2 UCRT for Bundler and Jekyll work. Do not move to Ruby 4.x because it breaks native extensions required by the GitHub Pages Jekyll stack.
 - Keep `x64-mingw-ucrt` in `Gemfile.lock`. Add it with `bundle lock --add-platform x64-mingw-ucrt` if it goes missing.
@@ -37,11 +37,13 @@
 
 ## Repository Structure
 
-- Main site content is in `index.md`.
+- `index.md` currently contains only front matter and uses `_layouts/default.html`.
+- The portfolio project list is defined in `assets/js/filter.js` (`projectsData`) and rendered client-side.
 - Jekyll passes committed static project folders through as-is.
-- Hosted project directories include `advent-of-code-2025-visualizations/`, `drawArc/`, `wordle-solver/`, `not-a-clue/`, and `sudokujs/`.
+- Hosted project directories include `advent-of-code-2025-visualizations/`, `bitcoin-keys-demo/`, `drawArc/`, `wordle-solver/`, `not-a-clue/`, and `sudokujs/`.
 - Generated API documentation lives under `docs/`.
-- When adding new site content, either edit `index.md` or add a pre-built static project directory at the repository root.
+- For portfolio item updates, edit `assets/js/filter.js` first; use `index.md` only for front matter/layout wiring unless intentionally changing page structure.
+- When adding new site content, either add/update portfolio metadata in `assets/js/filter.js` or add a pre-built static project directory at the repository root.
 
 ## Common Failures
 

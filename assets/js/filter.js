@@ -537,12 +537,12 @@ const projectsData = [
   {
     title: "Bitcoin Keys Demo",
     description: "Demonstrations of the derivations and features of Bitcoin keys.",
-    projectType: "builtbyai",
+    projectType: "applications",
     topic: "crypto",
     isWip: false,
     github: "https://github.com/jambolo/bitcoin-keys-demo",
-    demo: "https://bitcoin-keys-demo--jambolo.github.app",
-    languages: ["GitHub Spark"],
+    demo: "bitcoin-keys-demo/index.html",
+    languages: ["TypeScript", "React"],
   },
 
   // WIP STATUS PROJECTS (type may be applications or libraries)
