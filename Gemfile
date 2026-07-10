@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw]
-gem "webrick", "~> 1.8"
+gem 'jekyll', '~> 4.4'
+gem 'jekyll-theme-architect', '~> 0.2'
+gem 'wdm', '>= 0.2.0', platforms: [:windows]
+gem "webrick", "~> 1.9"
