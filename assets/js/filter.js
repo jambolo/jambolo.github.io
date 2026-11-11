@@ -125,6 +125,16 @@ const projectsData = [
     languages: ["Julia"],
   },
   {
+    title: "Blackjack Simulation",
+    description: "Simulates a huge number of Blackjack hands.",
+    projectType: "applications",
+    topic: "gameanalysis",
+    isWip: false,
+    github: "https://github.com/jambolo/blackjack-simulator",
+    demo: "https://blackjack-simulator--jambolo.github.app",
+    languages: ["GitHub Spark"],
+  },
+  {
     title: "blackjack-betting-strategy",
     description: "Calculates blackjack bets from the true count using the Kelly criterion and table limits.",
     projectType: "applications",
@@ -163,6 +173,15 @@ const projectsData = [
     languages: ["CoffeeScript", "Node.js"],
   },
   {
+    title: "D&D Dice Rolling Simulation",
+    description: "Simulates D&D dice rolling to obtain expected results.",
+    projectType: "applications",
+    topic: "gameanalysis",
+    isWip: false,
+    demo: "https://dd-stat-generator--jambolo.github.app",
+    languages: ["GitHub Spark"],
+  },
+  {
     title: "dominoes",
     description: "Play dominoes against the computer.",
     projectType: "applications",
@@ -188,6 +207,16 @@ const projectsData = [
     isWip: false,
     github: "https://github.com/jambolo/git-helpers",
     languages: ["Bash"],
+  },
+  {
+    title: "I Luv Suits Simulation",
+    description: "Simulates a huge number of hands in the casino game I Luv Suits.",
+    projectType: "applications",
+    topic: "gameanalysis",
+    isWip: false,
+    github: "https://github.com/jambolo/i-luv-suits",
+    demo: "https://i-luv-suits-simulati--jambolo.github.app",
+    languages: ["GitHub Spark"],
   },
   {
     title: "konane",
@@ -600,37 +629,6 @@ const projectsData = [
     isWip: false,
     github: "https://github.com/jambolo/github-workflows",
     languages: ["YAML"],
-  },
-
-  // BUILT BY AI (GitHub Spark)
-  {
-    title: "Blackjack Simulation",
-    description: "Simulates a huge number of Blackjack hands.",
-    projectType: "builtbyai",
-    topic: "gameanalysis",
-    isWip: false,
-    github: "https://github.com/jambolo/blackjack-simulator",
-    demo: "https://blackjack-simulator--jambolo.github.app",
-    languages: ["GitHub Spark"],
-  },
-  {
-    title: "D&D Dice Rolling Simulation",
-    description: "Simulates D&D dice rolling to obtain expected results.",
-    projectType: "builtbyai",
-    topic: "gameanalysis",
-    isWip: false,
-    demo: "https://dd-stat-generator--jambolo.github.app",
-    languages: ["GitHub Spark"],
-  },
-  {
-    title: "I Luv Suits Simulation",
-    description: "Simulates a huge number of hands in the casino game I Luv Suits.",
-    projectType: "builtbyai",
-    topic: "gameanalysis",
-    isWip: false,
-    github: "https://github.com/jambolo/i-luv-suits",
-    demo: "https://i-luv-suits-simulati--jambolo.github.app",
-    languages: ["GitHub Spark"],
   },
 
   // WIP STATUS PROJECTS (retain their actual project type)

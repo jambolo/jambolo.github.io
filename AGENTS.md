@@ -25,7 +25,6 @@ Portfolio data lives in `assets/js/filter.js`, and filter controls live in `_lay
   - Libraries: sorted alphabetically, ignoring case, `projectType: "libraries"`. Include `languages` for every entry. Libraries are expected to have `docs`, so report any that are missing.
   - Whitepapers: sorted alphabetically, ignoring case, `projectType: "whitepapers"`; papers and draft specifications.
   - Developer Resources: sorted alphabetically, ignoring case, `projectType: "resources"`; reusable plugins, skills, agent instructions, and workflows.
-  - Built By AI (GitHub Spark): sorted alphabetically, ignoring case, `projectType: "builtbyai"`; `demo` points at the deployed `*.github.app` URL. GitHub repo links are optional.
   - WIP: sorted alphabetically, ignoring case, `isWip: true`; retain the actual `projectType`, including whitepapers and developer resources. Advent of Code entries stay in their own section with their WIP status. Render the status badge instead of adding a WIP prefix to the description.
 - Topic and status are independent of project type. Finance and trading tools use `topic: "finance"`, labeled Finance & Trading.
 - Keep the topic names Game AI & Theory, Game Analysis, AI Tools, and Development Tools.
